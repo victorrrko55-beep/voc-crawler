@@ -327,9 +327,46 @@
     /* Divider */
     .divider { height: 1px; background: var(--border); margin: 24px 0; }
 
+    .options-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 14px;
+    }
+    .year-wrap {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .year-label {
+      font-size: 13px;
+      color: var(--muted);
+      font-weight: 600;
+      white-space: nowrap;
+      text-transform: none;
+      letter-spacing: 0;
+      margin: 0;
+    }
+    .year-select {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 7px 12px;
+      color: var(--text);
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      outline: none;
+      transition: border-color .2s;
+    }
+    .year-select:focus { border-color: var(--accent); }
+
     @media (max-width: 600px) {
       .input-row { flex-direction: column; }
       .summary-grid { grid-template-columns: 1fr 1fr; }
+      .options-row { flex-direction: column; align-items: flex-start; }
     }
   </style>
 </head>
@@ -350,13 +387,27 @@
       <input id="keyword" type="text" placeholder="예: 배달의민족, 토스, ChatGPT, fitness app..." />
       <button class="btn-search" id="btn" onclick="search()">분석 시작</button>
     </div>
-    <div class="sources">
-      <button class="src-btn active-play" id="toggle-play" onclick="toggleSource('play')">
-        <span class="dot"></span> Google Play Store
-      </button>
-      <button class="src-btn active-reddit" id="toggle-reddit" onclick="toggleSource('reddit')">
-        <span class="dot"></span> Reddit
-      </button>
+    <div class="options-row">
+      <div class="sources">
+        <button class="src-btn active-play" id="toggle-play" onclick="toggleSource('play')">
+          <span class="dot"></span> Google Play Store
+        </button>
+        <button class="src-btn active-reddit" id="toggle-reddit" onclick="toggleSource('reddit')">
+          <span class="dot"></span> Reddit
+        </button>
+      </div>
+      <div class="year-wrap">
+        <label class="year-label" for="since-year">📅 검색 시작 연도</label>
+        <select id="since-year" class="year-select">
+          <option value="">전체 기간</option>
+          <option value="2020">2020년 이후</option>
+          <option value="2021">2021년 이후</option>
+          <option value="2022">2022년 이후</option>
+          <option value="2023">2023년 이후</option>
+          <option value="2024">2024년 이후</option>
+          <option value="2025">2025년 이후</option>
+        </select>
+      </div>
     </div>
   </div>
 </div>
@@ -418,6 +469,7 @@ let srcPlay = true;
 let srcReddit = true;
 let activeFilter = 'all';
 let currentKeyword = '';
+let sinceYear = 0;
 
 // ─── Source Toggle ────────────────────────────────────────────────────────────
 function toggleSource(src) {
@@ -433,6 +485,7 @@ function toggleSource(src) {
 // ─── Main Search ─────────────────────────────────────────────────────────────
 async function search() {
   currentKeyword = document.getElementById('keyword').value.trim();
+  sinceYear = parseInt(document.getElementById('since-year').value) || 0;
   if (!currentKeyword) { alert('주제어를 입력해주세요.'); return; }
   if (!srcPlay && !srcReddit) { alert('최소 하나의 소스를 선택해주세요.'); return; }
 
@@ -450,6 +503,15 @@ async function search() {
 
     const results = await Promise.allSettled(promises);
     results.forEach(r => { if (r.status === 'fulfilled') allVOC.push(...r.value); });
+
+    // 연도 필터 적용
+    if (sinceYear) {
+      allVOC = allVOC.filter(v => {
+        if (!v.date) return true;
+        const year = parseInt(v.date.split('.')[0]) || parseInt(v.date.split('/')[2]) || parseInt(v.date.split('-')[0]);
+        return year >= sinceYear;
+      });
+    }
 
     if (allVOC.length === 0) {
       showError('결과를 찾을 수 없습니다. 다른 키워드를 시도해보세요.');
@@ -471,7 +533,9 @@ async function search() {
 // ─── Reddit Fetch ─────────────────────────────────────────────────────────────
 async function fetchReddit(kw) {
   setMsg('Reddit 데이터 수집 중...');
-  const url = `https://www.reddit.com/search.json?q=${encodeURIComponent(kw)}&sort=relevance&limit=50&type=link`;
+  const afterTs = sinceYear ? Math.floor(new Date(`${sinceYear}-01-01`).getTime() / 1000) : 0;
+  const timeParam = sinceYear ? `&after=t${afterTs}` : '';
+  const url = `https://www.reddit.com/search.json?q=${encodeURIComponent(kw)}&sort=relevance&limit=50&type=link${timeParam}`;
   const res = await fetch(url, { headers: { 'Accept': 'application/json' } });
   if (!res.ok) throw new Error('Reddit API 오류: ' + res.status);
   const data = await res.json();
