@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VOC 분석기 – Google Play &amp; Reddit</title>
+  <style>
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --surface2: #22263a;
+      --border: #2e3347;
+      --accent: #6c63ff;
+      --accent2: #ff6584;
+      --green: #43d18a;
+      --yellow: #f9c74f;
+      --red: #ef4444;
+      --text: #e8eaf6;
+      --muted: #8b90a7;
+      --play: #01875f;
+      --reddit: #ff4500;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    header {
+      background: linear-gradient(135deg, #1a1d27 0%, #12142a 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    header .logo { font-size: 28px; }
+    header h1 { font-size: 20px; font-weight: 700; }
+    header p { font-size: 12px; color: var(--muted); margin-top: 2px; }
+
+    /* ── Search Bar ── */
+    .search-wrap {
+      max-width: 900px;
+      margin: 32px auto 0;
+      padding: 0 20px;
+    }
+    .search-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+    }
+    .search-box label {
+      display: block;
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 10px;
+      font-weight: 600;
+      letter-spacing: .5px;
+      text-transform: uppercase;
+    }
+    .input-row {
+      display: flex;
+      gap: 10px;
+    }
+    .input-row input {
+      flex: 1;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 16px;
+      color: var(--text);
+      font-size: 15px;
+      outline: none;
+      transition: border-color .2s;
+    }
+    .input-row input:focus { border-color: var(--accent); }
+    .input-row input::placeholder { color: var(--muted); }
+    .btn-search {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      padding: 12px 28px;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: opacity .2s, transform .1s;
+      white-space: nowrap;
+    }
+    .btn-search:hover { opacity: .88; }
+    .btn-search:active { transform: scale(.97); }
+    .btn-search:disabled { opacity: .4; cursor: not-allowed; }
+
+    /* source toggles */
+    .sources {
+      display: flex;
+      gap: 10px;
+      margin-top: 14px;
+    }
+    .src-btn {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 14px;
+      border-radius: 8px;
+      border: 1.5px solid var(--border);
+      background: transparent;
+      color: var(--muted);
+      font-size: 13px;
+      cursor: pointer;
+      transition: all .2s;
+      font-weight: 600;
+    }
+    .src-btn.active-play  { border-color: var(--play);   color: var(--play);   background: rgba(1,135,95,.1);  }
+    .src-btn.active-reddit{ border-color: var(--reddit); color: var(--reddit); background: rgba(255,69,0,.1);  }
+    .src-btn .dot { width: 8px; height: 8px; border-radius: 50%; background: currentColor; }
+
+    /* ── Loading ── */
+    #loading {
+      display: none;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .spinner {
+      width: 44px; height: 44px;
+      border: 3px solid var(--border);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin .8s linear infinite;
+      margin: 0 auto 16px;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    #loading p { color: var(--muted); font-size: 14px; }
+
+    /* ── Main Content ── */
+    #content { max-width: 900px; margin: 28px auto 60px; padding: 0 20px; display: none; }
+
+    /* Summary Cards */
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+    .stat-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px 20px;
+    }
+    .stat-card .num {
+      font-size: 28px;
+      font-weight: 800;
+      line-height: 1;
+    }
+    .stat-card .lbl { font-size: 12px; color: var(--muted); margin-top: 6px; font-weight: 600; text-transform: uppercase; letter-spacing: .4px; }
+    .num.green  { color: var(--green); }
+    .num.yellow { color: var(--yellow); }
+    .num.red    { color: var(--red); }
+    .num.blue   { color: var(--accent); }
+
+    /* Sentiment Bar */
+    .section-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .6px;
+      margin-bottom: 12px;
+    }
+    .sentiment-bar {
+      display: flex;
+      height: 10px;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 8px;
+    }
+    .sentiment-bar span { transition: width .6s ease; }
+    .bar-pos  { background: var(--green); }
+    .bar-neu  { background: var(--yellow); }
+    .bar-neg  { background: var(--red); }
+    .bar-legend {
+      display: flex;
+      gap: 18px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .bar-legend span::before {
+      content: '●';
+      margin-right: 4px;
+    }
+    .bar-legend .l-pos::before { color: var(--green); }
+    .bar-legend .l-neu::before { color: var(--yellow); }
+    .bar-legend .l-neg::before { color: var(--red); }
+
+    /* Keywords */
+    .keywords-wrap { margin: 24px 0; }
+    .kw-cloud { display: flex; flex-wrap: wrap; gap: 8px; }
+    .kw-tag {
+      padding: 5px 13px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      color: var(--text);
+    }
+    .kw-tag.hot { border-color: var(--accent); color: var(--accent); background: rgba(108,99,255,.1); }
+
+    /* Tabs */
+    .tabs { display: flex; gap: 4px; margin-bottom: 16px; }
+    .tab {
+      padding: 8px 18px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all .2s;
+    }
+    .tab.active { background: var(--surface2); color: var(--text); border-color: var(--accent); }
+
+    /* VOC Cards */
+    .voc-list { display: flex; flex-direction: column; gap: 12px; }
+    .voc-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px 18px;
+      transition: border-color .2s;
+    }
+    .voc-card:hover { border-color: var(--accent); }
+    .voc-meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+    .src-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 3px 10px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .badge-play   { background: rgba(1,135,95,.18);   color: var(--play);   }
+    .badge-reddit { background: rgba(255,69,0,.18);   color: var(--reddit); }
+    .sent-badge {
+      padding: 3px 10px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 700;
+    }
+    .sent-pos { background: rgba(67,209,138,.15); color: var(--green); }
+    .sent-neu { background: rgba(249,199,79,.15);  color: var(--yellow); }
+    .sent-neg { background: rgba(239,68,68,.15);   color: var(--red); }
+    .voc-author { font-size: 12px; color: var(--muted); }
+    .voc-date   { font-size: 11px; color: var(--muted); margin-left: auto; }
+    .voc-text   { font-size: 14px; line-height: 1.6; color: var(--text); margin-bottom: 12px; }
+    .voc-text em { color: var(--accent); font-style: normal; font-weight: 600; }
+    .voc-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 12px;
+      color: var(--muted);
+      text-decoration: none;
+      padding: 4px 10px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      transition: all .2s;
+    }
+    .voc-link:hover { color: var(--accent); border-color: var(--accent); }
+
+    /* Pagination */
+    .pagination {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 24px;
+    }
+    .pg-btn {
+      padding: 7px 16px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      font-size: 13px;
+      cursor: pointer;
+      transition: all .2s;
+    }
+    .pg-btn:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+    .pg-btn:disabled { opacity: .4; cursor: not-allowed; }
+    .pg-info { font-size: 13px; color: var(--muted); }
+
+    /* Error */
+    #error {
+      display: none;
+      max-width: 900px;
+      margin: 28px auto;
+      padding: 0 20px;
+    }
+    .error-box {
+      background: rgba(239,68,68,.08);
+      border: 1px solid rgba(239,68,68,.3);
+      border-radius: 12px;
+      padding: 20px 24px;
+      color: #fca5a5;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    /* Empty */
+    .empty { text-align: center; padding: 48px 20px; color: var(--muted); font-size: 14px; }
+
+    /* Divider */
+    .divider { height: 1px; background: var(--border); margin: 24px 0; }
+
+    @media (max-width: 600px) {
+      .input-row { flex-direction: column; }
+      .summary-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">🔍</div>
+  <div>
+    <h1>VOC 분석기</h1>
+    <p>Google Play Store &amp; Reddit 소비자 의견 수집·분석</p>
+  </div>
+</header>
+
+<div class="search-wrap">
+  <div class="search-box">
+    <label>관심 주제어 입력</label>
+    <div class="input-row">
+      <input id="keyword" type="text" placeholder="예: 배달의민족, 토스, ChatGPT, fitness app..." />
+      <button class="btn-search" id="btn" onclick="search()">분석 시작</button>
+    </div>
+    <div class="sources">
+      <button class="src-btn active-play" id="toggle-play" onclick="toggleSource('play')">
+        <span class="dot"></span> Google Play Store
+      </button>
+      <button class="src-btn active-reddit" id="toggle-reddit" onclick="toggleSource('reddit')">
+        <span class="dot"></span> Reddit
+      </button>
+    </div>
+  </div>
+</div>
+
+<div id="loading">
+  <div class="spinner"></div>
+  <p id="loading-msg">데이터를 수집하고 있습니다...</p>
+</div>
+
+<div id="error"><div class="error-box" id="error-msg"></div></div>
+
+<div id="content">
+  <!-- Summary -->
+  <div class="summary-grid" id="summary-grid"></div>
+  <div class="divider"></div>
+
+  <!-- Sentiment -->
+  <div>
+    <div class="section-title">감성 분석</div>
+    <div class="sentiment-bar" id="sent-bar"></div>
+    <div class="bar-legend">
+      <span class="l-pos" id="leg-pos"></span>
+      <span class="l-neu" id="leg-neu"></span>
+      <span class="l-neg" id="leg-neg"></span>
+    </div>
+  </div>
+  <div class="divider"></div>
+
+  <!-- Keywords -->
+  <div class="keywords-wrap">
+    <div class="section-title">주요 키워드</div>
+    <div class="kw-cloud" id="kw-cloud"></div>
+  </div>
+  <div class="divider"></div>
+
+  <!-- VOC List -->
+  <div>
+    <div class="section-title">VOC 목록</div>
+    <div class="tabs" id="tabs">
+      <button class="tab active" onclick="filterTab('all', this)">전체</button>
+      <button class="tab" onclick="filterTab('positive', this)">긍정 😊</button>
+      <button class="tab" onclick="filterTab('neutral', this)">중립 😐</button>
+      <button class="tab" onclick="filterTab('negative', this)">부정 😞</button>
+      <button class="tab" onclick="filterTab('play', this)">Play Store</button>
+      <button class="tab" onclick="filterTab('reddit', this)">Reddit</button>
+    </div>
+    <div class="voc-list" id="voc-list"></div>
+    <div class="pagination" id="pagination"></div>
+  </div>
+</div>
+
+<script>
+// ─── State ───────────────────────────────────────────────────────────────────
+let allVOC = [];
+let filtered = [];
+let page = 1;
+const PER_PAGE = 12;
+let srcPlay = true;
+let srcReddit = true;
+let activeFilter = 'all';
+let currentKeyword = '';
+
+// ─── Source Toggle ────────────────────────────────────────────────────────────
+function toggleSource(src) {
+  if (src === 'play') {
+    srcPlay = !srcPlay;
+    document.getElementById('toggle-play').className = 'src-btn' + (srcPlay ? ' active-play' : '');
+  } else {
+    srcReddit = !srcReddit;
+    document.getElementById('toggle-reddit').className = 'src-btn' + (srcReddit ? ' active-reddit' : '');
+  }
+}
+
+// ─── Main Search ─────────────────────────────────────────────────────────────
+async function search() {
+  currentKeyword = document.getElementById('keyword').value.trim();
+  if (!currentKeyword) { alert('주제어를 입력해주세요.'); return; }
+  if (!srcPlay && !srcReddit) { alert('최소 하나의 소스를 선택해주세요.'); return; }
+
+  setLoading(true);
+  hide('content'); hide('error');
+  allVOC = [];
+  page = 1;
+  activeFilter = 'all';
+  resetTabs();
+
+  try {
+    const promises = [];
+    if (srcReddit) promises.push(fetchReddit(currentKeyword));
+    if (srcPlay)   promises.push(fetchPlayStore(currentKeyword));
+
+    const results = await Promise.allSettled(promises);
+    results.forEach(r => { if (r.status === 'fulfilled') allVOC.push(...r.value); });
+
+    if (allVOC.length === 0) {
+      showError('결과를 찾을 수 없습니다. 다른 키워드를 시도해보세요.');
+      setLoading(false); return;
+    }
+
+    allVOC.sort((a, b) => b.score - a.score);
+    applyFilter(activeFilter);
+    renderSummary();
+    renderSentiment();
+    renderKeywords();
+    show('content');
+  } catch (e) {
+    showError('데이터 수집 중 오류가 발생했습니다: ' + e.message);
+  }
+  setLoading(false);
+}
+
+// ─── Reddit Fetch ─────────────────────────────────────────────────────────────
+async function fetchReddit(kw) {
+  setMsg('Reddit 데이터 수집 중...');
+  const url = `https://www.reddit.com/search.json?q=${encodeURIComponent(kw)}&sort=relevance&limit=50&type=link`;
+  const res = await fetch(url, { headers: { 'Accept': 'application/json' } });
+  if (!res.ok) throw new Error('Reddit API 오류: ' + res.status);
+  const data = await res.json();
+  const posts = data?.data?.children || [];
+  const items = [];
+
+  for (const p of posts) {
+    const d = p.data;
+    if (!d.selftext && !d.title) continue;
+    const text = (d.selftext || d.title || '').slice(0, 600);
+    const sentiment = analyzeSentiment(text);
+    items.push({
+      id: d.id,
+      source: 'reddit',
+      author: d.author || 'unknown',
+      title: d.title,
+      text: text || d.title,
+      url: 'https://www.reddit.com' + d.permalink,
+      subreddit: d.subreddit_name_prefixed || '',
+      date: d.created_utc ? new Date(d.created_utc * 1000).toLocaleDateString('ko-KR') : '',
+      score: d.score || 0,
+      sentiment
+    });
+  }
+
+  // Also fetch comments from top post
+  if (posts.length > 0) {
+    try {
+      const topPost = posts[0].data;
+      const commUrl = `https://www.reddit.com${topPost.permalink}.json?limit=30`;
+      const commRes = await fetch(commUrl);
+      if (commRes.ok) {
+        const commData = await commRes.json();
+        const comments = commData?.[1]?.data?.children || [];
+        for (const c of comments) {
+          const cd = c.data;
+          if (!cd.body || cd.body === '[deleted]') continue;
+          const text = cd.body.slice(0, 500);
+          items.push({
+            id: cd.id,
+            source: 'reddit',
+            author: cd.author || 'unknown',
+            title: '💬 댓글: ' + topPost.title,
+            text,
+            url: 'https://www.reddit.com' + topPost.permalink,
+            subreddit: topPost.subreddit_name_prefixed || '',
+            date: cd.created_utc ? new Date(cd.created_utc * 1000).toLocaleDateString('ko-KR') : '',
+            score: cd.score || 0,
+            sentiment: analyzeSentiment(text)
+          });
+        }
+      }
+    } catch (_) {}
+  }
+
+  return items;
+}
+
+// ─── Play Store Fetch ─────────────────────────────────────────────────────────
+async function fetchPlayStore(kw) {
+  setMsg('Google Play Store 데이터 수집 중...');
+  const PROXY = 'https://corsproxy.io/?';
+  const searchUrl = `https://play.google.com/store/search?q=${encodeURIComponent(kw)}&c=apps&hl=ko`;
+
+  let html = '';
+  try {
+    const res = await fetch(PROXY + encodeURIComponent(searchUrl));
+    if (!res.ok) throw new Error('Play Store 검색 실패');
+    html = await res.text();
+  } catch (e) {
+    // fallback: use allorigins
+    try {
+      const res2 = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(searchUrl)}`);
+      const j = await res2.json();
+      html = j.contents || '';
+    } catch (_) { return []; }
+  }
+
+  // Extract app IDs from search result page
+  const appIdRegex = /\/store\/apps\/details\?id=([\w.]+)/g;
+  const appIds = [...new Set([...html.matchAll(appIdRegex)].map(m => m[1]))].slice(0, 5);
+
+  const items = [];
+  for (const appId of appIds) {
+    try {
+      const reviews = await fetchPlayReviews(appId, kw);
+      items.push(...reviews);
+    } catch (_) {}
+  }
+
+  // If no app reviews found, create placeholder from search results
+  if (items.length === 0 && appIds.length > 0) {
+    for (const appId of appIds) {
+      items.push({
+        id: appId,
+        source: 'play',
+        author: 'Play Store',
+        title: '앱 검색 결과',
+        text: `"${kw}" 관련 앱: ${appId}`,
+        url: `https://play.google.com/store/apps/details?id=${appId}&hl=ko`,
+        date: new Date().toLocaleDateString('ko-KR'),
+        score: 0,
+        sentiment: 'neutral',
+        appId
+      });
+    }
+  }
+  return items;
+}
+
+async function fetchPlayReviews(appId, kw) {
+  const PROXY = 'https://corsproxy.io/?';
+  const reviewUrl = `https://play.google.com/store/apps/details?id=${appId}&showAllReviews=true&hl=ko`;
+  let html = '';
+  try {
+    const res = await fetch(PROXY + encodeURIComponent(reviewUrl));
+    if (!res.ok) return [];
+    html = await res.text();
+  } catch (_) { return []; }
+
+  const items = [];
+  // Extract reviews from Play Store HTML (JSON data embedded in page)
+  const jsonMatch = html.match(/\[\[null,\[\[null,null,null,"([^"]{10,})".*?\]\]/g);
+  if (jsonMatch) {
+    for (const block of jsonMatch.slice(0, 20)) {
+      try {
+        const textMatch = block.match(/"([^"]{20,500})"/);
+        if (textMatch) {
+          const text = textMatch[1].replace(/\\n/g, ' ').trim();
+          if (text.length > 15) {
+            const sentiment = analyzeSentiment(text);
+            items.push({
+              id: Math.random().toString(36).slice(2),
+              source: 'play',
+              author: '플레이스토어 사용자',
+              title: `${appId} 리뷰`,
+              text,
+              url: `https://play.google.com/store/apps/details?id=${appId}&hl=ko`,
+              date: new Date().toLocaleDateString('ko-KR'),
+              score: 1,
+              sentiment,
+              appId
+            });
+          }
+        }
+      } catch (_) {}
+    }
+  }
+
+  // Fallback: regex extract visible review text
+  if (items.length === 0) {
+    const reviewRegex = /<jsname="fbQN7e"[^>]*>([^<]{20,})<\/span>/g;
+    const matches = [...html.matchAll(reviewRegex)].slice(0, 15);
+    for (const m of matches) {
+      const text = m[1].trim();
+      items.push({
+        id: Math.random().toString(36).slice(2),
+        source: 'play',
+        author: '플레이스토어 사용자',
+        title: `${appId} 리뷰`,
+        text,
+        url: `https://play.google.com/store/apps/details?id=${appId}&hl=ko`,
+        date: new Date().toLocaleDateString('ko-KR'),
+        score: 1,
+        sentiment: analyzeSentiment(text),
+        appId
+      });
+    }
+  }
+
+  return items;
+}
+
+// ─── Sentiment Analysis ───────────────────────────────────────────────────────
+const POS_KO = ['좋아','훌륭','최고','편리','빠르','유용','추천','만족','완벽','사랑','쉽','간편','놀라','기능','잘됨','최선','효율','갱신'];
+const NEG_KO = ['나쁘','불편','느리','버그','오류','문제','최악','실망','삭제','환불','충돌','끊김','안됨','불만','짜증','개선','수정','이슈'];
+const POS_EN = ['great','love','excellent','amazing','perfect','good','awesome','fast','easy','helpful','best','recommend','nice','smooth','works'];
+const NEG_EN = ['bad','terrible','worst','bug','crash','slow','broken','useless','hate','awful','poor','disappoint','error','fail','fix','issue','problem'];
+
+function analyzeSentiment(text) {
+  const t = text.toLowerCase();
+  let pos = 0, neg = 0;
+  POS_KO.forEach(w => { if (t.includes(w)) pos++; });
+  NEG_KO.forEach(w => { if (t.includes(w)) neg++; });
+  POS_EN.forEach(w => { if (t.includes(w)) pos++; });
+  NEG_EN.forEach(w => { if (t.includes(w)) neg++; });
+  if (pos > neg) return 'positive';
+  if (neg > pos) return 'negative';
+  return 'neutral';
+}
+
+// ─── Keyword Extraction ───────────────────────────────────────────────────────
+function extractKeywords(vocs) {
+  const freq = {};
+  const stopwords = new Set(['the','a','an','is','in','it','of','and','or','to','this','that','for','with','on','at','be','was','are','by','as','i','we','you','they','me','my','our','your','their','have','has','had','do','did','not','so','but','if','from','up','all','can','will','just','about','more','also','than','when','how','what','who','its','no','out','get','got','been','were','said','use','used','like','one','would','could','should','any','some','his','her','him','she','he','https','www','com','app','apps','store','play','reddit','google','이','그','저','의','가','은','는','을','를','에','에서','으로','로','와','과','또','도','이다','있다','없다','하다','되다','않다','이것','그것','저것']);
+
+  for (const v of vocs) {
+    const words = (v.text + ' ' + (v.title || '')).toLowerCase().match(/[a-z가-힣]{2,}/g) || [];
+    for (const w of words) {
+      if (!stopwords.has(w) && w.length >= 2) freq[w] = (freq[w] || 0) + 1;
+    }
+  }
+  return Object.entries(freq).sort((a,b) => b[1]-a[1]).slice(0, 24);
+}
+
+// ─── Render ───────────────────────────────────────────────────────────────────
+function renderSummary() {
+  const pos = allVOC.filter(v => v.sentiment === 'positive').length;
+  const neg = allVOC.filter(v => v.sentiment === 'negative').length;
+  const neu = allVOC.filter(v => v.sentiment === 'neutral').length;
+  const play = allVOC.filter(v => v.source === 'play').length;
+  const reddit = allVOC.filter(v => v.source === 'reddit').length;
+
+  document.getElementById('summary-grid').innerHTML = `
+    <div class="stat-card"><div class="num blue">${allVOC.length}</div><div class="lbl">총 VOC 수</div></div>
+    <div class="stat-card"><div class="num green">${pos}</div><div class="lbl">긍정 의견</div></div>
+    <div class="stat-card"><div class="num yellow">${neu}</div><div class="lbl">중립 의견</div></div>
+    <div class="stat-card"><div class="num red">${neg}</div><div class="lbl">부정 의견</div></div>
+    <div class="stat-card"><div class="num" style="color:var(--play)">${play}</div><div class="lbl">Play Store</div></div>
+    <div class="stat-card"><div class="num" style="color:var(--reddit)">${reddit}</div><div class="lbl">Reddit</div></div>
+  `;
+}
+
+function renderSentiment() {
+  const total = allVOC.length || 1;
+  const pos = allVOC.filter(v => v.sentiment === 'positive').length;
+  const neg = allVOC.filter(v => v.sentiment === 'negative').length;
+  const neu = total - pos - neg;
+  const pPos = (pos/total*100).toFixed(1);
+  const pNeu = (neu/total*100).toFixed(1);
+  const pNeg = (neg/total*100).toFixed(1);
+
+  document.getElementById('sent-bar').innerHTML = `
+    <span class="bar-pos" style="width:${pPos}%"></span>
+    <span class="bar-neu" style="width:${pNeu}%"></span>
+    <span class="bar-neg" style="width:${pNeg}%"></span>
+  `;
+  document.getElementById('leg-pos').textContent = `긍정 ${pPos}%`;
+  document.getElementById('leg-neu').textContent = `중립 ${pNeu}%`;
+  document.getElementById('leg-neg').textContent = `부정 ${pNeg}%`;
+}
+
+function renderKeywords() {
+  const kws = extractKeywords(allVOC);
+  const max = kws[0]?.[1] || 1;
+  document.getElementById('kw-cloud').innerHTML = kws.map(([w, c]) =>
+    `<span class="kw-tag${c >= max * 0.5 ? ' hot' : ''}">${w} <small style="opacity:.6">${c}</small></span>`
+  ).join('');
+}
+
+function applyFilter(f) {
+  activeFilter = f;
+  if (f === 'all')      filtered = [...allVOC];
+  else if (f === 'play' || f === 'reddit') filtered = allVOC.filter(v => v.source === f);
+  else filtered = allVOC.filter(v => v.sentiment === f);
+  page = 1;
+  renderVOCPage();
+}
+
+function renderVOCPage() {
+  const total = filtered.length;
+  const totalPages = Math.ceil(total / PER_PAGE) || 1;
+  const slice = filtered.slice((page-1)*PER_PAGE, page*PER_PAGE);
+
+  if (slice.length === 0) {
+    document.getElementById('voc-list').innerHTML = '<div class="empty">해당 필터에 결과가 없습니다.</div>';
+    document.getElementById('pagination').innerHTML = '';
+    return;
+  }
+
+  document.getElementById('voc-list').innerHTML = slice.map(v => vocCard(v)).join('');
+  document.getElementById('pagination').innerHTML = `
+    <button class="pg-btn" onclick="changePage(-1)" ${page<=1?'disabled':''}>◀ 이전</button>
+    <span class="pg-info">${page} / ${totalPages} (${total}건)</span>
+    <button class="pg-btn" onclick="changePage(1)" ${page>=totalPages?'disabled':''}>다음 ▶</button>
+  `;
+}
+
+function vocCard(v) {
+  const srcBadge = v.source === 'play'
+    ? '<span class="src-badge badge-play">▶ Play Store</span>'
+    : '<span class="src-badge badge-reddit">🔴 Reddit</span>';
+  const sentMap = { positive: ['sent-pos','긍정 😊'], neutral: ['sent-neu','중립 😐'], negative: ['sent-neg','부정 😞'] };
+  const [sc, sl] = sentMap[v.sentiment] || ['sent-neu','중립'];
+  const sentBadge = `<span class="sent-badge ${sc}">${sl}</span>`;
+  const highlighted = highlightKeyword(v.text, currentKeyword);
+  const sub = v.subreddit ? `<span style="color:var(--reddit);font-size:11px">${v.subreddit}</span>` : '';
+  return `
+    <div class="voc-card">
+      <div class="voc-meta">
+        ${srcBadge}${sentBadge}
+        <span class="voc-author">@${v.author}</span>
+        ${sub}
+        <span class="voc-date">${v.date}</span>
+      </div>
+      ${v.title && v.source==='reddit' ? `<div style="font-size:13px;font-weight:700;margin-bottom:8px;color:var(--muted)">${escHtml(v.title.slice(0,80))}</div>` : ''}
+      <div class="voc-text">${highlighted}</div>
+      <a class="voc-link" href="${v.url}" target="_blank" rel="noopener">
+        🔗 원문 보기
+      </a>
+    </div>
+  `;
+}
+
+function highlightKeyword(text, kw) {
+  const safe = escHtml(text);
+  if (!kw) return safe;
+  const parts = kw.split(/\s+/).filter(Boolean).map(p => p.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'));
+  const re = new RegExp(`(${parts.join('|')})`, 'gi');
+  return safe.replace(re, '<em>$1</em>');
+}
+
+function escHtml(s) {
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function changePage(dir) {
+  page += dir;
+  renderVOCPage();
+  document.getElementById('content').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function filterTab(f, el) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  el.classList.add('active');
+  applyFilter(f);
+}
+function resetTabs() {
+  document.querySelectorAll('.tab').forEach((t,i) => t.classList.toggle('active', i===0));
+}
+
+// ─── Utilities ────────────────────────────────────────────────────────────────
+function setLoading(on) {
+  document.getElementById('loading').style.display = on ? 'block' : 'none';
+  document.getElementById('btn').disabled = on;
+}
+function setMsg(m) { document.getElementById('loading-msg').textContent = m; }
+function show(id) { document.getElementById(id).style.display = 'block'; }
+function hide(id) { document.getElementById(id).style.display = 'none'; }
+function showError(msg) {
+  document.getElementById('error-msg').textContent = msg;
+  show('error');
+}
+
+// Enter key
+document.getElementById('keyword').addEventListener('keydown', e => {
+  if (e.key === 'Enter') search();
+});
+</script>
+</body>
+</html>
