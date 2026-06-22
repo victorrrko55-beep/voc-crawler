@@ -503,12 +503,13 @@ async function search() {
     const results = await Promise.allSettled(promises);
     results.forEach(r => { if (r.status === 'fulfilled') allVOC.push(...r.value); });
 
-    // 연도 필터 적용
+    // 연도 필터 적용 (날짜가 없는 항목은 포함)
     if (sinceYear) {
       allVOC = allVOC.filter(v => {
         if (!v.date) return true;
-        const year = parseInt(v.date.split('.')[0]) || parseInt(v.date.split('/')[2]) || parseInt(v.date.split('-')[0]);
-        return year >= sinceYear;
+        const parts = v.date.split('.');  // ko-KR: YYYY. M. D.
+        const year = parseInt(parts[0]);
+        return !isNaN(year) ? year >= sinceYear : true;
       });
     }
 
@@ -532,9 +533,15 @@ async function search() {
 // ─── Reddit Fetch ─────────────────────────────────────────────────────────────
 async function fetchReddit(kw) {
   setMsg('Reddit 데이터 수집 중...');
-  const afterTs = sinceYear ? Math.floor(new Date(`${sinceYear}-01-01`).getTime() / 1000) : 0;
-  const timeParam = sinceYear ? `&after=t${afterTs}` : '';
-  const url = `https://www.reddit.com/search.json?q=${encodeURIComponent(kw)}&sort=relevance&limit=50&type=link${timeParam}`;
+  const now = new Date().getFullYear();
+  let timeParam = '';
+  if (sinceYear) {
+    const diff = now - sinceYear;
+    if (diff === 0) timeParam = '&t=year';
+    else if (diff <= 1) timeParam = '&t=year';
+    else timeParam = '&t=all';
+  }
+  const url = `https://www.reddit.com/search.json?q=${encodeURIComponent(kw)}&sort=relevance&limit=100&type=link${timeParam}`;
   const res = await fetch(url, { headers: { 'Accept': 'application/json' } });
   if (!res.ok) throw new Error('Reddit API 오류: ' + res.status);
   const data = await res.json();
