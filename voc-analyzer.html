@@ -541,10 +541,36 @@ async function fetchReddit(kw) {
     else if (diff <= 1) timeParam = '&t=year';
     else timeParam = '&t=all';
   }
-  const url = `https://www.reddit.com/search.json?q=${encodeURIComponent(kw)}&sort=relevance&limit=100&type=link${timeParam}`;
-  const res = await fetch(url, { headers: { 'Accept': 'application/json' } });
-  if (!res.ok) throw new Error('Reddit API 오류: ' + res.status);
-  const data = await res.json();
+  const redditUrl = `https://www.reddit.com/search.json?q=${encodeURIComponent(kw)}&sort=relevance&limit=100&type=link${timeParam}`;
+
+  let data;
+  // 직접 호출 시도
+  try {
+    const res = await fetch(redditUrl, { headers: { 'Accept': 'application/json' } });
+    if (res.ok) {
+      data = await res.json();
+    } else {
+      throw new Error('direct failed');
+    }
+  } catch (_) {
+    // CORS 프록시로 재시도
+    try {
+      const proxy1 = `https://corsproxy.io/?${encodeURIComponent(redditUrl)}`;
+      const res = await fetch(proxy1);
+      if (res.ok) data = await res.json();
+      else throw new Error('proxy1 failed');
+    } catch (_) {
+      try {
+        const proxy2 = `https://api.allorigins.win/get?url=${encodeURIComponent(redditUrl)}`;
+        const res = await fetch(proxy2);
+        if (res.ok) {
+          const j = await res.json();
+          data = JSON.parse(j.contents);
+        }
+      } catch (_) { return []; }
+    }
+  }
+
   const posts = data?.data?.children || [];
   const items = [];
 
