@@ -339,6 +339,7 @@
       display: flex;
       align-items: center;
       gap: 8px;
+      margin-top: 12px;
     }
     .year-label {
       font-size: 13px;
@@ -387,27 +388,25 @@
       <input id="keyword" type="text" placeholder="예: 배달의민족, 토스, ChatGPT, fitness app..." />
       <button class="btn-search" id="btn" onclick="search()">분석 시작</button>
     </div>
-    <div class="options-row">
-      <div class="sources">
-        <button class="src-btn active-play" id="toggle-play" onclick="toggleSource('play')">
-          <span class="dot"></span> Google Play Store
-        </button>
-        <button class="src-btn active-reddit" id="toggle-reddit" onclick="toggleSource('reddit')">
-          <span class="dot"></span> Reddit
-        </button>
-      </div>
-      <div class="year-wrap">
-        <label class="year-label" for="since-year">📅 검색 시작 연도</label>
-        <select id="since-year" class="year-select">
-          <option value="">전체 기간</option>
-          <option value="2020">2020년 이후</option>
-          <option value="2021">2021년 이후</option>
-          <option value="2022">2022년 이후</option>
-          <option value="2023">2023년 이후</option>
-          <option value="2024">2024년 이후</option>
-          <option value="2025">2025년 이후</option>
-        </select>
-      </div>
+    <div class="sources" style="margin-top:14px">
+      <button class="src-btn active-play" id="toggle-play" onclick="toggleSource('play')">
+        <span class="dot"></span> Google Play Store
+      </button>
+      <button class="src-btn active-reddit" id="toggle-reddit" onclick="toggleSource('reddit')">
+        <span class="dot"></span> Reddit
+      </button>
+    </div>
+    <div class="year-wrap">
+      <label class="year-label" for="since-year">📅 검색 시작 연도</label>
+      <select id="since-year" class="year-select">
+        <option value="">전체 기간</option>
+        <option value="2020">2020년 이후</option>
+        <option value="2021">2021년 이후</option>
+        <option value="2022">2022년 이후</option>
+        <option value="2023">2023년 이후</option>
+        <option value="2024">2024년 이후</option>
+        <option value="2025">2025년 이후</option>
+      </select>
     </div>
   </div>
 </div>
