@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>VOC 분석기</title>
+  <style>
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --surface2: #22263a;
+      --border: #2e3347;
+      --accent: #6c63ff;
+      --green: #43d18a;
+      --yellow: #f9c74f;
+      --red: #ef4444;
+      --text: #e8eaf6;
+      --muted: #8b90a7;
+      --play: #01875f;
+      --reddit: #ff4500;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      width: 680px;
+      min-height: 400px;
+      max-height: 700px;
+      overflow-y: auto;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 13px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1a1d27, #12142a);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 18px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    header h1 { font-size: 16px; font-weight: 700; }
+    header p  { font-size: 11px; color: var(--muted); margin-top: 2px; }
+
+    .search-box {
+      padding: 16px 18px;
+      border-bottom: 1px solid var(--border);
+    }
+    .input-row { display: flex; gap: 8px; }
+    .input-row input {
+      flex: 1;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 9px 12px;
+      color: var(--text);
+      font-size: 13px;
+      outline: none;
+    }
+    .input-row input:focus { border-color: var(--accent); }
+    .input-row input::placeholder { color: var(--muted); }
+    .btn-search {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 9px 20px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .btn-search:disabled { opacity: .4; cursor: not-allowed; }
+
+    .options {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+    .src-btn {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 5px 12px;
+      border-radius: 6px;
+      border: 1.5px solid var(--border);
+      background: transparent;
+      color: var(--muted);
+      font-size: 12px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .src-btn .dot { width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
+    .src-btn.active-play   { border-color: var(--play);   color: var(--play);   background: rgba(1,135,95,.1); }
+    .src-btn.active-reddit { border-color: var(--reddit); color: var(--reddit); background: rgba(255,69,0,.1); }
+
+    .year-wrap { display: flex; align-items: center; gap: 6px; margin-left: auto; }
+    .year-wrap span { font-size: 12px; color: var(--muted); white-space: nowrap; }
+    .year-wrap select {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 5px 10px;
+      color: var(--text);
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      outline: none;
+    }
+
+    #loading { display: none; text-align: center; padding: 40px 20px; }
+    .spinner {
+      width: 36px; height: 36px;
+      border: 3px solid var(--border);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin .8s linear infinite;
+      margin: 0 auto 12px;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    #loading p { color: var(--muted); font-size: 12px; }
+
+    #content { display: none; padding: 14px 18px; }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+    .stat-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 12px;
+    }
+    .stat-card .num { font-size: 22px; font-weight: 800; line-height: 1; }
+    .stat-card .lbl { font-size: 10px; color: var(--muted); margin-top: 4px; text-transform: uppercase; letter-spacing: .4px; }
+    .num.green  { color: var(--green); }
+    .num.yellow { color: var(--yellow); }
+    .num.red    { color: var(--red); }
+    .num.blue   { color: var(--accent); }
+
+    .section-title { font-size: 11px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .6px; margin-bottom: 8px; }
+
+    .sentiment-bar { display: flex; height: 8px; border-radius: 8px; overflow: hidden; margin-bottom: 6px; }
+    .bar-pos { background: var(--green); }
+    .bar-neu { background: var(--yellow); }
+    .bar-neg { background: var(--red); }
+    .bar-legend { display: flex; gap: 12px; font-size: 11px; color: var(--muted); margin-bottom: 14px; }
+    .bar-legend span::before { content: '●'; margin-right: 3px; }
+    .bar-legend .l-pos::before { color: var(--green); }
+    .bar-legend .l-neu::before { color: var(--yellow); }
+    .bar-legend .l-neg::before { color: var(--red); }
+
+    .kw-cloud { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+    .kw-tag {
+      padding: 3px 10px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 600;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      color: var(--text);
+    }
+    .kw-tag.hot { border-color: var(--accent); color: var(--accent); background: rgba(108,99,255,.1); }
+
+    .tabs { display: flex; gap: 4px; margin-bottom: 10px; flex-wrap: wrap; }
+    .tab {
+      padding: 5px 12px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .tab.active { background: var(--surface2); color: var(--text); border-color: var(--accent); }
+
+    .voc-list { display: flex; flex-direction: column; gap: 8px; }
+    .voc-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 12px;
+    }
+    .voc-meta { display: flex; align-items: center; gap: 6px; margin-bottom: 6px; flex-wrap: wrap; }
+    .src-badge {
+      padding: 2px 7px;
+      border-radius: 4px;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .badge-play   { background: rgba(1,135,95,.18);  color: var(--play); }
+    .badge-reddit { background: rgba(255,69,0,.18);  color: var(--reddit); }
+    .sent-badge { padding: 2px 7px; border-radius: 4px; font-size: 10px; font-weight: 700; }
+    .sent-pos { background: rgba(67,209,138,.15); color: var(--green); }
+    .sent-neu { background: rgba(249,199,79,.15);  color: var(--yellow); }
+    .sent-neg { background: rgba(239,68,68,.15);   color: var(--red); }
+    .voc-author { font-size: 11px; color: var(--muted); }
+    .voc-date   { font-size: 10px; color: var(--muted); margin-left: auto; }
+    .voc-title  { font-size: 11px; font-weight: 700; color: var(--muted); margin-bottom: 5px; }
+    .voc-text   { font-size: 12px; line-height: 1.5; margin-bottom: 8px; }
+    .voc-text em { color: var(--accent); font-style: normal; font-weight: 600; }
+    .voc-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 11px;
+      color: var(--muted);
+      text-decoration: none;
+      padding: 3px 8px;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+    }
+    .voc-link:hover { color: var(--accent); border-color: var(--accent); }
+
+    .pagination { display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 14px; }
+    .pg-btn {
+      padding: 5px 12px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .pg-btn:disabled { opacity: .4; cursor: not-allowed; }
+    .pg-info { font-size: 12px; color: var(--muted); }
+
+    #error { display: none; padding: 14px 18px; }
+    .error-box {
+      background: rgba(239,68,68,.08);
+      border: 1px solid rgba(239,68,68,.3);
+      border-radius: 8px;
+      padding: 14px 16px;
+      color: #fca5a5;
+      font-size: 12px;
+    }
+    .divider { height: 1px; background: var(--border); margin: 12px 0; }
+    .empty { text-align: center; padding: 30px; color: var(--muted); }
+  </style>
+</head>
+<body>
+
+<header>
+  <div style="font-size:22px">🔍</div>
+  <div>
+    <h1>VOC 분석기</h1>
+    <p>Google Play Store &amp; Reddit 소비자 의견 수집·분석</p>
+  </div>
+</header>
+
+<div class="search-box">
+  <div class="input-row">
+    <input id="keyword" type="text" placeholder="예: SmartThings, 토스, fitness tracker..." />
+    <button class="btn-search" id="btn" onclick="search()">분석 시작</button>
+  </div>
+  <div class="options">
+    <button class="src-btn active-play" id="toggle-play" onclick="toggleSource('play')">
+      <span class="dot"></span> Google Play Store
+    </button>
+    <button class="src-btn active-reddit" id="toggle-reddit" onclick="toggleSource('reddit')">
+      <span class="dot"></span> Reddit
+    </button>
+    <div class="year-wrap">
+      <span>📅 시작 연도</span>
+      <select id="since-year">
+        <option value="">전체</option>
+        <option value="2020">2020+</option>
+        <option value="2021">2021+</option>
+        <option value="2022">2022+</option>
+        <option value="2023">2023+</option>
+        <option value="2024">2024+</option>
+        <option value="2025">2025+</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<div id="loading"><div class="spinner"></div><p id="loading-msg">데이터 수집 중...</p></div>
+<div id="error"><div class="error-box" id="error-msg"></div></div>
+
+<div id="content">
+  <div class="summary-grid" id="summary-grid"></div>
+  <div class="divider"></div>
+  <div class="section-title">감성 분석</div>
+  <div class="sentiment-bar" id="sent-bar"></div>
+  <div class="bar-legend">
+    <span class="l-pos" id="leg-pos"></span>
+    <span class="l-neu" id="leg-neu"></span>
+    <span class="l-neg" id="leg-neg"></span>
+  </div>
+  <div class="section-title">주요 키워드</div>
+  <div class="kw-cloud" id="kw-cloud"></div>
+  <div class="divider"></div>
+  <div class="section-title">VOC 목록</div>
+  <div class="tabs">
+    <button class="tab active" onclick="filterTab('all',this)">전체</button>
+    <button class="tab" onclick="filterTab('positive',this)">긍정 😊</button>
+    <button class="tab" onclick="filterTab('neutral',this)">중립 😐</button>
+    <button class="tab" onclick="filterTab('negative',this)">부정 😞</button>
+    <button class="tab" onclick="filterTab('play',this)">Play Store</button>
+    <button class="tab" onclick="filterTab('reddit',this)">Reddit</button>
+  </div>
+  <div class="voc-list" id="voc-list"></div>
+  <div class="pagination" id="pagination"></div>
+</div>
+
+<script src="popup.js"></script>
+</body>
+</html>

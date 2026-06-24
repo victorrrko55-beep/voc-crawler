@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "VOC 분석기",
+  "version": "1.0",
+  "description": "Google Play Store & Reddit 소비자 VOC 수집·분석",
+  "permissions": ["scripting"],
+  "host_permissions": [
+    "https://www.reddit.com/*",
+    "https://play.google.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "VOC 분석기"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
