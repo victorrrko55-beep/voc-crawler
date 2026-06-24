@@ -257,13 +257,13 @@
 <div class="search-box">
   <div class="input-row">
     <input id="keyword" type="text" placeholder="예: SmartThings, 토스, fitness tracker..." />
-    <button class="btn-search" id="btn" onclick="search()">분석 시작</button>
+    <button class="btn-search" id="btn">분석 시작</button>
   </div>
   <div class="options">
-    <button class="src-btn active-play" id="toggle-play" onclick="toggleSource('play')">
+    <button class="src-btn active-play" id="toggle-play">
       <span class="dot"></span> Google Play Store
     </button>
-    <button class="src-btn active-reddit" id="toggle-reddit" onclick="toggleSource('reddit')">
+    <button class="src-btn active-reddit" id="toggle-reddit">
       <span class="dot"></span> Reddit
     </button>
     <div class="year-wrap">
@@ -298,13 +298,13 @@
   <div class="kw-cloud" id="kw-cloud"></div>
   <div class="divider"></div>
   <div class="section-title">VOC 목록</div>
-  <div class="tabs">
-    <button class="tab active" onclick="filterTab('all',this)">전체</button>
-    <button class="tab" onclick="filterTab('positive',this)">긍정 😊</button>
-    <button class="tab" onclick="filterTab('neutral',this)">중립 😐</button>
-    <button class="tab" onclick="filterTab('negative',this)">부정 😞</button>
-    <button class="tab" onclick="filterTab('play',this)">Play Store</button>
-    <button class="tab" onclick="filterTab('reddit',this)">Reddit</button>
+  <div class="tabs" id="tabs">
+    <button class="tab active" data-filter="all">전체</button>
+    <button class="tab" data-filter="positive">긍정 😊</button>
+    <button class="tab" data-filter="neutral">중립 😐</button>
+    <button class="tab" data-filter="negative">부정 😞</button>
+    <button class="tab" data-filter="play">Play Store</button>
+    <button class="tab" data-filter="reddit">Reddit</button>
   </div>
   <div class="voc-list" id="voc-list"></div>
   <div class="pagination" id="pagination"></div>

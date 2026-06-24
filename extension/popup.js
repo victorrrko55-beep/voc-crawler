@@ -318,3 +318,10 @@ function hide(id) { document.getElementById(id).style.display = 'none'; }
 function showError(msg) { document.getElementById('error-msg').textContent = msg; show('error'); }
 
 document.getElementById('keyword').addEventListener('keydown', e => { if (e.key === 'Enter') search(); });
+document.getElementById('btn').addEventListener('click', search);
+document.getElementById('toggle-play').addEventListener('click', () => toggleSource('play'));
+document.getElementById('toggle-reddit').addEventListener('click', () => toggleSource('reddit'));
+document.getElementById('tabs').addEventListener('click', e => {
+  const tab = e.target.closest('[data-filter]');
+  if (tab) filterTab(tab.dataset.filter, tab);
+});
