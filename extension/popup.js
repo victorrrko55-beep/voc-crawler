@@ -126,9 +126,18 @@ async function fetchReddit(kw) {
 // ─── Play Store ───────────────────────────────────────────────────────────────
 async function fetchPlayStore(kw) {
   setMsg('Play Store 수집 중...');
-  const searchUrl = `https://play.google.com/store/search?q=${encodeURIComponent(kw)}&c=apps&hl=ko`;
+  // gplay-scraper 스타일 비공개 API 사용
+  const url = `https://play.google.com/_/PlayStoreUi/data/batchexecute?rpcids=qnKhOb&bl=boq_playuiserver_&hl=ko&gl=KR`;
+  const body = `f.req=${encodeURIComponent(JSON.stringify([[["qnKhOb", JSON.stringify([[null,[2,3,[["CAE%3D"]],null,null,null,null,[kw]],null,[0,7]]]]]), null, "generic"]]])}`;
+
   let html = '';
-  try { html = await bgFetch(searchUrl); } catch (_) { return []; }
+  try {
+    const text = await bgFetch(
+      `https://play.google.com/store/apps?q=${encodeURIComponent(kw)}&hl=ko&gl=KR`,
+      { 'Accept': 'text/html', 'Accept-Language': 'ko-KR' }
+    );
+    html = text;
+  } catch (_) { return []; }
 
   const appIdRegex = /\/store\/apps\/details\?id=([\w.]+)/g;
   const appIds = [...new Set([...html.matchAll(appIdRegex)].map(m => m[1]))].slice(0, 5);
