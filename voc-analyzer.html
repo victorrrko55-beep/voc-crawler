@@ -18,7 +18,8 @@
       --text: #e8eaf6;
       --muted: #8b90a7;
       --play: #01875f;
-      --reddit: #ff4500;
+      --hn: #ff6600;
+      --appstore: #0070c9;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -115,8 +116,9 @@
       transition: all .2s;
       font-weight: 600;
     }
-    .src-btn.active-play  { border-color: var(--play);   color: var(--play);   background: rgba(1,135,95,.1);  }
-    .src-btn.active-reddit{ border-color: var(--reddit); color: var(--reddit); background: rgba(255,69,0,.1);  }
+    .src-btn.active-play     { border-color: var(--play);      color: var(--play);      background: rgba(1,135,95,.1);   }
+    .src-btn.active-hn       { border-color: var(--hn);        color: var(--hn);        background: rgba(255,102,0,.1);  }
+    .src-btn.active-appstore { border-color: var(--appstore);  color: var(--appstore);  background: rgba(0,112,201,.1);  }
     .src-btn .dot { width: 8px; height: 8px; border-radius: 50%; background: currentColor; }
 
     /* ── Loading ── */
@@ -253,8 +255,9 @@
       font-weight: 700;
       text-transform: uppercase;
     }
-    .badge-play   { background: rgba(1,135,95,.18);   color: var(--play);   }
-    .badge-reddit { background: rgba(255,69,0,.18);   color: var(--reddit); }
+    .badge-play     { background: rgba(1,135,95,.18);    color: var(--play);     }
+    .badge-hn       { background: rgba(255,102,0,.18);  color: var(--hn);       }
+    .badge-appstore { background: rgba(0,112,201,.18);  color: var(--appstore); }
     .sent-badge {
       padding: 3px 10px;
       border-radius: 6px;
@@ -377,7 +380,7 @@
   <div class="logo">🔍</div>
   <div>
     <h1>VOC 분석기</h1>
-    <p>Google Play Store &amp; Reddit 소비자 의견 수집·분석</p>
+    <p>Google Play Store, Hacker News &amp; App Store 소비자 의견 수집·분석</p>
   </div>
 </header>
 
@@ -392,8 +395,11 @@
       <button class="src-btn active-play" id="toggle-play" onclick="toggleSource('play')">
         <span class="dot"></span> Google Play Store
       </button>
-      <button class="src-btn active-reddit" id="toggle-reddit" onclick="toggleSource('reddit')">
-        <span class="dot"></span> Reddit
+      <button class="src-btn active-hn" id="toggle-hn" onclick="toggleSource('hn')">
+        <span class="dot"></span> Hacker News
+      </button>
+      <button class="src-btn active-appstore" id="toggle-appstore" onclick="toggleSource('appstore')">
+        <span class="dot"></span> App Store
       </button>
     </div>
     <div style="display:flex;align-items:center;gap:10px;margin-top:14px;padding-top:12px;border-top:1px solid var(--border)">
@@ -451,7 +457,8 @@
       <button class="tab" onclick="filterTab('neutral', this)">중립 😐</button>
       <button class="tab" onclick="filterTab('negative', this)">부정 😞</button>
       <button class="tab" onclick="filterTab('play', this)">Play Store</button>
-      <button class="tab" onclick="filterTab('reddit', this)">Reddit</button>
+      <button class="tab" onclick="filterTab('hn', this)">Hacker News</button>
+      <button class="tab" onclick="filterTab('appstore', this)">App Store</button>
     </div>
     <div class="voc-list" id="voc-list"></div>
     <div class="pagination" id="pagination"></div>
@@ -465,7 +472,8 @@ let filtered = [];
 let page = 1;
 const PER_PAGE = 12;
 let srcPlay = true;
-let srcReddit = true;
+let srcHN = true;
+let srcAppStore = true;
 let activeFilter = 'all';
 let currentKeyword = '';
 let sinceYear = 0;
@@ -475,9 +483,12 @@ function toggleSource(src) {
   if (src === 'play') {
     srcPlay = !srcPlay;
     document.getElementById('toggle-play').className = 'src-btn' + (srcPlay ? ' active-play' : '');
-  } else {
-    srcReddit = !srcReddit;
-    document.getElementById('toggle-reddit').className = 'src-btn' + (srcReddit ? ' active-reddit' : '');
+  } else if (src === 'hn') {
+    srcHN = !srcHN;
+    document.getElementById('toggle-hn').className = 'src-btn' + (srcHN ? ' active-hn' : '');
+  } else if (src === 'appstore') {
+    srcAppStore = !srcAppStore;
+    document.getElementById('toggle-appstore').className = 'src-btn' + (srcAppStore ? ' active-appstore' : '');
   }
 }
 
@@ -486,7 +497,7 @@ async function search() {
   currentKeyword = document.getElementById('keyword').value.trim();
   sinceYear = parseInt(document.getElementById('since-year').value) || 0;
   if (!currentKeyword) { alert('주제어를 입력해주세요.'); return; }
-  if (!srcPlay && !srcReddit) { alert('최소 하나의 소스를 선택해주세요.'); return; }
+  if (!srcPlay && !srcHN && !srcAppStore) { alert('최소 하나의 소스를 선택해주세요.'); return; }
 
   setLoading(true);
   hide('content'); hide('error');
@@ -497,17 +508,17 @@ async function search() {
 
   try {
     const promises = [];
-    if (srcReddit) promises.push(fetchReddit(currentKeyword));
-    if (srcPlay)   promises.push(fetchPlayStore(currentKeyword));
+    if (srcPlay)     promises.push(fetchPlayStore(currentKeyword));
+    if (srcHN)       promises.push(fetchHN(currentKeyword));
+    if (srcAppStore) promises.push(fetchAppStore(currentKeyword));
 
     const results = await Promise.allSettled(promises);
     results.forEach(r => { if (r.status === 'fulfilled') allVOC.push(...r.value); });
 
-    // 연도 필터 적용 (날짜가 없는 항목은 포함)
     if (sinceYear) {
       allVOC = allVOC.filter(v => {
         if (!v.date) return true;
-        const parts = v.date.split('.');  // ko-KR: YYYY. M. D.
+        const parts = v.date.split('.');
         const year = parseInt(parts[0]);
         return !isNaN(year) ? year >= sinceYear : true;
       });
@@ -530,99 +541,99 @@ async function search() {
   setLoading(false);
 }
 
-// ─── Reddit Fetch ─────────────────────────────────────────────────────────────
-async function fetchReddit(kw) {
-  setMsg('Reddit 데이터 수집 중...');
-  const now = new Date().getFullYear();
-  let timeParam = '';
+// ─── Hacker News Fetch ────────────────────────────────────────────────────────
+async function fetchHN(kw) {
+  setMsg('Hacker News 데이터 수집 중...');
+  let numFilter = '';
   if (sinceYear) {
-    const diff = now - sinceYear;
-    if (diff === 0) timeParam = '&t=year';
-    else if (diff <= 1) timeParam = '&t=year';
-    else timeParam = '&t=all';
+    const ts = Math.floor(new Date(sinceYear + '-01-01').getTime() / 1000);
+    numFilter = `&numericFilters=created_at_i>${ts}`;
   }
-  const redditUrl = `https://www.reddit.com/search.json?q=${encodeURIComponent(kw)}&sort=relevance&limit=100&type=link${timeParam}`;
-
+  const url = `https://hn.algolia.com/api/v1/search?query=${encodeURIComponent(kw)}&tags=story&hitsPerPage=50${numFilter}`;
   let data;
-  // 직접 호출 시도
   try {
-    const res = await fetch(redditUrl, { headers: { 'Accept': 'application/json' } });
-    if (res.ok) {
-      data = await res.json();
-    } else {
-      throw new Error('direct failed');
-    }
-  } catch (_) {
-    // CORS 프록시로 재시도
-    try {
-      const proxy1 = `https://corsproxy.io/?${encodeURIComponent(redditUrl)}`;
-      const res = await fetch(proxy1);
-      if (res.ok) data = await res.json();
-      else throw new Error('proxy1 failed');
-    } catch (_) {
-      try {
-        const proxy2 = `https://api.allorigins.win/get?url=${encodeURIComponent(redditUrl)}`;
-        const res = await fetch(proxy2);
-        if (res.ok) {
-          const j = await res.json();
-          data = JSON.parse(j.contents);
-        }
-      } catch (_) { return []; }
-    }
-  }
+    const res = await fetch(url);
+    if (!res.ok) throw new Error('HN API 실패');
+    data = await res.json();
+  } catch (_) { return []; }
 
-  const posts = data?.data?.children || [];
   const items = [];
-
-  for (const p of posts) {
-    const d = p.data;
-    if (!d.selftext && !d.title) continue;
-    const text = (d.selftext || d.title || '').slice(0, 600);
-    const sentiment = analyzeSentiment(text);
+  for (const h of (data.hits || [])) {
+    const text = (h.story_text || h.title || '').replace(/<[^>]+>/g, '').slice(0, 600);
     items.push({
-      id: d.id,
-      source: 'reddit',
-      author: d.author || 'unknown',
-      title: d.title,
-      text: text || d.title,
-      url: 'https://www.reddit.com' + d.permalink,
-      subreddit: d.subreddit_name_prefixed || '',
-      date: d.created_utc ? new Date(d.created_utc * 1000).toLocaleDateString('ko-KR') : '',
-      score: d.score || 0,
-      sentiment
+      id: h.objectID,
+      source: 'hn',
+      author: h.author || 'unknown',
+      title: h.title || '',
+      text: text || h.title,
+      url: h.url || `https://news.ycombinator.com/item?id=${h.objectID}`,
+      date: h.created_at ? new Date(h.created_at).toLocaleDateString('ko-KR') : '',
+      score: h.points || 0,
+      sentiment: analyzeSentiment(text || h.title)
     });
   }
+  return items;
+}
 
-  // Also fetch comments from top post
-  if (posts.length > 0) {
+// ─── App Store Fetch ──────────────────────────────────────────────────────────
+async function fetchAppStore(kw) {
+  setMsg('App Store 데이터 수집 중...');
+  const searchUrl = `https://itunes.apple.com/search?term=${encodeURIComponent(kw)}&entity=software&limit=5&country=kr`;
+  let apps = [];
+  try {
+    const res = await fetch(searchUrl);
+    if (!res.ok) throw new Error('iTunes Search 실패');
+    const data = await res.json();
+    apps = data.results || [];
+  } catch (_) { return []; }
+
+  const items = [];
+  for (const app of apps.slice(0, 3)) {
+    const appId = app.trackId;
     try {
-      const topPost = posts[0].data;
-      const commUrl = `https://www.reddit.com${topPost.permalink}.json?limit=30`;
-      const commRes = await fetch(commUrl);
-      if (commRes.ok) {
-        const commData = await commRes.json();
-        const comments = commData?.[1]?.data?.children || [];
-        for (const c of comments) {
-          const cd = c.data;
-          if (!cd.body || cd.body === '[deleted]') continue;
-          const text = cd.body.slice(0, 500);
-          items.push({
-            id: cd.id,
-            source: 'reddit',
-            author: cd.author || 'unknown',
-            title: '💬 댓글: ' + topPost.title,
-            text,
-            url: 'https://www.reddit.com' + topPost.permalink,
-            subreddit: topPost.subreddit_name_prefixed || '',
-            date: cd.created_utc ? new Date(cd.created_utc * 1000).toLocaleDateString('ko-KR') : '',
-            score: cd.score || 0,
-            sentiment: analyzeSentiment(text)
-          });
-        }
+      const rssUrl = `https://itunes.apple.com/kr/rss/customerreviews/id=${appId}/sortBy=mostRecent/json`;
+      const rRes = await fetch(rssUrl);
+      if (!rRes.ok) continue;
+      const rData = await rRes.json();
+      const entries = rData?.feed?.entry || [];
+      for (const entry of entries.slice(1, 20)) { // first entry is app info
+        const text = entry?.content?.label || '';
+        const title = entry?.title?.label || '';
+        const author = entry?.author?.name?.label || 'unknown';
+        const dateStr = entry?.updated?.label || '';
+        const rating = parseInt(entry?.['im:rating']?.label || '3');
+        if (!text || text.length < 5) continue;
+        const date = dateStr ? new Date(dateStr).toLocaleDateString('ko-KR') : '';
+        const year = dateStr ? new Date(dateStr).getFullYear() : 0;
+        if (sinceYear && year && year < sinceYear) continue;
+        items.push({
+          id: Math.random().toString(36).slice(2),
+          source: 'appstore',
+          author,
+          title: `${app.trackName} - ${title}`,
+          text: text.slice(0, 600),
+          url: app.trackViewUrl || `https://apps.apple.com/kr/app/id${appId}`,
+          date,
+          score: rating,
+          sentiment: rating >= 4 ? 'positive' : rating <= 2 ? 'negative' : 'neutral'
+        });
       }
     } catch (_) {}
-  }
 
+    if (items.length === 0) {
+      items.push({
+        id: String(appId),
+        source: 'appstore',
+        author: app.sellerName || 'App Store',
+        title: app.trackName,
+        text: (app.description || app.trackName || '').slice(0, 600),
+        url: app.trackViewUrl || `https://apps.apple.com/kr/app/id${appId}`,
+        date: new Date().toLocaleDateString('ko-KR'),
+        score: Math.round((app.averageUserRating || 3) * 20),
+        sentiment: (app.averageUserRating || 3) >= 4 ? 'positive' : (app.averageUserRating || 3) <= 2 ? 'negative' : 'neutral'
+      });
+    }
+  }
   return items;
 }
 
@@ -778,8 +789,9 @@ function renderSummary() {
   const pos = allVOC.filter(v => v.sentiment === 'positive').length;
   const neg = allVOC.filter(v => v.sentiment === 'negative').length;
   const neu = allVOC.filter(v => v.sentiment === 'neutral').length;
-  const play = allVOC.filter(v => v.source === 'play').length;
-  const reddit = allVOC.filter(v => v.source === 'reddit').length;
+  const play     = allVOC.filter(v => v.source === 'play').length;
+  const hn       = allVOC.filter(v => v.source === 'hn').length;
+  const appstore = allVOC.filter(v => v.source === 'appstore').length;
 
   document.getElementById('summary-grid').innerHTML = `
     <div class="stat-card"><div class="num blue">${allVOC.length}</div><div class="lbl">총 VOC 수</div></div>
@@ -787,7 +799,8 @@ function renderSummary() {
     <div class="stat-card"><div class="num yellow">${neu}</div><div class="lbl">중립 의견</div></div>
     <div class="stat-card"><div class="num red">${neg}</div><div class="lbl">부정 의견</div></div>
     <div class="stat-card"><div class="num" style="color:var(--play)">${play}</div><div class="lbl">Play Store</div></div>
-    <div class="stat-card"><div class="num" style="color:var(--reddit)">${reddit}</div><div class="lbl">Reddit</div></div>
+    <div class="stat-card"><div class="num" style="color:var(--hn)">${hn}</div><div class="lbl">Hacker News</div></div>
+    <div class="stat-card"><div class="num" style="color:var(--appstore)">${appstore}</div><div class="lbl">App Store</div></div>
   `;
 }
 
@@ -821,7 +834,7 @@ function renderKeywords() {
 function applyFilter(f) {
   activeFilter = f;
   if (f === 'all')      filtered = [...allVOC];
-  else if (f === 'play' || f === 'reddit') filtered = allVOC.filter(v => v.source === f);
+  else if (f === 'play' || f === 'hn' || f === 'appstore') filtered = allVOC.filter(v => v.source === f);
   else filtered = allVOC.filter(v => v.sentiment === f);
   page = 1;
   renderVOCPage();
@@ -849,21 +862,22 @@ function renderVOCPage() {
 function vocCard(v) {
   const srcBadge = v.source === 'play'
     ? '<span class="src-badge badge-play">▶ Play Store</span>'
-    : '<span class="src-badge badge-reddit">🔴 Reddit</span>';
+    : v.source === 'hn'
+    ? '<span class="src-badge badge-hn">● Hacker News</span>'
+    : '<span class="src-badge badge-appstore">🍎 App Store</span>';
   const sentMap = { positive: ['sent-pos','긍정 😊'], neutral: ['sent-neu','중립 😐'], negative: ['sent-neg','부정 😞'] };
   const [sc, sl] = sentMap[v.sentiment] || ['sent-neu','중립'];
   const sentBadge = `<span class="sent-badge ${sc}">${sl}</span>`;
   const highlighted = highlightKeyword(v.text, currentKeyword);
-  const sub = v.subreddit ? `<span style="color:var(--reddit);font-size:11px">${v.subreddit}</span>` : '';
+  const showTitle = (v.source === 'hn' || v.source === 'appstore') && v.title;
   return `
     <div class="voc-card">
       <div class="voc-meta">
         ${srcBadge}${sentBadge}
-        <span class="voc-author">@${v.author}</span>
-        ${sub}
+        <span class="voc-author">@${escHtml(v.author)}</span>
         <span class="voc-date">${v.date}</span>
       </div>
-      ${v.title && v.source==='reddit' ? `<div style="font-size:13px;font-weight:700;margin-bottom:8px;color:var(--muted)">${escHtml(v.title.slice(0,80))}</div>` : ''}
+      ${showTitle ? `<div style="font-size:13px;font-weight:700;margin-bottom:8px;color:var(--muted)">${escHtml(v.title.slice(0,80))}</div>` : ''}
       <div class="voc-text">${highlighted}</div>
       <a class="voc-link" href="${v.url}" target="_blank" rel="noopener">
         🔗 원문 보기

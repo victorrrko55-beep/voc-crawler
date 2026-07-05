@@ -16,7 +16,8 @@
       --text: #e8eaf6;
       --muted: #8b90a7;
       --play: #01875f;
-      --reddit: #ff4500;
+      --hn: #ff6600;
+      --appstore: #0070c9;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -92,8 +93,9 @@
       font-weight: 600;
     }
     .src-btn .dot { width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
-    .src-btn.active-play   { border-color: var(--play);   color: var(--play);   background: rgba(1,135,95,.1); }
-    .src-btn.active-reddit { border-color: var(--reddit); color: var(--reddit); background: rgba(255,69,0,.1); }
+    .src-btn.active-play     { border-color: var(--play);     color: var(--play);     background: rgba(1,135,95,.1);  }
+    .src-btn.active-hn       { border-color: var(--hn);       color: var(--hn);       background: rgba(255,102,0,.1); }
+    .src-btn.active-appstore { border-color: var(--appstore); color: var(--appstore); background: rgba(0,112,201,.1); }
 
     .year-wrap { display: flex; align-items: center; gap: 6px; margin-left: auto; }
     .year-wrap span { font-size: 12px; color: var(--muted); white-space: nowrap; }
@@ -194,8 +196,9 @@
       font-weight: 700;
       text-transform: uppercase;
     }
-    .badge-play   { background: rgba(1,135,95,.18);  color: var(--play); }
-    .badge-reddit { background: rgba(255,69,0,.18);  color: var(--reddit); }
+    .badge-play     { background: rgba(1,135,95,.18);   color: var(--play);     }
+    .badge-hn       { background: rgba(255,102,0,.18); color: var(--hn);       }
+    .badge-appstore { background: rgba(0,112,201,.18); color: var(--appstore); }
     .sent-badge { padding: 2px 7px; border-radius: 4px; font-size: 10px; font-weight: 700; }
     .sent-pos { background: rgba(67,209,138,.15); color: var(--green); }
     .sent-neu { background: rgba(249,199,79,.15);  color: var(--yellow); }
@@ -250,7 +253,7 @@
   <div style="font-size:22px">🔍</div>
   <div>
     <h1>VOC 분석기</h1>
-    <p>Google Play Store &amp; Reddit 소비자 의견 수집·분석</p>
+    <p>Google Play Store, Hacker News &amp; App Store 소비자 의견 수집·분석</p>
   </div>
 </header>
 
@@ -263,8 +266,11 @@
     <button class="src-btn active-play" id="toggle-play">
       <span class="dot"></span> Google Play Store
     </button>
-    <button class="src-btn active-reddit" id="toggle-reddit">
-      <span class="dot"></span> Reddit
+    <button class="src-btn active-hn" id="toggle-hn">
+      <span class="dot"></span> Hacker News
+    </button>
+    <button class="src-btn active-appstore" id="toggle-appstore">
+      <span class="dot"></span> App Store
     </button>
     <div class="year-wrap">
       <span>📅 시작 연도</span>
@@ -304,7 +310,8 @@
     <button class="tab" data-filter="neutral">중립 😐</button>
     <button class="tab" data-filter="negative">부정 😞</button>
     <button class="tab" data-filter="play">Play Store</button>
-    <button class="tab" data-filter="reddit">Reddit</button>
+    <button class="tab" data-filter="hn">Hacker News</button>
+    <button class="tab" data-filter="appstore">App Store</button>
   </div>
   <div class="voc-list" id="voc-list"></div>
   <div class="pagination" id="pagination"></div>

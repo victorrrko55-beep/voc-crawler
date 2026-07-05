@@ -5,9 +5,11 @@
   "description": "Google Play Store & Reddit 소비자 VOC 수집·분석",
   "permissions": ["scripting"],
   "host_permissions": [
-    "https://www.reddit.com/*",
     "https://play.google.com/*",
-    "https://accounts.google.com/*"
+    "https://accounts.google.com/*",
+    "https://hn.algolia.com/*",
+    "https://itunes.apple.com/*",
+    "https://apps.apple.com/*"
   ],
   "action": {
     "default_popup": "popup.html",
