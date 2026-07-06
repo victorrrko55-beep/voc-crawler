@@ -578,7 +578,7 @@ async function fetchHN(kw) {
 // ─── App Store Fetch ──────────────────────────────────────────────────────────
 async function fetchAppStore(kw) {
   setMsg('App Store 데이터 수집 중...');
-  const searchUrl = `https://itunes.apple.com/search?term=${encodeURIComponent(kw)}&entity=software&limit=5&country=kr`;
+  const searchUrl = `https://itunes.apple.com/search?term=${encodeURIComponent(kw)}&entity=software&limit=10&country=kr`;
   let apps = [];
   try {
     const res = await fetch(searchUrl);
@@ -588,51 +588,76 @@ async function fetchAppStore(kw) {
   } catch (_) { return []; }
 
   const items = [];
-  for (const app of apps.slice(0, 3)) {
+  for (const app of apps.slice(0, 5)) {
     const appId = app.trackId;
-    try {
-      const rssUrl = `https://itunes.apple.com/kr/rss/customerreviews/id=${appId}/sortBy=mostRecent/json`;
-      const rRes = await fetch(rssUrl);
-      if (!rRes.ok) continue;
-      const rData = await rRes.json();
-      const entries = rData?.feed?.entry || [];
-      for (const entry of entries.slice(1, 20)) { // first entry is app info
-        const text = entry?.content?.label || '';
-        const title = entry?.title?.label || '';
-        const author = entry?.author?.name?.label || 'unknown';
-        const dateStr = entry?.updated?.label || '';
-        const rating = parseInt(entry?.['im:rating']?.label || '3');
-        if (!text || text.length < 5) continue;
-        const date = dateStr ? new Date(dateStr).toLocaleDateString('ko-KR') : '';
-        const year = dateStr ? new Date(dateStr).getFullYear() : 0;
-        if (sinceYear && year && year < sinceYear) continue;
-        items.push({
-          id: Math.random().toString(36).slice(2),
-          source: 'appstore',
-          author,
-          title: `${app.trackName} - ${title}`,
-          text: text.slice(0, 600),
-          url: app.trackViewUrl || `https://apps.apple.com/kr/app/id${appId}`,
-          date,
-          score: rating,
-          sentiment: rating >= 4 ? 'positive' : rating <= 2 ? 'negative' : 'neutral'
-        });
-      }
-    } catch (_) {}
+    const appUrl = app.trackViewUrl || `https://apps.apple.com/kr/app/id${appId}`;
+    const avgRating = app.averageUserRating || 3;
+    const baseSent = avgRating >= 4 ? 'positive' : avgRating <= 2 ? 'negative' : 'neutral';
+    const releaseDate = app.currentVersionReleaseDate
+      ? new Date(app.currentVersionReleaseDate).toLocaleDateString('ko-KR') : '';
 
-    if (items.length === 0) {
+    // 앱 설명 (iTunes Search API는 CORS 지원 — 항상 수집 가능)
+    if (app.description) {
       items.push({
-        id: String(appId),
+        id: `${appId}-desc`,
         source: 'appstore',
-        author: app.sellerName || 'App Store',
-        title: app.trackName,
-        text: (app.description || app.trackName || '').slice(0, 600),
-        url: app.trackViewUrl || `https://apps.apple.com/kr/app/id${appId}`,
-        date: new Date().toLocaleDateString('ko-KR'),
-        score: Math.round((app.averageUserRating || 3) * 20),
-        sentiment: (app.averageUserRating || 3) >= 4 ? 'positive' : (app.averageUserRating || 3) <= 2 ? 'negative' : 'neutral'
+        author: app.sellerName || app.artistName || 'App Store',
+        title: `${app.trackName} — 앱 설명`,
+        text: app.description.slice(0, 600),
+        url: appUrl,
+        date: releaseDate,
+        score: Math.round(avgRating * 20),
+        sentiment: baseSent
       });
     }
+
+    // 업데이트 노트 (버그 수정·개선 사항 = 실질적 VOC)
+    if (app.releaseNotes) {
+      items.push({
+        id: `${appId}-notes`,
+        source: 'appstore',
+        author: app.sellerName || app.artistName || 'App Store',
+        title: `${app.trackName} v${app.version} — 업데이트 노트`,
+        text: app.releaseNotes.slice(0, 600),
+        url: appUrl,
+        date: releaseDate,
+        score: 0,
+        sentiment: analyzeSentiment(app.releaseNotes)
+      });
+    }
+
+    // RSS 리뷰 추가 시도 (CORS 프록시 경유)
+    try {
+      const rssUrl = `https://itunes.apple.com/kr/rss/customerreviews/id=${appId}/sortBy=mostRecent/json`;
+      const proxied = `https://corsproxy.io/?${encodeURIComponent(rssUrl)}`;
+      const rRes = await fetch(proxied);
+      if (rRes.ok) {
+        const rData = await rRes.json();
+        const entries = rData?.feed?.entry || [];
+        for (const entry of entries.slice(1, 15)) {
+          const text = entry?.content?.label || '';
+          const title = entry?.title?.label || '';
+          const author = entry?.author?.name?.label || 'unknown';
+          const dateStr = entry?.updated?.label || '';
+          const rating = parseInt(entry?.['im:rating']?.label || '3');
+          if (!text || text.length < 5) continue;
+          const date = dateStr ? new Date(dateStr).toLocaleDateString('ko-KR') : '';
+          const year = dateStr ? new Date(dateStr).getFullYear() : 0;
+          if (sinceYear && year && year < sinceYear) continue;
+          items.push({
+            id: Math.random().toString(36).slice(2),
+            source: 'appstore',
+            author,
+            title: `${app.trackName} - ${title}`,
+            text: text.slice(0, 600),
+            url: appUrl,
+            date,
+            score: rating,
+            sentiment: rating >= 4 ? 'positive' : rating <= 2 ? 'negative' : 'neutral'
+          });
+        }
+      }
+    } catch (_) {}
   }
   return items;
 }
@@ -640,21 +665,25 @@ async function fetchAppStore(kw) {
 // ─── Play Store Fetch ─────────────────────────────────────────────────────────
 async function fetchPlayStore(kw) {
   setMsg('Google Play Store 데이터 수집 중...');
-  const PROXY = 'https://corsproxy.io/?';
   const searchUrl = `https://play.google.com/store/search?q=${encodeURIComponent(kw)}&c=apps&hl=ko`;
+  const proxies = [
+    `https://api.allorigins.win/get?url=${encodeURIComponent(searchUrl)}`,
+    `https://corsproxy.io/?${encodeURIComponent(searchUrl)}`,
+  ];
 
   let html = '';
-  try {
-    const res = await fetch(PROXY + encodeURIComponent(searchUrl));
-    if (!res.ok) throw new Error('Play Store 검색 실패');
-    html = await res.text();
-  } catch (e) {
-    // fallback: use allorigins
+  for (const proxyUrl of proxies) {
     try {
-      const res2 = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(searchUrl)}`);
-      const j = await res2.json();
-      html = j.contents || '';
-    } catch (_) { return []; }
+      const res = await fetch(proxyUrl);
+      if (!res.ok) continue;
+      if (proxyUrl.includes('allorigins')) {
+        const j = await res.json();
+        html = j.contents || '';
+      } else {
+        html = await res.text();
+      }
+      if (html.includes('/store/apps/details')) break;
+    } catch (_) {}
   }
 
   // Extract app IDs from search result page
@@ -690,14 +719,20 @@ async function fetchPlayStore(kw) {
 }
 
 async function fetchPlayReviews(appId, kw) {
-  const PROXY = 'https://corsproxy.io/?';
   const reviewUrl = `https://play.google.com/store/apps/details?id=${appId}&showAllReviews=true&hl=ko`;
   let html = '';
-  try {
-    const res = await fetch(PROXY + encodeURIComponent(reviewUrl));
-    if (!res.ok) return [];
-    html = await res.text();
-  } catch (_) { return []; }
+  const reviewProxies = [
+    `https://api.allorigins.win/get?url=${encodeURIComponent(reviewUrl)}`,
+    `https://corsproxy.io/?${encodeURIComponent(reviewUrl)}`,
+  ];
+  for (const p of reviewProxies) {
+    try {
+      const res = await fetch(p);
+      if (!res.ok) continue;
+      html = p.includes('allorigins') ? (await res.json()).contents || '' : await res.text();
+      if (html.length > 1000) break;
+    } catch (_) {}
+  }
 
   const items = [];
   // Extract reviews from Play Store HTML (JSON data embedded in page)
