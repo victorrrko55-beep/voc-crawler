@@ -1,0 +1,61 @@
+name: Daily SmartThings VOC Pain Point Radar
+
+on:
+  schedule:
+    # 22:30 UTC = 07:30 KST (UTC+9), every day.
+    # NOTE: GitHub only fires `schedule` events for the workflow file that
+    # lives on the repository's default branch. This will not run on a
+    # schedule until this workflow is merged into the default branch.
+    - cron: '30 22 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: voc-radar
+  cancel-in-progress: false
+
+jobs:
+  collect-and-analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: crawler/package-lock.json
+
+      - name: Install dependencies
+        working-directory: crawler
+        run: npm install
+
+      - name: Run self-test (fail fast if pipeline logic is broken)
+        working-directory: crawler
+        run: npm test
+
+      - name: Collect VOC from all sources
+        working-directory: crawler
+        run: npm run collect
+
+      - name: Analyze and generate report
+        working-directory: crawler
+        run: npm run analyze
+
+      - name: Commit and push updated data + report
+        run: |
+          git config user.name "voc-radar-bot"
+          git config user.email "actions@github.com"
+          git add data reports
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: daily SmartThings VOC Pain Point Radar $(date -u +%F)"
+            git push
+          fi

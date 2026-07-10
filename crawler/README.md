@@ -1,0 +1,92 @@
+# SmartThings VOC Pain Point Radar — Crawler
+
+매일 07:30(KST)에 SmartThings 앱 관련 VOC를 수집·분석해 `reports/latest.md`에
+"SmartThings Pain Point Radar" 리포트를 생성하는 파이프라인입니다.
+
+## 구조
+
+```
+crawler/
+  src/
+    config.js          # 카테고리, 소스별 앱ID/쿼리, 분석 기간 상수
+    categorize.js       # 10개 카테고리 규칙 기반 분류 + 감성/Pain 신호 판별
+    dedupe.js            # 동일 유형 VOC 통합(정규화 후 중복 제거)
+    sources/             # 소스별 수집기
+      reddit.js
+      discourseForum.js  # SmartThings Community / Home Assistant Community(기타 포럼)
+      appStore.js         # Apple RSS 리뷰 피드
+      playStore.js         # google-play-scraper 기반 Google Play 리뷰
+      experimental.js       # Trustpilot / Samsung Community (best-effort, 기본 비활성)
+    collect.js            # 전체 소스 수집 → 분류 → 통합 → data/voc-store.json 저장
+    rootCause.js            # 카테고리별 Root Cause·개선 아이디어 템플릿
+    insights.js               # PM Insight / Executive Summary 생성
+    analyze.js                 # 빈도·최근3개월 vs 이전9개월 트렌드 계산, 리포트 생성
+    report.js                   # Markdown 리포트 렌더러
+    selftest.js                  # 네트워크 없이 픽스처 데이터로 파이프라인 검증 (`npm test`)
+data/voc-store.json             # 누적 VOC 데이터셋(최근 13개월 보관, 매일 갱신)
+reports/latest.md               # 최신 리포트
+reports/archive/YYYY-MM-DD.md   # 일자별 리포트 아카이브
+```
+
+## 실행
+
+```bash
+cd crawler
+npm install
+npm test        # 네트워크 없이 로직 검증
+npm run collect # 전체 소스 수집 → data/voc-store.json 갱신
+npm run analyze # reports/latest.md, reports/archive/*.md 생성
+```
+
+## 자동화 (GitHub Actions)
+
+`.github/workflows/daily-voc-radar.yml`이 매일 22:30 UTC(=07:30 KST)에
+`collect` → `analyze`를 실행하고 결과를 리포지토리에 커밋합니다.
+
+**중요:** GitHub는 워크플로우 파일이 **리포지토리 기본 브랜치**에 있어야만
+`schedule` 트리거를 실행합니다. 이 브랜치(`claude/smartthings-pain-point-radar-p0hndj`)가
+기본 브랜치로 병합되기 전까지는 자동 실행되지 않으며, `workflow_dispatch`로
+수동 실행만 가능합니다. 병합 후 실제 매일 07:30 실행이 시작됩니다.
+
+또한 GitHub Actions가 리포지토리에 커밋을 push하려면 저장소 설정에서
+**Settings → Actions → General → Workflow permissions**을
+"Read and write permissions"으로 설정해야 합니다.
+
+## 수집 소스 현황
+
+| 소스 | 방식 | 안정성 |
+|---|---|---|
+| Reddit r/smartthings | 공개 JSON 리스팅 API | 안정적 (User-Agent 필수) |
+| SmartThings Community | Discourse `search.json` API | 안정적 |
+| Home Assistant Community ("기타 포럼") | Discourse `search.json` API | 안정적 |
+| Apple App Store | 공식 RSS 리뷰 피드(JSON) | 안정적, 최근 ~500건 제한 |
+| Google Play Store | `google-play-scraper` 패키지 | 비교적 안정적, 마크업 변경 시 깨질 수 있음 |
+| Trustpilot | JSON-LD 스크래핑 | **실험적** — 기본 비활성 |
+| Samsung Community | HTML 셀렉터 스크래핑 | **실험적** — 기본 비활성, JS 렌더링 페이지라 셀렉터 조정 필요 가능 |
+
+Trustpilot·Samsung Community는 `ENABLE_EXPERIMENTAL_SOURCES=true` 환경변수로
+활성화할 수 있습니다. 두 소스는 마크업 변경/봇 차단에 취약하므로 정기적으로
+검증이 필요합니다. 실패해도 `collect.js`가 해당 소스만 건너뛰고 나머지
+파이프라인은 정상 동작합니다.
+
+## 분류 카테고리
+
+Device Onboarding · Connectivity & Reliability · Automation & Routine · UX/UI ·
+Multi-brand Integration · Notification & Alert · Performance · AI / Voice ·
+Security & Privacy · Ecosystem Management
+
+`Root Cause 추정`/`개선 아이디어`는 카테고리별 사전 정의 템플릿(`rootCause.js`)을
+사용합니다(LLM API 키 불필요, GitHub Actions에서 완전 자동 실행). 실제 VOC 내용이
+바뀌면 템플릿을 주기적으로 검토·갱신하세요.
+
+## 알려진 한계
+
+- Reddit/Discourse/Apple RSS/Play Store는 실제 공개 API/패키지 기반이지만,
+  이 저장소를 개발한 샌드박스 환경은 조직 네트워크 정책상 외부 사이트 접속이
+  차단되어 있어 **실제 라이브 네트워크 호출을 이 환경에서 검증하지 못했습니다.**
+  로직(분류·중복 통합·트렌드 계산·리포트 렌더링)은 `npm test`의 픽스처 데이터로
+  검증되었습니다. GitHub Actions에서 첫 수동 실행(`workflow_dispatch`) 후 로그를
+  확인해 소스별 수집 결과를 점검하세요.
+- 카테고리 분류와 감성 판별은 키워드 규칙 기반입니다. 오분류가 발견되면
+  `categorize.js`의 키워드 테이블을 보강하세요.
+- "발생 빈도"는 부정(pain) 신호로 판별된 VOC만 집계합니다.
