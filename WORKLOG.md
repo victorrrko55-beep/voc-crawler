@@ -1,5 +1,44 @@
 # VOC 분석기 개발 작업 로그
 
+## 2026-07-10 — SmartThings Pain Point Radar 자동화 파이프라인 추가
+
+**브랜치:** claude/smartthings-pain-point-radar-p0hndj
+
+### 배경
+"매일 07:30 SmartThings VOC 자동 수집·분석" 요구사항 구현 시도. 이 세션(샌드박스)은
+조직 네트워크 정책상 Reddit/Play Store/App Store/Samsung Community/Trustpilot 등
+외부 사이트로의 outbound 접속이 차단되어 있고, `WebFetch` 도구도 이 세션에서는
+거의 모든 외부 URL에 403을 반환해 사용 불가함을 확인. 세션 내부에서 도는 크롤러는
+근본적으로 불가능하다고 판단하여, 실제 인터넷 접속이 가능한 **GitHub Actions**
+러너에서 매일 크론으로 수집·분석하고 결과를 리포지토리에 커밋하는 방식으로 설계.
+
+### 구현
+- `crawler/` — Node.js 파이프라인 (수집 → 분류 → 통합 → 트렌드 분석 → 리포트 생성)
+  - 소스: Reddit, SmartThings Community, Home Assistant Community(기타 포럼),
+    Apple App Store RSS, Google Play(`google-play-scraper`) — 공개 API/패키지 기반
+  - Trustpilot, Samsung Community는 마크업 변경/봇 차단에 취약해 실험적 소스로
+    분리, 기본 비활성(`ENABLE_EXPERIMENTAL_SOURCES=true`로 옵트인)
+  - 10개 카테고리 키워드 기반 자동 분류, 중복 VOC 통합, 최근 3개월 vs 이전
+    9개월 발생 빈도·증가율 계산, Top 10 Pain Point / 신규 증가·감소 이슈 /
+    PM Insight / Executive Summary 자동 생성
+  - Root Cause·개선 아이디어는 카테고리별 사전 정의 템플릿 사용 (API 키 불필요)
+- `.github/workflows/daily-voc-radar.yml` — 매일 22:30 UTC(07:30 KST) 크론
+  - **주의:** GitHub는 기본 브랜치의 워크플로우 파일만 스케줄 실행하므로, 이
+    브랜치가 기본 브랜치에 병합되기 전까지는 수동 실행(`workflow_dispatch`)만 가능
+- `crawler/src/selftest.js` — 네트워크 없이 분류·중복통합·트렌드·리포트 렌더링
+  로직을 픽스처 데이터로 검증 (`npm test`, 전체 통과 확인)
+
+### 한계 / 후속 작업
+- [ ] 이 세션에서는 실제 라이브 네트워크 호출 검증 불가 → 병합 후 GitHub Actions에서
+      `workflow_dispatch`로 1회 수동 실행하여 소스별 수집 결과 점검 필요
+- [ ] 저장소 Settings → Actions → Workflow permissions를 "Read and write"로 설정 필요
+- [ ] Trustpilot/Samsung Community 셀렉터는 미검증 (실험적 소스)
+- [ ] 카테고리 분류 키워드 규칙은 실제 VOC 누적 후 오분류 사례 기반으로 보강 필요
+
+---
+
+# VOC 분석기 개발 작업 로그 (초기)
+
 **날짜:** 2026-06-24  
 **저장소:** victorrrko55-beep/voc-crawler  
 **브랜치:** claude/fervent-goodall-lgiey7
