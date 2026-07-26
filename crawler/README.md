@@ -41,16 +41,31 @@ npm run analyze # reports/latest.md, reports/archive/*.md 생성
 ## 자동화 (GitHub Actions)
 
 `.github/workflows/daily-voc-radar.yml`이 매일 22:30 UTC(=07:30 KST)에
-`collect` → `analyze`를 실행하고 결과를 리포지토리에 커밋합니다.
+`collect` → `analyze`를 실행하고 결과를 리포지토리(`main` 브랜치, 기본 브랜치)에
+커밋합니다. 2026-07-26 첫 수동 실행(`workflow_dispatch`)으로 정상 동작 확인됨.
 
-**중요:** GitHub는 워크플로우 파일이 **리포지토리 기본 브랜치**에 있어야만
-`schedule` 트리거를 실행합니다. 이 브랜치(`claude/smartthings-pain-point-radar-p0hndj`)가
-기본 브랜치로 병합되기 전까지는 자동 실행되지 않으며, `workflow_dispatch`로
-수동 실행만 가능합니다. 병합 후 실제 매일 07:30 실행이 시작됩니다.
-
-또한 GitHub Actions가 리포지토리에 커밋을 push하려면 저장소 설정에서
+GitHub Actions가 리포지토리에 커밋을 push하려면 저장소 설정에서
 **Settings → Actions → General → Workflow permissions**을
 "Read and write permissions"으로 설정해야 합니다.
+
+## 이메일로 리포트 받기
+
+`collect` → `analyze` 이후 `reports/latest.md`를 이메일로 보내는 단계가
+워크플로우에 포함되어 있습니다([dawidd6/action-send-mail](https://github.com/dawidd6/action-send-mail)
+사용). 아래 3개의 **리포지토리 시크릿**이 설정되기 전까지는 이 단계가 자동으로
+건너뛰어지고(파이프라인은 정상 진행), 시크릿을 등록하면 다음 실행부터 메일이 발송됩니다.
+
+1. Google 계정에 2단계 인증이 켜져 있어야 앱 비밀번호를 만들 수 있습니다.
+   https://myaccount.google.com/apppasswords 에서 앱 비밀번호(16자리) 생성
+2. 저장소 **Settings → Secrets and variables → Actions → New repository secret**에서
+   아래 3개를 등록 (시크릿 값은 GitHub에만 저장되며 이 대화창에는 입력하지 마세요):
+   - `MAIL_USERNAME` — 발신용 Gmail 주소
+   - `MAIL_PASSWORD` — 위에서 만든 앱 비밀번호 (일반 로그인 비밀번호 아님)
+   - `MAIL_TO` — 리포트를 받을 이메일 주소
+3. 다음 실행(수동 `workflow_dispatch` 또는 다음 날 07:30)부터 자동 발송됩니다.
+
+Gmail이 아닌 다른 SMTP(회사 메일 등)를 쓰려면 워크플로우의 `server_address`/`server_port`를
+해당 SMTP 정보로 바꾸면 됩니다.
 
 ## 수집 소스 현황
 
@@ -81,12 +96,8 @@ Security & Privacy · Ecosystem Management
 
 ## 알려진 한계
 
-- Reddit/Discourse/Apple RSS/Play Store는 실제 공개 API/패키지 기반이지만,
-  이 저장소를 개발한 샌드박스 환경은 조직 네트워크 정책상 외부 사이트 접속이
-  차단되어 있어 **실제 라이브 네트워크 호출을 이 환경에서 검증하지 못했습니다.**
-  로직(분류·중복 통합·트렌드 계산·리포트 렌더링)은 `npm test`의 픽스처 데이터로
-  검증되었습니다. GitHub Actions에서 첫 수동 실행(`workflow_dispatch`) 후 로그를
-  확인해 소스별 수집 결과를 점검하세요.
+- Reddit/Discourse/Apple RSS/Play Store는 2026-07-26 GitHub Actions 실행에서
+  실제 데이터 수집(전체 3,244건, 부정 VOC 241건)이 확인되었습니다.
 - 카테고리 분류와 감성 판별은 키워드 규칙 기반입니다. 오분류가 발견되면
   `categorize.js`의 키워드 테이블을 보강하세요.
 - "발생 빈도"는 부정(pain) 신호로 판별된 VOC만 집계합니다.

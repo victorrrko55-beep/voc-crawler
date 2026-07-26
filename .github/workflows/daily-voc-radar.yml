@@ -59,3 +59,28 @@ jobs:
             git commit -m "chore: daily SmartThings VOC Pain Point Radar $(date -u +%F)"
             git push
           fi
+
+      - name: Set report date
+        run: echo "REPORT_DATE=$(date -u +%F)" >> "$GITHUB_ENV"
+
+      - name: Email the report
+        # Only runs once MAIL_USERNAME / MAIL_PASSWORD / MAIL_TO repo secrets
+        # are set (Settings -> Secrets and variables -> Actions). Until then
+        # this step is skipped rather than failing the whole run.
+        if: ${{ env.MAIL_USERNAME != '' && env.MAIL_PASSWORD != '' && env.MAIL_TO != '' }}
+        uses: dawidd6/action-send-mail@v3
+        env:
+          MAIL_USERNAME: ${{ secrets.MAIL_USERNAME }}
+          MAIL_PASSWORD: ${{ secrets.MAIL_PASSWORD }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          to: ${{ secrets.MAIL_TO }}
+          from: SmartThings VOC Radar <${{ secrets.MAIL_USERNAME }}>
+          subject: "SmartThings Pain Point Radar - ${{ env.REPORT_DATE }}"
+          html_body: file://reports/latest.md
+          convert_markdown: true
+          content_type: text/html
