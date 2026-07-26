@@ -60,6 +60,55 @@ export const TRUSTPILOT_URL = 'https://www.trustpilot.com/review/www.smartthings
 export const SAMSUNG_COMMUNITY_SEARCH_URL =
   'https://community.samsung.com/t5/forums/searchpage/tab/message?q=smartthings%20app&collapse_discussion=true';
 
+// Human-readable directory of every source the pipeline can pull from, used
+// to render the "VOC 출처" section at the end of the report. `active`
+// reflects whether the source runs by default (experimental ones only run
+// when ENABLE_EXPERIMENTAL_SOURCES=true).
+export const SOURCE_DIRECTORY = [
+  {
+    key: 'reddit',
+    name: 'Reddit r/smartthings',
+    url: `https://www.reddit.com/r/${REDDIT_SUBREDDIT}/`,
+    active: true,
+  },
+  {
+    key: 'smartthings_community',
+    name: 'SmartThings Community',
+    url: DISCOURSE_FORUMS[0].baseUrl,
+    active: true,
+  },
+  {
+    key: 'other_forum_home_assistant',
+    name: 'Home Assistant Community (기타 스마트홈 포럼)',
+    url: DISCOURSE_FORUMS[1].baseUrl,
+    active: true,
+  },
+  {
+    key: 'appstore',
+    name: 'Apple App Store (SmartThings)',
+    url: `https://apps.apple.com/us/app/id${APP_STORE_APP_ID}`,
+    active: true,
+  },
+  {
+    key: 'play',
+    name: 'Google Play Store (SmartThings)',
+    url: `https://play.google.com/store/apps/details?id=${PLAY_STORE_APP_ID}`,
+    active: true,
+  },
+  {
+    key: 'trustpilot',
+    name: 'Trustpilot',
+    url: TRUSTPILOT_URL,
+    active: EXPERIMENTAL_SOURCES_ENABLED,
+  },
+  {
+    key: 'samsung_community',
+    name: 'Samsung Community',
+    url: 'https://community.samsung.com',
+    active: EXPERIMENTAL_SOURCES_ENABLED,
+  },
+];
+
 export const ANALYSIS_WINDOW_MONTHS = 12;
 export const RECENT_WINDOW_MONTHS = 3;
 export const RETENTION_MONTHS = 13; // how long raw items are kept in the store

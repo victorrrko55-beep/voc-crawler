@@ -1,3 +1,5 @@
+import { SOURCE_DIRECTORY } from './config.js';
+
 function fmtDate(iso) {
   if (!iso) return 'N/A';
   return new Date(iso).toISOString().slice(0, 10);
@@ -124,7 +126,17 @@ export function renderReport(analysis) {
     '',
     executiveSummary.map((l) => `- ${l}`).join('\n'),
     '',
+    '## VOC 출처',
+    '',
+    renderSourceDirectory(),
+    '',
   ].join('\n');
 
   return header + '\n' + body;
+}
+
+function renderSourceDirectory() {
+  return SOURCE_DIRECTORY.map(
+    (s) => `- ${s.name} — [${s.url}](${s.url})${s.active ? '' : ' _(현재 비활성 소스)_'}`
+  ).join('\n');
 }
