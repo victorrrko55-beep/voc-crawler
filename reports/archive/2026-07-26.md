@@ -1,9 +1,9 @@
 # SmartThings Pain Point Radar
 
-- 생성 시각: 2026-07-26T14:43:05.546Z
+- 생성 시각: 2026-07-26T23:27:41.701Z
 - 분석 기간: 2025-07-26 ~ 2026-07-26 (최근 12개월)
 - 최근 구간: 2026-04-26 ~ 2026-07-26 (최근 3개월) vs 이전 9개월
-- 분석 대상 부정 VOC: 256건 (전체 수집 VOC 3384건 중)
+- 분석 대상 부정 VOC: 256건 (전체 수집 VOC 3411건 중)
 
 ## Top 10 Pain Points
 
@@ -55,10 +55,10 @@
 
 - 순위: 5
 - 카테고리: Device Onboarding
-- 발생 빈도: 22건 (최근 3개월 12건 / 이전 9개월 10건)
-- 증가율: +260%
+- 발생 빈도: 22건 (최근 3개월 11건 / 이전 9개월 11건)
+- 증가율: +200%
 - 대표 VOC: "First Alert New 025 SMCO410 Z-Wave Battery-Powered Smoke Detector & Carbon Monoxide Alarm Have 2 smco410 paired with an v2 hub now. Took a bit to get them to show up as a device . First one listed as a switch. Would not …" — smartthings_community, 2026-07-22 ([원문](https://community.smartthings.com/t/first-alert-new-025-smco410-z-wave-battery-powered-smoke-detector-carbon-monoxide-alarm/300427/168))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +260% 증가하며, 'Device Onboarding' 관련 부정 VOC가 총 22건 누적되어 상위 Pain Point로 식별됨.
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +200% 증가하며, 'Device Onboarding' 관련 부정 VOC가 총 22건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 기기 등록 과정에서 발생하는 프로토콜(Wi-Fi/Zigbee/Z-Wave/Matter) 핸드셰이크 실패, 펌웨어-앱 버전 불일치, 불명확한 오류 메시지로 사용자가 실패 원인을 파악하기 어려움.
 - 개선 아이디어: 온보딩 단계별 진행률과 실패 시 구체적 원인(예: "라우터 2.4GHz 대역 확인 필요")을 보여주는 가이드형 UI 도입, 실패율이 높은 기기 유형에 대한 사전 호환성 체크 강화.
 
@@ -125,7 +125,7 @@
 - **Multi-brand Integration**: 최근 6개월 34건 vs 이전 6개월 7건 (+283%)
 - **Automation & Routine**: 최근 6개월 26건 vs 이전 6개월 8건 (+450%)
 - **Performance**: 최근 6개월 21건 vs 이전 6개월 9건 (+500%)
-- **Device Onboarding**: 최근 6개월 15건 vs 이전 6개월 7건 (+260%)
+- **Device Onboarding**: 최근 6개월 15건 vs 이전 6개월 7건 (+200%)
 - **Security & Privacy**: 최근 6개월 7건 vs 이전 6개월 1건 (+800%)
 - **UX/UI**: 최근 6개월 9건 vs 이전 6개월 4건 (+380%)
 - **AI / Voice**: 최근 6개월 2건 vs 이전 6개월 0건 (신규)

@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-26T14:43:05.546Z",
-  "windowStart": "2025-07-26T14:43:05.546Z",
-  "recentStart": "2026-04-26T14:43:05.546Z",
+  "generatedAt": "2026-07-26T23:27:41.701Z",
+  "windowStart": "2025-07-26T23:27:41.701Z",
+  "recentStart": "2026-04-26T23:27:41.701Z",
   "totalPainItems": 256,
-  "totalRawItems": 3384,
+  "totalRawItems": 3411,
   "top10": [
     {
       "category": "Connectivity & Reliability",
@@ -115,10 +115,10 @@
     {
       "category": "Device Onboarding",
       "totalFrequency": 22,
-      "recentCount": 12,
-      "priorCount": 10,
-      "growth": 259.99999999999994,
-      "growthLabel": "+260%",
+      "recentCount": 11,
+      "priorCount": 11,
+      "growth": 199.99999999999994,
+      "growthLabel": "+200%",
       "last6moCount": 15,
       "prev6moCount": 7,
       "representative": {
@@ -380,10 +380,10 @@
     {
       "category": "Device Onboarding",
       "totalFrequency": 22,
-      "recentCount": 12,
-      "priorCount": 10,
-      "growth": 259.99999999999994,
-      "growthLabel": "+260%",
+      "recentCount": 11,
+      "priorCount": 11,
+      "growth": 199.99999999999994,
+      "growthLabel": "+200%",
       "last6moCount": 15,
       "prev6moCount": 7,
       "representative": {
@@ -512,10 +512,10 @@
     {
       "category": "Device Onboarding",
       "totalFrequency": 22,
-      "recentCount": 12,
-      "priorCount": 10,
-      "growth": 259.99999999999994,
-      "growthLabel": "+260%",
+      "recentCount": 11,
+      "priorCount": 11,
+      "growth": 199.99999999999994,
+      "growthLabel": "+200%",
       "last6moCount": 15,
       "prev6moCount": 7,
       "representative": {
