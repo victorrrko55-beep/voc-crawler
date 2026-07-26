@@ -187,7 +187,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 54
+    "occurrences": 79
   },
   {
     "id": "play_en_14e8aa07-5295-4504-9f0f-30494b912e62",
@@ -3026,7 +3026,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 67
+    "occurrences": 68
   },
   {
     "id": "play_ko_40650c6d-7887-45f2-a930-e8f2f5c024dc",
@@ -6800,7 +6800,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 2
+    "occurrences": 12
   },
   {
     "id": "appstore_us_14318778121",
@@ -11037,7 +11037,7 @@
     "category": "Uncategorized",
     "sentiment": "positive",
     "pain": false,
-    "occurrences": 5
+    "occurrences": 2
   },
   {
     "id": "appstore_us_14299636936",
@@ -14435,7 +14435,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 1
+    "occurrences": 11
   },
   {
     "id": "play_en_58607555-5782-456e-b2f8-6ddb0b7fe845",
@@ -16201,7 +16201,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 1
+    "occurrences": 4
   },
   {
     "id": "play_en_c3f73a94-e44f-4621-8d66-7b9fa19b15b7",
@@ -22403,7 +22403,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 1
+    "occurrences": 2
   },
   {
     "id": "appstore_kr_14209292698",
@@ -22935,7 +22935,7 @@
     "category": "Uncategorized",
     "sentiment": "positive",
     "pain": false,
-    "occurrences": 2
+    "occurrences": 1
   },
   {
     "id": "play_ko_0a2a008e-5a89-4f34-998b-13bb7a80da2f",
@@ -23086,7 +23086,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 2
+    "occurrences": 1
   },
   {
     "id": "appstore_kr_14205774976",
@@ -23604,7 +23604,7 @@
     "category": "Uncategorized",
     "sentiment": "positive",
     "pain": false,
-    "occurrences": 2
+    "occurrences": 1
   },
   {
     "id": "appstore_us_14202911356",
@@ -24416,7 +24416,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 6
+    "occurrences": 4
   },
   {
     "id": "appstore_us_14198459229",

@@ -1,6 +1,6 @@
 # SmartThings Pain Point Radar
 
-- 생성 시각: 2026-07-26T14:33:47.276Z
+- 생성 시각: 2026-07-26T14:43:05.546Z
 - 분석 기간: 2025-07-26 ~ 2026-07-26 (최근 12개월)
 - 최근 구간: 2026-04-26 ~ 2026-07-26 (최근 3개월) vs 이전 9개월
 - 분석 대상 부정 VOC: 256건 (전체 수집 VOC 3384건 중)
@@ -150,3 +150,13 @@
 - 일부 사용자는 대체 솔루션으로의 이탈 의사를 직접 언급(1건)하여 이탈 위험 신호가 관측된다.
 - Home Assistant, Apple Home 등 경쟁/대체 플랫폼 대비 열위가 언급된 VOC가 5건 확인되어 경쟁력 저하 신호로 관리가 필요하다.
 - 차기 릴리즈에서는 AI / Voice, Notification & Alert, Security & Privacy 항목을 우선 검토 대상으로 제안한다.
+
+## VOC 출처
+
+- Reddit r/smartthings — [https://www.reddit.com/r/smartthings/](https://www.reddit.com/r/smartthings/)
+- SmartThings Community — [https://community.smartthings.com](https://community.smartthings.com)
+- Home Assistant Community (기타 스마트홈 포럼) — [https://community.home-assistant.io](https://community.home-assistant.io)
+- Apple App Store (SmartThings) — [https://apps.apple.com/us/app/id1222822904](https://apps.apple.com/us/app/id1222822904)
+- Google Play Store (SmartThings) — [https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect)
+- Trustpilot — [https://www.trustpilot.com/review/www.smartthings.com](https://www.trustpilot.com/review/www.smartthings.com) _(현재 비활성 소스)_
+- Samsung Community — [https://community.samsung.com](https://community.samsung.com) _(현재 비활성 소스)_
