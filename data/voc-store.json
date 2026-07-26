@@ -187,7 +187,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 90
+    "occurrences": 54
   },
   {
     "id": "play_en_14e8aa07-5295-4504-9f0f-30494b912e62",
@@ -3026,7 +3026,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 68
+    "occurrences": 67
   },
   {
     "id": "play_ko_40650c6d-7887-45f2-a930-e8f2f5c024dc",
@@ -6800,7 +6800,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 18
+    "occurrences": 2
   },
   {
     "id": "appstore_us_14318778121",
@@ -11037,7 +11037,7 @@
     "category": "Uncategorized",
     "sentiment": "positive",
     "pain": false,
-    "occurrences": 6
+    "occurrences": 5
   },
   {
     "id": "appstore_us_14299636936",
@@ -14435,7 +14435,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 14
+    "occurrences": 1
   },
   {
     "id": "play_en_58607555-5782-456e-b2f8-6ddb0b7fe845",
@@ -16201,7 +16201,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 4
+    "occurrences": 1
   },
   {
     "id": "play_en_c3f73a94-e44f-4621-8d66-7b9fa19b15b7",
@@ -22403,7 +22403,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 2
+    "occurrences": 1
   },
   {
     "id": "appstore_kr_14209292698",
@@ -23478,7 +23478,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 3
+    "occurrences": 2
   },
   {
     "id": "appstore_kr_14203420250",
@@ -24416,7 +24416,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 10
+    "occurrences": 6
   },
   {
     "id": "appstore_us_14198459229",
@@ -46865,19 +46865,6 @@
     "date": "2025-07-02T09:48:41.000Z",
     "rating": 2,
     "category": "Uncategorized",
-    "sentiment": "negative",
-    "pain": true,
-    "occurrences": 1
-  },
-  {
-    "id": "smartthings_community_1435149",
-    "source": "smartthings_community",
-    "author": "arifi",
-    "title": "The SmartThings App Crashes when I Attempt to Create a Routine",
-    "text": "The SmartThings App Crashes when I Attempt to Create a Routine\nI am having exactly the same issue. Any updates?",
-    "url": "https://community.smartthings.com/t/the-smartthings-app-crashes-when-i-attempt-to-create-a-routine/298936/3",
-    "date": "2025-07-01T14:25:04.456Z",
-    "category": "Performance",
     "sentiment": "negative",
     "pain": true,
     "occurrences": 1
