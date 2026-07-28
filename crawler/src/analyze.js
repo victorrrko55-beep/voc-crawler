@@ -96,7 +96,9 @@ export function analyze(items, now = new Date()) {
     .sort((a, b) => (a.last6moCount - a.prev6moCount) - (b.last6moCount - b.prev6moCount));
 
   const recentPainItems = inWindow.filter((i) => new Date(i.date) >= recentStart);
-  const insights = buildInsights({ top10, allRows: rows, painItemsRecent: recentPainItems });
+  const insights = buildInsights({
+    top10, allRows: rows, painItemsRecent: recentPainItems, totalPainItems: inWindow.length,
+  });
   const executiveSummary = buildExecutiveSummary({
     top10,
     insights,

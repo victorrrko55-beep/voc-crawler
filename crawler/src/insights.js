@@ -4,10 +4,19 @@ const CHURN_KEYWORDS = [
   'no longer using', 'moved away from',
 ];
 
-const COMPETITOR_KEYWORDS = [
-  'home assistant', 'hubitat', 'apple home', 'homekit', 'google home',
-  'aqara', 'homey', 'homeassistant',
-];
+// Maps a matched keyword to a display name so multiple spellings of the same
+// competitor (e.g. "home assistant" / "homeassistant") collapse into one.
+const COMPETITOR_DISPLAY_NAMES = {
+  'home assistant': 'Home Assistant',
+  homeassistant: 'Home Assistant',
+  hubitat: 'Hubitat',
+  'apple home': 'Apple Home',
+  homekit: 'Apple Home',
+  'google home': 'Google Home',
+  aqara: 'Aqara',
+  homey: 'Homey',
+};
+const COMPETITOR_KEYWORDS = Object.keys(COMPETITOR_DISPLAY_NAMES);
 
 function findQuotes(items, keywords, limit = 5) {
   const hits = [];
@@ -22,24 +31,55 @@ function findQuotes(items, keywords, limit = 5) {
   return hits;
 }
 
+// Most-frequent value in a list, with a tie broken by first appearance.
+function mode(values) {
+  const counts = new Map();
+  for (const v of values) counts.set(v, (counts.get(v) || 0) + 1);
+  let best = null;
+  let bestCount = 0;
+  for (const [v, c] of counts) {
+    if (c > bestCount) { best = v; bestCount = c; }
+  }
+  return best;
+}
+
 // Builds the PM Insight + Executive Summary sections from already-ranked
 // category rows and the raw pain-signal item pool.
-export function buildInsights({ top10, allRows, painItemsRecent }) {
+export function buildInsights({ top10, allRows, painItemsRecent, totalPainItems }) {
   const mostUrgent = top10[0];
+  const second = top10[1];
 
-  const churnHits = findQuotes(painItemsRecent, CHURN_KEYWORDS);
-  const competitorHits = findQuotes(painItemsRecent, COMPETITOR_KEYWORDS);
+  const churnHits = findQuotes(painItemsRecent, CHURN_KEYWORDS, 5);
+  const competitorHits = findQuotes(painItemsRecent, COMPETITOR_KEYWORDS, 5);
+
+  const mentionedCompetitors = [
+    ...new Set(competitorHits.map((h) => COMPETITOR_DISPLAY_NAMES[h.matched])),
+  ];
+  const competitorTopCategory = mode(competitorHits.map((h) => h.item.category));
+  const churnTopCategory = mode(churnHits.map((h) => h.item.category));
 
   const nextReleasePriority = [...top10]
     .filter((r) => r.growth === null || r.growth > 0)
     .sort((a, b) => (b.growth ?? 999) - (a.growth ?? 999))
     .slice(0, 3);
 
+  const urgentShare = mostUrgent && totalPainItems
+    ? Math.round((mostUrgent.totalFrequency / totalPainItems) * 100)
+    : null;
+  const urgentGapToSecond = mostUrgent && second ? mostUrgent.recentCount - second.recentCount : null;
+
   return {
     mostUrgent,
+    second,
+    urgentShare,
+    urgentGapToSecond,
     churnHits,
+    churnTopCategory,
     competitorHits,
+    mentionedCompetitors,
+    competitorTopCategory,
     nextReleasePriority,
+    totalPainItems,
   };
 }
 
@@ -64,7 +104,7 @@ export function buildExecutiveSummary({ top10, insights, totalPainItems }) {
   );
   lines.push(
     insights.competitorHits.length > 0
-      ? `Home Assistant, Apple Home 등 경쟁/대체 플랫폼 대비 열위가 언급된 VOC가 ${insights.competitorHits.length}건 확인되어 경쟁력 저하 신호로 관리가 필요하다.`
+      ? `${insights.mentionedCompetitors.join(', ')} 등 경쟁/대체 플랫폼 대비 열위가 언급된 VOC가 ${insights.competitorHits.length}건 확인되어 경쟁력 저하 신호로 관리가 필요하다.`
       : '경쟁 플랫폼 대비 열위를 직접 언급한 VOC는 제한적이나, 지속 모니터링이 필요하다.'
   );
   lines.push(

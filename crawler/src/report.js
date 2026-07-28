@@ -59,28 +59,82 @@ function renderDecliningSection(declining) {
     .join('\n');
 }
 
-function renderPmInsight(analysis) {
-  const { insights, top10 } = analysis;
-  const churnLine =
-    insights.churnHits.length > 0
-      ? insights.churnHits
-          .slice(0, 3)
-          .map((h) => `"${h.item.text.slice(0, 140).replace(/\s+/g, ' ')}…" (${h.item.source}, ${fmtDate(h.item.date)})`)
-          .join('; ')
-      : '직접적인 이탈 언급 VOC는 제한적 (지속 모니터링 필요)';
-  const competitorLine =
-    insights.competitorHits.length > 0
-      ? insights.competitorHits
-          .slice(0, 3)
-          .map((h) => `"${h.item.text.slice(0, 140).replace(/\s+/g, ' ')}…" (${h.item.source}, ${fmtDate(h.item.date)})`)
-          .join('; ')
-      : '경쟁 플랫폼 대비 열위를 직접 언급한 VOC는 제한적 (지속 모니터링 필요)';
+function quoteBullet(h) {
+  const text = h.item.text.slice(0, 160).replace(/\s+/g, ' ').trim();
+  return `- "${text}${h.item.text.length > 160 ? '…' : ''}" — ${h.item.source}, ${fmtDate(h.item.date)} ([원문](${h.item.url}))`;
+}
 
+function renderUrgentSection(insights) {
+  const { mostUrgent, second, urgentShare, urgentGapToSecond } = insights;
+  if (!mostUrgent) return 'N/A';
+  const shareLine = urgentShare != null ? `12개월 누적 ${mostUrgent.totalFrequency}건으로 전체 부정 VOC의 ${urgentShare}%를 차지` : `12개월 누적 ${mostUrgent.totalFrequency}건`;
+  const gapLine = second
+    ? `, 2위(${second.category}, 최근 3개월 ${second.recentCount}건)보다 ${urgentGapToSecond}건 더 많음`
+    : '';
   return [
-    `- **가장 시급한 개선 과제**: ${insights.mostUrgent ? `${insights.mostUrgent.category} (최근 3개월 ${insights.mostUrgent.recentCount}건, ${insights.mostUrgent.growthLabel})` : 'N/A'}`,
-    `- **사용자 이탈 위험 요소**: ${churnLine}`,
-    `- **SmartThings 경쟁력 저하 요소**: ${competitorLine}`,
-    `- **차기 릴리즈 우선 검토 항목**: ${top10.slice(0, 3).map((r) => r.category).join(', ') || 'N/A'}`,
+    `**${mostUrgent.category}** — 최근 3개월 ${mostUrgent.recentCount}건(${mostUrgent.growthLabel}), ${shareLine}${gapLine}.`,
+    '',
+    `Root Cause 추정: ${mostUrgent.rootCause}`,
+  ].join('\n');
+}
+
+function renderChurnSection(insights) {
+  const { churnHits, churnTopCategory } = insights;
+  if (churnHits.length === 0) {
+    return '직접적인 이탈(전환/삭제) 언급 VOC는 발견되지 않았습니다. 다만 상위 Pain Point가 누적될 경우 잠재적 이탈로 이어질 수 있어 지속 모니터링이 필요합니다.';
+  }
+  const catLine = churnTopCategory ? ` 주로 **${churnTopCategory}** 관련 맥락에서 언급됨.` : '';
+  return [
+    `대체 솔루션으로의 전환·삭제 의사를 직접 언급한 VOC ${churnHits.length}건 확인.` +
+      ` 건수는 많지 않지만 자발적 이탈 의사 표현은 일반 불만보다 드물게 나타나는 강한 신호이므로 주시가 필요합니다.${catLine}`,
+    '',
+    ...churnHits.map(quoteBullet),
+  ].join('\n');
+}
+
+function renderCompetitorSection(insights) {
+  const { competitorHits, mentionedCompetitors, competitorTopCategory } = insights;
+  if (competitorHits.length === 0) {
+    return '경쟁/대체 플랫폼 대비 열위를 직접 언급한 VOC는 발견되지 않았습니다.';
+  }
+  const catLine = competitorTopCategory ? ` 주로 **${competitorTopCategory}** 카테고리에서 함께 언급됨.` : '';
+  return [
+    `${mentionedCompetitors.join(', ')} 등 경쟁/대체 플랫폼과 비교하며 SmartThings의 열위를 지적한 VOC ${competitorHits.length}건 확인.${catLine}`,
+    '',
+    ...competitorHits.map(quoteBullet),
+  ].join('\n');
+}
+
+function renderNextReleaseSection(insights) {
+  const { nextReleasePriority } = insights;
+  if (nextReleasePriority.length === 0) return 'N/A';
+  return [
+    '증가율 기준 상위 카테고리를 차기 릴리즈 검토 우선순위로 제안합니다:',
+    '',
+    ...nextReleasePriority.map(
+      (r, i) => `${i + 1}. **${r.category}** (${r.growthLabel}) — ${r.rootCause}`
+    ),
+  ].join('\n');
+}
+
+function renderPmInsight(analysis) {
+  const { insights } = analysis;
+  return [
+    '### 가장 시급한 개선 과제',
+    '',
+    renderUrgentSection(insights),
+    '',
+    '### 사용자 이탈 위험 요소',
+    '',
+    renderChurnSection(insights),
+    '',
+    '### SmartThings 경쟁력 저하 요소',
+    '',
+    renderCompetitorSection(insights),
+    '',
+    '### 차기 릴리즈 우선 검토 항목',
+    '',
+    renderNextReleaseSection(insights),
   ].join('\n');
 }
 
