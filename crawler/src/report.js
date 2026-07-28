@@ -180,7 +180,7 @@ export function renderReport(analysis) {
     '',
     executiveSummary.map((l) => `- ${l}`).join('\n'),
     '',
-    '## VOC 출처',
+    '## Sources',
     '',
     renderSourceDirectory(),
     '',
