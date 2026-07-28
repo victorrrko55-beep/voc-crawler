@@ -91,18 +91,32 @@
     "occurrences": 1
   },
   {
+    "id": "play_en_79771b5f-229e-4040-8808-fac617c52466",
+    "source": "play",
+    "author": "Robin A",
+    "title": "",
+    "text": "so easy to use!",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-07-27T16:07:53.751Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
     "id": "play_en_d33e4cac-c63d-4d03-8fa8-25403862b724",
     "source": "play",
     "author": "DABBIRU RAMA DHARMA NALINI KUMARI",
     "title": "",
     "text": "super",
     "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
-    "date": "2026-07-27T15:40:23.474Z",
+    "date": "2026-07-27T15:58:58.938Z",
     "rating": 5,
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 10
+    "occurrences": 11
   },
   {
     "id": "play_en_ddbd859e-74b6-40d0-bb41-0a5eca891e82",
@@ -327,6 +341,19 @@
     "occurrences": 6
   },
   {
+    "id": "smartthings_community_1460984",
+    "source": "smartthings_community",
+    "author": "Andreas_Roedl",
+    "title": "Driver for TP-Link/Tapo P316M?",
+    "text": "Driver for TP-Link/Tapo P316M?\nMy initial suspicion was largely correct: the problem is in the SmartThings Matter Switch driver's child-device creation path. The driver still contains the code needed to create separate child devices for all six P316M outlets. However, that code is only reached after the driver has completed it...",
+    "url": "https://community.smartthings.com/t/driver-for-tp-link-tapo-p316m/310364/14",
+    "date": "2026-07-27T11:03:40.125Z",
+    "category": "Multi-brand Integration",
+    "sentiment": "negative",
+    "pain": true,
+    "occurrences": 1
+  },
+  {
     "id": "play_en_5aad7fe0-0e5b-4d09-8689-e3cebd95ecdf",
     "source": "play",
     "author": "Ibrahim Saleh",
@@ -547,7 +574,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 88
+    "occurrences": 61
   },
   {
     "id": "play_en_1e6738ec-9fa1-497d-b605-c8b88e9f7e0e",
@@ -1007,7 +1034,7 @@
     "category": "Uncategorized",
     "sentiment": "positive",
     "pain": false,
-    "occurrences": 30
+    "occurrences": 29
   },
   {
     "id": "other_forum_home_assistant_3868587",
@@ -1188,7 +1215,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 68
+    "occurrences": 67
   },
   {
     "id": "appstore_us_14350626865",
@@ -3915,7 +3942,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 8
+    "occurrences": 7
   },
   {
     "id": "play_en_9f4a6b15-aa64-4448-a5a1-6e9fce37dd5c",
@@ -8691,7 +8718,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 17
+    "occurrences": 5
   },
   {
     "id": "appstore_us_14318778121",
@@ -16284,7 +16311,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 14
+    "occurrences": 7
   },
   {
     "id": "play_en_58607555-5782-456e-b2f8-6ddb0b7fe845",
@@ -18050,7 +18077,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 4
+    "occurrences": 2
   },
   {
     "id": "play_en_c3f73a94-e44f-4621-8d66-7b9fa19b15b7",
@@ -24252,7 +24279,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 2
+    "occurrences": 1
   },
   {
     "id": "appstore_kr_14209292698",
@@ -25327,7 +25354,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 3
+    "occurrences": 2
   },
   {
     "id": "appstore_kr_14203420250",
@@ -26265,7 +26292,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 10
+    "occurrences": 6
   },
   {
     "id": "appstore_us_14198459229",
