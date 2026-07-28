@@ -1,9 +1,9 @@
 # Victor's VoC Crawler
 
-- 생성 시각: 2026-07-28T16:10:41.286Z
+- 생성 시각: 2026-07-28T23:29:07.135Z
 - 분석 기간: 2025-07-28 ~ 2026-07-28 (최근 12개월)
 - 최근 구간: 2026-04-28 ~ 2026-07-28 (최근 3개월) vs 이전 9개월
-- 분석 대상 부정 VOC: 263건 (전체 수집 VOC 3514건 중)
+- 분석 대상 부정 VOC: 264건 (전체 수집 VOC 3545건 중)
 
 ## Top 10 Pain Points
 
@@ -22,10 +22,10 @@
 
 - 순위: 2
 - 카테고리: Multi-brand Integration
-- 발생 빈도: 44건 (최근 3개월 26건 / 이전 9개월 18건)
-- 증가율: +333%
-- 대표 VOC: "SmartWings Shades (Matter Over Thread) Stuck on 'Opening' and 'Closing' Hi @clintonkj Thank you for confirming that the fix resolved the main issue. We're glad to hear the shades are now reporting the correct position. R…" — smartthings_community, 2026-07-27 ([원문](https://community.smartthings.com/t/smartwings-shades-matter-over-thread-stuck-on-opening-and-closing/309925/13))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +333% 증가하며, 'Multi-brand Integration' 관련 부정 VOC가 총 44건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 45건 (최근 3개월 27건 / 이전 9개월 18건)
+- 증가율: +350%
+- 대표 VOC: "A way to add more devices? ( 300 device limit issue ) I've recently hit this ceiling too. One issue I have is where I have linked services like Switchbot, where I have matter devices added to smartthings, but duplicates …" — smartthings_community, 2026-07-28 ([원문](https://community.smartthings.com/t/a-way-to-add-more-devices-300-device-limit-issue/286819/16))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +350% 증가하며, 'Multi-brand Integration' 관련 부정 VOC가 총 45건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: Matter 표준 지원이 기기/펌웨어별로 파편화되어 있고, 타 브랜드 기기와의 인증서/ 드라이버 호환성 검증이 SmartThings 릴리즈 주기와 어긋남.
 - 개선 아이디어: Matter 인증 기기에 대한 호환성 매트릭스를 앱 내에서 공개하고, 주요 서드파티 브랜드와의 통합 테스트를 릴리즈 전 QA 파이프라인에 상시 포함.
 
@@ -122,7 +122,7 @@
 최근 6개월간 증가한 VOC:
 
 - **Connectivity & Reliability**: 최근 6개월 93건 vs 이전 6개월 13건 (+823%)
-- **Multi-brand Integration**: 최근 6개월 35건 vs 이전 6개월 9건 (+333%)
+- **Multi-brand Integration**: 최근 6개월 36건 vs 이전 6개월 9건 (+350%)
 - **Automation & Routine**: 최근 6개월 26건 vs 이전 6개월 8건 (+450%)
 - **Performance**: 최근 6개월 21건 vs 이전 6개월 9건 (+500%)
 - **Device Onboarding**: 최근 6개월 15건 vs 이전 6개월 7건 (+200%)
@@ -140,7 +140,7 @@
 
 ### 가장 시급한 개선 과제
 
-**Connectivity & Reliability** — 최근 3개월 80건(+823%), 12개월 누적 106건으로 전체 부정 VOC의 40%를 차지, 2위(Multi-brand Integration, 최근 3개월 26건)보다 54건 더 많음.
+**Connectivity & Reliability** — 최근 3개월 80건(+823%), 12개월 누적 106건으로 전체 부정 VOC의 40%를 차지, 2위(Multi-brand Integration, 최근 3개월 27건)보다 53건 더 많음.
 
 Root Cause 추정: 허브-클라우드 간 세션 유지 로직 취약, 다중 홉 메시 네트워크에서의 신호 간섭, 백그라운드 재연결 로직 미흡으로 오프라인 표시가 실제 상태와 어긋남.
 
@@ -170,7 +170,7 @@ Apple Home, Google Home, Aqara, Home Assistant 등 경쟁/대체 플랫폼과 �
 
 ## Executive Summary
 
-- 최근 12개월간 SmartThings 앱 관련 부정 VOC 263건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 80건(+823%)으로 나타났다.
+- 최근 12개월간 SmartThings 앱 관련 부정 VOC 264건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 80건(+823%)으로 나타났다.
 - "Multi-brand Integration" 역시 상위 Pain Point로, 사용자 경험 저하가 지속되고 있어 함께 우선 대응이 필요하다.
 - 일부 사용자는 대체 솔루션으로의 이탈 의사를 직접 언급(1건)하여 이탈 위험 신호가 관측된다.
 - Apple Home, Google Home, Aqara, Home Assistant 등 경쟁/대체 플랫폼 대비 열위가 언급된 VOC가 5건 확인되어 경쟁력 저하 신호로 관리가 필요하다.
