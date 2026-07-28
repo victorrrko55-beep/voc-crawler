@@ -11,6 +11,7 @@ export const CATEGORIES = [
   'AI / Voice',
   'Security & Privacy',
   'Ecosystem Management',
+  'Energy Management',
 ];
 
 export const APP_STORE_APP_ID = '1222822904'; // SmartThings - Apple App Store

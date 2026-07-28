@@ -24,6 +24,7 @@ assert.equal(categorize('No notification when the door opens, notifications dela
 assert.equal(categorize('Bixby voice command never works, bad AI feature'), 'AI / Voice');
 assert.equal(categorize('Worried about privacy, too many permission requests'), 'Security & Privacy');
 assert.equal(categorize('Managing multiple hubs and room assignment is a nightmare'), 'Ecosystem Management');
+assert.equal(categorize("My third-party plug is connected but doesn't show up in the energy dashboard, energy monitoring broken"), 'Energy Management');
 assert.equal(categorize('Random unrelated text about nothing'), 'Uncategorized');
 console.log('OK categorize()');
 

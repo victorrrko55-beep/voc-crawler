@@ -64,6 +64,13 @@ const CATEGORY_KEYWORDS = {
     ['manage devices', 2], ['location switching', 3], ['organize devices', 3],
     ['too many devices', 2], ['device list', 1],
   ],
+  'Energy Management': [
+    ['energy usage', 3], ['energy monitoring', 3], ['energy mode', 3],
+    ['ai energy', 3], ['power consumption', 3], ['energy tab', 3],
+    ['energy report', 2], ['energy saving', 2], ['energy consumption', 3],
+    ['smartthings energy', 3], ['electricity usage', 2], ['power usage', 2],
+    ['kwh', 2], ['energy data', 2], ['energy dashboard', 3],
+  ],
 };
 
 const PAIN_WORDS = [

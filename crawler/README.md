@@ -88,7 +88,13 @@ Trustpilot·Samsung Community는 `ENABLE_EXPERIMENTAL_SOURCES=true` 환경변수
 
 Device Onboarding · Connectivity & Reliability · Automation & Routine · UX/UI ·
 Multi-brand Integration · Notification & Alert · Performance · AI / Voice ·
-Security & Privacy · Ecosystem Management
+Security & Privacy · Ecosystem Management · Energy Management (SmartThings
+Energy 관련 VOC: 에너지 모니터링, AI Energy Mode, 기기별 전력 사용량 등)
+
+카테고리/키워드 규칙을 바꾸면 `npm run recategorize`로 `data/voc-store.json`에
+이미 쌓인 과거 VOC도 새 규칙으로 다시 분류할 수 있습니다. `collect.js`는 매일
+새로 수집되는 항목만 분류하고 기존 항목의 카테고리는 그대로 유지하므로, 카테고리
+체계를 바꾼 뒤에는 이 스크립트를 한 번 실행해줘야 과거 데이터에도 반영됩니다.
 
 `Root Cause 추정`/`개선 아이디어`는 카테고리별 사전 정의 템플릿(`rootCause.js`)을
 사용합니다(LLM API 키 불필요, GitHub Actions에서 완전 자동 실행). 실제 VOC 내용이

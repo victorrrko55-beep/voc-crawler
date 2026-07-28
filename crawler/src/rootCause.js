@@ -83,6 +83,16 @@ export const ROOT_CAUSE_TEMPLATES = {
       '위치·허브 간 일괄 관리(bulk actions) 기능 제공, 계층적 그룹/태그 기반 기기 관리 ' +
       'UI 도입, 공유 사용자 권한 관리 세분화.',
   },
+  'Energy Management': {
+    rootCause:
+      'SmartThings Energy의 상세 에너지 데이터가 삼성 자체 기기 위주로만 제공되어 서드파티 ' +
+      '기기(스마트 플러그 등)는 연동은 되어도 에너지 모니터링 항목이 누락되거나 Energy 화면에 ' +
+      '기기 자체가 표시되지 않는 경우가 있음.',
+    improvementIdea:
+      'Matter/서드파티 에너지 리포팅 표준(예: Matter Electrical Energy Measurement 클러스터) ' +
+      '지원 기기 목록을 앱 내에 명시하고, 연동은 되지만 에너지 데이터가 없는 기기는 그 사유를 ' +
+      '명확히 안내. AI Energy Mode 추천의 절감 효과를 실측 데이터로 검증해 신뢰도 제고.',
+  },
 };
 
 export function getRootCause(category) {

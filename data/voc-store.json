@@ -59,7 +59,7 @@
     "text": "Washing machine recommendation with real energy data via API?\n...API yet. If you've got a washer or dryer with genuinely useful energy data flowing into HA — any brand, Bosch/Home Connect, Miele, LG ThinQ, Samsung SmartThings, whatever — which model and which integration are you using? Trying to avoid buying blind and finding out after the fact that the energy numbers are...",
     "url": "https://community.home-assistant.io/t/washing-machine-recommendation-with-real-energy-data-via-api/1019001/1",
     "date": "2026-07-27T23:21:03.930Z",
-    "category": "Uncategorized",
+    "category": "Energy Management",
     "sentiment": "neutral",
     "pain": false,
     "occurrences": 1
@@ -5694,7 +5694,7 @@
     "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
     "date": "2026-07-21T13:46:08.835Z",
     "rating": 2,
-    "category": "Uncategorized",
+    "category": "Energy Management",
     "sentiment": "negative",
     "pain": true,
     "occurrences": 1
@@ -7755,7 +7755,7 @@
     "url": "https://apps.apple.com/us/app/id1222822904",
     "date": "2026-07-19T18:31:30.000Z",
     "rating": 3,
-    "category": "Uncategorized",
+    "category": "Energy Management",
     "sentiment": "neutral",
     "pain": false,
     "occurrences": 1
@@ -10193,7 +10193,7 @@
     "url": "https://apps.apple.com/gb/app/id1222822904",
     "date": "2026-07-17T07:38:59.000Z",
     "rating": 3,
-    "category": "Uncategorized",
+    "category": "Energy Management",
     "sentiment": "positive",
     "pain": false,
     "occurrences": 1
@@ -11686,7 +11686,7 @@
     "text": "Outdoor smart plug with energy meter (July 2026)\n...s is to monitor power consumption of a jacuzzi / whirlpool tub so it should also be able to handle that kind of load. The choice of protocol does not matter, as long as it works reliably with SmartThings and one can observe the graphs and data. Zigbee, Z-Wave, Matter over Thread, Matter over Wi-Fi are all...",
     "url": "https://community.smartthings.com/t/outdoor-smart-plug-with-energy-meter-july-2026/310216/1",
     "date": "2026-07-15T08:28:39.888Z",
-    "category": "Connectivity & Reliability",
+    "category": "Energy Management",
     "sentiment": "neutral",
     "pain": false,
     "occurrences": 1
@@ -36193,7 +36193,7 @@
     "text": "AirConditioner Power Consumption Missing\nFollowing up on this thread because I think it deserves a different conclusion than \"no workaround.\" Short version up front: the multi-system indoor unit does report instantaneous and cumulative power. The data exists on the device and travels through Samsung's cloud — it just isn't surfaced to t...",
     "url": "https://community.smartthings.com/t/airconditioner-power-consumption-missing/306327/7",
     "date": "2026-05-08T12:52:39.115Z",
-    "category": "Uncategorized",
+    "category": "Energy Management",
     "sentiment": "neutral",
     "pain": false,
     "occurrences": 1
@@ -46043,7 +46043,7 @@
     "text": "[EDGE] Aeotec Heavy Duty Switch Gen5 (ZW078) Driver\nThis is an https://www.rboyapps.com Enhanced Edge Driver for the https://amzn.to/3X7V1Ar Aeotec Heavy Duty Switch Gen5 ZW078 The Aeotec Heavy Duty Switch Gen5 can be bought on https://amzn.to/3X7V1Ar Amazon This switch has Energy Monitoring and a temperature sensor built into it . It can handle a...",
     "url": "https://community.smartthings.com/t/edge-aeotec-heavy-duty-switch-gen5-zw078-driver/306577/1",
     "date": "2025-11-21T22:01:28.829Z",
-    "category": "Uncategorized",
+    "category": "Energy Management",
     "sentiment": "neutral",
     "pain": false,
     "occurrences": 1

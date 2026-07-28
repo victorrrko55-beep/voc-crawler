@@ -9,6 +9,7 @@
   },
   "scripts": {
     "collect": "node src/collect.js",
+    "recategorize": "node src/recategorize.js",
     "analyze": "node src/analyze.js",
     "all": "npm run collect && npm run analyze",
     "test": "node src/selftest.js"
