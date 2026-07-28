@@ -1,7 +1,7 @@
 # SmartThings VOC Pain Point Radar — Crawler
 
 매일 07:30(KST)에 SmartThings 앱 관련 VOC를 수집·분석해 `reports/latest.md`에
-"SmartThings Pain Point Radar" 리포트를 생성하는 파이프라인입니다.
+"Victor's VoC Crawler" 리포트를 생성하는 파이프라인입니다.
 
 ## 구조
 

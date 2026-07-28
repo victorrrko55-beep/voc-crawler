@@ -142,7 +142,7 @@ export function renderReport(analysis) {
   const { generatedAt, windowStart, recentStart, top10, rising, declining, executiveSummary, totalPainItems, totalRawItems } = analysis;
 
   const header = [
-    '# SmartThings Pain Point Radar',
+    "# Victor's VoC Crawler",
     '',
     `- 생성 시각: ${generatedAt}`,
     `- 분석 기간: ${fmtDate(windowStart)} ~ ${fmtDate(generatedAt)} (최근 12개월)`,
