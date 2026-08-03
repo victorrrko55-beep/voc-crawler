@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-02T23:28:32.774Z",
-  "windowStart": "2025-08-02T23:28:32.774Z",
-  "recentStart": "2026-05-02T23:28:32.774Z",
+  "generatedAt": "2026-08-03T23:34:20.106Z",
+  "windowStart": "2025-08-03T23:34:20.106Z",
+  "recentStart": "2026-05-03T23:34:20.106Z",
   "totalPainItems": 285,
-  "totalRawItems": 3879,
+  "totalRawItems": 3953,
   "top10": [
     {
       "category": "Connectivity & Reliability",
@@ -12,8 +12,8 @@
       "priorCount": 31,
       "growth": 741.9354838709677,
       "growthLabel": "+742%",
-      "last6moCount": 103,
-      "prev6moCount": 15,
+      "last6moCount": 102,
+      "prev6moCount": 16,
       "representative": {
         "id": "smartthings_community_1461284",
         "source": "smartthings_community",
@@ -34,10 +34,10 @@
     {
       "category": "Multi-brand Integration",
       "totalFrequency": 48,
-      "recentCount": 29,
-      "priorCount": 19,
-      "growth": 357.89473684210526,
-      "growthLabel": "+358%",
+      "recentCount": 28,
+      "priorCount": 20,
+      "growth": 320,
+      "growthLabel": "+320%",
       "last6moCount": 39,
       "prev6moCount": 9,
       "representative": {
@@ -280,8 +280,8 @@
       "priorCount": 31,
       "growth": 741.9354838709677,
       "growthLabel": "+742%",
-      "last6moCount": 103,
-      "prev6moCount": 15,
+      "last6moCount": 102,
+      "prev6moCount": 16,
       "representative": {
         "id": "smartthings_community_1461284",
         "source": "smartthings_community",
@@ -301,10 +301,10 @@
     {
       "category": "Multi-brand Integration",
       "totalFrequency": 48,
-      "recentCount": 29,
-      "priorCount": 19,
-      "growth": 357.89473684210526,
-      "growthLabel": "+358%",
+      "recentCount": 28,
+      "priorCount": 20,
+      "growth": 320,
+      "growthLabel": "+320%",
       "last6moCount": 39,
       "prev6moCount": 9,
       "representative": {
@@ -566,8 +566,8 @@
       "priorCount": 31,
       "growth": 741.9354838709677,
       "growthLabel": "+742%",
-      "last6moCount": 103,
-      "prev6moCount": 15,
+      "last6moCount": 102,
+      "prev6moCount": 16,
       "representative": {
         "id": "smartthings_community_1461284",
         "source": "smartthings_community",
@@ -638,10 +638,10 @@
     {
       "category": "Multi-brand Integration",
       "totalFrequency": 48,
-      "recentCount": 29,
-      "priorCount": 19,
-      "growth": 357.89473684210526,
-      "growthLabel": "+358%",
+      "recentCount": 28,
+      "priorCount": 20,
+      "growth": 320,
+      "growthLabel": "+320%",
       "last6moCount": 39,
       "prev6moCount": 9,
       "representative": {
@@ -824,8 +824,8 @@
       "priorCount": 31,
       "growth": 741.9354838709677,
       "growthLabel": "+742%",
-      "last6moCount": 103,
-      "prev6moCount": 15,
+      "last6moCount": 102,
+      "prev6moCount": 16,
       "representative": {
         "id": "smartthings_community_1461284",
         "source": "smartthings_community",
@@ -846,10 +846,10 @@
     "second": {
       "category": "Multi-brand Integration",
       "totalFrequency": 48,
-      "recentCount": 29,
-      "priorCount": 19,
-      "growth": 357.89473684210526,
-      "growthLabel": "+358%",
+      "recentCount": 28,
+      "priorCount": 20,
+      "growth": 320,
+      "growthLabel": "+320%",
       "last6moCount": 39,
       "prev6moCount": 9,
       "representative": {
@@ -870,7 +870,7 @@
       "rank": 2
     },
     "urgentShare": 41,
-    "urgentGapToSecond": 58,
+    "urgentGapToSecond": 59,
     "churnHits": [
       {
         "item": {
