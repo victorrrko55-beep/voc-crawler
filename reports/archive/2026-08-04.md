@@ -1,9 +1,9 @@
 # Victor's VoC Crawler
 
-- 생성 시각: 2026-08-04T14:54:37.052Z
+- 생성 시각: 2026-08-04T23:32:42.777Z
 - 분석 기간: 2025-08-04 ~ 2026-08-04 (최근 12개월)
 - 최근 구간: 2026-05-04 ~ 2026-08-04 (최근 3개월) vs 이전 9개월
-- 분석 대상 부정 VOC: 293건 (전체 수집 VOC 4009건 중)
+- 분석 대상 부정 VOC: 294건 (전체 수집 VOC 4037건 중)
 
 ## Top 10 Pain Points
 
@@ -55,10 +55,10 @@
 
 - 순위: 5
 - 카테고리: Device Onboarding
-- 발생 빈도: 24건 (최근 3개월 13건 / 이전 9개월 11건)
-- 증가율: +255%
-- 대표 VOC: "it asks me if I want to add some CONSTANTLY. So I click yes, and it says It can't add it, "you need a different app". useless" — play, 2026-07-29 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +255% 증가하며, 'Device Onboarding' 관련 부정 VOC가 총 24건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 25건 (최근 3개월 14건 / 이전 9개월 11건)
+- 증가율: +282%
+- 대표 VOC: "its a default app that just doesn't work at all. devices won't pair, aren't discoverable, and you can't use QR codes to add them. Its a utterly useless app." — play, 2026-08-03 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +282% 증가하며, 'Device Onboarding' 관련 부정 VOC가 총 25건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 기기 등록 과정에서 발생하는 프로토콜(Wi-Fi/Zigbee/Z-Wave/Matter) 핸드셰이크 실패, 펌웨어-앱 버전 불일치, 불명확한 오류 메시지로 사용자가 실패 원인을 파악하기 어려움.
 - 개선 아이디어: 온보딩 단계별 진행률과 실패 시 구체적 원인(예: "라우터 2.4GHz 대역 확인 필요")을 보여주는 가이드형 UI 도입, 실패율이 높은 기기 유형에 대한 사전 호환성 체크 강화.
 
@@ -139,7 +139,7 @@
 - **Multi-brand Integration**: 최근 6개월 39건 vs 이전 6개월 9건 (+320%)
 - **Performance**: 최근 6개월 30건 vs 이전 6개월 9건 (+770%)
 - **Automation & Routine**: 최근 6개월 27건 vs 이전 6개월 8건 (+408%)
-- **Device Onboarding**: 최근 6개월 17건 vs 이전 6개월 7건 (+255%)
+- **Device Onboarding**: 최근 6개월 18건 vs 이전 6개월 7건 (+282%)
 - **UX/UI**: 최근 6개월 9건 vs 이전 6개월 3건 (+320%)
 - **Security & Privacy**: 최근 6개월 7건 vs 이전 6개월 1건 (+800%)
 - **Notification & Alert**: 최근 6개월 2건 vs 이전 6개월 0건 (신규)
@@ -184,7 +184,7 @@ Aqara, Apple Home, Google Home 등 경쟁/대체 플랫폼과 비교하며 Smart
 
 ## Executive Summary
 
-- 최근 12개월간 SmartThings 앱 관련 부정 VOC 293건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 89건(+761%)으로 나타났다.
+- 최근 12개월간 SmartThings 앱 관련 부정 VOC 294건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 89건(+761%)으로 나타났다.
 - "Multi-brand Integration" 역시 상위 Pain Point로, 사용자 경험 저하가 지속되고 있어 함께 우선 대응이 필요하다.
 - 일부 사용자는 대체 솔루션으로의 이탈 의사를 직접 언급(1건)하여 이탈 위험 신호가 관측된다.
 - Aqara, Apple Home, Google Home 등 경쟁/대체 플랫폼 대비 열위가 언급된 VOC가 5건 확인되어 경쟁력 저하 신호로 관리가 필요하다.
