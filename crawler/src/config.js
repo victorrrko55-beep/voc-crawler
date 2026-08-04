@@ -110,6 +110,10 @@ export const SOURCE_DIRECTORY = [
   },
 ];
 
+// Categories always shown in their own report section regardless of Top 10
+// rank, for topics the business wants visibility on even at low volume.
+export const SPOTLIGHT_CATEGORIES = ['Energy Management'];
+
 export const ANALYSIS_WINDOW_MONTHS = 12;
 export const RECENT_WINDOW_MONTHS = 3;
 export const RETENTION_MONTHS = 13; // how long raw items are kept in the store

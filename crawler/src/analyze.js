@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {
   DATA_STORE_PATH, REPORTS_DIR, ANALYSIS_WINDOW_MONTHS,
-  RECENT_WINDOW_MONTHS, CATEGORIES,
+  RECENT_WINDOW_MONTHS, CATEGORIES, SPOTLIGHT_CATEGORIES,
 } from './config.js';
 import { getRootCause } from './rootCause.js';
 import { buildInsights, buildExecutiveSummary } from './insights.js';
@@ -87,6 +87,13 @@ export function analyze(items, now = new Date()) {
     .sort((a, b) => b.totalFrequency - a.totalFrequency || (b.growth ?? 999) - (a.growth ?? 999));
   const top10 = ranked.slice(0, 10).map((r, idx) => ({ ...r, rank: idx + 1 }));
 
+  // Shown in their own section regardless of Top 10 rank, so a low-volume
+  // topic the business wants tracked doesn't silently disappear from the
+  // report just because it hasn't cracked the top 10 yet.
+  const spotlights = SPOTLIGHT_CATEGORIES.map(
+    (cat) => top10.find((r) => r.category === cat) || rows.find((r) => r.category === cat) || null
+  ).filter(Boolean);
+
   const rising = rows
     .filter((r) => r.last6moCount > 0 && r.last6moCount > r.prev6moCount)
     .sort((a, b) => (b.last6moCount - b.prev6moCount) - (a.last6moCount - a.prev6moCount));
@@ -112,6 +119,7 @@ export function analyze(items, now = new Date()) {
     totalPainItems: inWindow.length,
     totalRawItems: items.length,
     top10,
+    spotlights,
     rising,
     declining,
     allRows: rows,

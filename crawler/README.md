@@ -100,6 +100,13 @@ Energy 관련 VOC: 에너지 모니터링, AI Energy Mode, 기기별 전력 사�
 사용합니다(LLM API 키 불필요, GitHub Actions에서 완전 자동 실행). 실제 VOC 내용이
 바뀌면 템플릿을 주기적으로 검토·갱신하세요.
 
+## Spotlight 섹션
+
+`config.js`의 `SPOTLIGHT_CATEGORIES`에 지정된 카테고리(현재 `Energy Management`)는
+Top 10 순위에 들지 못해도 리포트에 항상 별도 섹션으로 표시됩니다. 아직 수집량이
+적어 순위권 밖인 관심 주제를 놓치지 않기 위한 장치입니다. 다른 카테고리를 상시
+추적하고 싶으면 이 배열에 이름을 추가하면 됩니다.
+
 ## 알려진 한계
 
 - Reddit/Discourse/Apple RSS/Play Store는 2026-07-26 GitHub Actions 실행에서

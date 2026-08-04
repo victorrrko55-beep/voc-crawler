@@ -117,6 +117,8 @@ console.log('OK analyze()');
 const markdown = renderReport(analysis);
 assert.ok(markdown.includes("# Victor's VoC Crawler"));
 assert.ok(markdown.includes('## Top 10 Pain Points'));
+assert.ok(markdown.includes('## Spotlight'));
+assert.ok(markdown.includes('Energy Management'));
 assert.ok(markdown.includes('## 신규 증가 이슈'));
 assert.ok(markdown.includes('## 감소 이슈'));
 assert.ok(markdown.includes('## PM Insight'));

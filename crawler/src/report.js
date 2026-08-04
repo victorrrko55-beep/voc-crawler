@@ -37,6 +37,42 @@ function summarize(row) {
   return `${trend} '${row.category}' 관련 부정 VOC가 총 ${row.totalFrequency}건 누적되어 상위 Pain Point로 식별됨.`;
 }
 
+function renderSpotlightItem(row) {
+  if (row.totalFrequency === 0) {
+    return [
+      `### ${row.category}`,
+      '',
+      `아직 수집된 '${row.category}' 관련 부정 VOC가 없습니다. 데이터가 쌓이면 이 섹션에 자동으로 표시됩니다.`,
+      '',
+    ].join('\n');
+  }
+  const rankNote = row.rank
+    ? `현재 Top 10 ${row.rank}위에도 랭크되어 있습니다.`
+    : 'Top 10 순위 밖이지만 관심 카테고리로 지정되어 항상 이 리포트에 표시됩니다.';
+  return [
+    `### ${row.category}`,
+    '',
+    `- 발생 빈도: ${row.totalFrequency}건 (최근 3개월 ${row.recentCount}건 / 이전 9개월 ${row.priorCount}건)`,
+    `- 증가율: ${row.growthLabel}`,
+    `- 대표 VOC: ${quote(row.representative)}`,
+    `- Root Cause 추정: ${row.rootCause}`,
+    `- 개선 아이디어: ${row.improvementIdea}`,
+    `- ${rankNote}`,
+    '',
+  ].join('\n');
+}
+
+function renderSpotlightSection(spotlights) {
+  if (!spotlights || spotlights.length === 0) return '';
+  return [
+    '## Spotlight',
+    '',
+    '순위와 무관하게 항상 추적하는 관심 카테고리입니다.',
+    '',
+    spotlights.map(renderSpotlightItem).join('\n'),
+  ].join('\n');
+}
+
 function renderRisingSection(rising) {
   if (rising.length === 0) return '최근 6개월간 뚜렷한 증가 추세를 보이는 카테고리가 확인되지 않았습니다.';
   return rising
@@ -139,7 +175,7 @@ function renderPmInsight(analysis) {
 }
 
 export function renderReport(analysis) {
-  const { generatedAt, windowStart, recentStart, top10, rising, declining, executiveSummary, totalPainItems, totalRawItems } = analysis;
+  const { generatedAt, windowStart, recentStart, top10, spotlights, rising, declining, executiveSummary, totalPainItems, totalRawItems } = analysis;
 
   const header = [
     "# Victor's VoC Crawler",
@@ -156,10 +192,13 @@ export function renderReport(analysis) {
       ? top10.map(renderTop10Item).join('\n')
       : '_아직 충분한 VOC 데이터가 수집되지 않았습니다. `npm run collect`를 실행해 데이터를 먼저 수집하세요._\n';
 
+  const spotlightSection = renderSpotlightSection(spotlights);
+
   const body = [
     '## Top 10 Pain Points',
     '',
     top10Section,
+    ...(spotlightSection ? [spotlightSection, ''] : []),
     '## 신규 증가 이슈',
     '',
     '최근 6개월간 증가한 VOC:',
