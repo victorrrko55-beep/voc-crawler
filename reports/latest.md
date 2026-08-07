@@ -1,9 +1,9 @@
 # Victor's VoC Crawler
 
-- 생성 시각: 2026-08-07T01:36:22.704Z
+- 생성 시각: 2026-08-07T23:04:31.691Z
 - 분석 기간: 2025-08-07 ~ 2026-08-07 (최근 12개월)
 - 최근 구간: 2026-05-07 ~ 2026-08-07 (최근 3개월) vs 이전 9개월
-- 분석 대상 부정 VOC: 304건 (전체 수집 VOC 4205건 중)
+- 분석 대상 부정 VOC: 308건 (전체 수집 VOC 4264건 중)
 
 ## Top 10 Pain Points
 
@@ -11,10 +11,10 @@
 
 - 순위: 1
 - 카테고리: Connectivity & Reliability
-- 발생 빈도: 122건 (최근 3개월 90건 / 이전 9개월 32건)
-- 증가율: +744%
-- 대표 VOC: "[EDGE] Generic Google TV / Android TV Driver — control any Google TV via SmartThings ...nches when off regardless. To be fair though, TCL tv has been hit or miss for me in general, even in Google home I've had issues whe…" — smartthings_community, 2026-08-06 ([원문](https://community.smartthings.com/t/edge-generic-google-tv-android-tv-driver-control-any-google-tv-via-smartthings/310455/25))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +744% 증가하며, 'Connectivity & Reliability' 관련 부정 VOC가 총 122건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 125건 (최근 3개월 93건 / 이전 9개월 32건)
+- 증가율: +772%
+- 대표 VOC: "[ST Edge] Philips Hue LAN [BETA] (3rd Party Driver, Not ST Native) When offline, does it still allow you to use devices in the ST app? I can't use any device in the ST app (except the Philips Hue Hub itself causing all l…" — smartthings_community, 2026-08-07 ([원문](https://community.smartthings.com/t/st-edge-philips-hue-lan-beta-3rd-party-driver-not-st-native/249030/1141))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +772% 증가하며, 'Connectivity & Reliability' 관련 부정 VOC가 총 125건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 허브-클라우드 간 세션 유지 로직 취약, 다중 홉 메시 네트워크에서의 신호 간섭, 백그라운드 재연결 로직 미흡으로 오프라인 표시가 실제 상태와 어긋남.
 - 개선 아이디어: 지수 백오프 기반 자동 재연결 로직 개선, 기기별 실시간 연결 품질 지표 제공, 오프라인 발생 시 원인(허브/기기/네트워크) 구분 진단 도구 제공.
 
@@ -106,16 +106,16 @@
 - Root Cause 추정: AI/음성 기능이 특정 지역·기기에서만 제공되어 기대와 실제 지원 범위 간 괴리가 크고, Bixby 등 음성 인식 정확도가 낮아 명령 실패가 반복됨.
 - 개선 아이디어: AI/음성 기능의 지원 범위를 앱 내에서 명확히 안내, 음성 명령 실패 시 대체 텍스트 명령 제공, 사용자 피드백 기반 인식률 개선 루프 구축.
 
-### 10. Ecosystem Management
+### 10. Energy Management
 
 - 순위: 10
-- 카테고리: Ecosystem Management
-- 발생 빈도: 2건 (최근 3개월 0건 / 이전 9개월 2건)
-- 증가율: -100%
-- 대표 VOC: "Hub groups, multiple hubs, pros and cons I had a hub group of three V3 hubs for a while. I don't have one any more. One problem I have with hub groups is that they recommend you have the hubs at most ten feet apart which…" — smartthings_community, 2026-02-10 ([원문](https://community.smartthings.com/t/hub-groups-multiple-hubs-pros-and-cons/307991/5))
-- Pain Point 요약: 발생 빈도는 -100%로 완만한 추세를 보이나, 'Ecosystem Management' 관련 부정 VOC가 총 2건 누적되어 상위 Pain Point로 식별됨.
-- Root Cause 추정: 다중 위치(Location)·다중 허브 환경에서 기기/자동화 관리 UI가 단일 가구 기준으로 설계되어 있어 확장 시 관리 복잡도가 급증.
-- 개선 아이디어: 위치·허브 간 일괄 관리(bulk actions) 기능 제공, 계층적 그룹/태그 기반 기기 관리 UI 도입, 공유 사용자 권한 관리 세분화.
+- 카테고리: Energy Management
+- 발생 빈도: 2건 (최근 3개월 2건 / 이전 9개월 0건)
+- 증가율: 신규
+- 대표 VOC: "Energy Monitoring Does not work with British Gas energy monitoring. Reported to BG who say they have nothing to do Samsung, despite the app saying they are partners! Other than that it is counterintuitive to set up. And …" — appstore, 2026-08-06 ([원문](https://apps.apple.com/gb/app/id1222822904))
+- Pain Point 요약: 최근 3개월 내 새롭게 부각된 이슈로, 'Energy Management' 관련 부정 VOC가 총 2건 누적되어 상위 Pain Point로 식별됨.
+- Root Cause 추정: SmartThings Energy의 상세 에너지 데이터가 삼성 자체 기기 위주로만 제공되어 서드파티 기기(스마트 플러그 등)는 연동은 되어도 에너지 모니터링 항목이 누락되거나 Energy 화면에 기기 자체가 표시되지 않는 경우가 있음.
+- 개선 아이디어: Matter/서드파티 에너지 리포팅 표준(예: Matter Electrical Energy Measurement 클러스터) 지원 기기 목록을 앱 내에 명시하고, 연동은 되지만 에너지 데이터가 없는 기기는 그 사유를 명확히 안내. AI Energy Mode 추천의 절감 효과를 실측 데이터로 검증해 신뢰도 제고.
 
 ## Spotlight
 
@@ -123,19 +123,19 @@
 
 ### Energy Management
 
-- 발생 빈도: 1건 (최근 3개월 1건 / 이전 9개월 0건)
+- 발생 빈도: 2건 (최근 3개월 2건 / 이전 9개월 0건)
 - 증가율: 신규
-- 대표 VOC: "Not that useful for refrigerators.. You only get to change Fridge temperature & monitor energy consumption nothing else, no diagnostics feature like Lg, and can't convert refrigerator, and there should have been an optio…" — play, 2026-07-21 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
+- 대표 VOC: "Energy Monitoring Does not work with British Gas energy monitoring. Reported to BG who say they have nothing to do Samsung, despite the app saying they are partners! Other than that it is counterintuitive to set up. And …" — appstore, 2026-08-06 ([원문](https://apps.apple.com/gb/app/id1222822904))
 - Root Cause 추정: SmartThings Energy의 상세 에너지 데이터가 삼성 자체 기기 위주로만 제공되어 서드파티 기기(스마트 플러그 등)는 연동은 되어도 에너지 모니터링 항목이 누락되거나 Energy 화면에 기기 자체가 표시되지 않는 경우가 있음.
 - 개선 아이디어: Matter/서드파티 에너지 리포팅 표준(예: Matter Electrical Energy Measurement 클러스터) 지원 기기 목록을 앱 내에 명시하고, 연동은 되지만 에너지 데이터가 없는 기기는 그 사유를 명확히 안내. AI Energy Mode 추천의 절감 효과를 실측 데이터로 검증해 신뢰도 제고.
-- Top 10 순위 밖이지만 관심 카테고리로 지정되어 항상 이 리포트에 표시됩니다.
+- 현재 Top 10 10위에도 랭크되어 있습니다.
 
 
 ## 신규 증가 이슈
 
 최근 6개월간 증가한 VOC:
 
-- **Connectivity & Reliability**: 최근 6개월 105건 vs 이전 6개월 17건 (+744%)
+- **Connectivity & Reliability**: 최근 6개월 108건 vs 이전 6개월 17건 (+772%)
 - **Multi-brand Integration**: 최근 6개월 39건 vs 이전 6개월 9건 (+320%)
 - **Performance**: 최근 6개월 35건 vs 이전 6개월 9건 (+920%)
 - **Automation & Routine**: 최근 6개월 27건 vs 이전 6개월 9건 (+431%)
@@ -154,7 +154,7 @@
 
 ### 가장 시급한 개선 과제
 
-**Connectivity & Reliability** — 최근 3개월 90건(+744%), 12개월 누적 122건으로 전체 부정 VOC의 40%를 차지, 2위(Multi-brand Integration, 최근 3개월 28건)보다 62건 더 많음.
+**Connectivity & Reliability** — 최근 3개월 93건(+772%), 12개월 누적 125건으로 전체 부정 VOC의 41%를 차지, 2위(Multi-brand Integration, 최근 3개월 28건)보다 65건 더 많음.
 
 Root Cause 추정: 허브-클라우드 간 세션 유지 로직 취약, 다중 홉 메시 네트워크에서의 신호 간섭, 백그라운드 재연결 로직 미흡으로 오프라인 표시가 실제 상태와 어긋남.
 
@@ -181,15 +181,15 @@ Google Home, Aqara, Apple Home 등 경쟁/대체 플랫폼과 비교하며 Smart
 
 1. **Notification & Alert** (신규) — 푸시 알림 파이프라인(클라우드→FCM/APNs)의 지연, 사용자별 알림 설정과 기기 이벤트 트리거 간 매핑 오류로 알림 누락/중복 발생.
 2. **AI / Voice** (신규) — AI/음성 기능이 특정 지역·기기에서만 제공되어 기대와 실제 지원 범위 간 괴리가 크고, Bixby 등 음성 인식 정확도가 낮아 명령 실패가 반복됨.
-3. **Performance** (+920%) — 앱 초기 로딩 시 과도한 기기 상태 동기화, 메모리 누수로 인한 장시간 사용 시 느려짐, 백그라운드 폴링으로 인한 배터리 소모.
+3. **Energy Management** (신규) — SmartThings Energy의 상세 에너지 데이터가 삼성 자체 기기 위주로만 제공되어 서드파티 기기(스마트 플러그 등)는 연동은 되어도 에너지 모니터링 항목이 누락되거나 Energy 화면에 기기 자체가 표시되지 않는 경우가 있음.
 
 ## Executive Summary
 
-- 최근 12개월간 SmartThings 앱 관련 부정 VOC 304건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 90건(+744%)으로 나타났다.
+- 최근 12개월간 SmartThings 앱 관련 부정 VOC 308건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 93건(+772%)으로 나타났다.
 - "Multi-brand Integration" 역시 상위 Pain Point로, 사용자 경험 저하가 지속되고 있어 함께 우선 대응이 필요하다.
 - 일부 사용자는 대체 솔루션으로의 이탈 의사를 직접 언급(2건)하여 이탈 위험 신호가 관측된다.
 - Google Home, Aqara, Apple Home 등 경쟁/대체 플랫폼 대비 열위가 언급된 VOC가 5건 확인되어 경쟁력 저하 신호로 관리가 필요하다.
-- 차기 릴리즈에서는 Notification & Alert, AI / Voice, Performance 항목을 우선 검토 대상으로 제안한다.
+- 차기 릴리즈에서는 Notification & Alert, AI / Voice, Energy Management 항목을 우선 검토 대상으로 제안한다.
 
 ## Sources
 
