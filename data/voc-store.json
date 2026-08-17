@@ -1,5 +1,172 @@
 [
   {
+    "id": "other_forum_home_assistant_3880877",
+    "source": "other_forum_home_assistant",
+    "author": "MikeyHomeAssistant",
+    "title": "Newbee trying to use Weather as a trigger",
+    "text": "Newbee trying to use Weather as a trigger\nI'm brand new at HA, having just installed the server yesterday. I am migrating from SmartThings and have most devices moved over. I'm trying to set up an automation to turn on a light, based on the weather. If it's sunny, turn on the light 30 mi...",
+    "url": "https://community.home-assistant.io/t/newbee-trying-to-use-weather-as-a-trigger/1021445/1",
+    "date": "2026-08-17T00:52:12.532Z",
+    "category": "Automation & Routine",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_c84a8020-7648-4e3d-adc3-361df123fc7e",
+    "source": "play",
+    "author": "Adam Herrera",
+    "title": "",
+    "text": "sometimes the connection works then there are other times it doesn't",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T22:46:11.976Z",
+    "rating": 3,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_4927954d-a156-4254-b6ab-a1cf546266b5",
+    "source": "play",
+    "author": "Dylan Dehring",
+    "title": "",
+    "text": "Same thing as with any other app. It glitches, turns on things you dont want it to. and when you want it to work, it doesn't",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T22:30:44.385Z",
+    "rating": 1,
+    "category": "Uncategorized",
+    "sentiment": "negative",
+    "pain": true,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_7ada79ec-2667-4ea7-8ecf-e362ebe4b251",
+    "source": "play",
+    "author": "Jerome Richardson",
+    "title": "",
+    "text": "very well app",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T22:01:23.109Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_15689101-63bd-4f30-bdd9-3fa3933cc666",
+    "source": "play",
+    "author": "Mehr ali Sher",
+    "title": "",
+    "text": "don't use it this app is not good",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T21:40:48.559Z",
+    "rating": 1,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_a88f5f66-df18-480b-aab7-6567b1b79173",
+    "source": "play",
+    "author": "GARASIYA RAJENDRA",
+    "title": "",
+    "text": "noise",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T21:32:48.967Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_e37867a0-87bf-4f66-8d13-d8f0e927e3d2",
+    "source": "play",
+    "author": "Mohamed Faizal",
+    "title": "",
+    "text": "good",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T21:27:02.712Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 251
+  },
+  {
+    "id": "play_en_07010fda-7609-452f-8675-14e75f651e42",
+    "source": "play",
+    "author": "KG D20",
+    "title": "",
+    "text": "well it found my tv.. and I had to reset but it connected screen and I had no way to click ok on tv as the gd remote stopped working. how to proceed? God knows this app sucks",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T21:20:16.650Z",
+    "rating": 1,
+    "category": "Uncategorized",
+    "sentiment": "negative",
+    "pain": true,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_5030e2a4-0796-46b4-88fb-e1f20a801199",
+    "source": "play",
+    "author": "Deco Prince",
+    "title": "",
+    "text": "no scams here",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T20:51:37.302Z",
+    "rating": 1,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_52385295-9b79-4782-8945-43b7e1fcd6c4",
+    "source": "play",
+    "author": "S S",
+    "title": "",
+    "text": "ok",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T20:31:07.495Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 32
+  },
+  {
+    "id": "play_en_91b73631-95d8-4001-b21e-f49c132b162b",
+    "source": "play",
+    "author": "Citation Number",
+    "title": "",
+    "text": "I just want a TV that turns on and lets me select the input I dont want any of this garbage for my new TV.",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T19:47:36.103Z",
+    "rating": 1,
+    "category": "Uncategorized",
+    "sentiment": "negative",
+    "pain": true,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_272c1760-799d-4cff-a726-ce43b156bf29",
+    "source": "play",
+    "author": "Jacqueline Pocan",
+    "title": "",
+    "text": "great a crazy stalker controlling my life once again",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T19:41:58.515Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "positive",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
     "id": "smartthings_community_1461935",
     "source": "smartthings_community",
     "author": "dotan_shai",
@@ -13,6 +180,440 @@
     "occurrences": 1
   },
   {
+    "id": "play_en_b49f2f58-9250-4913-ae6e-14690d50c1e9",
+    "source": "play",
+    "author": "Todd Thurlow",
+    "title": "",
+    "text": "I really like how this works",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T19:04:39.739Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "appstore_gb_14435895450",
+    "source": "appstore",
+    "author": "Nickname-Nickname101",
+    "title": "Horrendous App",
+    "text": "Horrendous App\nThis app should not be available until it is up to standard.\n\nWashing machine says it has successfully added then says there is a network error and doesn’t add despite saying success.\n\nThe TV remote app is slow and incredibly clunky. It is significantly worse than using an actual remote.\n\nThe app is substandard and quite frankly should never have been released.",
+    "url": "https://apps.apple.com/gb/app/id1222822904",
+    "date": "2026-08-16T18:57:01.000Z",
+    "rating": 1,
+    "category": "Performance",
+    "sentiment": "negative",
+    "pain": true,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_21f58a21-a5c1-4153-975f-1346f97b72ab",
+    "source": "play",
+    "author": "giulius beig",
+    "title": "",
+    "text": "logging so bad, cant log in after updating",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T18:28:31.139Z",
+    "rating": 1,
+    "category": "Uncategorized",
+    "sentiment": "negative",
+    "pain": true,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_b36be22f-4051-4b5f-b91c-b6ff52bcb090",
+    "source": "play",
+    "author": "Aaron malancea",
+    "title": "",
+    "text": "its a good app",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T18:24:00.822Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 2
+  },
+  {
+    "id": "play_en_d1983378-8d87-4223-875d-065a738e77b8",
+    "source": "play",
+    "author": "Anthony Campion",
+    "title": "",
+    "text": "very helpful",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T18:11:46.430Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 5
+  },
+  {
+    "id": "appstore_us_14435716944",
+    "source": "appstore",
+    "author": "Their Nonny",
+    "title": "Laundry made easy",
+    "text": "Laundry made easy\nThis app has made laundry so much faster and gets done easier. For someone with ADHD like myself this will keep you on track and keep the laundry going.",
+    "url": "https://apps.apple.com/us/app/id1222822904",
+    "date": "2026-08-16T18:00:08.000Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "appstore_us_14435706265",
+    "source": "appstore",
+    "author": "hazmat98685",
+    "title": "Life’s a lot easier",
+    "text": "Life’s a lot easier\nVery helpful to home life!!!",
+    "url": "https://apps.apple.com/us/app/id1222822904",
+    "date": "2026-08-16T17:56:47.000Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_b467f9a1-1878-4a7c-a3f9-12969195d538",
+    "source": "play",
+    "author": "Senobia Blaauw",
+    "title": "",
+    "text": "nice",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T17:45:48.890Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 63
+  },
+  {
+    "id": "play_en_998545b3-2986-4bdb-927d-254a3145dbd9",
+    "source": "play",
+    "author": "Jamie Moundi",
+    "title": "",
+    "text": "annoying af",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T17:41:45.561Z",
+    "rating": 1,
+    "category": "Uncategorized",
+    "sentiment": "negative",
+    "pain": true,
+    "occurrences": 1
+  },
+  {
+    "id": "appstore_us_14435642222",
+    "source": "appstore",
+    "author": "Rissa143!",
+    "title": "My smart home.",
+    "text": "My smart home.\nI love this app. It helps me know when my washer or dryer is done. I also love that I can turn on and off my tv with this app.",
+    "url": "https://apps.apple.com/us/app/id1222822904",
+    "date": "2026-08-16T17:37:01.000Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "positive",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_143ead2e-4ede-496c-8d2a-5013567e3f8f",
+    "source": "play",
+    "author": "David",
+    "title": "",
+    "text": "showing TV offline all the time when its not. this is a joke",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T17:33:38.764Z",
+    "rating": 1,
+    "category": "Connectivity & Reliability",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_6782b9d7-3214-4ff1-b063-6333e5d37401",
+    "source": "play",
+    "author": "gourab kumar",
+    "title": "",
+    "text": "this app is great i am so happy after use this app",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T17:19:48.419Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "positive",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_f0540283-c49b-4fb8-b1f0-1e43e516bfb6",
+    "source": "play",
+    "author": "Sowkath Javith",
+    "title": "",
+    "text": "best ecosystem for ever I love samsung",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T17:03:39.767Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "positive",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "appstore_us_14435479103",
+    "source": "appstore",
+    "author": "Friendo :￼P",
+    "title": "Ok but it stopped",
+    "text": "Ok but it stopped\nI was using it being the happiest person alive when suddenly one day my device just stopped working and it hasn’t worked since then",
+    "url": "https://apps.apple.com/us/app/id1222822904",
+    "date": "2026-08-16T16:47:48.000Z",
+    "rating": 2,
+    "category": "Uncategorized",
+    "sentiment": "negative",
+    "pain": true,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_2a9876e5-1b8d-43bb-8587-8beb56c92cfc",
+    "source": "play",
+    "author": "Ayush Ishu",
+    "title": "",
+    "text": "very good",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T16:46:58.255Z",
+    "rating": 3,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 26
+  },
+  {
+    "id": "play_en_ce33c6ef-84ea-4299-8afa-aeb76f4d5dbc",
+    "source": "play",
+    "author": "Shabeer Ahmed",
+    "title": "",
+    "text": "vGA",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T16:41:09.629Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_ko_ea288f10-faea-4301-91e7-5e51896e7ce3",
+    "source": "play",
+    "author": "P SJ",
+    "title": "",
+    "text": "아니... 리모컨이랑 앱이랑 따로 놀면 어떡함? 리모컨 온도가 자동으로 갱신도 안 되고 리모컨 온도 내렸더니 갑자기 바람세기 올라가고 뭐하자는거임. 호환성 문제 심각함",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T16:31:14.636Z",
+    "rating": 3,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "appstore_us_14202420904",
+    "source": "appstore",
+    "author": "LawCockyDawg",
+    "title": ".",
+    "text": ".\n.",
+    "url": "https://apps.apple.com/us/app/id1222822904",
+    "date": "2026-08-16T16:30:11.633Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 51
+  },
+  {
+    "id": "play_en_712ad827-ff0c-41c0-9a1c-ce0e3a84c178",
+    "source": "play",
+    "author": "ZUBAIR OK",
+    "title": "",
+    "text": "okk 👍",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T16:13:28.351Z",
+    "rating": 1,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_88a94c2a-1184-48da-b6b2-6a63fa358b27",
+    "source": "play",
+    "author": "Dursaa Ibrahim Abduleziz",
+    "title": "",
+    "text": "yeroo",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T16:12:49.849Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_347ce84c-32c0-47b4-8014-ac2613f2dbe8",
+    "source": "play",
+    "author": "Sadhna Devi",
+    "title": "",
+    "text": "ADM mp3",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T15:59:01.900Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_71a10e89-903a-4ffa-8786-a9be2f759f4b",
+    "source": "play",
+    "author": "Md Shorifhossainbd2xxx",
+    "title": "",
+    "text": "good luck",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T15:56:38.318Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 2
+  },
+  {
+    "id": "play_en_4448d0ce-1887-48c9-bae5-e7185246b371",
+    "source": "play",
+    "author": "Daniel Montague",
+    "title": "",
+    "text": "Pretty good to be honest. I think it would be a lot better if I had more than just my TV and Smart phone.... But I have become a big fan of Samsung, so I will certainly be getting more devices which will integrate with the Smart Things app",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T15:25:06.953Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_372eb4c3-1513-4229-9fb2-a60081a37e76",
+    "source": "play",
+    "author": "Camilo Rendon Gomez",
+    "title": "",
+    "text": "Almost perfect! SmartThings is incredibly powerful, easy to use, and rock-solid,it simply never fails. The automations run flawlessly. The only thing keeping it from being the absolute perfect app is the lack of a fully customizable, native dashboard builder. Add that feature, and it’s unbeatable.",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T14:20:16.728Z",
+    "rating": 5,
+    "category": "Automation & Routine",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_fec51975-5bb1-457f-9f47-870f3b60b766",
+    "source": "play",
+    "author": "Shawnie Hall",
+    "title": "",
+    "text": "Love Smart things app! Easy to navigate and helps me tremendously with remembering appointments and tasks and events throughout my day!",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T14:08:49.785Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "positive",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "appstore_us_14434672643",
+    "source": "appstore",
+    "author": "Futurekyost4616",
+    "title": "No Good",
+    "text": "No Good\nExtremely laggy app. Only works with the T.V. Half the time and that’s being generous.",
+    "url": "https://apps.apple.com/us/app/id1222822904",
+    "date": "2026-08-16T12:55:49.000Z",
+    "rating": 1,
+    "category": "Performance",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_8319d380-9de3-4775-9139-4bb6e5304aae",
+    "source": "play",
+    "author": "Suresh Kumar",
+    "title": "",
+    "text": "Useless app in my samsung phone",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T12:42:39.396Z",
+    "rating": 1,
+    "category": "Uncategorized",
+    "sentiment": "negative",
+    "pain": true,
+    "occurrences": 1
+  },
+  {
+    "id": "appstore_kr_14172822940",
+    "source": "appstore",
+    "author": "히미나나",
+    "title": ".",
+    "text": ".\n좋아요!",
+    "url": "https://apps.apple.com/kr/app/id1222822904",
+    "date": "2026-08-16T12:33:12.160Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 109
+  },
+  {
+    "id": "play_en_d35d7fcd-f941-4208-b7f7-2d6eb2f26ba1",
+    "source": "play",
+    "author": "zulqarnain khokhar",
+    "title": "",
+    "text": "always stuck and slow",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T12:16:33.124Z",
+    "rating": 1,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_bf36743f-1d16-4aad-8fdc-690a9e421867",
+    "source": "play",
+    "author": "John Mungai",
+    "title": "",
+    "text": "very reliable and efficient",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T12:13:36.504Z",
+    "rating": 4,
+    "category": "Uncategorized",
+    "sentiment": "positive",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_15d366ce-5a5f-4de5-928a-9625387deedb",
+    "source": "play",
+    "author": "Fabrizio Nichele",
+    "title": "",
+    "text": "using the smart tags to make the phone ring is buggy. it works once every ten times",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T11:47:44.131Z",
+    "rating": 1,
+    "category": "Uncategorized",
+    "sentiment": "negative",
+    "pain": true,
+    "occurrences": 1
+  },
+  {
     "id": "smartthings_community_1461917",
     "source": "smartthings_community",
     "author": "TheHundredthIdiot",
@@ -20,6 +621,370 @@
     "text": "How to make old versions of smartthings work (controller plugin )\nThe Android app is only available for Android devices running Android 9.0 or above. You may be able to sideload a suitable earlier version from somewhere like apk mirror and bypass the play store completely. Older app versions would likely be limited and may not be functional at all though. Also ...",
     "url": "https://community.smartthings.com/t/how-to-make-old-versions-of-smartthings-work-controller-plugin/310645/4",
     "date": "2026-08-16T11:30:26.849Z",
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_9c5c30a1-305c-4e64-ba12-1b15893e0252",
+    "source": "play",
+    "author": "Michael McLAUGHLIN",
+    "title": "",
+    "text": "Samsung - amazing kit",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T11:19:45.260Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "positive",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_9180a6ee-9904-4228-b47f-de3ef8916d44",
+    "source": "play",
+    "author": "Rashid mridha",
+    "title": "",
+    "text": "Thank you",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T10:13:41.134Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 5
+  },
+  {
+    "id": "play_en_a8dc85ad-0edf-4ed6-aab3-bc9ca708d810",
+    "source": "play",
+    "author": "Arvind Yadu",
+    "title": "",
+    "text": "very helpful apps",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T07:05:53.221Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_639eb75e-c327-4be0-a907-388d719e9a8d",
+    "source": "play",
+    "author": "Arsenal Gyokeres",
+    "title": "",
+    "text": "I like it",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T06:56:10.625Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 5
+  },
+  {
+    "id": "play_en_ff49c8e6-b0fd-440d-8042-3898838ba3b8",
+    "source": "play",
+    "author": "Yadav amit",
+    "title": "",
+    "text": "acha aap nahi hai",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T06:55:44.432Z",
+    "rating": 1,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_29df0a45-4467-47aa-b6e3-61373ce7fc15",
+    "source": "play",
+    "author": "Gerardo Boza",
+    "title": "",
+    "text": "Best!!!!",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T06:39:44.646Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 9
+  },
+  {
+    "id": "appstore_us_14433643365",
+    "source": "appstore",
+    "author": "thomas.granbois",
+    "title": "Popup ads everywhere",
+    "text": "Popup ads everywhere\nI already bought the TV, I don’t want or need popup ads in the remote app",
+    "url": "https://apps.apple.com/us/app/id1222822904",
+    "date": "2026-08-16T06:16:36.000Z",
+    "rating": 1,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_cd82f532-ea90-4da7-b826-7afa67b46df7",
+    "source": "play",
+    "author": "jerry jeremiah Hernandez",
+    "title": "",
+    "text": "worthless app. connected failed",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T06:04:29.297Z",
+    "rating": 1,
+    "category": "Uncategorized",
+    "sentiment": "negative",
+    "pain": true,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_39853322-e98a-4a62-aa51-f8ecd293d7a9",
+    "source": "play",
+    "author": "Yvette",
+    "title": "",
+    "text": "decent",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T05:53:51.456Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_c83fb075-0b77-4628-b1f4-e4c1dcd9ffe2",
+    "source": "play",
+    "author": "Nuttawut Roima",
+    "title": "",
+    "text": "samsung wash ไม่สามารถใช้ได้จริง กับเครื่องซักผ้า",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T05:11:34.616Z",
+    "rating": 1,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_0481b079-f758-45a2-9e93-89bb8cfeae8d",
+    "source": "play",
+    "author": "Ali Al",
+    "title": "",
+    "text": "I love samsung",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T04:46:19.196Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "positive",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_a726bfd1-8472-4fd4-a31b-11d67d85d633",
+    "source": "play",
+    "author": "Victor Lewis",
+    "title": "",
+    "text": "I just dont like it seems like ai",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T04:09:33.454Z",
+    "rating": 1,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_69f6c357-3025-4b02-8a98-701d760f60b6",
+    "source": "play",
+    "author": "Brett",
+    "title": "",
+    "text": "nothing works right",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T03:35:39.797Z",
+    "rating": 1,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_94b5b32e-cc58-4be5-8662-091067eafa00",
+    "source": "play",
+    "author": "Navin Krishnan",
+    "title": "",
+    "text": "Good experience in every devices",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T03:33:16.872Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "appstore_us_14433242388",
+    "source": "appstore",
+    "author": "LFNEWYORK",
+    "title": "Fine",
+    "text": "Fine\nThe application scope is relatively limited.",
+    "url": "https://apps.apple.com/us/app/id1222822904",
+    "date": "2026-08-16T03:23:53.000Z",
+    "rating": 4,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_6233d6f4-e269-465d-85d9-bd6d55c8eb83",
+    "source": "play",
+    "author": "Roi Dazt",
+    "title": "",
+    "text": "Map not working.",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T03:04:31.668Z",
+    "rating": 1,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "appstore_us_14433153997",
+    "source": "appstore",
+    "author": "HeroxOfxTime909",
+    "title": "Useful",
+    "text": "Useful\nComes in handy",
+    "url": "https://apps.apple.com/us/app/id1222822904",
+    "date": "2026-08-16T02:48:57.000Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_d29ca6d7-0801-46e6-8ddc-d1bc526d2a67",
+    "source": "play",
+    "author": "Danie Booysen",
+    "title": "",
+    "text": "not working",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T02:47:15.839Z",
+    "rating": 1,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 3
+  },
+  {
+    "id": "play_en_a2d6c2c0-d726-4dad-908f-9cddc7d17c00",
+    "source": "play",
+    "author": "Ajay Nigil",
+    "title": "",
+    "text": "awesome",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T01:13:02.241Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "positive",
+    "pain": false,
+    "occurrences": 12
+  },
+  {
+    "id": "appstore_us_14432870370",
+    "source": "appstore",
+    "author": "america104",
+    "title": "Juan",
+    "text": "Juan\nMuy bien",
+    "url": "https://apps.apple.com/us/app/id1222822904",
+    "date": "2026-08-16T01:00:54.000Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_d788b74e-3b66-496c-a7b6-966749650a85",
+    "source": "play",
+    "author": "Robert Price",
+    "title": "",
+    "text": "I'm not even done answering the permission questions and the app is already asking for a review. Well, here you go!",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T00:45:02.184Z",
+    "rating": 1,
+    "category": "Security & Privacy",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_c71e4cf8-48b7-46d3-a47f-1cb99ec2dd43",
+    "source": "play",
+    "author": "Taylor Toon",
+    "title": "",
+    "text": "I appreciate all my samsung devices being in one place",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T00:41:50.335Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_b098ceff-5eb5-40c7-b226-a58c353b38af",
+    "source": "play",
+    "author": "Alan “Twiggy”",
+    "title": "",
+    "text": "great",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T00:14:44.845Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "positive",
+    "pain": false,
+    "occurrences": 16
+  },
+  {
+    "id": "play_ko_e317e661-52ad-4266-83f4-63fc225e1279",
+    "source": "play",
+    "author": "soyoung jung",
+    "title": "",
+    "text": "멋있다",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-16T00:03:01.816Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_7e328252-5077-43b0-9a29-9750916f76f9",
+    "source": "play",
+    "author": "C D (theAlien)",
+    "title": "",
+    "text": "keeps telling me to turn my TV on first.... I see no use for this app if I have to hunt down my remote",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-15T23:08:18.774Z",
+    "rating": 1,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_da548968-fb9e-49e8-933a-cb8837960782",
+    "source": "play",
+    "author": "Mike D Smith",
+    "title": "",
+    "text": "ok Kool",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-08-15T22:52:11.196Z",
+    "rating": 5,
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
@@ -82,32 +1047,32 @@
     "occurrences": 1
   },
   {
-    "id": "play_en_e37867a0-87bf-4f66-8d13-d8f0e927e3d2",
-    "source": "play",
-    "author": "Mohamed Faizal",
-    "title": "",
-    "text": "good",
-    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
-    "date": "2026-08-15T20:45:17.621Z",
-    "rating": 5,
+    "id": "appstore_us_14432276609",
+    "source": "appstore",
+    "author": "09713622146810274",
+    "title": "Trash.",
+    "text": "Trash.\nSomehow I’m forced to use an app to self clean my dishwasher, because the option isn’t in the menu screen for run cycles. Even though it’s selected as an option. I would give this negative stars. Whoever designed this should be imprisoned for life.",
+    "url": "https://apps.apple.com/us/app/id1222822904",
+    "date": "2026-08-15T21:05:37.000Z",
+    "rating": 1,
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 248
+    "occurrences": 1
   },
   {
-    "id": "play_en_b467f9a1-1878-4a7c-a3f9-12969195d538",
-    "source": "play",
-    "author": "Senobia Blaauw",
-    "title": "",
-    "text": "nice",
-    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
-    "date": "2026-08-15T19:38:59.524Z",
-    "rating": 5,
+    "id": "appstore_us_14432212541",
+    "source": "appstore",
+    "author": "Better guides",
+    "title": "iPhone can’t cast to it.",
+    "text": "iPhone can’t cast to it.\nOnly android devices can cast video",
+    "url": "https://apps.apple.com/us/app/id1222822904",
+    "date": "2026-08-15T20:41:47.000Z",
+    "rating": 1,
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 65
+    "occurrences": 1
   },
   {
     "id": "play_en_445cbe28-31be-4b4b-bb47-7305f5555fb6",
@@ -180,20 +1145,6 @@
     "occurrences": 10
   },
   {
-    "id": "play_en_2a9876e5-1b8d-43bb-8587-8beb56c92cfc",
-    "source": "play",
-    "author": "Ayush Ishu",
-    "title": "",
-    "text": "very good",
-    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
-    "date": "2026-08-15T18:03:14.215Z",
-    "rating": 3,
-    "category": "Uncategorized",
-    "sentiment": "neutral",
-    "pain": false,
-    "occurrences": 24
-  },
-  {
     "id": "play_en_0d06b02e-f468-4490-887f-51a51233cb9e",
     "source": "play",
     "author": "shlomi biton",
@@ -220,20 +1171,6 @@
     "sentiment": "neutral",
     "pain": false,
     "occurrences": 1
-  },
-  {
-    "id": "appstore_us_14202420904",
-    "source": "appstore",
-    "author": "LawCockyDawg",
-    "title": ".",
-    "text": ".\n.",
-    "url": "https://apps.apple.com/us/app/id1222822904",
-    "date": "2026-08-15T17:34:36.633Z",
-    "rating": 5,
-    "category": "Uncategorized",
-    "sentiment": "neutral",
-    "pain": false,
-    "occurrences": 81
   },
   {
     "id": "appstore_us_14431510232",
@@ -387,7 +1324,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 74
+    "occurrences": 73
   },
   {
     "id": "play_en_77d59330-5e33-445e-a5ba-485a80c18a75",
@@ -459,20 +1396,6 @@
     "occurrences": 1
   },
   {
-    "id": "play_en_52385295-9b79-4782-8945-43b7e1fcd6c4",
-    "source": "play",
-    "author": "S S",
-    "title": "",
-    "text": "ok",
-    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
-    "date": "2026-08-15T12:28:24.440Z",
-    "rating": 5,
-    "category": "Uncategorized",
-    "sentiment": "neutral",
-    "pain": false,
-    "occurrences": 35
-  },
-  {
     "id": "appstore_us_14430541361",
     "source": "appstore",
     "author": "NoJenks",
@@ -485,20 +1408,6 @@
     "sentiment": "positive",
     "pain": false,
     "occurrences": 1
-  },
-  {
-    "id": "play_en_9180a6ee-9904-4228-b47f-de3ef8916d44",
-    "source": "play",
-    "author": "Rashid mridha",
-    "title": "",
-    "text": "Thank you",
-    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
-    "date": "2026-08-15T12:09:46.573Z",
-    "rating": 5,
-    "category": "Uncategorized",
-    "sentiment": "neutral",
-    "pain": false,
-    "occurrences": 4
   },
   {
     "id": "appstore_gb_14430307834",
@@ -639,20 +1548,6 @@
     "sentiment": "neutral",
     "pain": false,
     "occurrences": 1
-  },
-  {
-    "id": "appstore_kr_14172822940",
-    "source": "appstore",
-    "author": "히미나나",
-    "title": ".",
-    "text": ".\n좋아요!",
-    "url": "https://apps.apple.com/kr/app/id1222822904",
-    "date": "2026-08-15T08:05:46.781Z",
-    "rating": 5,
-    "category": "Uncategorized",
-    "sentiment": "neutral",
-    "pain": false,
-    "occurrences": 109
   },
   {
     "id": "play_en_83128fb4-782a-4ccf-888b-36497115709a",
@@ -1015,20 +1910,6 @@
     "occurrences": 1
   },
   {
-    "id": "play_en_a2d6c2c0-d726-4dad-908f-9cddc7d17c00",
-    "source": "play",
-    "author": "Ajay Nigil",
-    "title": "",
-    "text": "awesome",
-    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
-    "date": "2026-08-14T19:29:28.196Z",
-    "rating": 5,
-    "category": "Uncategorized",
-    "sentiment": "positive",
-    "pain": false,
-    "occurrences": 12
-  },
-  {
     "id": "play_en_43a1f22c-a477-415e-9f30-86b4411b8024",
     "source": "play",
     "author": "Piyush Godkar",
@@ -1040,7 +1921,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 4
+    "occurrences": 3
   },
   {
     "id": "play_en_01bd6fd4-be4a-457e-874b-211ea2642a25",
@@ -1527,7 +2408,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 15
+    "occurrences": 13
   },
   {
     "id": "play_en_206c4a1a-6eb8-460f-ace3-970d92ef0c9f",
@@ -2014,20 +2895,6 @@
     "occurrences": 1
   },
   {
-    "id": "play_en_d29ca6d7-0801-46e6-8ddc-d1bc526d2a67",
-    "source": "play",
-    "author": "Danie Booysen",
-    "title": "",
-    "text": "not working",
-    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
-    "date": "2026-08-13T17:13:19.197Z",
-    "rating": 1,
-    "category": "Uncategorized",
-    "sentiment": "neutral",
-    "pain": false,
-    "occurrences": 2
-  },
-  {
     "id": "play_en_b22e7b49-fb11-41c0-8836-e6fced110861",
     "source": "play",
     "author": "p Jacques 2019",
@@ -2302,7 +3169,7 @@
     "category": "Uncategorized",
     "sentiment": "positive",
     "pain": false,
-    "occurrences": 7
+    "occurrences": 6
   },
   {
     "id": "play_en_e5006219-9a48-4656-baf9-e899291ce271",
@@ -2652,20 +3519,6 @@
     "occurrences": 1
   },
   {
-    "id": "play_en_29df0a45-4467-47aa-b6e3-61373ce7fc15",
-    "source": "play",
-    "author": "Gerardo Boza",
-    "title": "",
-    "text": "Best!!!!",
-    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
-    "date": "2026-08-12T19:27:45.379Z",
-    "rating": 5,
-    "category": "Uncategorized",
-    "sentiment": "neutral",
-    "pain": false,
-    "occurrences": 8
-  },
-  {
     "id": "play_en_ec31c819-f939-4da4-b9c8-3afa8ad1394d",
     "source": "play",
     "author": "Raju Love",
@@ -2831,7 +3684,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 2
+    "occurrences": 1
   },
   {
     "id": "play_en_795e97d1-b761-4bdd-b1a2-5a7d3787e385",
@@ -3082,20 +3935,6 @@
     "sentiment": "neutral",
     "pain": false,
     "occurrences": 1
-  },
-  {
-    "id": "play_en_d1983378-8d87-4223-875d-065a738e77b8",
-    "source": "play",
-    "author": "Anthony Campion",
-    "title": "",
-    "text": "very helpful",
-    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
-    "date": "2026-08-12T09:14:43.356Z",
-    "rating": 5,
-    "category": "Uncategorized",
-    "sentiment": "neutral",
-    "pain": false,
-    "occurrences": 4
   },
   {
     "id": "play_en_39618bda-03f2-4b32-90e6-441300650ade",
@@ -3433,20 +4272,6 @@
     "occurrences": 1
   },
   {
-    "id": "play_en_b098ceff-5eb5-40c7-b226-a58c353b38af",
-    "source": "play",
-    "author": "Alan “Twiggy”",
-    "title": "",
-    "text": "great",
-    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
-    "date": "2026-08-12T00:24:30.430Z",
-    "rating": 5,
-    "category": "Uncategorized",
-    "sentiment": "positive",
-    "pain": false,
-    "occurrences": 17
-  },
-  {
     "id": "appstore_kr_14416550995",
     "source": "appstore",
     "author": "아니 왜 이게 천원",
@@ -3680,7 +4505,7 @@
     "category": "Uncategorized",
     "sentiment": "positive",
     "pain": false,
-    "occurrences": 7
+    "occurrences": 6
   },
   {
     "id": "play_en_b23b7247-4a17-4a34-9fe3-e4fea17b275a",
@@ -3778,7 +4603,7 @@
     "category": "Uncategorized",
     "sentiment": "negative",
     "pain": true,
-    "occurrences": 3
+    "occurrences": 2
   },
   {
     "id": "appstore_us_14415193934",
@@ -4502,20 +5327,6 @@
     "occurrences": 1
   },
   {
-    "id": "play_en_639eb75e-c327-4be0-a907-388d719e9a8d",
-    "source": "play",
-    "author": "Arsenal Gyokeres",
-    "title": "",
-    "text": "I like it",
-    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
-    "date": "2026-08-10T17:25:19.864Z",
-    "rating": 5,
-    "category": "Uncategorized",
-    "sentiment": "neutral",
-    "pain": false,
-    "occurrences": 4
-  },
-  {
     "id": "smartthings_community_1461708",
     "source": "smartthings_community",
     "author": "TapioX",
@@ -4821,20 +5632,6 @@
     "occurrences": 1
   },
   {
-    "id": "play_en_71a10e89-903a-4ffa-8786-a9be2f759f4b",
-    "source": "play",
-    "author": "Md Shorifhossainbd2xxx",
-    "title": "",
-    "text": "good luck",
-    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
-    "date": "2026-08-10T06:54:55.737Z",
-    "rating": 5,
-    "category": "Uncategorized",
-    "sentiment": "neutral",
-    "pain": false,
-    "occurrences": 1
-  },
-  {
     "id": "appstore_us_14409445644",
     "source": "appstore",
     "author": "Trudon60",
@@ -4930,7 +5727,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 12
+    "occurrences": 10
   },
   {
     "id": "play_en_2ea043eb-02ca-4268-b2ea-f1b1dcf60e3a",
@@ -4986,7 +5783,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 5
+    "occurrences": 1
   },
   {
     "id": "other_forum_home_assistant_3876988",
@@ -5666,7 +6463,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 13
+    "occurrences": 1
   },
   {
     "id": "play_en_f2a008de-f2c7-4e17-807a-945bb30d59b2",
@@ -8734,7 +9531,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 3
+    "occurrences": 2
   },
   {
     "id": "appstore_us_14393274799",
@@ -12616,20 +13413,6 @@
     "occurrences": 1
   },
   {
-    "id": "play_en_b36be22f-4051-4b5f-b91c-b6ff52bcb090",
-    "source": "play",
-    "author": "Aaron malancea",
-    "title": "",
-    "text": "its a good app",
-    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
-    "date": "2026-08-02T19:08:46.169Z",
-    "rating": 5,
-    "category": "Uncategorized",
-    "sentiment": "neutral",
-    "pain": false,
-    "occurrences": 1
-  },
-  {
     "id": "play_en_6413f636-f4a7-4984-8396-9b1b5074ab53",
     "source": "play",
     "author": "jay lee",
@@ -13836,7 +14619,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 3
+    "occurrences": 2
   },
   {
     "id": "play_en_e91de917-18ff-41a3-941d-248102244cf2",
@@ -16869,7 +17652,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 2
+    "occurrences": 1
   },
   {
     "id": "play_en_5cff1443-e21b-49b4-9325-063c4604542a",
@@ -16897,7 +17680,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 2
+    "occurrences": 1
   },
   {
     "id": "play_en_3e8f43aa-df71-481c-a8fd-0ba08e980f25",
@@ -30605,7 +31388,7 @@
     "category": "Uncategorized",
     "sentiment": "positive",
     "pain": false,
-    "occurrences": 4
+    "occurrences": 3
   },
   {
     "id": "appstore_us_14299636936",
@@ -33905,7 +34688,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 11
+    "occurrences": 1
   },
   {
     "id": "play_en_58607555-5782-456e-b2f8-6ddb0b7fe845",
@@ -41733,7 +42516,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 2
+    "occurrences": 1
   },
   {
     "id": "appstore_kr_14209292698",
@@ -42920,7 +43703,7 @@
     "category": "Uncategorized",
     "sentiment": "positive",
     "pain": false,
-    "occurrences": 2
+    "occurrences": 1
   },
   {
     "id": "appstore_us_14202911356",
@@ -43732,7 +44515,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 4
+    "occurrences": 2
   },
   {
     "id": "appstore_us_14198459229",
@@ -65955,20 +66738,6 @@
     "category": "UX/UI",
     "sentiment": "negative",
     "pain": true,
-    "occurrences": 1
-  },
-  {
-    "id": "appstore_gb_12926327736",
-    "source": "appstore",
-    "author": "Smiro03",
-    "title": "No Start Delay Feature",
-    "text": "No Start Delay Feature\nNice app for controlling Samsung home appliances. Only scores 3* as there’s no way to program in a start delay in the App. Even the most basic of electric ovens allowed you to set up the time and temperature to cook food with either a time you wanted to start cooking or a time you wanted food to be ready by, so you could program this in and oven would start automatically even if you are out.",
-    "url": "https://apps.apple.com/gb/app/id1222822904",
-    "date": "2025-07-23T11:43:09.000Z",
-    "rating": 3,
-    "category": "Uncategorized",
-    "sentiment": "neutral",
-    "pain": false,
     "occurrences": 1
   }
 ]
