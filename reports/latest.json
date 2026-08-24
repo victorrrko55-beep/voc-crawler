@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-23T22:46:55.535Z",
-  "windowStart": "2025-08-23T22:46:55.535Z",
-  "recentStart": "2026-05-23T22:46:55.535Z",
-  "totalPainItems": 352,
-  "totalRawItems": 5163,
+  "generatedAt": "2026-08-24T22:52:41.686Z",
+  "windowStart": "2025-08-24T22:52:41.686Z",
+  "recentStart": "2026-05-24T22:52:41.686Z",
+  "totalPainItems": 353,
+  "totalRawItems": 5229,
   "top10": [
     {
       "category": "Connectivity & Reliability",
@@ -12,8 +12,8 @@
       "priorCount": 38,
       "growth": 728.9473684210526,
       "growthLabel": "+729%",
-      "last6moCount": 125,
-      "prev6moCount": 18,
+      "last6moCount": 124,
+      "prev6moCount": 19,
       "representative": {
         "id": "smartthings_community_1462184",
         "source": "smartthings_community",
@@ -33,22 +33,22 @@
     },
     {
       "category": "Multi-brand Integration",
-      "totalFrequency": 55,
-      "recentCount": 33,
+      "totalFrequency": 56,
+      "recentCount": 34,
       "priorCount": 22,
-      "growth": 349.99999999999994,
-      "growthLabel": "+350%",
-      "last6moCount": 45,
+      "growth": 363.6363636363636,
+      "growthLabel": "+364%",
+      "last6moCount": 46,
       "prev6moCount": 10,
       "representative": {
-        "id": "play_en_c900cacc-cb2c-41c9-8d22-7b0f23385958",
+        "id": "play_en_a86b579f-7cc0-449b-8f49-2e0e8160ffe9",
         "source": "play",
-        "author": "Andrew Wagoner",
+        "author": "Timothy McDonough",
         "title": "",
-        "text": "this app won't stop popping up when my phone is asleep no matter what I do. I'm about to just uninstall it.",
+        "text": "I don't use this much as I use Google home as my smart home hub so really I can't give 5 stars but also can't give low score as that doesn't feel fair to SmartThings",
         "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
-        "date": "2026-08-21T21:29:15.402Z",
-        "rating": 1,
+        "date": "2026-08-23T19:19:34.908Z",
+        "rating": 4,
         "category": "Multi-brand Integration",
         "sentiment": "negative",
         "pain": true,
@@ -88,10 +88,10 @@
     {
       "category": "Automation & Routine",
       "totalFrequency": 39,
-      "recentCount": 23,
-      "priorCount": 16,
-      "growth": 331.25000000000006,
-      "growthLabel": "+331%",
+      "recentCount": 22,
+      "priorCount": 17,
+      "growth": 288.2352941176471,
+      "growthLabel": "+288%",
       "last6moCount": 31,
       "prev6moCount": 8,
       "representative": {
@@ -118,8 +118,8 @@
       "priorCount": 10,
       "growth": 409.99999999999994,
       "growthLabel": "+410%",
-      "last6moCount": 21,
-      "prev6moCount": 6,
+      "last6moCount": 20,
+      "prev6moCount": 7,
       "representative": {
         "id": "play_en_bd027075-3144-4126-8e64-067146111f7d",
         "source": "play",
@@ -310,8 +310,8 @@
       "priorCount": 38,
       "growth": 728.9473684210526,
       "growthLabel": "+729%",
-      "last6moCount": 125,
-      "prev6moCount": 18,
+      "last6moCount": 124,
+      "prev6moCount": 19,
       "representative": {
         "id": "smartthings_community_1462184",
         "source": "smartthings_community",
@@ -330,22 +330,22 @@
     },
     {
       "category": "Multi-brand Integration",
-      "totalFrequency": 55,
-      "recentCount": 33,
+      "totalFrequency": 56,
+      "recentCount": 34,
       "priorCount": 22,
-      "growth": 349.99999999999994,
-      "growthLabel": "+350%",
-      "last6moCount": 45,
+      "growth": 363.6363636363636,
+      "growthLabel": "+364%",
+      "last6moCount": 46,
       "prev6moCount": 10,
       "representative": {
-        "id": "play_en_c900cacc-cb2c-41c9-8d22-7b0f23385958",
+        "id": "play_en_a86b579f-7cc0-449b-8f49-2e0e8160ffe9",
         "source": "play",
-        "author": "Andrew Wagoner",
+        "author": "Timothy McDonough",
         "title": "",
-        "text": "this app won't stop popping up when my phone is asleep no matter what I do. I'm about to just uninstall it.",
+        "text": "I don't use this much as I use Google home as my smart home hub so really I can't give 5 stars but also can't give low score as that doesn't feel fair to SmartThings",
         "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
-        "date": "2026-08-21T21:29:15.402Z",
-        "rating": 1,
+        "date": "2026-08-23T19:19:34.908Z",
+        "rating": 4,
         "category": "Multi-brand Integration",
         "sentiment": "negative",
         "pain": true,
@@ -383,10 +383,10 @@
     {
       "category": "Automation & Routine",
       "totalFrequency": 39,
-      "recentCount": 23,
-      "priorCount": 16,
-      "growth": 331.25000000000006,
-      "growthLabel": "+331%",
+      "recentCount": 22,
+      "priorCount": 17,
+      "growth": 288.2352941176471,
+      "growthLabel": "+288%",
       "last6moCount": 31,
       "prev6moCount": 8,
       "representative": {
@@ -412,8 +412,8 @@
       "priorCount": 10,
       "growth": 409.99999999999994,
       "growthLabel": "+410%",
-      "last6moCount": 21,
-      "prev6moCount": 6,
+      "last6moCount": 20,
+      "prev6moCount": 7,
       "representative": {
         "id": "play_en_bd027075-3144-4126-8e64-067146111f7d",
         "source": "play",
@@ -596,8 +596,8 @@
       "priorCount": 10,
       "growth": 409.99999999999994,
       "growthLabel": "+410%",
-      "last6moCount": 21,
-      "prev6moCount": 6,
+      "last6moCount": 20,
+      "prev6moCount": 7,
       "representative": {
         "id": "play_en_bd027075-3144-4126-8e64-067146111f7d",
         "source": "play",
@@ -622,8 +622,8 @@
       "priorCount": 38,
       "growth": 728.9473684210526,
       "growthLabel": "+729%",
-      "last6moCount": 125,
-      "prev6moCount": 18,
+      "last6moCount": 124,
+      "prev6moCount": 19,
       "representative": {
         "id": "smartthings_community_1462184",
         "source": "smartthings_community",
@@ -643,10 +643,10 @@
     {
       "category": "Automation & Routine",
       "totalFrequency": 39,
-      "recentCount": 23,
-      "priorCount": 16,
-      "growth": 331.25000000000006,
-      "growthLabel": "+331%",
+      "recentCount": 22,
+      "priorCount": 17,
+      "growth": 288.2352941176471,
+      "growthLabel": "+288%",
       "last6moCount": 31,
       "prev6moCount": 8,
       "representative": {
@@ -693,22 +693,22 @@
     },
     {
       "category": "Multi-brand Integration",
-      "totalFrequency": 55,
-      "recentCount": 33,
+      "totalFrequency": 56,
+      "recentCount": 34,
       "priorCount": 22,
-      "growth": 349.99999999999994,
-      "growthLabel": "+350%",
-      "last6moCount": 45,
+      "growth": 363.6363636363636,
+      "growthLabel": "+364%",
+      "last6moCount": 46,
       "prev6moCount": 10,
       "representative": {
-        "id": "play_en_c900cacc-cb2c-41c9-8d22-7b0f23385958",
+        "id": "play_en_a86b579f-7cc0-449b-8f49-2e0e8160ffe9",
         "source": "play",
-        "author": "Andrew Wagoner",
+        "author": "Timothy McDonough",
         "title": "",
-        "text": "this app won't stop popping up when my phone is asleep no matter what I do. I'm about to just uninstall it.",
+        "text": "I don't use this much as I use Google home as my smart home hub so really I can't give 5 stars but also can't give low score as that doesn't feel fair to SmartThings",
         "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
-        "date": "2026-08-21T21:29:15.402Z",
-        "rating": 1,
+        "date": "2026-08-23T19:19:34.908Z",
+        "rating": 4,
         "category": "Multi-brand Integration",
         "sentiment": "negative",
         "pain": true,
@@ -880,8 +880,8 @@
       "priorCount": 38,
       "growth": 728.9473684210526,
       "growthLabel": "+729%",
-      "last6moCount": 125,
-      "prev6moCount": 18,
+      "last6moCount": 124,
+      "prev6moCount": 19,
       "representative": {
         "id": "smartthings_community_1462184",
         "source": "smartthings_community",
@@ -901,22 +901,22 @@
     },
     "second": {
       "category": "Multi-brand Integration",
-      "totalFrequency": 55,
-      "recentCount": 33,
+      "totalFrequency": 56,
+      "recentCount": 34,
       "priorCount": 22,
-      "growth": 349.99999999999994,
-      "growthLabel": "+350%",
-      "last6moCount": 45,
+      "growth": 363.6363636363636,
+      "growthLabel": "+364%",
+      "last6moCount": 46,
       "prev6moCount": 10,
       "representative": {
-        "id": "play_en_c900cacc-cb2c-41c9-8d22-7b0f23385958",
+        "id": "play_en_a86b579f-7cc0-449b-8f49-2e0e8160ffe9",
         "source": "play",
-        "author": "Andrew Wagoner",
+        "author": "Timothy McDonough",
         "title": "",
-        "text": "this app won't stop popping up when my phone is asleep no matter what I do. I'm about to just uninstall it.",
+        "text": "I don't use this much as I use Google home as my smart home hub so really I can't give 5 stars but also can't give low score as that doesn't feel fair to SmartThings",
         "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
-        "date": "2026-08-21T21:29:15.402Z",
-        "rating": 1,
+        "date": "2026-08-23T19:19:34.908Z",
+        "rating": 4,
         "category": "Multi-brand Integration",
         "sentiment": "negative",
         "pain": true,
@@ -927,7 +927,7 @@
       "rank": 2
     },
     "urgentShare": 41,
-    "urgentGapToSecond": 72,
+    "urgentGapToSecond": 71,
     "churnHits": [
       {
         "item": {
@@ -1002,6 +1002,23 @@
     "competitorHits": [
       {
         "item": {
+          "id": "play_en_a86b579f-7cc0-449b-8f49-2e0e8160ffe9",
+          "source": "play",
+          "author": "Timothy McDonough",
+          "title": "",
+          "text": "I don't use this much as I use Google home as my smart home hub so really I can't give 5 stars but also can't give low score as that doesn't feel fair to SmartThings",
+          "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+          "date": "2026-08-23T19:19:34.908Z",
+          "rating": 4,
+          "category": "Multi-brand Integration",
+          "sentiment": "negative",
+          "pain": true,
+          "occurrences": 1
+        },
+        "matched": "google home"
+      },
+      {
+        "item": {
           "id": "smartthings_community_1462093",
           "source": "smartthings_community",
           "author": "Jason_Silva",
@@ -1063,30 +1080,14 @@
           "occurrences": 1
         },
         "matched": "google home"
-      },
-      {
-        "item": {
-          "id": "smartthings_community_1461130",
-          "source": "smartthings_community",
-          "author": "Andreas_Roedl",
-          "title": "Meross ms605 matter sensor",
-          "text": "Meross ms605 matter sensor\n...here's a FAQ: https://www.meross.com/en-gc/mTerminal/smart-home-security/Smart-Presence-Sensor-Thread/212 At the end it's just as good or bad as any battery powered mmWave sensor. My Aqara FP300 started to act weird today while it was working quite well for the last week.",
-          "url": "https://community.smartthings.com/t/meross-ms605-matter-sensor/309123/13",
-          "date": "2026-07-30T00:40:33.975Z",
-          "category": "Multi-brand Integration",
-          "sentiment": "negative",
-          "pain": true,
-          "occurrences": 1
-        },
-        "matched": "aqara"
       }
     ],
     "mentionedCompetitors": [
+      "Google Home",
       "Aqara",
-      "Home Assistant",
-      "Google Home"
+      "Home Assistant"
     ],
-    "competitorTopCategory": "Connectivity & Reliability",
+    "competitorTopCategory": "Multi-brand Integration",
     "nextReleasePriority": [
       {
         "category": "Performance",
@@ -1170,13 +1171,13 @@
         "rank": 8
       }
     ],
-    "totalPainItems": 352
+    "totalPainItems": 353
   },
   "executiveSummary": [
-    "최근 12개월간 SmartThings 앱 관련 부정 VOC 352건을 분석한 결과, 가장 시급한 Pain Point는 \"Connectivity & Reliability\"이며 최근 3개월 발생 빈도가 105건(+729%)으로 나타났다.",
+    "최근 12개월간 SmartThings 앱 관련 부정 VOC 353건을 분석한 결과, 가장 시급한 Pain Point는 \"Connectivity & Reliability\"이며 최근 3개월 발생 빈도가 105건(+729%)으로 나타났다.",
     "\"Multi-brand Integration\" 역시 상위 Pain Point로, 사용자 경험 저하가 지속되고 있어 함께 우선 대응이 필요하다.",
     "일부 사용자는 대체 솔루션으로의 이탈 의사를 직접 언급(4건)하여 이탈 위험 신호가 관측된다.",
-    "Aqara, Home Assistant, Google Home 등 경쟁/대체 플랫폼 대비 열위가 언급된 VOC가 5건 확인되어 경쟁력 저하 신호로 관리가 필요하다.",
+    "Google Home, Aqara, Home Assistant 등 경쟁/대체 플랫폼 대비 열위가 언급된 VOC가 5건 확인되어 경쟁력 저하 신호로 관리가 필요하다.",
     "차기 릴리즈에서는 Performance, Security & Privacy, Notification & Alert 항목을 우선 검토 대상으로 제안한다."
   ]
 }
