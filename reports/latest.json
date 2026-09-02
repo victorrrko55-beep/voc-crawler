@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-09-01T01:20:59.419Z",
-  "windowStart": "2025-09-01T01:20:59.419Z",
-  "recentStart": "2026-06-01T01:20:59.419Z",
+  "generatedAt": "2026-09-02T00:23:05.002Z",
+  "windowStart": "2025-09-02T00:23:05.002Z",
+  "recentStart": "2026-06-02T00:23:05.002Z",
   "totalPainItems": 378,
-  "totalRawItems": 5586,
+  "totalRawItems": 5615,
   "top10": [
     {
       "category": "Connectivity & Reliability",
       "totalFrequency": 154,
-      "recentCount": 111,
-      "priorCount": 43,
-      "growth": 674.4186046511627,
-      "growthLabel": "+674%",
+      "recentCount": 109,
+      "priorCount": 45,
+      "growth": 626.6666666666667,
+      "growthLabel": "+627%",
       "last6moCount": 135,
       "prev6moCount": 19,
       "representative": {
@@ -304,10 +304,10 @@
     {
       "category": "Connectivity & Reliability",
       "totalFrequency": 154,
-      "recentCount": 111,
-      "priorCount": 43,
-      "growth": 674.4186046511627,
-      "growthLabel": "+674%",
+      "recentCount": 109,
+      "priorCount": 45,
+      "growth": 626.6666666666667,
+      "growthLabel": "+627%",
       "last6moCount": 135,
       "prev6moCount": 19,
       "representative": {
@@ -613,10 +613,10 @@
     {
       "category": "Connectivity & Reliability",
       "totalFrequency": 154,
-      "recentCount": 111,
-      "priorCount": 43,
-      "growth": 674.4186046511627,
-      "growthLabel": "+674%",
+      "recentCount": 109,
+      "priorCount": 45,
+      "growth": 626.6666666666667,
+      "growthLabel": "+627%",
       "last6moCount": 135,
       "prev6moCount": 19,
       "representative": {
@@ -870,10 +870,10 @@
     "mostUrgent": {
       "category": "Connectivity & Reliability",
       "totalFrequency": 154,
-      "recentCount": 111,
-      "priorCount": 43,
-      "growth": 674.4186046511627,
-      "growthLabel": "+674%",
+      "recentCount": 109,
+      "priorCount": 45,
+      "growth": 626.6666666666667,
+      "growthLabel": "+627%",
       "last6moCount": 135,
       "prev6moCount": 19,
       "representative": {
@@ -920,7 +920,7 @@
       "rank": 2
     },
     "urgentShare": 41,
-    "urgentGapToSecond": 74,
+    "urgentGapToSecond": 72,
     "churnHits": [
       {
         "item": {
@@ -1165,7 +1165,7 @@
     "totalPainItems": 378
   },
   "executiveSummary": [
-    "최근 12개월간 SmartThings 앱 관련 부정 VOC 378건을 분석한 결과, 가장 시급한 Pain Point는 \"Connectivity & Reliability\"이며 최근 3개월 발생 빈도가 111건(+674%)으로 나타났다.",
+    "최근 12개월간 SmartThings 앱 관련 부정 VOC 378건을 분석한 결과, 가장 시급한 Pain Point는 \"Connectivity & Reliability\"이며 최근 3개월 발생 빈도가 109건(+627%)으로 나타났다.",
     "\"Multi-brand Integration\" 역시 상위 Pain Point로, 사용자 경험 저하가 지속되고 있어 함께 우선 대응이 필요하다.",
     "일부 사용자는 대체 솔루션으로의 이탈 의사를 직접 언급(4건)하여 이탈 위험 신호가 관측된다.",
     "Aqara, Google Home 등 경쟁/대체 플랫폼 대비 열위가 언급된 VOC가 5건 확인되어 경쟁력 저하 신호로 관리가 필요하다.",
