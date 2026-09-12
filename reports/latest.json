@@ -1,27 +1,27 @@
 {
-  "generatedAt": "2026-09-11T00:19:45.686Z",
-  "windowStart": "2025-09-11T00:19:45.686Z",
-  "recentStart": "2026-06-11T00:19:45.686Z",
-  "totalPainItems": 415,
-  "totalRawItems": 6153,
+  "generatedAt": "2026-09-12T00:26:33.580Z",
+  "windowStart": "2025-09-12T00:26:33.580Z",
+  "recentStart": "2026-06-12T00:26:33.580Z",
+  "totalPainItems": 420,
+  "totalRawItems": 6215,
   "top10": [
     {
       "category": "Connectivity & Reliability",
-      "totalFrequency": 169,
-      "recentCount": 120,
-      "priorCount": 49,
-      "growth": 634.6938775510205,
-      "growthLabel": "+635%",
-      "last6moCount": 148,
+      "totalFrequency": 174,
+      "recentCount": 124,
+      "priorCount": 50,
+      "growth": 644,
+      "growthLabel": "+644%",
+      "last6moCount": 153,
       "prev6moCount": 21,
       "representative": {
-        "id": "smartthings_community_1463167",
+        "id": "smartthings_community_1463169",
         "source": "smartthings_community",
         "author": "Sean_Williams",
         "title": "Hub Firmware and Edge Driver Release Notes - 0.62.7",
-        "text": "Hub Firmware and Edge Driver Release Notes - 0.62.7\nIs anyone having issues with Virtual Switches (created through the Smartthings Labs) going offline and not coming back online? This only happened last night/today after the firmware update. I registered them on the hub when I initially created them.",
-        "url": "https://community.smartthings.com/t/hub-firmware-and-edge-driver-release-notes-0-62-7/310908/27",
-        "date": "2026-09-10T23:09:14.661Z",
+        "text": "Hub Firmware and Edge Driver Release Notes - 0.62.7\nI can recreate or add new virtual switches in 62.07, the existing ones I had before the upgrade are now offline and won't come back online. Is that the same scenario you tested?",
+        "url": "https://community.smartthings.com/t/hub-firmware-and-edge-driver-release-notes-0-62-7/310908/29",
+        "date": "2026-09-11T00:54:18.255Z",
         "category": "Connectivity & Reliability",
         "sentiment": "negative",
         "pain": true,
@@ -34,10 +34,10 @@
     {
       "category": "Multi-brand Integration",
       "totalFrequency": 67,
-      "recentCount": 41,
-      "priorCount": 26,
-      "growth": 373.07692307692304,
-      "growthLabel": "+373%",
+      "recentCount": 40,
+      "priorCount": 27,
+      "growth": 344.44444444444446,
+      "growthLabel": "+344%",
       "last6moCount": 55,
       "prev6moCount": 12,
       "representative": {
@@ -167,10 +167,10 @@
     {
       "category": "Security & Privacy",
       "totalFrequency": 16,
-      "recentCount": 13,
-      "priorCount": 3,
-      "growth": 1200,
-      "growthLabel": "+1200%",
+      "recentCount": 12,
+      "priorCount": 4,
+      "growth": 800,
+      "growthLabel": "+800%",
       "last6moCount": 15,
       "prev6moCount": 1,
       "representative": {
@@ -304,21 +304,21 @@
   "rising": [
     {
       "category": "Connectivity & Reliability",
-      "totalFrequency": 169,
-      "recentCount": 120,
-      "priorCount": 49,
-      "growth": 634.6938775510205,
-      "growthLabel": "+635%",
-      "last6moCount": 148,
+      "totalFrequency": 174,
+      "recentCount": 124,
+      "priorCount": 50,
+      "growth": 644,
+      "growthLabel": "+644%",
+      "last6moCount": 153,
       "prev6moCount": 21,
       "representative": {
-        "id": "smartthings_community_1463167",
+        "id": "smartthings_community_1463169",
         "source": "smartthings_community",
         "author": "Sean_Williams",
         "title": "Hub Firmware and Edge Driver Release Notes - 0.62.7",
-        "text": "Hub Firmware and Edge Driver Release Notes - 0.62.7\nIs anyone having issues with Virtual Switches (created through the Smartthings Labs) going offline and not coming back online? This only happened last night/today after the firmware update. I registered them on the hub when I initially created them.",
-        "url": "https://community.smartthings.com/t/hub-firmware-and-edge-driver-release-notes-0-62-7/310908/27",
-        "date": "2026-09-10T23:09:14.661Z",
+        "text": "Hub Firmware and Edge Driver Release Notes - 0.62.7\nI can recreate or add new virtual switches in 62.07, the existing ones I had before the upgrade are now offline and won't come back online. Is that the same scenario you tested?",
+        "url": "https://community.smartthings.com/t/hub-firmware-and-edge-driver-release-notes-0-62-7/310908/29",
+        "date": "2026-09-11T00:54:18.255Z",
         "category": "Connectivity & Reliability",
         "sentiment": "negative",
         "pain": true,
@@ -330,10 +330,10 @@
     {
       "category": "Multi-brand Integration",
       "totalFrequency": 67,
-      "recentCount": 41,
-      "priorCount": 26,
-      "growth": 373.07692307692304,
-      "growthLabel": "+373%",
+      "recentCount": 40,
+      "priorCount": 27,
+      "growth": 344.44444444444446,
+      "growthLabel": "+344%",
       "last6moCount": 55,
       "prev6moCount": 12,
       "representative": {
@@ -432,10 +432,10 @@
     {
       "category": "Security & Privacy",
       "totalFrequency": 16,
-      "recentCount": 13,
-      "priorCount": 3,
-      "growth": 1200,
-      "growthLabel": "+1200%",
+      "recentCount": 12,
+      "priorCount": 4,
+      "growth": 800,
+      "growthLabel": "+800%",
       "last6moCount": 15,
       "prev6moCount": 1,
       "representative": {
@@ -615,21 +615,21 @@
     },
     {
       "category": "Connectivity & Reliability",
-      "totalFrequency": 169,
-      "recentCount": 120,
-      "priorCount": 49,
-      "growth": 634.6938775510205,
-      "growthLabel": "+635%",
-      "last6moCount": 148,
+      "totalFrequency": 174,
+      "recentCount": 124,
+      "priorCount": 50,
+      "growth": 644,
+      "growthLabel": "+644%",
+      "last6moCount": 153,
       "prev6moCount": 21,
       "representative": {
-        "id": "smartthings_community_1463167",
+        "id": "smartthings_community_1463169",
         "source": "smartthings_community",
         "author": "Sean_Williams",
         "title": "Hub Firmware and Edge Driver Release Notes - 0.62.7",
-        "text": "Hub Firmware and Edge Driver Release Notes - 0.62.7\nIs anyone having issues with Virtual Switches (created through the Smartthings Labs) going offline and not coming back online? This only happened last night/today after the firmware update. I registered them on the hub when I initially created them.",
-        "url": "https://community.smartthings.com/t/hub-firmware-and-edge-driver-release-notes-0-62-7/310908/27",
-        "date": "2026-09-10T23:09:14.661Z",
+        "text": "Hub Firmware and Edge Driver Release Notes - 0.62.7\nI can recreate or add new virtual switches in 62.07, the existing ones I had before the upgrade are now offline and won't come back online. Is that the same scenario you tested?",
+        "url": "https://community.smartthings.com/t/hub-firmware-and-edge-driver-release-notes-0-62-7/310908/29",
+        "date": "2026-09-11T00:54:18.255Z",
         "category": "Connectivity & Reliability",
         "sentiment": "negative",
         "pain": true,
@@ -692,10 +692,10 @@
     {
       "category": "Multi-brand Integration",
       "totalFrequency": 67,
-      "recentCount": 41,
-      "priorCount": 26,
-      "growth": 373.07692307692304,
-      "growthLabel": "+373%",
+      "recentCount": 40,
+      "priorCount": 27,
+      "growth": 344.44444444444446,
+      "growthLabel": "+344%",
       "last6moCount": 55,
       "prev6moCount": 12,
       "representative": {
@@ -794,10 +794,10 @@
     {
       "category": "Security & Privacy",
       "totalFrequency": 16,
-      "recentCount": 13,
-      "priorCount": 3,
-      "growth": 1200,
-      "growthLabel": "+1200%",
+      "recentCount": 12,
+      "priorCount": 4,
+      "growth": 800,
+      "growthLabel": "+800%",
       "last6moCount": 15,
       "prev6moCount": 1,
       "representative": {
@@ -872,21 +872,21 @@
   "insights": {
     "mostUrgent": {
       "category": "Connectivity & Reliability",
-      "totalFrequency": 169,
-      "recentCount": 120,
-      "priorCount": 49,
-      "growth": 634.6938775510205,
-      "growthLabel": "+635%",
-      "last6moCount": 148,
+      "totalFrequency": 174,
+      "recentCount": 124,
+      "priorCount": 50,
+      "growth": 644,
+      "growthLabel": "+644%",
+      "last6moCount": 153,
       "prev6moCount": 21,
       "representative": {
-        "id": "smartthings_community_1463167",
+        "id": "smartthings_community_1463169",
         "source": "smartthings_community",
         "author": "Sean_Williams",
         "title": "Hub Firmware and Edge Driver Release Notes - 0.62.7",
-        "text": "Hub Firmware and Edge Driver Release Notes - 0.62.7\nIs anyone having issues with Virtual Switches (created through the Smartthings Labs) going offline and not coming back online? This only happened last night/today after the firmware update. I registered them on the hub when I initially created them.",
-        "url": "https://community.smartthings.com/t/hub-firmware-and-edge-driver-release-notes-0-62-7/310908/27",
-        "date": "2026-09-10T23:09:14.661Z",
+        "text": "Hub Firmware and Edge Driver Release Notes - 0.62.7\nI can recreate or add new virtual switches in 62.07, the existing ones I had before the upgrade are now offline and won't come back online. Is that the same scenario you tested?",
+        "url": "https://community.smartthings.com/t/hub-firmware-and-edge-driver-release-notes-0-62-7/310908/29",
+        "date": "2026-09-11T00:54:18.255Z",
         "category": "Connectivity & Reliability",
         "sentiment": "negative",
         "pain": true,
@@ -899,10 +899,10 @@
     "second": {
       "category": "Multi-brand Integration",
       "totalFrequency": 67,
-      "recentCount": 41,
-      "priorCount": 26,
-      "growth": 373.07692307692304,
-      "growthLabel": "+373%",
+      "recentCount": 40,
+      "priorCount": 27,
+      "growth": 344.44444444444446,
+      "growthLabel": "+344%",
       "last6moCount": 55,
       "prev6moCount": 12,
       "representative": {
@@ -923,8 +923,25 @@
       "rank": 2
     },
     "urgentShare": 41,
-    "urgentGapToSecond": 79,
+    "urgentGapToSecond": 84,
     "churnHits": [
+      {
+        "item": {
+          "id": "appstore_us_14534833937",
+          "source": "appstore",
+          "author": "Naval3654",
+          "title": "Horrible connection",
+          "text": "Horrible connection\nEvery time I click the app to try to turn on my tv it always says my tv is offline meanwhile I’m never disconnected from WiFi I’ve ran multiple diagnostics and uninstalled and reinstalled the app but it continues to do the same thing my tv is updated so is the app and I’m just very disappointed and frustrated with this app. It has no problem connecting to my washer but HORRIBLE FOR THE TV!",
+          "url": "https://apps.apple.com/us/app/id1222822904",
+          "date": "2026-09-10T22:42:20.000Z",
+          "rating": 1,
+          "category": "Connectivity & Reliability",
+          "sentiment": "negative",
+          "pain": true,
+          "occurrences": 1
+        },
+        "matched": "uninstall"
+      },
       {
         "item": {
           "id": "play_en_c900cacc-cb2c-41c9-8d22-7b0f23385958",
@@ -994,7 +1011,7 @@
         "matched": "uninstall"
       }
     ],
-    "churnTopCategory": "Multi-brand Integration",
+    "churnTopCategory": "Connectivity & Reliability",
     "competitorHits": [
       {
         "item": {
@@ -1113,33 +1130,6 @@
         "rank": 3
       },
       {
-        "category": "Security & Privacy",
-        "totalFrequency": 16,
-        "recentCount": 13,
-        "priorCount": 3,
-        "growth": 1200,
-        "growthLabel": "+1200%",
-        "last6moCount": 15,
-        "prev6moCount": 1,
-        "representative": {
-          "id": "play_en_4f1cdf76-2562-4f17-b868-75b7536f87c7",
-          "source": "play",
-          "author": "Wes Weeks",
-          "title": "",
-          "text": "**Frame TV Owners** SmartThings can't see Gallery albums. Trying to add photos to my Frame TV dumps my entire camera roll into one flat, uncategorized grid for thousands of images, no folders, no sorting. I built a dedicated album, moved (not copied) the files, granted full permissions, then tried limited access. Nothing changed. Album support is basic functionality, and users have reported this for years",
-          "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
-          "date": "2026-09-06T16:22:09.376Z",
-          "rating": 1,
-          "category": "Security & Privacy",
-          "sentiment": "negative",
-          "pain": true,
-          "occurrences": 1
-        },
-        "rootCause": "권한 요청 시점과 사유 설명이 불충분해 사용자가 과도한 권한 요구로 인식, 보안 관련 정책 변경 공지가 앱 내에서 충분히 전달되지 않음.",
-        "improvementIdea": "권한별 사용 목적을 요청 시점에 명확히 안내(contextual permission), 보안/개인정보 설정을 별도 대시보드로 통합해 접근성 향상, 정기 보안 감사 결과 공개.",
-        "rank": 7
-      },
-      {
         "category": "Notification & Alert",
         "totalFrequency": 3,
         "recentCount": 3,
@@ -1165,15 +1155,41 @@
         "rootCause": "푸시 알림 파이프라인(클라우드→FCM/APNs)의 지연, 사용자별 알림 설정과 기기 이벤트 트리거 간 매핑 오류로 알림 누락/중복 발생.",
         "improvementIdea": "중요 알림(보안·누수·화재 등)에 대한 우선순위 큐 분리, 알림 전달 성공률 모니터링 대시보드 구축, 사용자가 알림 지연을 직접 진단할 수 있는 테스트 알림 기능 제공.",
         "rank": 8
+      },
+      {
+        "category": "AI / Voice",
+        "totalFrequency": 3,
+        "recentCount": 3,
+        "priorCount": 0,
+        "growth": null,
+        "growthLabel": "신규",
+        "last6moCount": 3,
+        "prev6moCount": 0,
+        "representative": {
+          "id": "other_forum_home_assistant_3874915",
+          "source": "other_forum_home_assistant",
+          "author": "NathanCu",
+          "title": "Friday's Party: Creating a Private, Agentic AI using Voice Assistant tools",
+          "text": "Friday's Party: Creating a Private, Agentic AI using Voice Assistant tools\n...d resolving to a single state. (Badly I may add, no you can't have the code it's real bad- like there's a reason I never published it.) When I was on SmartThings I used a program called RoomManager from a contributor named bangali who I think MAY be on this forum too - I don't want to incorrectly tag someone....",
+          "url": "https://community.home-assistant.io/t/fridays-party-creating-a-private-agentic-ai-using-voice-assistant-tools/855862/671",
+          "date": "2026-08-06T15:28:03.293Z",
+          "category": "AI / Voice",
+          "sentiment": "negative",
+          "pain": true,
+          "occurrences": 1
+        },
+        "rootCause": "AI/음성 기능이 특정 지역·기기에서만 제공되어 기대와 실제 지원 범위 간 괴리가 크고, Bixby 등 음성 인식 정확도가 낮아 명령 실패가 반복됨.",
+        "improvementIdea": "AI/음성 기능의 지원 범위를 앱 내에서 명확히 안내, 음성 명령 실패 시 대체 텍스트 명령 제공, 사용자 피드백 기반 인식률 개선 루프 구축.",
+        "rank": 9
       }
     ],
-    "totalPainItems": 415
+    "totalPainItems": 420
   },
   "executiveSummary": [
-    "최근 12개월간 SmartThings 앱 관련 부정 VOC 415건을 분석한 결과, 가장 시급한 Pain Point는 \"Connectivity & Reliability\"이며 최근 3개월 발생 빈도가 120건(+635%)으로 나타났다.",
+    "최근 12개월간 SmartThings 앱 관련 부정 VOC 420건을 분석한 결과, 가장 시급한 Pain Point는 \"Connectivity & Reliability\"이며 최근 3개월 발생 빈도가 124건(+644%)으로 나타났다.",
     "\"Multi-brand Integration\" 역시 상위 Pain Point로, 사용자 경험 저하가 지속되고 있어 함께 우선 대응이 필요하다.",
-    "일부 사용자는 대체 솔루션으로의 이탈 의사를 직접 언급(4건)하여 이탈 위험 신호가 관측된다.",
+    "일부 사용자는 대체 솔루션으로의 이탈 의사를 직접 언급(5건)하여 이탈 위험 신호가 관측된다.",
     "Aqara, Hubitat, Google Home 등 경쟁/대체 플랫폼 대비 열위가 언급된 VOC가 5건 확인되어 경쟁력 저하 신호로 관리가 필요하다.",
-    "차기 릴리즈에서는 Performance, Security & Privacy, Notification & Alert 항목을 우선 검토 대상으로 제안한다."
+    "차기 릴리즈에서는 Performance, Notification & Alert, AI / Voice 항목을 우선 검토 대상으로 제안한다."
   ]
 }
