@@ -1,5 +1,511 @@
 [
   {
+    "id": "smartthings_community_1463774",
+    "source": "smartthings_community",
+    "author": "Abdulaziz_Shabi",
+    "title": "IKEA Fixes BILRESA Battery Life with Quiet Hardware Revisions",
+    "text": "IKEA Fixes BILRESA Battery Life with Quiet Hardware Revisions\nI had a same issue with my switchbot motion sensor doesn't work woth ikea rechargeable batteries but I found it works with one rechargeable and one non-chargeable working so fine .. try this hack.",
+    "url": "https://community.smartthings.com/t/ikea-fixes-bilresa-battery-life-with-quiet-hardware-revisions/310816/16",
+    "date": "2026-09-23T22:41:27.340Z",
+    "category": "Uncategorized",
+    "sentiment": "negative",
+    "pain": true,
+    "occurrences": 1
+  },
+  {
+    "id": "smartthings_community_1463772",
+    "source": "smartthings_community",
+    "author": "Andreas_Roedl",
+    "title": "Best battery-powered mmWave Presence Sensor Outdoor Usage",
+    "text": "Best battery-powered mmWave Presence Sensor Outdoor Usage\nSeanTek: However, can I turn the FP300 into Zigbee mode, without an Aqara hub? All you need is the Aqara Home app. Connect to it via Bluetooth and it'll ask you if you want to switch the protocol. Here's the driver: https://community.smartthings.com/t/st-edge-aqara-fp300-zigbee/306507",
+    "url": "https://community.smartthings.com/t/best-battery-powered-mmwave-presence-sensor-outdoor-usage/310606/9",
+    "date": "2026-09-23T20:42:17.908Z",
+    "category": "Connectivity & Reliability",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "smartthings_community_1463769",
+    "source": "smartthings_community",
+    "author": "SeanTek",
+    "title": "Best battery-powered mmWave Presence Sensor Outdoor Usage",
+    "text": "Best battery-powered mmWave Presence Sensor Outdoor Usage\nWanted to update this thread. THIRDREALITY Presence Sensor R2 has been working more-or-less fine over the last month (5 weeks) in the outdoor environment. Aqara FP300 running as Matter over Thread has not been satisfactory. Sometimes it activates (detects presence) when apparently nobody is there...",
+    "url": "https://community.smartthings.com/t/best-battery-powered-mmwave-presence-sensor-outdoor-usage/310606/8",
+    "date": "2026-09-23T20:32:49.446Z",
+    "category": "Multi-brand Integration",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "smartthings_community_1463760",
+    "source": "smartthings_community",
+    "author": "kultiras",
+    "title": "Title: Samsung TV tvChannelName stopped reporting the currently running app",
+    "text": "Title: Samsung TV tvChannelName stopped reporting the currently running app\nHello, I have a Samsung QE75Q60CAUXXH (2023) TV connected to SmartThings and use Home Assistant system. Until at least August 2026 , the tvChannelName value reliably changed according to the application currently running on the TV. YouTube, Netflix and other applications returned their individual...",
+    "url": "https://community.smartthings.com/t/title-samsung-tv-tvchannelname-stopped-reporting-the-currently-running-app/311123/1",
+    "date": "2026-09-23T15:44:53.766Z",
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "smartthings_community_1463755",
+    "source": "smartthings_community",
+    "author": "jwsg",
+    "title": "Hub Firmware and Edge Driver Release Notes - 0.62.7",
+    "text": "Hub Firmware and Edge Driver Release Notes - 0.62.7\nOn Android the app had an update today but still shows as 1.8.47.24 After the app is updated Routines based on using the phone for location/presence stop triggering - which also happens if the phone is restarted. The fix whenever this happens is to disable and re-enable the Get Location From opti...",
+    "url": "https://community.smartthings.com/t/hub-firmware-and-edge-driver-release-notes-0-62-7/310908/102",
+    "date": "2026-09-23T13:11:06.345Z",
+    "category": "Automation & Routine",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "smartthings_community_1463736",
+    "source": "smartthings_community",
+    "author": "h0ckeysk8er",
+    "title": "[ST Edge] Z-Wave Lock BP Beta — Schlage BE468 / BE469",
+    "text": "[ST Edge] Z-Wave Lock BP Beta — Schlage BE468 / BE469\nZ-Wave Lock BP Beta — v2026-09-23T00:38:23.348694086 ( Update ) Added visible refresh progress for Schlage settings and optional lock-code retrieval during driver loading and pull-down refresh. ( Improvement ) Improved lock-code refresh handling for locks with inconsistent code-slot counts. ( Fix...",
+    "url": "https://community.smartthings.com/t/st-edge-z-wave-lock-bp-beta-schlage-be468-be469/311019/39",
+    "date": "2026-09-23T00:27:03.565Z",
+    "category": "Connectivity & Reliability",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "appstore_us_14202420904",
+    "source": "appstore",
+    "author": "LawCockyDawg",
+    "title": ".",
+    "text": ".\n.",
+    "url": "https://apps.apple.com/us/app/id1222822904",
+    "date": "2026-09-23T00:05:44.371Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 53
+  },
+  {
+    "id": "play_en_c6454881-c88e-4fee-84c6-040e5d958f02",
+    "source": "play",
+    "author": "Zeeshan Zeni",
+    "title": "",
+    "text": "gud",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T22:25:35.650Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 4
+  },
+  {
+    "id": "play_en_ddaf31c1-3427-4e41-b1d3-b8348a9279d7",
+    "source": "play",
+    "author": "Torsaa Gberihwa",
+    "title": "",
+    "text": "everything is brighter when it's smart ✨️",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T22:23:47.458Z",
+    "rating": 4,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_34aa40af-4c1a-4f3f-9de2-8d9c89acf107",
+    "source": "play",
+    "author": "Arthur “BigAl” Randolph",
+    "title": "",
+    "text": "First time really fooling with it,so I can't say right now.",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T22:14:23.733Z",
+    "rating": 3,
+    "category": "Uncategorized",
+    "sentiment": "negative",
+    "pain": true,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_deaddb79-4a09-48ae-b926-8227ba29db58",
+    "source": "play",
+    "author": "D W",
+    "title": "",
+    "text": "not connecting to tv",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T22:04:16.878Z",
+    "rating": 1,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "smartthings_community_1463721",
+    "source": "smartthings_community",
+    "author": "Cupraben",
+    "title": "Hue lights showing as offline but still work",
+    "text": "Hue lights showing as offline but still work\nIt's showing as linked as in, if you go into the Hue Bridge / hub tile within Smart things, the 'Hub Link' status still shows linked, and I'd tried relinking from there and pressing the button on the hue hub. Hue isn't linked at the cloud service level :slight_smile:",
+    "url": "https://community.smartthings.com/t/hue-lights-showing-as-offline-but-still-work/307627/9",
+    "date": "2026-09-22T21:37:34.305Z",
+    "category": "Connectivity & Reliability",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_dca58e62-8f87-4f0a-9d52-238298b1b52f",
+    "source": "play",
+    "author": "n c",
+    "title": "",
+    "text": "why is there a million apps to be able to do anything. calling it smart things when its the dumbest task ive ever owned in my life is funny tho, I won't be purchasing any products from the Samsung company anytime soon if I can help it.",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T21:33:42.701Z",
+    "rating": 1,
+    "category": "Uncategorized",
+    "sentiment": "negative",
+    "pain": true,
+    "occurrences": 1
+  },
+  {
+    "id": "smartthings_community_1463702",
+    "source": "smartthings_community",
+    "author": "TheEfrit",
+    "title": "Beta - 62.X Hub Firmware and Edge Driver Release Notes",
+    "text": "Beta - 62.X Hub Firmware and Edge Driver Release Notes\nDid you just released on the beta channel a 62.10 firmware upgrade? My Aeotec Hub 2 (v4) is showing it's on 62.10 and there is no posts no information nothing about such update… It would be a really nice detail to at least include a new bullet point on the releases list with the new 62.10, at lea...",
+    "url": "https://community.smartthings.com/t/beta-62-x-hub-firmware-and-edge-driver-release-notes/310336/14",
+    "date": "2026-09-22T21:14:06.713Z",
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_2a9876e5-1b8d-43bb-8587-8beb56c92cfc",
+    "source": "play",
+    "author": "Ayush Ishu",
+    "title": "",
+    "text": "very good",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T21:11:26.809Z",
+    "rating": 3,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 21
+  },
+  {
+    "id": "play_en_ddd252d8-cc5c-4545-850b-7dcfdd73bb0c",
+    "source": "play",
+    "author": "saba ansari",
+    "title": "",
+    "text": "helpful",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T21:08:29.305Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 2
+  },
+  {
+    "id": "play_en_de56e86f-484c-4755-af04-f235ac384fa6",
+    "source": "play",
+    "author": "Rakesh Keshari",
+    "title": "",
+    "text": "thank",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T20:27:12.721Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 4
+  },
+  {
+    "id": "play_en_ce413bb8-9417-4886-a158-e852fb3515b5",
+    "source": "play",
+    "author": "Canter1Ter",
+    "title": "",
+    "text": "dogshit app for dogshit devices I'm not gonna lie. \"something went wrong\" simulator",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T20:09:39.312Z",
+    "rating": 1,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_b467f9a1-1878-4a7c-a3f9-12969195d538",
+    "source": "play",
+    "author": "Senobia Blaauw",
+    "title": "",
+    "text": "nice",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T20:00:08.891Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 51
+  },
+  {
+    "id": "play_en_feffb58d-83cf-4c17-bb38-852415a989f3",
+    "source": "play",
+    "author": "Tahiem Steir",
+    "title": "",
+    "text": "great app, love ittttt",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T19:43:32.420Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "positive",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "smartthings_community_1463681",
+    "source": "smartthings_community",
+    "author": "Michal_Zbielski",
+    "title": "Edge Shelly drivers for Gen1 and Gen2 Devices",
+    "text": "Edge Shelly drivers for Gen1 and Gen2 Devices\nHi TAustin, @TAustin I'm using a Shelly 2PM Gen3 in Cover mode with SmartThings. I installed your Shelly Gen2/3 Device Driver V1.8 , but my 2PM Gen3 is not detected/supported correctly. I also tried creating a device with 2.5 Roller Mode . It was able to send a close command to the blind, but the...",
+    "url": "https://community.smartthings.com/t/edge-shelly-drivers-for-gen1-and-gen2-devices/237544/1034",
+    "date": "2026-09-22T19:29:07.798Z",
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "smartthings_community_1463679",
+    "source": "smartthings_community",
+    "author": "BobLin",
+    "title": "[ST Edge] LinknLink eMotion Air - SmartThings driver for the battery-powered Zigbee mmWave presence sensor",
+    "text": "[ST Edge] LinknLink eMotion Air - SmartThings driver for the battery-powered Zigbee mmWave presence sensor\nThank you so much for the drivers and R &amp; D files, as well as Andrew Palmer's testing. You guys are absolutely amazing! Using \"Air\" has opened up so many possibilities for me—it's fantastic.",
+    "url": "https://community.smartthings.com/t/st-edge-linknlink-emotion-air-smartthings-driver-for-the-battery-powered-zigbee-mmwave-presence-sensor/310768/22",
+    "date": "2026-09-22T19:26:48.975Z",
+    "category": "Connectivity & Reliability",
+    "sentiment": "positive",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_d7b231d9-8787-4596-a6b1-3ae531cfd56f",
+    "source": "play",
+    "author": "jharkhan khan",
+    "title": "",
+    "text": "Nice aap",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T19:24:58.125Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 2
+  },
+  {
+    "id": "play_en_189f3bd1-f4de-4b72-ad71-848398f73674",
+    "source": "play",
+    "author": "Anzil",
+    "title": "",
+    "text": "not working and not useful",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T19:21:00.439Z",
+    "rating": 1,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_03e7cdf3-08e6-44a0-85c3-1dc0b187a095",
+    "source": "play",
+    "author": "Ahmed Morad",
+    "title": "",
+    "text": "excellent",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T19:15:28.864Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "positive",
+    "pain": false,
+    "occurrences": 19
+  },
+  {
+    "id": "appstore_gb_14581132779",
+    "source": "appstore",
+    "author": "RapidOwl",
+    "title": "My washer now shuts off in smart mode",
+    "text": "My washer now shuts off in smart mode\nI dunno what you folks did to a perfectly good remote control app, but whatever it does now forces the washer to shut off the minute the cycle finishes. So I can no longer put it on for an extra spin.",
+    "url": "https://apps.apple.com/gb/app/id1222822904",
+    "date": "2026-09-22T18:53:12.000Z",
+    "rating": 1,
+    "category": "Uncategorized",
+    "sentiment": "positive",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_1d246afe-aeef-45b1-8cb2-033df80af508",
+    "source": "play",
+    "author": "marcus henderson",
+    "title": "",
+    "text": "omg this my 1st smartphone this app is freaking awesome 👌 👏",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T18:49:36.171Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "positive",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_305ce61c-36c8-4831-807d-3ee194bb4166",
+    "source": "play",
+    "author": "Afandii Abdii",
+    "title": "",
+    "text": "afandi abdii",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T18:40:41.475Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_fada2125-66f7-4eb4-a3c4-8fd49a27b1d0",
+    "source": "play",
+    "author": "Srikant Sharma",
+    "title": "",
+    "text": "complex",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T17:42:22.279Z",
+    "rating": 1,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_b098ceff-5eb5-40c7-b226-a58c353b38af",
+    "source": "play",
+    "author": "Alan “Twiggy”",
+    "title": "",
+    "text": "great",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T17:40:26.578Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "positive",
+    "pain": false,
+    "occurrences": 24
+  },
+  {
+    "id": "smartthings_community_1463671",
+    "source": "smartthings_community",
+    "author": "swhitney60",
+    "title": "IKEA timmerflotte and klippbok dropping offline from firmware 61",
+    "text": "IKEA timmerflotte and klippbok dropping offline from firmware 61\nAll of my matter devices, including plug in smartplugs have been going offline every couple days since the firmware update. The only way for me to get them back online is to reboot my smartthings hub. For my implementation, the latest firmware have made things worse.",
+    "url": "https://community.smartthings.com/t/ikea-timmerflotte-and-klippbok-dropping-offline-from-firmware-61/310396/28",
+    "date": "2026-09-22T17:06:16.581Z",
+    "category": "Connectivity & Reliability",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "appstore_kr_14580807173",
+    "source": "appstore",
+    "author": "하읕랴",
+    "title": "날이 갈수록 불안정해짐",
+    "text": "날이 갈수록 불안정해짐\n느리기만 하고 쓰잘데기 없는 3D 지도보다 바로바로 뜨는 2D 평면도를 주세요.\n위젯에서 실시간 업데이트된 내용이 보였으면 좋았겠어요.",
+    "url": "https://apps.apple.com/kr/app/id1222822904",
+    "date": "2026-09-22T17:05:44.000Z",
+    "rating": 1,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_e37867a0-87bf-4f66-8d13-d8f0e927e3d2",
+    "source": "play",
+    "author": "Mohamed Faizal",
+    "title": "",
+    "text": "good",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T16:54:03.747Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 196
+  },
+  {
+    "id": "smartthings_community_1463670",
+    "source": "smartthings_community",
+    "author": "Mariano_Colmenarejo",
+    "title": "Hub Firmware and Edge Driver Release Notes - 0.62.7",
+    "text": "Hub Firmware and Edge Driver Release Notes - 0.62.7\nHi, The 10 devices I re-paired yesterday morning were still online, so I decided to re-pair the 23 that were still offline. Fortunately, Moes IR devices don't lose their saved codes when you reset them to pairing mode, which saved me a lot of time. An hour later, I noticed that two TS0201 tempera...",
+    "url": "https://community.smartthings.com/t/hub-firmware-and-edge-driver-release-notes-0-62-7/310908/92",
+    "date": "2026-09-22T16:46:36.779Z",
+    "category": "Device Onboarding",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_57de8637-1338-4f4e-a810-6ab18fa9e836",
+    "source": "play",
+    "author": "deiva sikamani",
+    "title": "",
+    "text": "not friendly to use",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T16:08:53.940Z",
+    "rating": 1,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_a2d6c2c0-d726-4dad-908f-9cddc7d17c00",
+    "source": "play",
+    "author": "Ajay Nigil",
+    "title": "",
+    "text": "awesome",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T15:55:12.739Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "positive",
+    "pain": false,
+    "occurrences": 11
+  },
+  {
+    "id": "play_en_4246126b-a3b2-4ca7-8a85-aa2fcf705bf0",
+    "source": "play",
+    "author": "Vinod Kumar",
+    "title": "",
+    "text": "I don't know why but I can't sign in in this app pls fix this",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T15:23:33.622Z",
+    "rating": 1,
+    "category": "Uncategorized",
+    "sentiment": "negative",
+    "pain": true,
+    "occurrences": 1
+  },
+  {
     "id": "other_forum_home_assistant_3902306",
     "source": "other_forum_home_assistant",
     "author": "Michael_Grossman",
@@ -10,6 +516,62 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_6dbeacb6-4676-4ed1-b700-6ab07680481f",
+    "source": "play",
+    "author": "NAFISATU MODIBBO",
+    "title": "",
+    "text": "smart things are smart",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T13:56:09.986Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_f0bca362-f4e0-4db4-bbee-8b614aeb493a",
+    "source": "play",
+    "author": "Sachin Bhatia",
+    "title": "",
+    "text": "I really liked this app. I can control everything through my phone, with just one touch and a couple of settings it makes everyday needs so much easy.",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T13:54:57.313Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_2cea27c7-6d29-4c37-be2e-6e816e12cc4b",
+    "source": "play",
+    "author": "Kota Schooley",
+    "title": "",
+    "text": "This app sucks",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T13:53:27.529Z",
+    "rating": 1,
+    "category": "Uncategorized",
+    "sentiment": "negative",
+    "pain": true,
+    "occurrences": 2
+  },
+  {
+    "id": "play_en_5f8fb78d-55af-4274-bde5-1d590ac46599",
+    "source": "play",
+    "author": "Ben",
+    "title": "",
+    "text": "l used to be able to control heat and AC through my cellphone. Now nothing. the interface is confusing. l can't figure out what l am supposed to do, which apparently is the typical experience. this is a disaster.",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T13:22:06.547Z",
+    "rating": 1,
+    "category": "UX/UI",
+    "sentiment": "negative",
+    "pain": true,
     "occurrences": 1
   },
   {
@@ -26,6 +588,242 @@
     "occurrences": 1
   },
   {
+    "id": "play_en_1b46b4e1-dffc-44fe-b1d6-26d4f8002343",
+    "source": "play",
+    "author": "Christine Hawks",
+    "title": "",
+    "text": "very handy but i can't get one of my tvs to connect. i have been trying for years",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T12:48:42.858Z",
+    "rating": 3,
+    "category": "Uncategorized",
+    "sentiment": "negative",
+    "pain": true,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_bc5d28af-6ce0-48d4-86f0-800365cd9168",
+    "source": "play",
+    "author": "Kevin Trotta",
+    "title": "",
+    "text": "bitchin",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T12:37:13.705Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "smartthings_community_1463659",
+    "source": "smartthings_community",
+    "author": "Declankh",
+    "title": "IKEA timmerflotte and klippbok dropping offline from firmware 61",
+    "text": "IKEA timmerflotte and klippbok dropping offline from firmware 61\n...TC https://github.com/dirrgang dirrgang **Describe the bug** I have been using ChatGPT and Codex in investigating a per … sistent attach failure of a battery-powered Thread end device (IKEA MYGGSPRAY motion sensor, firmware 1.1.4). An independent 802.15.4 capture shows a repeatable mismatch between the Lin...",
+    "url": "https://community.smartthings.com/t/ikea-timmerflotte-and-klippbok-dropping-offline-from-firmware-61/310396/27",
+    "date": "2026-09-22T12:28:42.277Z",
+    "category": "Connectivity & Reliability",
+    "sentiment": "negative",
+    "pain": true,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_146a6cd7-98bb-489f-bd18-b745158f3577",
+    "source": "play",
+    "author": "Mateusi petrus Thoabala",
+    "title": "",
+    "text": "life is good!!😄",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T12:21:36.172Z",
+    "rating": 4,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "appstore_kr_14579700450",
+    "source": "appstore",
+    "author": "Blue스윙",
+    "title": "크리티컬한 오류면 롤백을 하시죠",
+    "text": "크리티컬한 오류면 롤백을 하시죠\n오후 3시에 냉장고 업데이트 시작했는데 지금까지 완료도 안되고 앱이랑 연결도 안되고 냉장고 조명꺼져있고 심지어 냉장도 안되서 냉기 다 빠져나가는 중인데 장난하나요?? 이 와중에 개발자는 뭐하나요?? 오류 해결 빨리 안되면 롤백이 먼저 아닌가요??",
+    "url": "https://apps.apple.com/kr/app/id1222822904",
+    "date": "2026-09-22T11:30:59.000Z",
+    "rating": 1,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_5da37dc9-e5df-44ee-8cc9-621bf392b4d3",
+    "source": "play",
+    "author": "Nicole Hardy",
+    "title": "",
+    "text": "i love the Elon Musky poo turd",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T11:24:46.515Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "positive",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_ko_2001d808-da3f-4a2e-be3e-82ad3891044b",
+    "source": "play",
+    "author": "장지은",
+    "title": "",
+    "text": "업데이트하라길래 눌렀더니 냉장고 전원 나가서 작동안됨. 상담사 연결했더니 다음날 오후6시 안에 연락 준다고 함. 오늘이 22일인데 as는 24일날 된다고 함ㅠ추석 하루전날ㅠ. 추석이 코앞이라이라 이것저것 사다가 냉동실 꽉 채워뒀더니 미칠 것 같음. 인터넷으로 냉장고 주문해서 그러나? ㅠ 몇달 밖에 안됐는데ㅠ",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T10:16:55.663Z",
+    "rating": 1,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_445dbb6f-7148-445a-8ba2-e56f6efc1131",
+    "source": "play",
+    "author": "Boodi Moory",
+    "title": "",
+    "text": "I love it",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T09:42:18.780Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "positive",
+    "pain": false,
+    "occurrences": 3
+  },
+  {
+    "id": "play_en_fc70ac61-a9a5-4c68-9068-7c97d1f8d914",
+    "source": "play",
+    "author": "Edmund Kish",
+    "title": "",
+    "text": "never connects properly",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T09:24:58.206Z",
+    "rating": 2,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_035ba552-a0fb-4916-b6fb-1a28a6d3cd55",
+    "source": "play",
+    "author": "joejanejean Abas",
+    "title": "",
+    "text": "excilent",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T08:46:47.228Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "appstore_gb_14579207243",
+    "source": "appstore",
+    "author": "bigsodauk",
+    "title": "Robot hoover",
+    "text": "Robot hoover\nRobot hoover just does what it wants! No matter what i set the mop at or hoover it just does what it wants! I have sent various emails to Samsung and no answer. Would defo think twice about buying and paying near £900 and getting no back up!!!",
+    "url": "https://apps.apple.com/gb/app/id1222822904",
+    "date": "2026-09-22T08:04:50.000Z",
+    "rating": 1,
+    "category": "Multi-brand Integration",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "smartthings_community_1463648",
+    "source": "smartthings_community",
+    "author": "Mariano_Colmenarejo",
+    "title": "Hub Firmware and Edge Driver Release Notes - 0.62.7",
+    "text": "Hub Firmware and Edge Driver Release Notes - 0.62.7\nThanks @Declankn , Yes, that is the method I use to reinstall Zigbee devices when I can't get them to reconnect on their own by simply removing the battery or rebooting the hub. Usually, they reconnect automatically, though some take quite a while. Since I'm changing the Zigbee channel to try and fix the...",
+    "url": "https://community.smartthings.com/t/hub-firmware-and-edge-driver-release-notes-0-62-7/310908/89",
+    "date": "2026-09-22T07:46:07.174Z",
+    "category": "Connectivity & Reliability",
+    "sentiment": "negative",
+    "pain": true,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_ea43d297-f747-4a0a-8f46-8265627d0208",
+    "source": "play",
+    "author": "Deepak Thakur",
+    "title": "",
+    "text": "exilent",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T07:43:52.457Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_d9e20a73-7ade-4b16-87df-92a30d76456c",
+    "source": "play",
+    "author": "Danny Kim",
+    "title": "",
+    "text": "too many popups, I just wanted to open the app",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T07:37:55.745Z",
+    "rating": 2,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "appstore_gb_14579060210",
+    "source": "appstore",
+    "author": "Adda Badda",
+    "title": "Limited functionality for such a large app",
+    "text": "Limited functionality for such a large app\nThe only reason I keep this app on my phone is for the notifications, which are genuinely useful.\n\nHowever this app needs to download a further 200mb on top of the 850mb initial download in order to be able to control my washing machine. It doesn’t really justify the space it takes up.\n\nI’m interested in smart things energy however I’ve never been able to get it to work. It says “couldn’t connect” every time I try to open it.",
+    "url": "https://apps.apple.com/gb/app/id1222822904",
+    "date": "2026-09-22T06:54:43.000Z",
+    "rating": 2,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_115561ff-6f5b-44f3-bf25-0ee7f9d27926",
+    "source": "play",
+    "author": "Scott C",
+    "title": "",
+    "text": "Completely useless app. Does not work. the tracking info for my Samsung is ridiculous. Phone in my hand and telling me its 50 miles away from 2 months ago. Same for other devices. no where near my house and not updated for months. A tracking app that cant track. Garbage 0 stars.",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T06:31:35.674Z",
+    "rating": 1,
+    "category": "Security & Privacy",
+    "sentiment": "negative",
+    "pain": true,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_55e8e039-a920-4160-a046-0e39ca2644bb",
+    "source": "play",
+    "author": "Bridget Doyle",
+    "title": "",
+    "text": "having the sun messes up my TVs",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T06:21:49.434Z",
+    "rating": 1,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
     "id": "smartthings_community_1463647",
     "source": "smartthings_community",
     "author": "T_M2",
@@ -33,6 +831,118 @@
     "text": "A New Enhanced SmartThings API Experience\n...rsonal use of their API… Samsung really thinks people will pay them $5 a month for API access for such bandwidth intensive tasks as \"getting a custom notification confirming that the $2,000 washer they bought didn't fully dry their socks on the first try.\"",
     "url": "https://community.smartthings.com/t/a-new-enhanced-smartthings-api-experience/309947/255",
     "date": "2026-09-22T06:13:25.618Z",
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_2d369e0e-6e69-431d-a4e4-1d82c6c61c2d",
+    "source": "play",
+    "author": "Goson Michelo",
+    "title": "",
+    "text": "very bad",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T06:06:37.831Z",
+    "rating": 2,
+    "category": "Uncategorized",
+    "sentiment": "negative",
+    "pain": true,
+    "occurrences": 2
+  },
+  {
+    "id": "play_en_4aa348ff-8798-4ebb-843c-cc4d505cc6ac",
+    "source": "play",
+    "author": "Kaity Jones",
+    "title": "",
+    "text": "love the fact I can control my TV with it",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T05:39:06.670Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "positive",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_63cfd64b-82cc-46d4-b71a-85857e187cb7",
+    "source": "play",
+    "author": "The johir bd The johir bd",
+    "title": "",
+    "text": "good Work",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T05:05:24.633Z",
+    "rating": 4,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 3
+  },
+  {
+    "id": "play_en_dbb81278-cc4c-4b7a-8b4f-497a293272f6",
+    "source": "play",
+    "author": "Josh Speciale",
+    "title": "",
+    "text": "Recently started being unable to reliably connect to my soundbar, which would be less of a problem if any device configuration could be performed without the app.",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T04:21:39.250Z",
+    "rating": 1,
+    "category": "Uncategorized",
+    "sentiment": "negative",
+    "pain": true,
+    "occurrences": 1
+  },
+  {
+    "id": "play_ko_0f3c8684-6c0c-469e-9338-00b25aa290a5",
+    "source": "play",
+    "author": "Cj Lee",
+    "title": "",
+    "text": "좋다 뜨ㅡ트",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T04:07:58.789Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_8ec92a98-c1d0-4f58-892c-9262ffb5f491",
+    "source": "play",
+    "author": "Sergio Campos",
+    "title": "",
+    "text": "It does not show the objects in real time, I have two things lost and it is easier to find them on the other hand than by GPS, my tablet was on and I never report that it appeared, I found out because they came to me from lost objects, that is, this app is not useful, do not waste your money buying the taps because they are not updated or show the location in real time either.... only those that are close to the same rest device are useless.",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T03:23:45.662Z",
+    "rating": 1,
+    "category": "Uncategorized",
+    "sentiment": "negative",
+    "pain": true,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_2161b0da-e1ec-43b9-8dd9-4526f7ebb412",
+    "source": "play",
+    "author": "Me Now",
+    "title": "",
+    "text": "to be strong energy healthy with pennis with family with god blessed anyway spinser with prety love!",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T01:53:48.728Z",
+    "rating": 4,
+    "category": "Uncategorized",
+    "sentiment": "positive",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "play_en_2559a780-a40f-41d0-a24e-33a45b05e529",
+    "source": "play",
+    "author": "Zest Subject",
+    "title": "",
+    "text": "I just want to turn this blasted thing OFF!",
+    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+    "date": "2026-09-22T01:15:44.290Z",
+    "rating": 1,
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
@@ -122,20 +1032,6 @@
     "occurrences": 1
   },
   {
-    "id": "play_en_e37867a0-87bf-4f66-8d13-d8f0e927e3d2",
-    "source": "play",
-    "author": "Mohamed Faizal",
-    "title": "",
-    "text": "good",
-    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
-    "date": "2026-09-21T21:55:15.961Z",
-    "rating": 5,
-    "category": "Uncategorized",
-    "sentiment": "neutral",
-    "pain": false,
-    "occurrences": 196
-  },
-  {
     "id": "play_ko_6eae6029-6544-4446-8315-1d3a25a65483",
     "source": "play",
     "author": "joan youn",
@@ -161,6 +1057,20 @@
     "category": "Uncategorized",
     "sentiment": "negative",
     "pain": true,
+    "occurrences": 1
+  },
+  {
+    "id": "appstore_kr_14577630232",
+    "source": "appstore",
+    "author": "꼬매미",
+    "title": "실내 공기질 관리에 아주 유용해요",
+    "text": "실내 공기질 관리에 아주 유용해요\n스마트 상태로 두면 요리하거나 창문을 장기간 열어뒀을 때 실내공기 오염도를 알수 있고 청정모드를 작동해서 바로 공기질을 높여줘 안심할 수 있오요",
+    "url": "https://apps.apple.com/kr/app/id1222822904",
+    "date": "2026-09-21T20:56:32.000Z",
+    "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
     "occurrences": 1
   },
   {
@@ -381,20 +1291,6 @@
     "occurrences": 1
   },
   {
-    "id": "play_en_de56e86f-484c-4755-af04-f235ac384fa6",
-    "source": "play",
-    "author": "Rakesh Keshari",
-    "title": "",
-    "text": "thank",
-    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
-    "date": "2026-09-21T16:17:00.144Z",
-    "rating": 5,
-    "category": "Uncategorized",
-    "sentiment": "neutral",
-    "pain": false,
-    "occurrences": 3
-  },
-  {
     "id": "play_en_f1a4eefc-263d-43a7-9734-5a9431954881",
     "source": "play",
     "author": "Jaydip Jadeja",
@@ -420,21 +1316,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 32
-  },
-  {
-    "id": "play_en_b467f9a1-1878-4a7c-a3f9-12969195d538",
-    "source": "play",
-    "author": "Senobia Blaauw",
-    "title": "",
-    "text": "nice",
-    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
-    "date": "2026-09-21T15:48:21.916Z",
-    "rating": 5,
-    "category": "Uncategorized",
-    "sentiment": "neutral",
-    "pain": false,
-    "occurrences": 47
+    "occurrences": 30
   },
   {
     "id": "play_en_123f2630-46bb-47b1-8c49-e425df5f1347",
@@ -518,7 +1400,21 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 9
+    "occurrences": 8
+  },
+  {
+    "id": "appstore_kr_14576098202",
+    "source": "appstore",
+    "author": "오ㅓ잔",
+    "title": "너무 느려요.",
+    "text": "너무 느려요.\n진짜 LG나 로보락 다 쓰는데 스마트싱스가 제일 반응 속도/로딩 다 느림. 참고로 아이폰 18프로 1테라 중 약 400기가 사용 중이라 휴대폰 문제는 아닙니다.",
+    "url": "https://apps.apple.com/kr/app/id1222822904",
+    "date": "2026-09-21T12:52:54.000Z",
+    "rating": 1,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
   },
   {
     "id": "play_en_2df501ae-ca2d-49c1-9849-ddc738d075bc",
@@ -533,34 +1429,6 @@
     "sentiment": "neutral",
     "pain": false,
     "occurrences": 1
-  },
-  {
-    "id": "play_en_b098ceff-5eb5-40c7-b226-a58c353b38af",
-    "source": "play",
-    "author": "Alan “Twiggy”",
-    "title": "",
-    "text": "great",
-    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
-    "date": "2026-09-21T11:23:18.235Z",
-    "rating": 5,
-    "category": "Uncategorized",
-    "sentiment": "positive",
-    "pain": false,
-    "occurrences": 24
-  },
-  {
-    "id": "appstore_us_14202420904",
-    "source": "appstore",
-    "author": "LawCockyDawg",
-    "title": ".",
-    "text": ".\n.",
-    "url": "https://apps.apple.com/us/app/id1222822904",
-    "date": "2026-09-21T10:53:18.100Z",
-    "rating": 5,
-    "category": "Uncategorized",
-    "sentiment": "neutral",
-    "pain": false,
-    "occurrences": 50
   },
   {
     "id": "play_en_cff66c52-8294-4134-8b0e-147c7a939fd3",
@@ -643,7 +1511,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 4
+    "occurrences": 3
   },
   {
     "id": "play_en_94ae9854-2d68-4f0f-b94e-9c929cc558b4",
@@ -657,7 +1525,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 9
+    "occurrences": 8
   },
   {
     "id": "play_ko_804bb791-ce8e-47fe-8642-0dd52a1fc8ed",
@@ -682,6 +1550,20 @@
     "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
     "date": "2026-09-21T06:10:28.970Z",
     "rating": 5,
+    "category": "Uncategorized",
+    "sentiment": "neutral",
+    "pain": false,
+    "occurrences": 1
+  },
+  {
+    "id": "appstore_kr_14575080867",
+    "source": "appstore",
+    "author": "똑똑이55",
+    "title": "똑똑",
+    "text": "똑똑\n편해요",
+    "url": "https://apps.apple.com/kr/app/id1222822904",
+    "date": "2026-09-21T05:49:44.000Z",
+    "rating": 4,
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
@@ -994,20 +1876,6 @@
     "occurrences": 1
   },
   {
-    "id": "play_en_03e7cdf3-08e6-44a0-85c3-1dc0b187a095",
-    "source": "play",
-    "author": "Ahmed Morad",
-    "title": "",
-    "text": "excellent",
-    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
-    "date": "2026-09-20T17:39:30.229Z",
-    "rating": 5,
-    "category": "Uncategorized",
-    "sentiment": "positive",
-    "pain": false,
-    "occurrences": 19
-  },
-  {
     "id": "appstore_kr_14573169224",
     "source": "appstore",
     "author": "하흐학가웋핵",
@@ -1187,7 +2055,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 4
+    "occurrences": 3
   },
   {
     "id": "other_forum_home_assistant_3901360",
@@ -1589,20 +2457,6 @@
     "sentiment": "negative",
     "pain": true,
     "occurrences": 1
-  },
-  {
-    "id": "play_en_2a9876e5-1b8d-43bb-8587-8beb56c92cfc",
-    "source": "play",
-    "author": "Ayush Ishu",
-    "title": "",
-    "text": "very good",
-    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
-    "date": "2026-09-20T03:36:58.747Z",
-    "rating": 3,
-    "category": "Uncategorized",
-    "sentiment": "neutral",
-    "pain": false,
-    "occurrences": 23
   },
   {
     "id": "appstore_kr_14204648817",
@@ -2104,7 +2958,7 @@
     "category": "Uncategorized",
     "sentiment": "positive",
     "pain": false,
-    "occurrences": 3
+    "occurrences": 2
   },
   {
     "id": "play_en_2037e2f2-4e43-403a-831f-ed974d6a1a1d",
@@ -2743,20 +3597,6 @@
     "occurrences": 2
   },
   {
-    "id": "play_en_a2d6c2c0-d726-4dad-908f-9cddc7d17c00",
-    "source": "play",
-    "author": "Ajay Nigil",
-    "title": "",
-    "text": "awesome",
-    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
-    "date": "2026-09-18T21:22:06.708Z",
-    "rating": 5,
-    "category": "Uncategorized",
-    "sentiment": "positive",
-    "pain": false,
-    "occurrences": 10
-  },
-  {
     "id": "appstore_us_14565703675",
     "source": "appstore",
     "author": "BetShemesh92",
@@ -2976,7 +3816,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 5
+    "occurrences": 4
   },
   {
     "id": "play_en_891de749-5897-43d8-b806-d31b528122b8",
@@ -3313,20 +4153,6 @@
     "occurrences": 1
   },
   {
-    "id": "play_en_d7b231d9-8787-4596-a6b1-3ae531cfd56f",
-    "source": "play",
-    "author": "jharkhan khan",
-    "title": "",
-    "text": "Nice aap",
-    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
-    "date": "2026-09-18T05:39:33.971Z",
-    "rating": 5,
-    "category": "Uncategorized",
-    "sentiment": "neutral",
-    "pain": false,
-    "occurrences": 1
-  },
-  {
     "id": "play_en_5fec3532-44d2-4e9c-b464-e4a0c250ee42",
     "source": "play",
     "author": "Sammir Atmar",
@@ -3645,20 +4471,6 @@
     "sentiment": "negative",
     "pain": true,
     "occurrences": 1
-  },
-  {
-    "id": "play_en_63cfd64b-82cc-46d4-b71a-85857e187cb7",
-    "source": "play",
-    "author": "The johir bd The johir bd",
-    "title": "",
-    "text": "good Work",
-    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
-    "date": "2026-09-17T18:31:00.743Z",
-    "rating": 4,
-    "category": "Uncategorized",
-    "sentiment": "neutral",
-    "pain": false,
-    "occurrences": 2
   },
   {
     "id": "appstore_us_14561325877",
@@ -4690,7 +5502,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 9
+    "occurrences": 8
   },
   {
     "id": "play_en_fc0a5e9c-e5e6-423c-994f-d0f14652f02a",
@@ -4885,7 +5697,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 1
+    "occurrences": 2
   },
   {
     "id": "play_en_91324578-1d6d-41e2-b933-83d42844e6f9",
@@ -5639,20 +6451,6 @@
     "occurrences": 1
   },
   {
-    "id": "play_en_c6454881-c88e-4fee-84c6-040e5d958f02",
-    "source": "play",
-    "author": "Zeeshan Zeni",
-    "title": "",
-    "text": "gud",
-    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
-    "date": "2026-09-15T15:43:11.974Z",
-    "rating": 5,
-    "category": "Uncategorized",
-    "sentiment": "neutral",
-    "pain": false,
-    "occurrences": 3
-  },
-  {
     "id": "play_en_46290050-9a39-4023-8620-80fc948860d2",
     "source": "play",
     "author": "Adam bin sunusi Adamu bin sunusi",
@@ -5776,7 +6574,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 4
+    "occurrences": 3
   },
   {
     "id": "play_en_0607bf78-a058-4975-bb1b-c86f25c8055c",
@@ -6301,7 +7099,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 4
+    "occurrences": 3
   },
   {
     "id": "appstore_us_14549716176",
@@ -8657,20 +9455,6 @@
     "occurrences": 1
   },
   {
-    "id": "play_en_2d369e0e-6e69-431d-a4e4-1d82c6c61c2d",
-    "source": "play",
-    "author": "Goson Michelo",
-    "title": "",
-    "text": "very bad",
-    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
-    "date": "2026-09-12T17:01:34.615Z",
-    "rating": 2,
-    "category": "Uncategorized",
-    "sentiment": "negative",
-    "pain": true,
-    "occurrences": 1
-  },
-  {
     "id": "play_en_e4943419-89d4-47d7-a425-03b6e2c3da65",
     "source": "play",
     "author": "N Healy",
@@ -10681,7 +11465,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 1
+    "occurrences": 2
   },
   {
     "id": "play_en_a824ee56-4d42-4d99-8fd2-ace5f88aac45",
@@ -11999,7 +12783,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 3
+    "occurrences": 2
   },
   {
     "id": "play_en_b94536bc-1134-4584-8c12-d9fcc2c000e2",
@@ -13189,20 +13973,6 @@
     "sentiment": "neutral",
     "pain": false,
     "occurrences": 1
-  },
-  {
-    "id": "play_en_445dbb6f-7148-445a-8ba2-e56f6efc1131",
-    "source": "play",
-    "author": "Boodi Moory",
-    "title": "",
-    "text": "I love it",
-    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
-    "date": "2026-09-07T14:38:28.682Z",
-    "rating": 5,
-    "category": "Uncategorized",
-    "sentiment": "positive",
-    "pain": false,
-    "occurrences": 2
   },
   {
     "id": "smartthings_community_1462994",
@@ -16187,20 +16957,6 @@
     "occurrences": 1
   },
   {
-    "id": "play_en_ddd252d8-cc5c-4545-850b-7dcfdd73bb0c",
-    "source": "play",
-    "author": "saba ansari",
-    "title": "",
-    "text": "helpful",
-    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
-    "date": "2026-09-04T14:20:33.707Z",
-    "rating": 5,
-    "category": "Uncategorized",
-    "sentiment": "neutral",
-    "pain": false,
-    "occurrences": 2
-  },
-  {
     "id": "smartthings_community_1462841",
     "source": "smartthings_community",
     "author": "Andrew_Palmer",
@@ -16374,7 +17130,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 2
+    "occurrences": 1
   },
   {
     "id": "appstore_gb_14508797115",
@@ -16931,7 +17687,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 2
+    "occurrences": 1
   },
   {
     "id": "appstore_kr_14505881263",
@@ -20247,7 +21003,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 1
+    "occurrences": 2
   },
   {
     "id": "play_en_6705d02a-52ea-4416-92f9-d7f756a8dfbe",
@@ -27022,7 +27778,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 2
+    "occurrences": 1
   },
   {
     "id": "play_en_a43dfbbb-0a2f-41f8-97ed-7e0ad9cbf8f4",
@@ -27148,7 +27904,7 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 1
+    "occurrences": 2
   },
   {
     "id": "appstore_us_14452906921",
@@ -64462,20 +65218,6 @@
     "category": "Uncategorized",
     "sentiment": "neutral",
     "pain": false,
-    "occurrences": 1
-  },
-  {
-    "id": "play_en_2cea27c7-6d29-4c37-be2e-6e816e12cc4b",
-    "source": "play",
-    "author": "Kota Schooley",
-    "title": "",
-    "text": "This app sucks",
-    "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
-    "date": "2026-07-09T03:07:51.687Z",
-    "rating": 1,
-    "category": "Uncategorized",
-    "sentiment": "negative",
-    "pain": true,
     "occurrences": 1
   },
   {
