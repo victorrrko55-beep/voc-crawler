@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-10-11T01:06:50.007Z",
-  "windowStart": "2025-10-11T01:06:50.007Z",
-  "recentStart": "2026-07-11T01:06:50.007Z",
-  "totalPainItems": 570,
-  "totalRawItems": 8117,
+  "generatedAt": "2026-10-12T01:30:25.046Z",
+  "windowStart": "2025-10-12T01:30:25.046Z",
+  "recentStart": "2026-07-12T01:30:25.046Z",
+  "totalPainItems": 577,
+  "totalRawItems": 8209,
   "top10": [
     {
       "category": "Connectivity & Reliability",
-      "totalFrequency": 236,
-      "recentCount": 147,
+      "totalFrequency": 240,
+      "recentCount": 151,
       "priorCount": 89,
-      "growth": 395.5056179775281,
-      "growthLabel": "+396%",
-      "last6moCount": 210,
+      "growth": 408.98876404494376,
+      "growthLabel": "+409%",
+      "last6moCount": 214,
       "prev6moCount": 26,
       "representative": {
         "id": "smartthings_community_1464584",
@@ -33,13 +33,13 @@
     },
     {
       "category": "Multi-brand Integration",
-      "totalFrequency": 81,
-      "recentCount": 46,
+      "totalFrequency": 82,
+      "recentCount": 47,
       "priorCount": 35,
-      "growth": 294.28571428571433,
-      "growthLabel": "+294%",
+      "growth": 302.85714285714283,
+      "growthLabel": "+303%",
       "last6moCount": 67,
-      "prev6moCount": 14,
+      "prev6moCount": 15,
       "representative": {
         "id": "smartthings_community_1464583",
         "source": "smartthings_community",
@@ -60,10 +60,10 @@
     {
       "category": "Performance",
       "totalFrequency": 78,
-      "recentCount": 58,
-      "priorCount": 20,
-      "growth": 769.9999999999999,
-      "growthLabel": "+770%",
+      "recentCount": 57,
+      "priorCount": 21,
+      "growth": 714.2857142857143,
+      "growthLabel": "+714%",
       "last6moCount": 71,
       "prev6moCount": 7,
       "representative": {
@@ -87,10 +87,10 @@
     {
       "category": "Automation & Routine",
       "totalFrequency": 51,
-      "recentCount": 28,
-      "priorCount": 23,
-      "growth": 265.21739130434787,
-      "growthLabel": "+265%",
+      "recentCount": 27,
+      "priorCount": 24,
+      "growth": 237.50000000000006,
+      "growthLabel": "+238%",
       "last6moCount": 41,
       "prev6moCount": 10,
       "representative": {
@@ -166,21 +166,21 @@
     },
     {
       "category": "Security & Privacy",
-      "totalFrequency": 23,
-      "recentCount": 18,
+      "totalFrequency": 25,
+      "recentCount": 20,
       "priorCount": 5,
-      "growth": 980.0000000000001,
-      "growthLabel": "+980%",
-      "last6moCount": 21,
+      "growth": 1100,
+      "growthLabel": "+1100%",
+      "last6moCount": 23,
       "prev6moCount": 2,
       "representative": {
-        "id": "appstore_gb_14618870504",
-        "source": "appstore",
-        "author": "Spood1969",
-        "title": "Garbage",
-        "text": "Garbage\nAfter repeated email and password resets to register and countless permissions for targeted ads .., it won’t even connect to a Samsung device  that my phone can find instantly… I want that hour of my life back",
-        "url": "https://apps.apple.com/gb/app/id1222822904",
-        "date": "2026-10-02T13:29:03.000Z",
+        "id": "play_en_ba693353-0583-44bf-a36a-386bc3f9c80c",
+        "source": "play",
+        "author": "Percy Winters",
+        "title": "",
+        "text": "Apparently this app is not installed on my phone-I can't even install it voluntarily, google play tells me it is not available for my device-but it still somehow exists on this device. I get popups regularly but cannot access the app. I see it in my list of apps but cannot interact with it. I can't remove its permissions to be able to record my microphone and location at ALL TIMES. This is some crazy spyware I don't want on my phone, but I can't even delete it because it tells me it's not there.",
+        "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+        "date": "2026-10-10T21:23:14.186Z",
         "rating": 1,
         "category": "Security & Privacy",
         "sentiment": "negative",
@@ -303,12 +303,12 @@
   "rising": [
     {
       "category": "Connectivity & Reliability",
-      "totalFrequency": 236,
-      "recentCount": 147,
+      "totalFrequency": 240,
+      "recentCount": 151,
       "priorCount": 89,
-      "growth": 395.5056179775281,
-      "growthLabel": "+396%",
-      "last6moCount": 210,
+      "growth": 408.98876404494376,
+      "growthLabel": "+409%",
+      "last6moCount": 214,
       "prev6moCount": 26,
       "representative": {
         "id": "smartthings_community_1464584",
@@ -329,10 +329,10 @@
     {
       "category": "Performance",
       "totalFrequency": 78,
-      "recentCount": 58,
-      "priorCount": 20,
-      "growth": 769.9999999999999,
-      "growthLabel": "+770%",
+      "recentCount": 57,
+      "priorCount": 21,
+      "growth": 714.2857142857143,
+      "growthLabel": "+714%",
       "last6moCount": 71,
       "prev6moCount": 7,
       "representative": {
@@ -354,13 +354,13 @@
     },
     {
       "category": "Multi-brand Integration",
-      "totalFrequency": 81,
-      "recentCount": 46,
+      "totalFrequency": 82,
+      "recentCount": 47,
       "priorCount": 35,
-      "growth": 294.28571428571433,
-      "growthLabel": "+294%",
+      "growth": 302.85714285714283,
+      "growthLabel": "+303%",
       "last6moCount": 67,
-      "prev6moCount": 14,
+      "prev6moCount": 15,
       "representative": {
         "id": "smartthings_community_1464583",
         "source": "smartthings_community",
@@ -406,10 +406,10 @@
     {
       "category": "Automation & Routine",
       "totalFrequency": 51,
-      "recentCount": 28,
-      "priorCount": 23,
-      "growth": 265.21739130434787,
-      "growthLabel": "+265%",
+      "recentCount": 27,
+      "priorCount": 24,
+      "growth": 237.50000000000006,
+      "growthLabel": "+238%",
       "last6moCount": 41,
       "prev6moCount": 10,
       "representative": {
@@ -456,21 +456,21 @@
     },
     {
       "category": "Security & Privacy",
-      "totalFrequency": 23,
-      "recentCount": 18,
+      "totalFrequency": 25,
+      "recentCount": 20,
       "priorCount": 5,
-      "growth": 980.0000000000001,
-      "growthLabel": "+980%",
-      "last6moCount": 21,
+      "growth": 1100,
+      "growthLabel": "+1100%",
+      "last6moCount": 23,
       "prev6moCount": 2,
       "representative": {
-        "id": "appstore_gb_14618870504",
-        "source": "appstore",
-        "author": "Spood1969",
-        "title": "Garbage",
-        "text": "Garbage\nAfter repeated email and password resets to register and countless permissions for targeted ads .., it won’t even connect to a Samsung device  that my phone can find instantly… I want that hour of my life back",
-        "url": "https://apps.apple.com/gb/app/id1222822904",
-        "date": "2026-10-02T13:29:03.000Z",
+        "id": "play_en_ba693353-0583-44bf-a36a-386bc3f9c80c",
+        "source": "play",
+        "author": "Percy Winters",
+        "title": "",
+        "text": "Apparently this app is not installed on my phone-I can't even install it voluntarily, google play tells me it is not available for my device-but it still somehow exists on this device. I get popups regularly but cannot access the app. I see it in my list of apps but cannot interact with it. I can't remove its permissions to be able to record my microphone and location at ALL TIMES. This is some crazy spyware I don't want on my phone, but I can't even delete it because it tells me it's not there.",
+        "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+        "date": "2026-10-10T21:23:14.186Z",
         "rating": 1,
         "category": "Security & Privacy",
         "sentiment": "negative",
@@ -615,12 +615,12 @@
     },
     {
       "category": "Connectivity & Reliability",
-      "totalFrequency": 236,
-      "recentCount": 147,
+      "totalFrequency": 240,
+      "recentCount": 151,
       "priorCount": 89,
-      "growth": 395.5056179775281,
-      "growthLabel": "+396%",
-      "last6moCount": 210,
+      "growth": 408.98876404494376,
+      "growthLabel": "+409%",
+      "last6moCount": 214,
       "prev6moCount": 26,
       "representative": {
         "id": "smartthings_community_1464584",
@@ -641,10 +641,10 @@
     {
       "category": "Automation & Routine",
       "totalFrequency": 51,
-      "recentCount": 28,
-      "priorCount": 23,
-      "growth": 265.21739130434787,
-      "growthLabel": "+265%",
+      "recentCount": 27,
+      "priorCount": 24,
+      "growth": 237.50000000000006,
+      "growthLabel": "+238%",
       "last6moCount": 41,
       "prev6moCount": 10,
       "representative": {
@@ -691,13 +691,13 @@
     },
     {
       "category": "Multi-brand Integration",
-      "totalFrequency": 81,
-      "recentCount": 46,
+      "totalFrequency": 82,
+      "recentCount": 47,
       "priorCount": 35,
-      "growth": 294.28571428571433,
-      "growthLabel": "+294%",
+      "growth": 302.85714285714283,
+      "growthLabel": "+303%",
       "last6moCount": 67,
-      "prev6moCount": 14,
+      "prev6moCount": 15,
       "representative": {
         "id": "smartthings_community_1464583",
         "source": "smartthings_community",
@@ -743,10 +743,10 @@
     {
       "category": "Performance",
       "totalFrequency": 78,
-      "recentCount": 58,
-      "priorCount": 20,
-      "growth": 769.9999999999999,
-      "growthLabel": "+770%",
+      "recentCount": 57,
+      "priorCount": 21,
+      "growth": 714.2857142857143,
+      "growthLabel": "+714%",
       "last6moCount": 71,
       "prev6moCount": 7,
       "representative": {
@@ -794,21 +794,21 @@
     },
     {
       "category": "Security & Privacy",
-      "totalFrequency": 23,
-      "recentCount": 18,
+      "totalFrequency": 25,
+      "recentCount": 20,
       "priorCount": 5,
-      "growth": 980.0000000000001,
-      "growthLabel": "+980%",
-      "last6moCount": 21,
+      "growth": 1100,
+      "growthLabel": "+1100%",
+      "last6moCount": 23,
       "prev6moCount": 2,
       "representative": {
-        "id": "appstore_gb_14618870504",
-        "source": "appstore",
-        "author": "Spood1969",
-        "title": "Garbage",
-        "text": "Garbage\nAfter repeated email and password resets to register and countless permissions for targeted ads .., it won’t even connect to a Samsung device  that my phone can find instantly… I want that hour of my life back",
-        "url": "https://apps.apple.com/gb/app/id1222822904",
-        "date": "2026-10-02T13:29:03.000Z",
+        "id": "play_en_ba693353-0583-44bf-a36a-386bc3f9c80c",
+        "source": "play",
+        "author": "Percy Winters",
+        "title": "",
+        "text": "Apparently this app is not installed on my phone-I can't even install it voluntarily, google play tells me it is not available for my device-but it still somehow exists on this device. I get popups regularly but cannot access the app. I see it in my list of apps but cannot interact with it. I can't remove its permissions to be able to record my microphone and location at ALL TIMES. This is some crazy spyware I don't want on my phone, but I can't even delete it because it tells me it's not there.",
+        "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+        "date": "2026-10-10T21:23:14.186Z",
         "rating": 1,
         "category": "Security & Privacy",
         "sentiment": "negative",
@@ -873,12 +873,12 @@
   "insights": {
     "mostUrgent": {
       "category": "Connectivity & Reliability",
-      "totalFrequency": 236,
-      "recentCount": 147,
+      "totalFrequency": 240,
+      "recentCount": 151,
       "priorCount": 89,
-      "growth": 395.5056179775281,
-      "growthLabel": "+396%",
-      "last6moCount": 210,
+      "growth": 408.98876404494376,
+      "growthLabel": "+409%",
+      "last6moCount": 214,
       "prev6moCount": 26,
       "representative": {
         "id": "smartthings_community_1464584",
@@ -899,13 +899,13 @@
     },
     "second": {
       "category": "Multi-brand Integration",
-      "totalFrequency": 81,
-      "recentCount": 46,
+      "totalFrequency": 82,
+      "recentCount": 47,
       "priorCount": 35,
-      "growth": 294.28571428571433,
-      "growthLabel": "+294%",
+      "growth": 302.85714285714283,
+      "growthLabel": "+303%",
       "last6moCount": 67,
-      "prev6moCount": 14,
+      "prev6moCount": 15,
       "representative": {
         "id": "smartthings_community_1464583",
         "source": "smartthings_community",
@@ -923,8 +923,8 @@
       "improvementIdea": "Matter 인증 기기에 대한 호환성 매트릭스를 앱 내에서 공개하고, 주요 서드파티 브랜드와의 통합 테스트를 릴리즈 전 QA 파이프라인에 상시 포함.",
       "rank": 2
     },
-    "urgentShare": 41,
-    "urgentGapToSecond": 101,
+    "urgentShare": 42,
+    "urgentGapToSecond": 104,
     "churnHits": [
       {
         "item": {
@@ -1030,6 +1030,23 @@
       },
       {
         "item": {
+          "id": "appstore_us_14648215223",
+          "source": "appstore",
+          "author": "Cine hunter",
+          "title": "WiFi",
+          "text": "WiFi\nIt’s a nice refrigerator, but the tech stuff is not working right. It keeps dropping off the home smart network and I kept thinking that it was Google Home’s fault but it’s not it’s SmartThings. The smart thing app keeps losing the connection and you have to keep reconnecting and troubleshooting it and the app does not do a good job of diagnosing problems it keeps getting stuck",
+          "url": "https://apps.apple.com/us/app/id1222822904",
+          "date": "2026-10-10T03:15:52.000Z",
+          "rating": 1,
+          "category": "Connectivity & Reliability",
+          "sentiment": "negative",
+          "pain": true,
+          "occurrences": 1
+        },
+        "matched": "google home"
+      },
+      {
+        "item": {
           "id": "smartthings_community_1464392",
           "source": "smartthings_community",
           "author": "ascernas77",
@@ -1075,22 +1092,6 @@
           "occurrences": 1
         },
         "matched": "aqara"
-      },
-      {
-        "item": {
-          "id": "smartthings_community_1464218",
-          "source": "smartthings_community",
-          "author": "TOMillr",
-          "title": "[ST Edge] Aqara FP300 (Zigbee)",
-          "text": "[ST Edge] Aqara FP300 (Zigbee)\nI'm still trying to disable the light and temperature sensors to possibly extend the battery life a bit. Unfortunately, no matter which value I've tried in the settings menu, I can't seem to turn them off. Am I missing something?",
-          "url": "https://community.smartthings.com/t/st-edge-aqara-fp300-zigbee/306507/85",
-          "date": "2026-10-06T18:34:04.036Z",
-          "category": "Multi-brand Integration",
-          "sentiment": "negative",
-          "pain": true,
-          "occurrences": 1
-        },
-        "matched": "aqara"
       }
     ],
     "mentionedCompetitors": [
@@ -1099,6 +1100,33 @@
     ],
     "competitorTopCategory": "Multi-brand Integration",
     "nextReleasePriority": [
+      {
+        "category": "Security & Privacy",
+        "totalFrequency": 25,
+        "recentCount": 20,
+        "priorCount": 5,
+        "growth": 1100,
+        "growthLabel": "+1100%",
+        "last6moCount": 23,
+        "prev6moCount": 2,
+        "representative": {
+          "id": "play_en_ba693353-0583-44bf-a36a-386bc3f9c80c",
+          "source": "play",
+          "author": "Percy Winters",
+          "title": "",
+          "text": "Apparently this app is not installed on my phone-I can't even install it voluntarily, google play tells me it is not available for my device-but it still somehow exists on this device. I get popups regularly but cannot access the app. I see it in my list of apps but cannot interact with it. I can't remove its permissions to be able to record my microphone and location at ALL TIMES. This is some crazy spyware I don't want on my phone, but I can't even delete it because it tells me it's not there.",
+          "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+          "date": "2026-10-10T21:23:14.186Z",
+          "rating": 1,
+          "category": "Security & Privacy",
+          "sentiment": "negative",
+          "pain": true,
+          "occurrences": 1
+        },
+        "rootCause": "권한 요청 시점과 사유 설명이 불충분해 사용자가 과도한 권한 요구로 인식, 보안 관련 정책 변경 공지가 앱 내에서 충분히 전달되지 않음.",
+        "improvementIdea": "권한별 사용 목적을 요청 시점에 명확히 안내(contextual permission), 보안/개인정보 설정을 별도 대시보드로 통합해 접근성 향상, 정기 보안 감사 결과 공개.",
+        "rank": 7
+      },
       {
         "category": "Energy Management",
         "totalFrequency": 6,
@@ -1151,42 +1179,15 @@
         "rootCause": "AI/음성 기능이 특정 지역·기기에서만 제공되어 기대와 실제 지원 범위 간 괴리가 크고, Bixby 등 음성 인식 정확도가 낮아 명령 실패가 반복됨.",
         "improvementIdea": "AI/음성 기능의 지원 범위를 앱 내에서 명확히 안내, 음성 명령 실패 시 대체 텍스트 명령 제공, 사용자 피드백 기반 인식률 개선 루프 구축.",
         "rank": 9
-      },
-      {
-        "category": "Notification & Alert",
-        "totalFrequency": 3,
-        "recentCount": 3,
-        "priorCount": 0,
-        "growth": null,
-        "growthLabel": "신규",
-        "last6moCount": 3,
-        "prev6moCount": 0,
-        "representative": {
-          "id": "appstore_us_14391443146",
-          "source": "appstore",
-          "author": "Outraged Potato",
-          "title": "Ads in Notofications",
-          "text": "Ads in Notofications\nAll of a sudden it started sending me push notifications that are just ads for the new Samsung phone. These notifications are supposed to alert me to issues like water leaks. Ads are annoying and will make me ignore real alerts. This is an absolutely terrible product decision by Samsung.",
-          "url": "https://apps.apple.com/us/app/id1222822904",
-          "date": "2026-08-05T15:47:39.000Z",
-          "rating": 1,
-          "category": "Notification & Alert",
-          "sentiment": "negative",
-          "pain": true,
-          "occurrences": 1
-        },
-        "rootCause": "푸시 알림 파이프라인(클라우드→FCM/APNs)의 지연, 사용자별 알림 설정과 기기 이벤트 트리거 간 매핑 오류로 알림 누락/중복 발생.",
-        "improvementIdea": "중요 알림(보안·누수·화재 등)에 대한 우선순위 큐 분리, 알림 전달 성공률 모니터링 대시보드 구축, 사용자가 알림 지연을 직접 진단할 수 있는 테스트 알림 기능 제공.",
-        "rank": 10
       }
     ],
-    "totalPainItems": 570
+    "totalPainItems": 577
   },
   "executiveSummary": [
-    "최근 12개월간 SmartThings 앱 관련 부정 VOC 570건을 분석한 결과, 가장 시급한 Pain Point는 \"Connectivity & Reliability\"이며 최근 3개월 발생 빈도가 147건(+396%)으로 나타났다.",
+    "최근 12개월간 SmartThings 앱 관련 부정 VOC 577건을 분석한 결과, 가장 시급한 Pain Point는 \"Connectivity & Reliability\"이며 최근 3개월 발생 빈도가 151건(+409%)으로 나타났다.",
     "\"Multi-brand Integration\" 역시 상위 Pain Point로, 사용자 경험 저하가 지속되고 있어 함께 우선 대응이 필요하다.",
     "일부 사용자는 대체 솔루션으로의 이탈 의사를 직접 언급(5건)하여 이탈 위험 신호가 관측된다.",
     "Aqara, Google Home 등 경쟁/대체 플랫폼 대비 열위가 언급된 VOC가 5건 확인되어 경쟁력 저하 신호로 관리가 필요하다.",
-    "차기 릴리즈에서는 Energy Management, AI / Voice, Notification & Alert 항목을 우선 검토 대상으로 제안한다."
+    "차기 릴리즈에서는 Security & Privacy, Energy Management, AI / Voice 항목을 우선 검토 대상으로 제안한다."
   ]
 }
