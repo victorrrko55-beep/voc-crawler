@@ -1,9 +1,9 @@
 # Victor's VoC Crawler
 
-- 생성 시각: 2026-10-12T01:30:25.046Z
-- 분석 기간: 2025-10-12 ~ 2026-10-12 (최근 12개월)
-- 최근 구간: 2026-07-12 ~ 2026-10-12 (최근 3개월) vs 이전 9개월
-- 분석 대상 부정 VOC: 577건 (전체 수집 VOC 8209건 중)
+- 생성 시각: 2026-10-13T03:06:23.633Z
+- 분석 기간: 2025-10-13 ~ 2026-10-13 (최근 12개월)
+- 최근 구간: 2026-07-13 ~ 2026-10-13 (최근 3개월) vs 이전 9개월
+- 분석 대상 부정 VOC: 581건 (전체 수집 VOC 8292건 중)
 
 ## Top 10 Pain Points
 
@@ -44,10 +44,10 @@
 
 - 순위: 4
 - 카테고리: Automation & Routine
-- 발생 빈도: 51건 (최근 3개월 27건 / 이전 9개월 24건)
-- 증가율: +238%
-- 대표 VOC: "Aqara G350 and SmartThings: Matter Cameras Have Come a Long Way My forked, fixed and enhanced (see below) Matter Camera driver now exposes mechanical PTZ presets as routine actions! Screenshot_20261010_191420_SmartThings…" — smartthings_community, 2026-10-10 ([원문](https://community.smartthings.com/t/aqara-g350-and-smartthings-matter-cameras-have-come-a-long-way/310676/9))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +238% 증가하며, 'Automation & Routine' 관련 부정 VOC가 총 51건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 52건 (최근 3개월 28건 / 이전 9개월 24건)
+- 증가율: +250%
+- 대표 VOC: "Home Care Service Stopped Working (26 April 2024) Went down again (28 April 2024) The service apps are a good example of what I dislike most about the app. It wants to live your life for you, deciding what it thinks you …" — smartthings_community, 2026-10-12 ([원문](https://community.smartthings.com/t/home-care-service-stopped-working-26-april-2024-went-down-again-28-april-2024/281266/11))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +250% 증가하며, 'Automation & Routine' 관련 부정 VOC가 총 52건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 루틴 실행 엔진의 조건 평가 지연, 클라우드 종속 자동화의 지연/타임아웃, 앱 업데이트 후 기존 루틴의 트리거-조건 매핑이 깨지는 회귀 버그.
 - 개선 아이디어: 루틴 실행 로그/히스토리를 사용자에게 노출해 실패 시점을 즉시 확인 가능하게 하고, 로컬 실행(온디바이스) 비중을 늘려 클라우드 왕복 지연을 줄임.
 
@@ -66,10 +66,10 @@
 
 - 순위: 6
 - 카테고리: UX/UI
-- 발생 빈도: 34건 (최근 3개월 26건 / 이전 9개월 8건)
-- 증가율: +875%
-- 대표 VOC: "Poor unintuitive layout. I'd expect the Samsung buds 4 pro to appear top & centre with full controls at top of UI as they are the only device connected" — play, 2026-10-09 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +875% 증가하며, 'UX/UI' 관련 부정 VOC가 총 34건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 35건 (최근 3개월 26건 / 이전 9개월 9건)
+- 증가율: +767%
+- 대표 VOC: "why change the layout? its horrible" — play, 2026-10-11 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +767% 증가하며, 'UX/UI' 관련 부정 VOC가 총 35건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 기능이 누적되며 정보 구조(IA)가 복잡해졌고, 기기 관리·자동화·모니터링 기능이 하나의 화면 계층에 혼재되어 사용자가 원하는 기능을 찾기 어려움.
 - 개선 아이디어: 사용 빈도 기반 홈 화면 재구성, 핵심 태스크(기기 추가/루틴 생성/상태 확인) 중심의 단순화된 네비게이션 도입, 정기적 사용성 테스트 기반 반복 개선.
 
@@ -77,16 +77,27 @@
 
 - 순위: 7
 - 카테고리: Security & Privacy
-- 발생 빈도: 25건 (최근 3개월 20건 / 이전 9개월 5건)
-- 증가율: +1100%
-- 대표 VOC: "Apparently this app is not installed on my phone-I can't even install it voluntarily, google play tells me it is not available for my device-but it still somehow exists on this device. I get popups regularly but cannot a…" — play, 2026-10-10 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +1100% 증가하며, 'Security & Privacy' 관련 부정 VOC가 총 25건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 26건 (최근 3개월 20건 / 이전 9개월 6건)
+- 증가율: +900%
+- 대표 VOC: "the update in OCT 26 just turn the app from bad to even more bad. The latest update requires sign in to Samsung website before using it. This raise serious privacy concerns. Uninstall the app and use the remote control." — play, 2026-10-11 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +900% 증가하며, 'Security & Privacy' 관련 부정 VOC가 총 26건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 권한 요청 시점과 사유 설명이 불충분해 사용자가 과도한 권한 요구로 인식, 보안 관련 정책 변경 공지가 앱 내에서 충분히 전달되지 않음.
 - 개선 아이디어: 권한별 사용 목적을 요청 시점에 명확히 안내(contextual permission), 보안/개인정보 설정을 별도 대시보드로 통합해 접근성 향상, 정기 보안 감사 결과 공개.
 
-### 8. Energy Management
+### 8. AI / Voice
 
 - 순위: 8
+- 카테고리: AI / Voice
+- 발생 빈도: 6건 (최근 3개월 6건 / 이전 9개월 0건)
+- 증가율: 신규
+- 대표 VOC: "Never works!!! Bixby never works!! Worst £2000 spend ever! Extremely disappointing performance" — appstore, 2026-10-10 ([원문](https://apps.apple.com/gb/app/id1222822904))
+- Pain Point 요약: 최근 3개월 내 새롭게 부각된 이슈로, 'AI / Voice' 관련 부정 VOC가 총 6건 누적되어 상위 Pain Point로 식별됨.
+- Root Cause 추정: AI/음성 기능이 특정 지역·기기에서만 제공되어 기대와 실제 지원 범위 간 괴리가 크고, Bixby 등 음성 인식 정확도가 낮아 명령 실패가 반복됨.
+- 개선 아이디어: AI/음성 기능의 지원 범위를 앱 내에서 명확히 안내, 음성 명령 실패 시 대체 텍스트 명령 제공, 사용자 피드백 기반 인식률 개선 루프 구축.
+
+### 9. Energy Management
+
+- 순위: 9
 - 카테고리: Energy Management
 - 발생 빈도: 6건 (최근 3개월 6건 / 이전 9개월 0건)
 - 증가율: 신규
@@ -94,17 +105,6 @@
 - Pain Point 요약: 최근 3개월 내 새롭게 부각된 이슈로, 'Energy Management' 관련 부정 VOC가 총 6건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: SmartThings Energy의 상세 에너지 데이터가 삼성 자체 기기 위주로만 제공되어 서드파티 기기(스마트 플러그 등)는 연동은 되어도 에너지 모니터링 항목이 누락되거나 Energy 화면에 기기 자체가 표시되지 않는 경우가 있음.
 - 개선 아이디어: Matter/서드파티 에너지 리포팅 표준(예: Matter Electrical Energy Measurement 클러스터) 지원 기기 목록을 앱 내에 명시하고, 연동은 되지만 에너지 데이터가 없는 기기는 그 사유를 명확히 안내. AI Energy Mode 추천의 절감 효과를 실측 데이터로 검증해 신뢰도 제고.
-
-### 9. AI / Voice
-
-- 순위: 9
-- 카테고리: AI / Voice
-- 발생 빈도: 5건 (최근 3개월 5건 / 이전 9개월 0건)
-- 증가율: 신규
-- 대표 VOC: "I'm struggling to understand the point of this app. With the recent redesign and apparently Bixby being built into the app, I can no longer get to the functions of the devices I have in this app. I don't need you to mana…" — play, 2026-10-08 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
-- Pain Point 요약: 최근 3개월 내 새롭게 부각된 이슈로, 'AI / Voice' 관련 부정 VOC가 총 5건 누적되어 상위 Pain Point로 식별됨.
-- Root Cause 추정: AI/음성 기능이 특정 지역·기기에서만 제공되어 기대와 실제 지원 범위 간 괴리가 크고, Bixby 등 음성 인식 정확도가 낮아 명령 실패가 반복됨.
-- 개선 아이디어: AI/음성 기능의 지원 범위를 앱 내에서 명확히 안내, 음성 명령 실패 시 대체 텍스트 명령 제공, 사용자 피드백 기반 인식률 개선 루프 구축.
 
 ### 10. Notification & Alert
 
@@ -128,7 +128,7 @@
 - 대표 VOC: "Samsung TV energy in the Energy dashboard when SmartThings shows "unavailable" (workaround, validated) I just noticed this had stopped working on mine. The log showed the sensor failed to read a non-numeric value of "non…" — other_forum_home_assistant, 2026-10-09 ([원문](https://community.home-assistant.io/t/samsung-tv-energy-in-the-energy-dashboard-when-smartthings-shows-unavailable-workaround-validated/1027262/2))
 - Root Cause 추정: SmartThings Energy의 상세 에너지 데이터가 삼성 자체 기기 위주로만 제공되어 서드파티 기기(스마트 플러그 등)는 연동은 되어도 에너지 모니터링 항목이 누락되거나 Energy 화면에 기기 자체가 표시되지 않는 경우가 있음.
 - 개선 아이디어: Matter/서드파티 에너지 리포팅 표준(예: Matter Electrical Energy Measurement 클러스터) 지원 기기 목록을 앱 내에 명시하고, 연동은 되지만 에너지 데이터가 없는 기기는 그 사유를 명확히 안내. AI Energy Mode 추천의 절감 효과를 실측 데이터로 검증해 신뢰도 제고.
-- 현재 Top 10 8위에도 랭크되어 있습니다.
+- 현재 Top 10 9위에도 랭크되어 있습니다.
 
 
 ## 신규 증가 이슈
@@ -139,10 +139,10 @@
 - **Performance**: 최근 6개월 71건 vs 이전 6개월 7건 (+714%)
 - **Multi-brand Integration**: 최근 6개월 67건 vs 이전 6개월 15건 (+303%)
 - **Device Onboarding**: 최근 6개월 42건 vs 이전 6개월 8건 (+482%)
-- **Automation & Routine**: 최근 6개월 41건 vs 이전 6개월 10건 (+238%)
-- **UX/UI**: 최근 6개월 31건 vs 이전 6개월 3건 (+875%)
-- **Security & Privacy**: 최근 6개월 23건 vs 이전 6개월 2건 (+1100%)
-- **Energy Management**: 최근 6개월 6건 vs 이전 6개월 0건 (신규)
+- **Automation & Routine**: 최근 6개월 42건 vs 이전 6개월 10건 (+250%)
+- **UX/UI**: 최근 6개월 32건 vs 이전 6개월 3건 (+767%)
+- **Security & Privacy**: 최근 6개월 24건 vs 이전 6개월 2건 (+900%)
+- **AI / Voice**: 최근 6개월 6건 vs 이전 6개월 0건 (신규)
 
 ## 감소 이슈
 
@@ -154,19 +154,19 @@
 
 ### 가장 시급한 개선 과제
 
-**Connectivity & Reliability** — 최근 3개월 151건(+409%), 12개월 누적 240건으로 전체 부정 VOC의 42%를 차지, 2위(Multi-brand Integration, 최근 3개월 47건)보다 104건 더 많음.
+**Connectivity & Reliability** — 최근 3개월 151건(+409%), 12개월 누적 240건으로 전체 부정 VOC의 41%를 차지, 2위(Multi-brand Integration, 최근 3개월 47건)보다 104건 더 많음.
 
 Root Cause 추정: 허브-클라우드 간 세션 유지 로직 취약, 다중 홉 메시 네트워크에서의 신호 간섭, 백그라운드 재연결 로직 미흡으로 오프라인 표시가 실제 상태와 어긋남.
 
 ### 사용자 이탈 위험 요소
 
-대체 솔루션으로의 전환·삭제 의사를 직접 언급한 VOC 5건 확인. 건수는 많지 않지만 자발적 이탈 의사 표현은 일반 불만보다 드물게 나타나는 강한 신호이므로 주시가 필요합니다. 주로 **Connectivity & Reliability** 관련 맥락에서 언급됨.
+대체 솔루션으로의 전환·삭제 의사를 직접 언급한 VOC 5건 확인. 건수는 많지 않지만 자발적 이탈 의사 표현은 일반 불만보다 드물게 나타나는 강한 신호이므로 주시가 필요합니다. 주로 **Security & Privacy** 관련 맥락에서 언급됨.
 
+- "the update in OCT 26 just turn the app from bad to even more bad. The latest update requires sign in to Samsung website before using it. This raise serious priv…" — play, 2026-10-11 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
 - "pressing login button, nothing happens. pressing add device button, also nothing happens. I have cleared the cache, uninstalled and reinstalled the app, same pr…" — play, 2026-10-08 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
 - "SmartThings iOS App Version 1.7.51.30 (September 2026) Since updating SmartThings to 1.7.51 , the iOS app has become completely unusable for me because it crash…" — smartthings_community, 2026-10-08 ([원문](https://community.smartthings.com/t/smartthings-ios-app-version-1-7-51-30-september-2026/311188/30))
 - "** Update Sep '26** Don't buy Samsung sound bars. App is a disaster. Now it can't control my sound bar - it inexplicably tries to download a controller, which f…" — play, 2026-10-05 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
 - "Samsung SmartThings Trackers (Not smarttags?) Moving to Find App ...rs-most-smartthings-tracker/ Samsung's original announcement describes exactly the functions…" — smartthings_community, 2026-09-29 ([원문](https://community.smartthings.com/t/samsung-smartthings-trackers-not-smarttags-moving-to-find-app/311189/3))
-- "Horrible connection Every time I click the app to try to turn on my tv it always says my tv is offline meanwhile I’m never disconnected from WiFi I’ve ran multi…" — appstore, 2026-09-10 ([원문](https://apps.apple.com/us/app/id1222822904))
 
 ### SmartThings 경쟁력 저하 요소
 
@@ -182,17 +182,17 @@ Aqara, Google Home 등 경쟁/대체 플랫폼과 비교하며 SmartThings의 �
 
 증가율 기준 상위 카테고리를 차기 릴리즈 검토 우선순위로 제안합니다:
 
-1. **Security & Privacy** (+1100%) — 권한 요청 시점과 사유 설명이 불충분해 사용자가 과도한 권한 요구로 인식, 보안 관련 정책 변경 공지가 앱 내에서 충분히 전달되지 않음.
+1. **AI / Voice** (신규) — AI/음성 기능이 특정 지역·기기에서만 제공되어 기대와 실제 지원 범위 간 괴리가 크고, Bixby 등 음성 인식 정확도가 낮아 명령 실패가 반복됨.
 2. **Energy Management** (신규) — SmartThings Energy의 상세 에너지 데이터가 삼성 자체 기기 위주로만 제공되어 서드파티 기기(스마트 플러그 등)는 연동은 되어도 에너지 모니터링 항목이 누락되거나 Energy 화면에 기기 자체가 표시되지 않는 경우가 있음.
-3. **AI / Voice** (신규) — AI/음성 기능이 특정 지역·기기에서만 제공되어 기대와 실제 지원 범위 간 괴리가 크고, Bixby 등 음성 인식 정확도가 낮아 명령 실패가 반복됨.
+3. **Notification & Alert** (신규) — 푸시 알림 파이프라인(클라우드→FCM/APNs)의 지연, 사용자별 알림 설정과 기기 이벤트 트리거 간 매핑 오류로 알림 누락/중복 발생.
 
 ## Executive Summary
 
-- 최근 12개월간 SmartThings 앱 관련 부정 VOC 577건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 151건(+409%)으로 나타났다.
+- 최근 12개월간 SmartThings 앱 관련 부정 VOC 581건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 151건(+409%)으로 나타났다.
 - "Multi-brand Integration" 역시 상위 Pain Point로, 사용자 경험 저하가 지속되고 있어 함께 우선 대응이 필요하다.
 - 일부 사용자는 대체 솔루션으로의 이탈 의사를 직접 언급(5건)하여 이탈 위험 신호가 관측된다.
 - Aqara, Google Home 등 경쟁/대체 플랫폼 대비 열위가 언급된 VOC가 5건 확인되어 경쟁력 저하 신호로 관리가 필요하다.
-- 차기 릴리즈에서는 Security & Privacy, Energy Management, AI / Voice 항목을 우선 검토 대상으로 제안한다.
+- 차기 릴리즈에서는 AI / Voice, Energy Management, Notification & Alert 항목을 우선 검토 대상으로 제안한다.
 
 ## Sources
 
