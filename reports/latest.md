@@ -1,9 +1,9 @@
 # Victor's VoC Crawler
 
-- 생성 시각: 2026-10-13T03:06:23.633Z
-- 분석 기간: 2025-10-13 ~ 2026-10-13 (최근 12개월)
-- 최근 구간: 2026-07-13 ~ 2026-10-13 (최근 3개월) vs 이전 9개월
-- 분석 대상 부정 VOC: 581건 (전체 수집 VOC 8292건 중)
+- 생성 시각: 2026-10-14T01:18:55.267Z
+- 분석 기간: 2025-10-14 ~ 2026-10-14 (최근 12개월)
+- 최근 구간: 2026-07-14 ~ 2026-10-14 (최근 3개월) vs 이전 9개월
+- 분석 대상 부정 VOC: 586건 (전체 수집 VOC 8379건 중)
 
 ## Top 10 Pain Points
 
@@ -11,10 +11,10 @@
 
 - 순위: 1
 - 카테고리: Connectivity & Reliability
-- 발생 빈도: 240건 (최근 3개월 151건 / 이전 9개월 89건)
-- 증가율: +409%
-- 대표 VOC: "First LAN Edge driver: new devices stuck in TYPED / DRIVER_SWITCH, and the device page won't open (hub fw 0.62.7) ...wer 2 &gt; /dev/null | grep -m1 mWakefulness=; " .. "dumpsys activity activities 2 &gt; /dev/null | gre…" — smartthings_community, 2026-10-10 ([원문](https://community.smartthings.com/t/first-lan-edge-driver-new-devices-stuck-in-typed-driver-switch-and-the-device-page-wont-open-hub-fw-0-62-7/311405/4))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +409% 증가하며, 'Connectivity & Reliability' 관련 부정 VOC가 총 240건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 242건 (최근 3개월 151건 / 이전 9개월 91건)
+- 증가율: +398%
+- 대표 VOC: "Update for the New Smart Lock Code Management Experience and Beta Opportunity Findings from migration testing with community Z-Wave lock drivers I completed additional testing of the Smart Lock Guest Access (SLGA) Transf…" — smartthings_community, 2026-10-12 ([원문](https://community.smartthings.com/t/update-for-the-new-smart-lock-code-management-experience-and-beta-opportunity/310803/16))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +398% 증가하며, 'Connectivity & Reliability' 관련 부정 VOC가 총 242건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 허브-클라우드 간 세션 유지 로직 취약, 다중 홉 메시 네트워크에서의 신호 간섭, 백그라운드 재연결 로직 미흡으로 오프라인 표시가 실제 상태와 어긋남.
 - 개선 아이디어: 지수 백오프 기반 자동 재연결 로직 개선, 기기별 실시간 연결 품질 지표 제공, 오프라인 발생 시 원인(허브/기기/네트워크) 구분 진단 도구 제공.
 
@@ -22,10 +22,10 @@
 
 - 순위: 2
 - 카테고리: Multi-brand Integration
-- 발생 빈도: 82건 (최근 3개월 47건 / 이전 9개월 35건)
-- 증가율: +303%
+- 발생 빈도: 82건 (최근 3개월 46건 / 이전 9개월 36건)
+- 증가율: +283%
 - 대표 VOC: "[RELEASE] MatterCameras Bridge - Bring ANY ONVIF/RTSP Camera natively to SmartThings via Matter 1.5 This is a really great project! Unfortunately I'm having the same issue as @amin300 with my Tapo cameras. The video feed…" — smartthings_community, 2026-10-10 ([원문](https://community.smartthings.com/t/release-mattercameras-bridge-bring-any-onvif-rtsp-camera-natively-to-smartthings-via-matter-1-5/310040/8))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +303% 증가하며, 'Multi-brand Integration' 관련 부정 VOC가 총 82건 누적되어 상위 Pain Point로 식별됨.
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +283% 증가하며, 'Multi-brand Integration' 관련 부정 VOC가 총 82건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: Matter 표준 지원이 기기/펌웨어별로 파편화되어 있고, 타 브랜드 기기와의 인증서/ 드라이버 호환성 검증이 SmartThings 릴리즈 주기와 어긋남.
 - 개선 아이디어: Matter 인증 기기에 대한 호환성 매트릭스를 앱 내에서 공개하고, 주요 서드파티 브랜드와의 통합 테스트를 릴리즈 전 QA 파이프라인에 상시 포함.
 
@@ -33,10 +33,10 @@
 
 - 순위: 3
 - 카테고리: Performance
-- 발생 빈도: 78건 (최근 3개월 57건 / 이전 9개월 21건)
-- 증가율: +714%
-- 대표 VOC: "Crashes since AI update I can see the app for 1 second before it crashes and and in that second I can see a new AI feature on the dashboard. Priorities?! iPhone 17 Pro, iOS 27.0.1." — appstore, 2026-10-09 ([원문](https://apps.apple.com/us/app/id1222822904))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +714% 증가하며, 'Performance' 관련 부정 VOC가 총 78건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 81건 (최근 3개월 60건 / 이전 9개월 21건)
+- 증가율: +757%
+- 대표 VOC: "app won't open all settings and just freezes constantly" — play, 2026-10-12 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +757% 증가하며, 'Performance' 관련 부정 VOC가 총 81건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 앱 초기 로딩 시 과도한 기기 상태 동기화, 메모리 누수로 인한 장시간 사용 시 느려짐, 백그라운드 폴링으로 인한 배터리 소모.
 - 개선 아이디어: 초기 로딩을 지연 로딩(lazy load) 방식으로 전환, 캐시 계층 도입으로 반복 호출 감소, 배터리/성능 프로파일링을 정기 회귀 테스트에 포함.
 
@@ -135,9 +135,9 @@
 
 최근 6개월간 증가한 VOC:
 
-- **Connectivity & Reliability**: 최근 6개월 214건 vs 이전 6개월 26건 (+409%)
-- **Performance**: 최근 6개월 71건 vs 이전 6개월 7건 (+714%)
-- **Multi-brand Integration**: 최근 6개월 67건 vs 이전 6개월 15건 (+303%)
+- **Connectivity & Reliability**: 최근 6개월 217건 vs 이전 6개월 25건 (+398%)
+- **Performance**: 최근 6개월 74건 vs 이전 6개월 7건 (+757%)
+- **Multi-brand Integration**: 최근 6개월 67건 vs 이전 6개월 15건 (+283%)
 - **Device Onboarding**: 최근 6개월 42건 vs 이전 6개월 8건 (+482%)
 - **Automation & Routine**: 최근 6개월 42건 vs 이전 6개월 10건 (+250%)
 - **UX/UI**: 최근 6개월 32건 vs 이전 6개월 3건 (+767%)
@@ -154,19 +154,19 @@
 
 ### 가장 시급한 개선 과제
 
-**Connectivity & Reliability** — 최근 3개월 151건(+409%), 12개월 누적 240건으로 전체 부정 VOC의 41%를 차지, 2위(Multi-brand Integration, 최근 3개월 47건)보다 104건 더 많음.
+**Connectivity & Reliability** — 최근 3개월 151건(+398%), 12개월 누적 242건으로 전체 부정 VOC의 41%를 차지, 2위(Multi-brand Integration, 최근 3개월 46건)보다 105건 더 많음.
 
 Root Cause 추정: 허브-클라우드 간 세션 유지 로직 취약, 다중 홉 메시 네트워크에서의 신호 간섭, 백그라운드 재연결 로직 미흡으로 오프라인 표시가 실제 상태와 어긋남.
 
 ### 사용자 이탈 위험 요소
 
-대체 솔루션으로의 전환·삭제 의사를 직접 언급한 VOC 5건 확인. 건수는 많지 않지만 자발적 이탈 의사 표현은 일반 불만보다 드물게 나타나는 강한 신호이므로 주시가 필요합니다. 주로 **Security & Privacy** 관련 맥락에서 언급됨.
+대체 솔루션으로의 전환·삭제 의사를 직접 언급한 VOC 5건 확인. 건수는 많지 않지만 자발적 이탈 의사 표현은 일반 불만보다 드물게 나타나는 강한 신호이므로 주시가 필요합니다. 주로 **Performance** 관련 맥락에서 언급됨.
 
+- "A completely non functional mess. And the developer assumes it's an issue on my end, even though I've already done everything they suggested in their response.…" — play, 2026-10-12 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
 - "the update in OCT 26 just turn the app from bad to even more bad. The latest update requires sign in to Samsung website before using it. This raise serious priv…" — play, 2026-10-11 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
 - "pressing login button, nothing happens. pressing add device button, also nothing happens. I have cleared the cache, uninstalled and reinstalled the app, same pr…" — play, 2026-10-08 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
 - "SmartThings iOS App Version 1.7.51.30 (September 2026) Since updating SmartThings to 1.7.51 , the iOS app has become completely unusable for me because it crash…" — smartthings_community, 2026-10-08 ([원문](https://community.smartthings.com/t/smartthings-ios-app-version-1-7-51-30-september-2026/311188/30))
 - "** Update Sep '26** Don't buy Samsung sound bars. App is a disaster. Now it can't control my sound bar - it inexplicably tries to download a controller, which f…" — play, 2026-10-05 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
-- "Samsung SmartThings Trackers (Not smarttags?) Moving to Find App ...rs-most-smartthings-tracker/ Samsung's original announcement describes exactly the functions…" — smartthings_community, 2026-09-29 ([원문](https://community.smartthings.com/t/samsung-smartthings-trackers-not-smarttags-moving-to-find-app/311189/3))
 
 ### SmartThings 경쟁력 저하 요소
 
@@ -188,7 +188,7 @@ Aqara, Google Home 등 경쟁/대체 플랫폼과 비교하며 SmartThings의 �
 
 ## Executive Summary
 
-- 최근 12개월간 SmartThings 앱 관련 부정 VOC 581건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 151건(+409%)으로 나타났다.
+- 최근 12개월간 SmartThings 앱 관련 부정 VOC 586건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 151건(+398%)으로 나타났다.
 - "Multi-brand Integration" 역시 상위 Pain Point로, 사용자 경험 저하가 지속되고 있어 함께 우선 대응이 필요하다.
 - 일부 사용자는 대체 솔루션으로의 이탈 의사를 직접 언급(5건)하여 이탈 위험 신호가 관측된다.
 - Aqara, Google Home 등 경쟁/대체 플랫폼 대비 열위가 언급된 VOC가 5건 확인되어 경쟁력 저하 신호로 관리가 필요하다.
