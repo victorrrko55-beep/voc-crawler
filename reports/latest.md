@@ -1,9 +1,9 @@
 # Victor's VoC Crawler
 
-- 생성 시각: 2026-10-17T00:40:17.238Z
-- 분석 기간: 2025-10-17 ~ 2026-10-17 (최근 12개월)
-- 최근 구간: 2026-07-17 ~ 2026-10-17 (최근 3개월) vs 이전 9개월
-- 분석 대상 부정 VOC: 603건 (전체 수집 VOC 8575건 중)
+- 생성 시각: 2026-10-18T00:08:09.009Z
+- 분석 기간: 2025-10-18 ~ 2026-10-18 (최근 12개월)
+- 최근 구간: 2026-07-18 ~ 2026-10-18 (최근 3개월) vs 이전 9개월
+- 분석 대상 부정 VOC: 609건 (전체 수집 VOC 8623건 중)
 
 ## Top 10 Pain Points
 
@@ -11,10 +11,10 @@
 
 - 순위: 1
 - 카테고리: Connectivity & Reliability
-- 발생 빈도: 248건 (최근 3개월 151건 / 이전 9개월 97건)
-- 증가율: +367%
-- 대표 VOC: "Z-Wave thermostats stopped working – SmartThings Hub V3 ...thermostats. The thermostats can be added again, but they show "NaN" instead of temperature, cannot be controlled through the app, and eventually go offline agai…" — smartthings_community, 2026-10-16 ([원문](https://community.smartthings.com/t/z-wave-thermostats-stopped-working-smartthings-hub-v3/311587/3))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +367% 증가하며, 'Connectivity & Reliability' 관련 부정 VOC가 총 248건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 249건 (최근 3개월 151건 / 이전 9개월 98건)
+- 증가율: +362%
+- 대표 VOC: "disconnected me when I went away for a while. useless" — play, 2026-10-16 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +362% 증가하며, 'Connectivity & Reliability' 관련 부정 VOC가 총 249건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 허브-클라우드 간 세션 유지 로직 취약, 다중 홉 메시 네트워크에서의 신호 간섭, 백그라운드 재연결 로직 미흡으로 오프라인 표시가 실제 상태와 어긋남.
 - 개선 아이디어: 지수 백오프 기반 자동 재연결 로직 개선, 기기별 실시간 연결 품질 지표 제공, 오프라인 발생 시 원인(허브/기기/네트워크) 구분 진단 도구 제공.
 
@@ -22,10 +22,10 @@
 
 - 순위: 2
 - 카테고리: Multi-brand Integration
-- 발생 빈도: 86건 (최근 3개월 49건 / 이전 9개월 37건)
-- 증가율: +297%
-- 대표 VOC: "Add Matter Bridge support to SmartThings +1 for this. I own several Samsung devices (a Smart Monitor, a refrigerator and a kimchi refrigerator) and use an Apple TV 4K as my Matter/Thread hub. SmartThings can import Matte…" — smartthings_community, 2026-10-15 ([원문](https://community.smartthings.com/t/add-matter-bridge-support-to-smartthings/310005/8))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +297% 증가하며, 'Multi-brand Integration' 관련 부정 VOC가 총 86건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 88건 (최근 3개월 50건 / 이전 9개월 38건)
+- 증가율: +295%
+- 대표 VOC: "Device Sentinel: Reports the Hardware that has Stopped Reporting ...e, open a GitHub issue and attach your diagnostics file. I am specifically hunting for data from systems running Z-Wave, Matter, Lutron, Philips Hue, Sm…" — other_forum_home_assistant, 2026-10-17 ([원문](https://community.home-assistant.io/t/device-sentinel-reports-the-hardware-that-has-stopped-reporting/1029252/1))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +295% 증가하며, 'Multi-brand Integration' 관련 부정 VOC가 총 88건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: Matter 표준 지원이 기기/펌웨어별로 파편화되어 있고, 타 브랜드 기기와의 인증서/ 드라이버 호환성 검증이 SmartThings 릴리즈 주기와 어긋남.
 - 개선 아이디어: Matter 인증 기기에 대한 호환성 매트릭스를 앱 내에서 공개하고, 주요 서드파티 브랜드와의 통합 테스트를 릴리즈 전 QA 파이프라인에 상시 포함.
 
@@ -44,10 +44,10 @@
 
 - 순위: 4
 - 카테고리: Automation & Routine
-- 발생 빈도: 54건 (최근 3개월 30건 / 이전 9개월 24건)
-- 증가율: +275%
-- 대표 VOC: "DIDA: self-hosted home automation where one misbehaving integration can't take the house down Hi all. I've been building a home automation system for my own house, it's now public, and since it talks to SmartThings this …" — smartthings_community, 2026-10-15 ([원문](https://community.smartthings.com/t/dida-self-hosted-home-automation-where-one-misbehaving-integration-cant-take-the-house-down/311541/1))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +275% 증가하며, 'Automation & Routine' 관련 부정 VOC가 총 54건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 55건 (최근 3개월 31건 / 이전 9개월 24건)
+- 증가율: +288%
+- 대표 VOC: "Home Assistant Core 2026.10.0 / 2026.10.2 — Severe bootstrap timeouts, 115 automations unavailable, integrations failing, possible automatic rollback to 2026.9.4 Hi everyone, I'm looking for help with a serious issue aff…" — other_forum_home_assistant, 2026-10-17 ([원문](https://community.home-assistant.io/t/home-assistant-core-2026-10-0-2026-10-2-severe-bootstrap-timeouts-115-automations-unavailable-integrations-failing-possible-automatic-rollback-to-2026-9-4/1029277/1))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +288% 증가하며, 'Automation & Routine' 관련 부정 VOC가 총 55건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 루틴 실행 엔진의 조건 평가 지연, 클라우드 종속 자동화의 지연/타임아웃, 앱 업데이트 후 기존 루틴의 트리거-조건 매핑이 깨지는 회귀 버그.
 - 개선 아이디어: 루틴 실행 로그/히스토리를 사용자에게 노출해 실패 시점을 즉시 확인 가능하게 하고, 로컬 실행(온디바이스) 비중을 늘려 클라우드 왕복 지연을 줄임.
 
@@ -55,10 +55,10 @@
 
 - 순위: 5
 - 카테고리: Device Onboarding
-- 발생 빈도: 51건 (최근 3개월 33건 / 이전 9개월 18건)
-- 증가율: +450%
+- 발생 빈도: 51건 (최근 3개월 32건 / 이전 9개월 19건)
+- 증가율: +405%
 - 대표 VOC: "Need a remote to connect to a TV without a remote Do I need to say more? Why does it ask to click okay to verify on tv if the whole reason I got the app is bc I don’t have the remote. The one button the tv comes with, do…" — appstore, 2026-10-14 ([원문](https://apps.apple.com/us/app/id1222822904))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +450% 증가하며, 'Device Onboarding' 관련 부정 VOC가 총 51건 누적되어 상위 Pain Point로 식별됨.
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +405% 증가하며, 'Device Onboarding' 관련 부정 VOC가 총 51건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 기기 등록 과정에서 발생하는 프로토콜(Wi-Fi/Zigbee/Z-Wave/Matter) 핸드셰이크 실패, 펌웨어-앱 버전 불일치, 불명확한 오류 메시지로 사용자가 실패 원인을 파악하기 어려움.
 - 개선 아이디어: 온보딩 단계별 진행률과 실패 시 구체적 원인(예: "라우터 2.4GHz 대역 확인 필요")을 보여주는 가이드형 UI 도입, 실패율이 높은 기기 유형에 대한 사전 호환성 체크 강화.
 
@@ -66,10 +66,10 @@
 
 - 순위: 6
 - 카테고리: UX/UI
-- 발생 빈도: 37건 (최근 3개월 27건 / 이전 9개월 10건)
-- 증가율: +710%
-- 대표 VOC: "A once simple and intuitive design now buries functionality behind a garbage interface." — play, 2026-10-14 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +710% 증가하며, 'UX/UI' 관련 부정 VOC가 총 37건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 38건 (최근 3개월 28건 / 이전 9개월 10건)
+- 증가율: +740%
+- 대표 VOC: "Always used to run a little clunky but lately the app just won't acknowledge the default browser I have set to sign in. It keeps opening the OS browser; which I can't uninstall but refuse to use." — play, 2026-10-16 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +740% 증가하며, 'UX/UI' 관련 부정 VOC가 총 38건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 기능이 누적되며 정보 구조(IA)가 복잡해졌고, 기기 관리·자동화·모니터링 기능이 하나의 화면 계층에 혼재되어 사용자가 원하는 기능을 찾기 어려움.
 - 개선 아이디어: 사용 빈도 기반 홈 화면 재구성, 핵심 태스크(기기 추가/루틴 생성/상태 확인) 중심의 단순화된 네비게이션 도입, 정기적 사용성 테스트 기반 반복 개선.
 
@@ -84,9 +84,20 @@
 - Root Cause 추정: 권한 요청 시점과 사유 설명이 불충분해 사용자가 과도한 권한 요구로 인식, 보안 관련 정책 변경 공지가 앱 내에서 충분히 전달되지 않음.
 - 개선 아이디어: 권한별 사용 목적을 요청 시점에 명확히 안내(contextual permission), 보안/개인정보 설정을 별도 대시보드로 통합해 접근성 향상, 정기 보안 감사 결과 공개.
 
-### 8. AI / Voice
+### 8. Energy Management
 
 - 순위: 8
+- 카테고리: Energy Management
+- 발생 빈도: 8건 (최근 3개월 8건 / 이전 9개월 0건)
+- 증가율: 신규
+- 대표 VOC: "Since the latest update I can no longer click on a device and see details or remove it from smartthings etc if the device is no longer around. I have uninstalled the app, cleared the data and cache etc and it still fails…" — play, 2026-10-16 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
+- Pain Point 요약: 최근 3개월 내 새롭게 부각된 이슈로, 'Energy Management' 관련 부정 VOC가 총 8건 누적되어 상위 Pain Point로 식별됨.
+- Root Cause 추정: SmartThings Energy의 상세 에너지 데이터가 삼성 자체 기기 위주로만 제공되어 서드파티 기기(스마트 플러그 등)는 연동은 되어도 에너지 모니터링 항목이 누락되거나 Energy 화면에 기기 자체가 표시되지 않는 경우가 있음.
+- 개선 아이디어: Matter/서드파티 에너지 리포팅 표준(예: Matter Electrical Energy Measurement 클러스터) 지원 기기 목록을 앱 내에 명시하고, 연동은 되지만 에너지 데이터가 없는 기기는 그 사유를 명확히 안내. AI Energy Mode 추천의 절감 효과를 실측 데이터로 검증해 신뢰도 제고.
+
+### 9. AI / Voice
+
+- 순위: 9
 - 카테고리: AI / Voice
 - 발생 빈도: 7건 (최근 3개월 6건 / 이전 9개월 1건)
 - 증가율: +1700%
@@ -94,17 +105,6 @@
 - Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +1700% 증가하며, 'AI / Voice' 관련 부정 VOC가 총 7건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: AI/음성 기능이 특정 지역·기기에서만 제공되어 기대와 실제 지원 범위 간 괴리가 크고, Bixby 등 음성 인식 정확도가 낮아 명령 실패가 반복됨.
 - 개선 아이디어: AI/음성 기능의 지원 범위를 앱 내에서 명확히 안내, 음성 명령 실패 시 대체 텍스트 명령 제공, 사용자 피드백 기반 인식률 개선 루프 구축.
-
-### 9. Energy Management
-
-- 순위: 9
-- 카테고리: Energy Management
-- 발생 빈도: 7건 (최근 3개월 7건 / 이전 9개월 0건)
-- 증가율: 신규
-- 대표 VOC: "Matter power/energy not exposed unless both 0x010A + 0x0510 are present There are tons of matter devices that are not showing power consumption information ONLY IN SmartThings. It seems that SmartThings already knows how…" — smartthings_community, 2026-10-13 ([원문](https://community.smartthings.com/t/matter-power-energy-not-exposed-unless-both-0x010a-0x0510-are-present/311478/2))
-- Pain Point 요약: 최근 3개월 내 새롭게 부각된 이슈로, 'Energy Management' 관련 부정 VOC가 총 7건 누적되어 상위 Pain Point로 식별됨.
-- Root Cause 추정: SmartThings Energy의 상세 에너지 데이터가 삼성 자체 기기 위주로만 제공되어 서드파티 기기(스마트 플러그 등)는 연동은 되어도 에너지 모니터링 항목이 누락되거나 Energy 화면에 기기 자체가 표시되지 않는 경우가 있음.
-- 개선 아이디어: Matter/서드파티 에너지 리포팅 표준(예: Matter Electrical Energy Measurement 클러스터) 지원 기기 목록을 앱 내에 명시하고, 연동은 되지만 에너지 데이터가 없는 기기는 그 사유를 명확히 안내. AI Energy Mode 추천의 절감 효과를 실측 데이터로 검증해 신뢰도 제고.
 
 ### 10. Notification & Alert
 
@@ -123,26 +123,26 @@
 
 ### Energy Management
 
-- 발생 빈도: 7건 (최근 3개월 7건 / 이전 9개월 0건)
+- 발생 빈도: 8건 (최근 3개월 8건 / 이전 9개월 0건)
 - 증가율: 신규
-- 대표 VOC: "Matter power/energy not exposed unless both 0x010A + 0x0510 are present There are tons of matter devices that are not showing power consumption information ONLY IN SmartThings. It seems that SmartThings already knows how…" — smartthings_community, 2026-10-13 ([원문](https://community.smartthings.com/t/matter-power-energy-not-exposed-unless-both-0x010a-0x0510-are-present/311478/2))
+- 대표 VOC: "Since the latest update I can no longer click on a device and see details or remove it from smartthings etc if the device is no longer around. I have uninstalled the app, cleared the data and cache etc and it still fails…" — play, 2026-10-16 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
 - Root Cause 추정: SmartThings Energy의 상세 에너지 데이터가 삼성 자체 기기 위주로만 제공되어 서드파티 기기(스마트 플러그 등)는 연동은 되어도 에너지 모니터링 항목이 누락되거나 Energy 화면에 기기 자체가 표시되지 않는 경우가 있음.
 - 개선 아이디어: Matter/서드파티 에너지 리포팅 표준(예: Matter Electrical Energy Measurement 클러스터) 지원 기기 목록을 앱 내에 명시하고, 연동은 되지만 에너지 데이터가 없는 기기는 그 사유를 명확히 안내. AI Energy Mode 추천의 절감 효과를 실측 데이터로 검증해 신뢰도 제고.
-- 현재 Top 10 9위에도 랭크되어 있습니다.
+- 현재 Top 10 8위에도 랭크되어 있습니다.
 
 
 ## 신규 증가 이슈
 
 최근 6개월간 증가한 VOC:
 
-- **Connectivity & Reliability**: 최근 6개월 220건 vs 이전 6개월 28건 (+367%)
+- **Connectivity & Reliability**: 최근 6개월 219건 vs 이전 6개월 30건 (+362%)
 - **Performance**: 최근 6개월 74건 vs 이전 6개월 7건 (+657%)
-- **Multi-brand Integration**: 최근 6개월 71건 vs 이전 6개월 15건 (+297%)
-- **Device Onboarding**: 최근 6개월 43건 vs 이전 6개월 8건 (+450%)
-- **Automation & Routine**: 최근 6개월 43건 vs 이전 6개월 11건 (+275%)
-- **UX/UI**: 최근 6개월 34건 vs 이전 6개월 3건 (+710%)
+- **Multi-brand Integration**: 최근 6개월 73건 vs 이전 6개월 15건 (+295%)
+- **Device Onboarding**: 최근 6개월 42건 vs 이전 6개월 9건 (+405%)
+- **Automation & Routine**: 최근 6개월 44건 vs 이전 6개월 11건 (+288%)
+- **UX/UI**: 최근 6개월 35건 vs 이전 6개월 3건 (+740%)
 - **Security & Privacy**: 최근 6개월 25건 vs 이전 6개월 1건 (+1160%)
-- **AI / Voice**: 최근 6개월 7건 vs 이전 6개월 0건 (+1700%)
+- **Energy Management**: 최근 6개월 8건 vs 이전 6개월 0건 (신규)
 
 ## 감소 이슈
 
@@ -154,29 +154,29 @@
 
 ### 가장 시급한 개선 과제
 
-**Connectivity & Reliability** — 최근 3개월 151건(+367%), 12개월 누적 248건으로 전체 부정 VOC의 41%를 차지, 2위(Multi-brand Integration, 최근 3개월 49건)보다 102건 더 많음.
+**Connectivity & Reliability** — 최근 3개월 151건(+362%), 12개월 누적 249건으로 전체 부정 VOC의 41%를 차지, 2위(Multi-brand Integration, 최근 3개월 50건)보다 101건 더 많음.
 
 Root Cause 추정: 허브-클라우드 간 세션 유지 로직 취약, 다중 홉 메시 네트워크에서의 신호 간섭, 백그라운드 재연결 로직 미흡으로 오프라인 표시가 실제 상태와 어긋남.
 
 ### 사용자 이탈 위험 요소
 
-대체 솔루션으로의 전환·삭제 의사를 직접 언급한 VOC 5건 확인. 건수는 많지 않지만 자발적 이탈 의사 표현은 일반 불만보다 드물게 나타나는 강한 신호이므로 주시가 필요합니다. 주로 **Performance** 관련 맥락에서 언급됨.
+대체 솔루션으로의 전환·삭제 의사를 직접 언급한 VOC 5건 확인. 건수는 많지 않지만 자발적 이탈 의사 표현은 일반 불만보다 드물게 나타나는 강한 신호이므로 주시가 필요합니다. 주로 **Energy Management** 관련 맥락에서 언급됨.
 
+- "Since the latest update I can no longer click on a device and see details or remove it from smartthings etc if the device is no longer around. I have uninstalle…" — play, 2026-10-16 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
+- "Always used to run a little clunky but lately the app just won't acknowledge the default browser I have set to sign in. It keeps opening the OS browser; which I…" — play, 2026-10-16 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
 - "A completely non functional mess. And the developer assumes it's an issue on my end, even though I've already done everything they suggested in their response.…" — play, 2026-10-12 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
 - "the update in OCT 26 just turn the app from bad to even more bad. The latest update requires sign in to Samsung website before using it. This raise serious priv…" — play, 2026-10-11 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
 - "pressing login button, nothing happens. pressing add device button, also nothing happens. I have cleared the cache, uninstalled and reinstalled the app, same pr…" — play, 2026-10-08 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
-- "SmartThings iOS App Version 1.7.51.30 (September 2026) Since updating SmartThings to 1.7.51 , the iOS app has become completely unusable for me because it crash…" — smartthings_community, 2026-10-08 ([원문](https://community.smartthings.com/t/smartthings-ios-app-version-1-7-51-30-september-2026/311188/30))
-- "** Update Sep '26** Don't buy Samsung sound bars. App is a disaster. Now it can't control my sound bar - it inexplicably tries to download a controller, which f…" — play, 2026-10-05 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
 
 ### SmartThings 경쟁력 저하 요소
 
-Apple Home, Aqara, Google Home 등 경쟁/대체 플랫폼과 비교하며 SmartThings의 열위를 지적한 VOC 5건 확인. 주로 **Multi-brand Integration** 카테고리에서 함께 언급됨.
+Home Assistant, Apple Home, Aqara, Google Home 등 경쟁/대체 플랫폼과 비교하며 SmartThings의 열위를 지적한 VOC 5건 확인. 주로 **Automation & Routine** 카테고리에서 함께 언급됨.
 
+- "Home Assistant Core 2026.10.0 / 2026.10.2 — Severe bootstrap timeouts, 115 automations unavailable, integrations failing, possible automatic rollback to 2026.9.…" — other_forum_home_assistant, 2026-10-17 ([원문](https://community.home-assistant.io/t/home-assistant-core-2026-10-0-2026-10-2-severe-bootstrap-timeouts-115-automations-unavailable-integrations-failing-possible-automatic-rollback-to-2026-9-4/1029277/1))
 - "Add Matter Bridge support to SmartThings +1 for this. I own several Samsung devices (a Smart Monitor, a refrigerator and a kimchi refrigerator) and use an Apple…" — smartthings_community, 2026-10-15 ([원문](https://community.smartthings.com/t/add-matter-bridge-support-to-smartthings/310005/8))
 - "Aqara G350 and SmartThings: Matter Cameras Have Come a Long Way My forked, fixed and enhanced (see below) Matter Camera driver now exposes mechanical PTZ preset…" — smartthings_community, 2026-10-10 ([원문](https://community.smartthings.com/t/aqara-g350-and-smartthings-matter-cameras-have-come-a-long-way/310676/9))
 - "WiFi It’s a nice refrigerator, but the tech stuff is not working right. It keeps dropping off the home smart network and I kept thinking that it was Google Home…" — appstore, 2026-10-10 ([원문](https://apps.apple.com/us/app/id1222822904))
 - "Google Home & Smarrthings integration broken? ...my side was disabling the Public preview. I did that on Sunday night and Monday morning all was good. So I gues…" — smartthings_community, 2026-10-08 ([원문](https://community.smartthings.com/t/google-home-smarrthings-integration-broken/311262/7))
-- "SmartThings Android App Version 1.8.51.30 (September 2026) ...seless. I had created a Camera Group to display all 8 cams in one view. Never worked. Now it does…" — smartthings_community, 2026-10-08 ([원문](https://community.smartthings.com/t/smartthings-android-app-version-1-8-51-30-september-2026/311187/75))
 
 ### 차기 릴리즈 우선 검토 항목
 
@@ -188,10 +188,10 @@ Apple Home, Aqara, Google Home 등 경쟁/대체 플랫폼과 비교하며 Smart
 
 ## Executive Summary
 
-- 최근 12개월간 SmartThings 앱 관련 부정 VOC 603건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 151건(+367%)으로 나타났다.
+- 최근 12개월간 SmartThings 앱 관련 부정 VOC 609건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 151건(+362%)으로 나타났다.
 - "Multi-brand Integration" 역시 상위 Pain Point로, 사용자 경험 저하가 지속되고 있어 함께 우선 대응이 필요하다.
 - 일부 사용자는 대체 솔루션으로의 이탈 의사를 직접 언급(5건)하여 이탈 위험 신호가 관측된다.
-- Apple Home, Aqara, Google Home 등 경쟁/대체 플랫폼 대비 열위가 언급된 VOC가 5건 확인되어 경쟁력 저하 신호로 관리가 필요하다.
+- Home Assistant, Apple Home, Aqara, Google Home 등 경쟁/대체 플랫폼 대비 열위가 언급된 VOC가 5건 확인되어 경쟁력 저하 신호로 관리가 필요하다.
 - 차기 릴리즈에서는 AI / Voice, Security & Privacy, Energy Management 항목을 우선 검토 대상으로 제안한다.
 
 ## Sources
