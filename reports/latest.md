@@ -1,9 +1,9 @@
 # Victor's VoC Crawler
 
-- 생성 시각: 2026-10-18T00:08:09.009Z
-- 분석 기간: 2025-10-18 ~ 2026-10-18 (최근 12개월)
-- 최근 구간: 2026-07-18 ~ 2026-10-18 (최근 3개월) vs 이전 9개월
-- 분석 대상 부정 VOC: 609건 (전체 수집 VOC 8623건 중)
+- 생성 시각: 2026-10-19T00:20:28.381Z
+- 분석 기간: 2025-10-19 ~ 2026-10-19 (최근 12개월)
+- 최근 구간: 2026-07-19 ~ 2026-10-19 (최근 3개월) vs 이전 9개월
+- 분석 대상 부정 VOC: 614건 (전체 수집 VOC 8686건 중)
 
 ## Top 10 Pain Points
 
@@ -11,10 +11,10 @@
 
 - 순위: 1
 - 카테고리: Connectivity & Reliability
-- 발생 빈도: 249건 (최근 3개월 151건 / 이전 9개월 98건)
-- 증가율: +362%
-- 대표 VOC: "disconnected me when I went away for a while. useless" — play, 2026-10-16 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +362% 증가하며, 'Connectivity & Reliability' 관련 부정 VOC가 총 249건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 251건 (최근 3개월 151건 / 이전 9개월 100건)
+- 증가율: +353%
+- 대표 VOC: "Z-Wave thermostats stopped working – SmartThings Hub V3 mikefc2026co: I went through something very similar when I swapped out my router last year — my Z-Wave devices shouldn't have cared about Wi-Fi at all, but everythi…" — smartthings_community, 2026-10-18 ([원문](https://community.smartthings.com/t/z-wave-thermostats-stopped-working-smartthings-hub-v3/311587/4))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +353% 증가하며, 'Connectivity & Reliability' 관련 부정 VOC가 총 251건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 허브-클라우드 간 세션 유지 로직 취약, 다중 홉 메시 네트워크에서의 신호 간섭, 백그라운드 재연결 로직 미흡으로 오프라인 표시가 실제 상태와 어긋남.
 - 개선 아이디어: 지수 백오프 기반 자동 재연결 로직 개선, 기기별 실시간 연결 품질 지표 제공, 오프라인 발생 시 원인(허브/기기/네트워크) 구분 진단 도구 제공.
 
@@ -33,10 +33,10 @@
 
 - 순위: 3
 - 카테고리: Performance
-- 발생 빈도: 81건 (최근 3개월 58건 / 이전 9개월 23건)
-- 증가율: +657%
-- 대표 VOC: "app won't open all settings and just freezes constantly" — play, 2026-10-12 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +657% 증가하며, 'Performance' 관련 부정 VOC가 총 81건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 82건 (최근 3개월 57건 / 이전 9개월 25건)
+- 증가율: +584%
+- 대표 VOC: "Zero star rating. A piece of software junk. It will trap you in handshake loops forever, opening endless browser tabs until your phone crashes. If you try to use it on the desktop, you will have to dig into tons of comme…" — play, 2026-10-17 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +584% 증가하며, 'Performance' 관련 부정 VOC가 총 82건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 앱 초기 로딩 시 과도한 기기 상태 동기화, 메모리 누수로 인한 장시간 사용 시 느려짐, 백그라운드 폴링으로 인한 배터리 소모.
 - 개선 아이디어: 초기 로딩을 지연 로딩(lazy load) 방식으로 전환, 캐시 계층 도입으로 반복 호출 감소, 배터리/성능 프로파일링을 정기 회귀 테스트에 포함.
 
@@ -55,10 +55,10 @@
 
 - 순위: 5
 - 카테고리: Device Onboarding
-- 발생 빈도: 51건 (최근 3개월 32건 / 이전 9개월 19건)
-- 증가율: +405%
-- 대표 VOC: "Need a remote to connect to a TV without a remote Do I need to say more? Why does it ask to click okay to verify on tv if the whole reason I got the app is bc I don’t have the remote. The one button the tv comes with, do…" — appstore, 2026-10-14 ([원문](https://apps.apple.com/us/app/id1222822904))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +405% 증가하며, 'Device Onboarding' 관련 부정 VOC가 총 51건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 52건 (최근 3개월 33건 / 이전 9개월 19건)
+- 증가율: +421%
+- 대표 VOC: "Cannot open device card in Smartthings app (Feb 2023) Thanks @jkp . I had an unfortunate thread network splinter and only noticed when re adding devices… I didn't correlate this with an app update… Thanks for the tip!" — smartthings_community, 2026-10-17 ([원문](https://community.smartthings.com/t/cannot-open-device-card-in-smartthings-app-feb-2023/258416/4))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +421% 증가하며, 'Device Onboarding' 관련 부정 VOC가 총 52건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 기기 등록 과정에서 발생하는 프로토콜(Wi-Fi/Zigbee/Z-Wave/Matter) 핸드셰이크 실패, 펌웨어-앱 버전 불일치, 불명확한 오류 메시지로 사용자가 실패 원인을 파악하기 어려움.
 - 개선 아이디어: 온보딩 단계별 진행률과 실패 시 구체적 원인(예: "라우터 2.4GHz 대역 확인 필요")을 보여주는 가이드형 UI 도입, 실패율이 높은 기기 유형에 대한 사전 호환성 체크 강화.
 
@@ -77,10 +77,10 @@
 
 - 순위: 7
 - 카테고리: Security & Privacy
-- 발생 빈도: 26건 (최근 3개월 21건 / 이전 9개월 5건)
-- 증가율: +1160%
-- 대표 VOC: "Helpful, but does not update automatically. I find myself spending more time asking it to update than using it for what it's for... tracking. The "Search nearby" for the Smart Tag is HORRIBLE!! I can be right over the ta…" — play, 2026-10-13 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +1160% 증가하며, 'Security & Privacy' 관련 부정 VOC가 총 26건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 27건 (최근 3개월 22건 / 이전 9개월 5건)
+- 증가율: +1220%
+- 대표 VOC: "Signs you into Samsung for your whole phone. Bad for privacy." — play, 2026-10-17 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +1220% 증가하며, 'Security & Privacy' 관련 부정 VOC가 총 27건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 권한 요청 시점과 사유 설명이 불충분해 사용자가 과도한 권한 요구로 인식, 보안 관련 정책 변경 공지가 앱 내에서 충분히 전달되지 않음.
 - 개선 아이디어: 권한별 사용 목적을 요청 시점에 명확히 안내(contextual permission), 보안/개인정보 설정을 별도 대시보드로 통합해 접근성 향상, 정기 보안 감사 결과 공개.
 
@@ -135,13 +135,13 @@
 
 최근 6개월간 증가한 VOC:
 
-- **Connectivity & Reliability**: 최근 6개월 219건 vs 이전 6개월 30건 (+362%)
-- **Performance**: 최근 6개월 74건 vs 이전 6개월 7건 (+657%)
+- **Connectivity & Reliability**: 최근 6개월 221건 vs 이전 6개월 30건 (+353%)
+- **Performance**: 최근 6개월 75건 vs 이전 6개월 7건 (+584%)
 - **Multi-brand Integration**: 최근 6개월 73건 vs 이전 6개월 15건 (+295%)
-- **Device Onboarding**: 최근 6개월 42건 vs 이전 6개월 9건 (+405%)
+- **Device Onboarding**: 최근 6개월 43건 vs 이전 6개월 9건 (+421%)
 - **Automation & Routine**: 최근 6개월 44건 vs 이전 6개월 11건 (+288%)
 - **UX/UI**: 최근 6개월 35건 vs 이전 6개월 3건 (+740%)
-- **Security & Privacy**: 최근 6개월 25건 vs 이전 6개월 1건 (+1160%)
+- **Security & Privacy**: 최근 6개월 26건 vs 이전 6개월 1건 (+1220%)
 - **Energy Management**: 최근 6개월 8건 vs 이전 6개월 0건 (신규)
 
 ## 감소 이슈
@@ -154,7 +154,7 @@
 
 ### 가장 시급한 개선 과제
 
-**Connectivity & Reliability** — 최근 3개월 151건(+362%), 12개월 누적 249건으로 전체 부정 VOC의 41%를 차지, 2위(Multi-brand Integration, 최근 3개월 50건)보다 101건 더 많음.
+**Connectivity & Reliability** — 최근 3개월 151건(+353%), 12개월 누적 251건으로 전체 부정 VOC의 41%를 차지, 2위(Multi-brand Integration, 최근 3개월 50건)보다 101건 더 많음.
 
 Root Cause 추정: 허브-클라우드 간 세션 유지 로직 취약, 다중 홉 메시 네트워크에서의 신호 간섭, 백그라운드 재연결 로직 미흡으로 오프라인 표시가 실제 상태와 어긋남.
 
@@ -183,12 +183,12 @@ Home Assistant, Apple Home, Aqara, Google Home 등 경쟁/대체 플랫폼과 �
 증가율 기준 상위 카테고리를 차기 릴리즈 검토 우선순위로 제안합니다:
 
 1. **AI / Voice** (+1700%) — AI/음성 기능이 특정 지역·기기에서만 제공되어 기대와 실제 지원 범위 간 괴리가 크고, Bixby 등 음성 인식 정확도가 낮아 명령 실패가 반복됨.
-2. **Security & Privacy** (+1160%) — 권한 요청 시점과 사유 설명이 불충분해 사용자가 과도한 권한 요구로 인식, 보안 관련 정책 변경 공지가 앱 내에서 충분히 전달되지 않음.
+2. **Security & Privacy** (+1220%) — 권한 요청 시점과 사유 설명이 불충분해 사용자가 과도한 권한 요구로 인식, 보안 관련 정책 변경 공지가 앱 내에서 충분히 전달되지 않음.
 3. **Energy Management** (신규) — SmartThings Energy의 상세 에너지 데이터가 삼성 자체 기기 위주로만 제공되어 서드파티 기기(스마트 플러그 등)는 연동은 되어도 에너지 모니터링 항목이 누락되거나 Energy 화면에 기기 자체가 표시되지 않는 경우가 있음.
 
 ## Executive Summary
 
-- 최근 12개월간 SmartThings 앱 관련 부정 VOC 609건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 151건(+362%)으로 나타났다.
+- 최근 12개월간 SmartThings 앱 관련 부정 VOC 614건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 151건(+353%)으로 나타났다.
 - "Multi-brand Integration" 역시 상위 Pain Point로, 사용자 경험 저하가 지속되고 있어 함께 우선 대응이 필요하다.
 - 일부 사용자는 대체 솔루션으로의 이탈 의사를 직접 언급(5건)하여 이탈 위험 신호가 관측된다.
 - Home Assistant, Apple Home, Aqara, Google Home 등 경쟁/대체 플랫폼 대비 열위가 언급된 VOC가 5건 확인되어 경쟁력 저하 신호로 관리가 필요하다.
