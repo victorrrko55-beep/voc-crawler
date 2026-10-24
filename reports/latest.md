@@ -1,9 +1,9 @@
 # Victor's VoC Crawler
 
-- 생성 시각: 2026-10-23T00:47:38.504Z
-- 분석 기간: 2025-10-23 ~ 2026-10-23 (최근 12개월)
-- 최근 구간: 2026-07-23 ~ 2026-10-23 (최근 3개월) vs 이전 9개월
-- 분석 대상 부정 VOC: 629건 (전체 수집 VOC 8931건 중)
+- 생성 시각: 2026-10-24T00:54:24.635Z
+- 분석 기간: 2025-10-24 ~ 2026-10-24 (최근 12개월)
+- 최근 구간: 2026-07-24 ~ 2026-10-24 (최근 3개월) vs 이전 9개월
+- 분석 대상 부정 VOC: 631건 (전체 수집 VOC 8981건 중)
 
 ## Top 10 Pain Points
 
@@ -44,10 +44,10 @@
 
 - 순위: 4
 - 카테고리: Automation & Routine
-- 발생 빈도: 57건 (최근 3개월 30건 / 이전 9개월 27건)
-- 증가율: +233%
+- 발생 빈도: 57건 (최근 3개월 26건 / 이전 9개월 31건)
+- 증가율: +152%
 - 대표 VOC: "Trying to set up the map view for the house is the worst thing I used in a long time. Drawing the rooms is more difficult than the beta version of SketchUp. When you do something as simple as change the icon for a light,…" — play, 2026-10-21 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +233% 증가하며, 'Automation & Routine' 관련 부정 VOC가 총 57건 누적되어 상위 Pain Point로 식별됨.
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +152% 증가하며, 'Automation & Routine' 관련 부정 VOC가 총 57건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 루틴 실행 엔진의 조건 평가 지연, 클라우드 종속 자동화의 지연/타임아웃, 앱 업데이트 후 기존 루틴의 트리거-조건 매핑이 깨지는 회귀 버그.
 - 개선 아이디어: 루틴 실행 로그/히스토리를 사용자에게 노출해 실패 시점을 즉시 확인 가능하게 하고, 로컬 실행(온디바이스) 비중을 늘려 클라우드 왕복 지연을 줄임.
 
@@ -66,10 +66,10 @@
 
 - 순위: 6
 - 카테고리: UX/UI
-- 발생 빈도: 38건 (최근 3개월 29건 / 이전 9개월 9건)
-- 증가율: +867%
-- 대표 VOC: "Just sad The OS is terrible. Menus are hard to navigate and the app only syncs with the TV half of the time. Bluetooth always has to be manually enabled despite already being previously connected." — appstore, 2026-10-20 ([원문](https://apps.apple.com/us/app/id1222822904))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +867% 증가하며, 'UX/UI' 관련 부정 VOC가 총 38건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 40건 (최근 3개월 31건 / 이전 9개월 9건)
+- 증가율: +933%
+- 대표 VOC: "Annoying as anything. Keeps popping up.on my.lock screen and hard to find how to make that not happen. Super annoying." — play, 2026-10-22 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +933% 증가하며, 'UX/UI' 관련 부정 VOC가 총 40건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 기능이 누적되며 정보 구조(IA)가 복잡해졌고, 기기 관리·자동화·모니터링 기능이 하나의 화면 계층에 혼재되어 사용자가 원하는 기능을 찾기 어려움.
 - 개선 아이디어: 사용 빈도 기반 홈 화면 재구성, 핵심 태스크(기기 추가/루틴 생성/상태 확인) 중심의 단순화된 네비게이션 도입, 정기적 사용성 테스트 기반 반복 개선.
 
@@ -137,10 +137,10 @@
 
 - **Connectivity & Reliability**: 최근 6개월 227건 vs 이전 6개월 30건 (+321%)
 - **Performance**: 최근 6개월 76건 vs 이전 6개월 8건 (+500%)
-- **Multi-brand Integration**: 최근 6개월 76건 vs 이전 6개월 14건 (+311%)
-- **Automation & Routine**: 최근 6개월 47건 vs 이전 6개월 10건 (+233%)
+- **Multi-brand Integration**: 최근 6개월 75건 vs 이전 6개월 15건 (+311%)
+- **Automation & Routine**: 최근 6개월 47건 vs 이전 6개월 10건 (+152%)
+- **UX/UI**: 최근 6개월 38건 vs 이전 6개월 2건 (+933%)
 - **Device Onboarding**: 최근 6개월 44건 vs 이전 6개월 9건 (+357%)
-- **UX/UI**: 최근 6개월 36건 vs 이전 6개월 2건 (+867%)
 - **Security & Privacy**: 최근 6개월 27건 vs 이전 6개월 1건 (+800%)
 - **Energy Management**: 최근 6개월 9건 vs 이전 6개월 0건 (+2300%)
 
@@ -184,11 +184,11 @@ Home Assistant, Apple Home, Aqara 등 경쟁/대체 플랫폼과 비교하며 Sm
 
 1. **Energy Management** (+2300%) — SmartThings Energy의 상세 에너지 데이터가 삼성 자체 기기 위주로만 제공되어 서드파티 기기(스마트 플러그 등)는 연동은 되어도 에너지 모니터링 항목이 누락되거나 Energy 화면에 기기 자체가 표시되지 않는 경우가 있음.
 2. **AI / Voice** (+1700%) — AI/음성 기능이 특정 지역·기기에서만 제공되어 기대와 실제 지원 범위 간 괴리가 크고, Bixby 등 음성 인식 정확도가 낮아 명령 실패가 반복됨.
-3. **UX/UI** (+867%) — 기능이 누적되며 정보 구조(IA)가 복잡해졌고, 기기 관리·자동화·모니터링 기능이 하나의 화면 계층에 혼재되어 사용자가 원하는 기능을 찾기 어려움.
+3. **UX/UI** (+933%) — 기능이 누적되며 정보 구조(IA)가 복잡해졌고, 기기 관리·자동화·모니터링 기능이 하나의 화면 계층에 혼재되어 사용자가 원하는 기능을 찾기 어려움.
 
 ## Executive Summary
 
-- 최근 12개월간 SmartThings 앱 관련 부정 VOC 629건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 150건(+321%)으로 나타났다.
+- 최근 12개월간 SmartThings 앱 관련 부정 VOC 631건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 150건(+321%)으로 나타났다.
 - "Multi-brand Integration" 역시 상위 Pain Point로, 사용자 경험 저하가 지속되고 있어 함께 우선 대응이 필요하다.
 - 일부 사용자는 대체 솔루션으로의 이탈 의사를 직접 언급(5건)하여 이탈 위험 신호가 관측된다.
 - Home Assistant, Apple Home, Aqara 등 경쟁/대체 플랫폼 대비 열위가 언급된 VOC가 5건 확인되어 경쟁력 저하 신호로 관리가 필요하다.
