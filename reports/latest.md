@@ -1,9 +1,9 @@
 # Victor's VoC Crawler
 
-- 생성 시각: 2026-10-25T00:26:26.388Z
-- 분석 기간: 2025-10-25 ~ 2026-10-25 (최근 12개월)
-- 최근 구간: 2026-07-25 ~ 2026-10-25 (최근 3개월) vs 이전 9개월
-- 분석 대상 부정 VOC: 637건 (전체 수집 VOC 9035건 중)
+- 생성 시각: 2026-10-26T00:31:36.845Z
+- 분석 기간: 2025-10-26 ~ 2026-10-26 (최근 12개월)
+- 최근 구간: 2026-07-26 ~ 2026-10-26 (최근 3개월) vs 이전 9개월
+- 분석 대상 부정 VOC: 638건 (전체 수집 VOC 9087건 중)
 
 ## Top 10 Pain Points
 
@@ -33,10 +33,10 @@
 
 - 순위: 3
 - 카테고리: Performance
-- 발생 빈도: 84건 (최근 3개월 56건 / 이전 9개월 28건)
-- 증가율: +500%
-- 대표 VOC: "Bad Joke Crashes constantly whenever I’m trying to add a device. The app is incredibly frustrating for something that should be simple. Like all Samsung products." — appstore, 2026-10-20 ([원문](https://apps.apple.com/us/app/id1222822904))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +500% 증가하며, 'Performance' 관련 부정 VOC가 총 84건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 85건 (최근 3개월 57건 / 이전 9개월 28건)
+- 증가율: +511%
+- 대표 VOC: "Bad connections to tv Always crashes" — appstore, 2026-10-24 ([원문](https://apps.apple.com/us/app/id1222822904))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +511% 증가하며, 'Performance' 관련 부정 VOC가 총 85건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 앱 초기 로딩 시 과도한 기기 상태 동기화, 메모리 누수로 인한 장시간 사용 시 느려짐, 백그라운드 폴링으로 인한 배터리 소모.
 - 개선 아이디어: 초기 로딩을 지연 로딩(lazy load) 방식으로 전환, 캐시 계층 도입으로 반복 호출 감소, 배터리/성능 프로파일링을 정기 회귀 테스트에 포함.
 
@@ -136,7 +136,7 @@
 최근 6개월간 증가한 VOC:
 
 - **Connectivity & Reliability**: 최근 6개월 229건 vs 이전 6개월 30건 (+319%)
-- **Performance**: 최근 6개월 76건 vs 이전 6개월 8건 (+500%)
+- **Performance**: 최근 6개월 77건 vs 이전 6개월 8건 (+511%)
 - **Multi-brand Integration**: 최근 6개월 77건 vs 이전 6개월 15건 (+326%)
 - **Automation & Routine**: 최근 6개월 49건 vs 이전 6개월 10건 (+153%)
 - **UX/UI**: 최근 6개월 38건 vs 이전 6개월 2건 (+800%)
@@ -188,7 +188,7 @@ Home Assistant, Apple Home, Aqara 등 경쟁/대체 플랫폼과 비교하며 Sm
 
 ## Executive Summary
 
-- 최근 12개월간 SmartThings 앱 관련 부정 VOC 637건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 151건(+319%)으로 나타났다.
+- 최근 12개월간 SmartThings 앱 관련 부정 VOC 638건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 151건(+319%)으로 나타났다.
 - "Multi-brand Integration" 역시 상위 Pain Point로, 사용자 경험 저하가 지속되고 있어 함께 우선 대응이 필요하다.
 - 일부 사용자는 대체 솔루션으로의 이탈 의사를 직접 언급(5건)하여 이탈 위험 신호가 관측된다.
 - Home Assistant, Apple Home, Aqara 등 경쟁/대체 플랫폼 대비 열위가 언급된 VOC가 5건 확인되어 경쟁력 저하 신호로 관리가 필요하다.
