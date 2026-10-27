@@ -1,9 +1,9 @@
 # Victor's VoC Crawler
 
-- 생성 시각: 2026-10-26T00:31:36.845Z
-- 분석 기간: 2025-10-26 ~ 2026-10-26 (최근 12개월)
-- 최근 구간: 2026-07-26 ~ 2026-10-26 (최근 3개월) vs 이전 9개월
-- 분석 대상 부정 VOC: 638건 (전체 수집 VOC 9087건 중)
+- 생성 시각: 2026-10-27T01:34:03.535Z
+- 분석 기간: 2025-10-27 ~ 2026-10-27 (최근 12개월)
+- 최근 구간: 2026-07-27 ~ 2026-10-27 (최근 3개월) vs 이전 9개월
+- 분석 대상 부정 VOC: 641건 (전체 수집 VOC 9137건 중)
 
 ## Top 10 Pain Points
 
@@ -11,10 +11,10 @@
 
 - 순위: 1
 - 카테고리: Connectivity & Reliability
-- 발생 빈도: 259건 (최근 3개월 151건 / 이전 9개월 108건)
-- 증가율: +319%
+- 발생 빈도: 259건 (최근 3개월 149건 / 이전 9개월 110건)
+- 증가율: +306%
 - 대표 VOC: "Matter Devices Offline 10-23-26 Thanks. I should have tried that, but figured the issue was at the devices, not the hub! Everything is back to normal now." — smartthings_community, 2026-10-24 ([원문](https://community.smartthings.com/t/matter-devices-offline-10-23-26/311727/5))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +319% 증가하며, 'Connectivity & Reliability' 관련 부정 VOC가 총 259건 누적되어 상위 Pain Point로 식별됨.
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +306% 증가하며, 'Connectivity & Reliability' 관련 부정 VOC가 총 259건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 허브-클라우드 간 세션 유지 로직 취약, 다중 홉 메시 네트워크에서의 신호 간섭, 백그라운드 재연결 로직 미흡으로 오프라인 표시가 실제 상태와 어긋남.
 - 개선 아이디어: 지수 백오프 기반 자동 재연결 로직 개선, 기기별 실시간 연결 품질 지표 제공, 오프라인 발생 시 원인(허브/기기/네트워크) 구분 진단 도구 제공.
 
@@ -22,10 +22,10 @@
 
 - 순위: 2
 - 카테고리: Multi-brand Integration
-- 발생 빈도: 92건 (최근 3개월 54건 / 이전 9개월 38건)
-- 증가율: +326%
-- 대표 VOC: "Here’s your review Needless to say, the moron developers don’t listen to feedback. Despite multiple reviews this worthless app continues to put up a request for rating when the app opens. Last thing I want to do is rate …" — appstore, 2026-10-23 ([원문](https://apps.apple.com/us/app/id1222822904))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +326% 증가하며, 'Multi-brand Integration' 관련 부정 VOC가 총 92건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 93건 (최근 3개월 54건 / 이전 9개월 39건)
+- 증가율: +315%
+- 대표 VOC: "it doesn't work with most home network switches. it's a pain. hours wasted." — play, 2026-10-25 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +315% 증가하며, 'Multi-brand Integration' 관련 부정 VOC가 총 93건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: Matter 표준 지원이 기기/펌웨어별로 파편화되어 있고, 타 브랜드 기기와의 인증서/ 드라이버 호환성 검증이 SmartThings 릴리즈 주기와 어긋남.
 - 개선 아이디어: Matter 인증 기기에 대한 호환성 매트릭스를 앱 내에서 공개하고, 주요 서드파티 브랜드와의 통합 테스트를 릴리즈 전 QA 파이프라인에 상시 포함.
 
@@ -33,10 +33,10 @@
 
 - 순위: 3
 - 카테고리: Performance
-- 발생 빈도: 85건 (최근 3개월 57건 / 이전 9개월 28건)
-- 증가율: +511%
-- 대표 VOC: "Bad connections to tv Always crashes" — appstore, 2026-10-24 ([원문](https://apps.apple.com/us/app/id1222822904))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +511% 증가하며, 'Performance' 관련 부정 VOC가 총 85건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 86건 (최근 3개월 58건 / 이전 9개월 28건)
+- 증가율: +521%
+- 대표 VOC: "Really disappointed and no improvements ever made! It crashes all the time and really doesn’t work on the iOS. It SUCKS!" — appstore, 2026-10-25 ([원문](https://apps.apple.com/us/app/id1222822904))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +521% 증가하며, 'Performance' 관련 부정 VOC가 총 86건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 앱 초기 로딩 시 과도한 기기 상태 동기화, 메모리 누수로 인한 장시간 사용 시 느려짐, 백그라운드 폴링으로 인한 배터리 소모.
 - 개선 아이디어: 초기 로딩을 지연 로딩(lazy load) 방식으로 전환, 캐시 계층 도입으로 반복 호출 감소, 배터리/성능 프로파일링을 정기 회귀 테스트에 포함.
 
@@ -66,10 +66,10 @@
 
 - 순위: 6
 - 카테고리: UX/UI
-- 발생 빈도: 40건 (최근 3개월 30건 / 이전 9개월 10건)
-- 증가율: +800%
-- 대표 VOC: "Annoying as anything. Keeps popping up.on my.lock screen and hard to find how to make that not happen. Super annoying." — play, 2026-10-22 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +800% 증가하며, 'UX/UI' 관련 부정 VOC가 총 40건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 41건 (최근 3개월 31건 / 이전 9개월 10건)
+- 증가율: +830%
+- 대표 VOC: "very poor interface, confusing" — play, 2026-10-25 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +830% 증가하며, 'UX/UI' 관련 부정 VOC가 총 41건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 기능이 누적되며 정보 구조(IA)가 복잡해졌고, 기기 관리·자동화·모니터링 기능이 하나의 화면 계층에 혼재되어 사용자가 원하는 기능을 찾기 어려움.
 - 개선 아이디어: 사용 빈도 기반 홈 화면 재구성, 핵심 태스크(기기 추가/루틴 생성/상태 확인) 중심의 단순화된 네비게이션 도입, 정기적 사용성 테스트 기반 반복 개선.
 
@@ -135,12 +135,12 @@
 
 최근 6개월간 증가한 VOC:
 
-- **Connectivity & Reliability**: 최근 6개월 229건 vs 이전 6개월 30건 (+319%)
-- **Performance**: 최근 6개월 77건 vs 이전 6개월 8건 (+511%)
-- **Multi-brand Integration**: 최근 6개월 77건 vs 이전 6개월 15건 (+326%)
+- **Connectivity & Reliability**: 최근 6개월 229건 vs 이전 6개월 30건 (+306%)
+- **Performance**: 최근 6개월 78건 vs 이전 6개월 8건 (+521%)
+- **Multi-brand Integration**: 최근 6개월 78건 vs 이전 6개월 15건 (+315%)
 - **Automation & Routine**: 최근 6개월 49건 vs 이전 6개월 10건 (+153%)
-- **UX/UI**: 최근 6개월 38건 vs 이전 6개월 2건 (+800%)
-- **Device Onboarding**: 최근 6개월 44건 vs 이전 6개월 9건 (+357%)
+- **UX/UI**: 최근 6개월 39건 vs 이전 6개월 2건 (+830%)
+- **Device Onboarding**: 최근 6개월 43건 vs 이전 6개월 10건 (+357%)
 - **Security & Privacy**: 최근 6개월 27건 vs 이전 6개월 1건 (+800%)
 - **Energy Management**: 최근 6개월 9건 vs 이전 6개월 0건 (+2300%)
 
@@ -154,7 +154,7 @@
 
 ### 가장 시급한 개선 과제
 
-**Connectivity & Reliability** — 최근 3개월 151건(+319%), 12개월 누적 259건으로 전체 부정 VOC의 41%를 차지, 2위(Multi-brand Integration, 최근 3개월 54건)보다 97건 더 많음.
+**Connectivity & Reliability** — 최근 3개월 149건(+306%), 12개월 누적 259건으로 전체 부정 VOC의 40%를 차지, 2위(Multi-brand Integration, 최근 3개월 54건)보다 95건 더 많음.
 
 Root Cause 추정: 허브-클라우드 간 세션 유지 로직 취약, 다중 홉 메시 네트워크에서의 신호 간섭, 백그라운드 재연결 로직 미흡으로 오프라인 표시가 실제 상태와 어긋남.
 
@@ -183,12 +183,12 @@ Home Assistant, Apple Home, Aqara 등 경쟁/대체 플랫폼과 비교하며 Sm
 증가율 기준 상위 카테고리를 차기 릴리즈 검토 우선순위로 제안합니다:
 
 1. **Energy Management** (+2300%) — SmartThings Energy의 상세 에너지 데이터가 삼성 자체 기기 위주로만 제공되어 서드파티 기기(스마트 플러그 등)는 연동은 되어도 에너지 모니터링 항목이 누락되거나 Energy 화면에 기기 자체가 표시되지 않는 경우가 있음.
-2. **UX/UI** (+800%) — 기능이 누적되며 정보 구조(IA)가 복잡해졌고, 기기 관리·자동화·모니터링 기능이 하나의 화면 계층에 혼재되어 사용자가 원하는 기능을 찾기 어려움.
+2. **UX/UI** (+830%) — 기능이 누적되며 정보 구조(IA)가 복잡해졌고, 기기 관리·자동화·모니터링 기능이 하나의 화면 계층에 혼재되어 사용자가 원하는 기능을 찾기 어려움.
 3. **Security & Privacy** (+800%) — 권한 요청 시점과 사유 설명이 불충분해 사용자가 과도한 권한 요구로 인식, 보안 관련 정책 변경 공지가 앱 내에서 충분히 전달되지 않음.
 
 ## Executive Summary
 
-- 최근 12개월간 SmartThings 앱 관련 부정 VOC 638건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 151건(+319%)으로 나타났다.
+- 최근 12개월간 SmartThings 앱 관련 부정 VOC 641건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 149건(+306%)으로 나타났다.
 - "Multi-brand Integration" 역시 상위 Pain Point로, 사용자 경험 저하가 지속되고 있어 함께 우선 대응이 필요하다.
 - 일부 사용자는 대체 솔루션으로의 이탈 의사를 직접 언급(5건)하여 이탈 위험 신호가 관측된다.
 - Home Assistant, Apple Home, Aqara 등 경쟁/대체 플랫폼 대비 열위가 언급된 VOC가 5건 확인되어 경쟁력 저하 신호로 관리가 필요하다.
