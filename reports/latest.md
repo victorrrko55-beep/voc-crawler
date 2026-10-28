@@ -1,9 +1,9 @@
 # Victor's VoC Crawler
 
-- 생성 시각: 2026-10-27T01:34:03.535Z
-- 분석 기간: 2025-10-27 ~ 2026-10-27 (최근 12개월)
-- 최근 구간: 2026-07-27 ~ 2026-10-27 (최근 3개월) vs 이전 9개월
-- 분석 대상 부정 VOC: 641건 (전체 수집 VOC 9137건 중)
+- 생성 시각: 2026-10-28T01:31:29.218Z
+- 분석 기간: 2025-10-28 ~ 2026-10-28 (최근 12개월)
+- 최근 구간: 2026-07-28 ~ 2026-10-28 (최근 3개월) vs 이전 9개월
+- 분석 대상 부정 VOC: 643건 (전체 수집 VOC 9192건 중)
 
 ## Top 10 Pain Points
 
@@ -11,10 +11,10 @@
 
 - 순위: 1
 - 카테고리: Connectivity & Reliability
-- 발생 빈도: 259건 (최근 3개월 149건 / 이전 9개월 110건)
-- 증가율: +306%
-- 대표 VOC: "Matter Devices Offline 10-23-26 Thanks. I should have tried that, but figured the issue was at the devices, not the hub! Everything is back to normal now." — smartthings_community, 2026-10-24 ([원문](https://community.smartthings.com/t/matter-devices-offline-10-23-26/311727/5))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +306% 증가하며, 'Connectivity & Reliability' 관련 부정 VOC가 총 259건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 261건 (최근 3개월 150건 / 이전 9개월 111건)
+- 증가율: +305%
+- 대표 VOC: "SmartThings Android App Version 1.8.51.30 (September 2026) and 1.8.52.23 (October 2026) TapioX: I tested SmartThings App and SmartThings V3 Hub with the internet offline. I failed miserably. The impression I got is that …" — smartthings_community, 2026-10-27 ([원문](https://community.smartthings.com/t/smartthings-android-app-version-1-8-51-30-september-2026-and-1-8-52-23-october-2026/311187/142))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +305% 증가하며, 'Connectivity & Reliability' 관련 부정 VOC가 총 261건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 허브-클라우드 간 세션 유지 로직 취약, 다중 홉 메시 네트워크에서의 신호 간섭, 백그라운드 재연결 로직 미흡으로 오프라인 표시가 실제 상태와 어긋남.
 - 개선 아이디어: 지수 백오프 기반 자동 재연결 로직 개선, 기기별 실시간 연결 품질 지표 제공, 오프라인 발생 시 원인(허브/기기/네트워크) 구분 진단 도구 제공.
 
@@ -22,10 +22,10 @@
 
 - 순위: 2
 - 카테고리: Multi-brand Integration
-- 발생 빈도: 93건 (최근 3개월 54건 / 이전 9개월 39건)
-- 증가율: +315%
+- 발생 빈도: 93건 (최근 3개월 51건 / 이전 9개월 42건)
+- 증가율: +264%
 - 대표 VOC: "it doesn't work with most home network switches. it's a pain. hours wasted." — play, 2026-10-25 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +315% 증가하며, 'Multi-brand Integration' 관련 부정 VOC가 총 93건 누적되어 상위 Pain Point로 식별됨.
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +264% 증가하며, 'Multi-brand Integration' 관련 부정 VOC가 총 93건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: Matter 표준 지원이 기기/펌웨어별로 파편화되어 있고, 타 브랜드 기기와의 인증서/ 드라이버 호환성 검증이 SmartThings 릴리즈 주기와 어긋남.
 - 개선 아이디어: Matter 인증 기기에 대한 호환성 매트릭스를 앱 내에서 공개하고, 주요 서드파티 브랜드와의 통합 테스트를 릴리즈 전 QA 파이프라인에 상시 포함.
 
@@ -135,9 +135,9 @@
 
 최근 6개월간 증가한 VOC:
 
-- **Connectivity & Reliability**: 최근 6개월 229건 vs 이전 6개월 30건 (+306%)
+- **Connectivity & Reliability**: 최근 6개월 231건 vs 이전 6개월 30건 (+305%)
 - **Performance**: 최근 6개월 78건 vs 이전 6개월 8건 (+521%)
-- **Multi-brand Integration**: 최근 6개월 78건 vs 이전 6개월 15건 (+315%)
+- **Multi-brand Integration**: 최근 6개월 78건 vs 이전 6개월 15건 (+264%)
 - **Automation & Routine**: 최근 6개월 49건 vs 이전 6개월 10건 (+153%)
 - **UX/UI**: 최근 6개월 39건 vs 이전 6개월 2건 (+830%)
 - **Device Onboarding**: 최근 6개월 43건 vs 이전 6개월 10건 (+357%)
@@ -154,7 +154,7 @@
 
 ### 가장 시급한 개선 과제
 
-**Connectivity & Reliability** — 최근 3개월 149건(+306%), 12개월 누적 259건으로 전체 부정 VOC의 40%를 차지, 2위(Multi-brand Integration, 최근 3개월 54건)보다 95건 더 많음.
+**Connectivity & Reliability** — 최근 3개월 150건(+305%), 12개월 누적 261건으로 전체 부정 VOC의 41%를 차지, 2위(Multi-brand Integration, 최근 3개월 51건)보다 99건 더 많음.
 
 Root Cause 추정: 허브-클라우드 간 세션 유지 로직 취약, 다중 홉 메시 네트워크에서의 신호 간섭, 백그라운드 재연결 로직 미흡으로 오프라인 표시가 실제 상태와 어긋남.
 
@@ -188,7 +188,7 @@ Home Assistant, Apple Home, Aqara 등 경쟁/대체 플랫폼과 비교하며 Sm
 
 ## Executive Summary
 
-- 최근 12개월간 SmartThings 앱 관련 부정 VOC 641건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 149건(+306%)으로 나타났다.
+- 최근 12개월간 SmartThings 앱 관련 부정 VOC 643건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 150건(+305%)으로 나타났다.
 - "Multi-brand Integration" 역시 상위 Pain Point로, 사용자 경험 저하가 지속되고 있어 함께 우선 대응이 필요하다.
 - 일부 사용자는 대체 솔루션으로의 이탈 의사를 직접 언급(5건)하여 이탈 위험 신호가 관측된다.
 - Home Assistant, Apple Home, Aqara 등 경쟁/대체 플랫폼 대비 열위가 언급된 VOC가 5건 확인되어 경쟁력 저하 신호로 관리가 필요하다.
