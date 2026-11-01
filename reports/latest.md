@@ -1,9 +1,9 @@
 # Victor's VoC Crawler
 
-- 생성 시각: 2026-10-31T01:43:13.699Z
-- 분석 기간: 2025-10-31 ~ 2026-10-31 (최근 12개월)
-- 최근 구간: 2026-07-31 ~ 2026-10-31 (최근 3개월) vs 이전 9개월
-- 분석 대상 부정 VOC: 653건 (전체 수집 VOC 9368건 중)
+- 생성 시각: 2026-11-01T01:20:11.398Z
+- 분석 기간: 2025-11-01 ~ 2026-11-01 (최근 12개월)
+- 최근 구간: 2026-08-01 ~ 2026-11-01 (최근 3개월) vs 이전 9개월
+- 분석 대상 부정 VOC: 658건 (전체 수집 VOC 9442건 중)
 
 ## Top 10 Pain Points
 
@@ -11,10 +11,10 @@
 
 - 순위: 1
 - 카테고리: Connectivity & Reliability
-- 발생 빈도: 264건 (최근 3개월 149건 / 이전 9개월 115건)
-- 증가율: +289%
-- 대표 VOC: "Disconnects all the time. TV won't remain authenticated" — play, 2026-10-29 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +289% 증가하며, 'Connectivity & Reliability' 관련 부정 VOC가 총 264건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 267건 (최근 3개월 151건 / 이전 9개월 116건)
+- 증가율: +291%
+- 대표 VOC: "[FREE] Offline Devices Monitor – daily Telegram/Pushover alert for offline SmartThings devices @Paul_Oliver Good question. As far as I can tell, Samsung hasn't published how OAuth apps that other users authorize will be …" — smartthings_community, 2026-10-31 ([원문](https://community.smartthings.com/t/free-offline-devices-monitor-daily-telegram-pushover-alert-for-offline-smartthings-devices/311868/3))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +291% 증가하며, 'Connectivity & Reliability' 관련 부정 VOC가 총 267건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 허브-클라우드 간 세션 유지 로직 취약, 다중 홉 메시 네트워크에서의 신호 간섭, 백그라운드 재연결 로직 미흡으로 오프라인 표시가 실제 상태와 어긋남.
 - 개선 아이디어: 지수 백오프 기반 자동 재연결 로직 개선, 기기별 실시간 연결 품질 지표 제공, 오프라인 발생 시 원인(허브/기기/네트워크) 구분 진단 도구 제공.
 
@@ -77,10 +77,10 @@
 
 - 순위: 7
 - 카테고리: Security & Privacy
-- 발생 빈도: 29건 (최근 3개월 22건 / 이전 9개월 7건)
-- 증가율: +843%
-- 대표 VOC: "I made the mistake of buying a Samsung dryer and by default you can't delay a certain cycle from the physical interface and you need this horrible app, which requires ALL PERMISSIONS to run and offers absolutely nothing …" — play, 2026-10-27 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +843% 증가하며, 'Security & Privacy' 관련 부정 VOC가 총 29건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 31건 (최근 3개월 24건 / 이전 9개월 7건)
+- 증가율: +929%
+- 대표 VOC: "worst application with international brand. signin process is nightmare. if you are lucky you will be able to sign-in. also unnecessary permission forced acceptance of ads." — play, 2026-10-30 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +929% 증가하며, 'Security & Privacy' 관련 부정 VOC가 총 31건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 권한 요청 시점과 사유 설명이 불충분해 사용자가 과도한 권한 요구로 인식, 보안 관련 정책 변경 공지가 앱 내에서 충분히 전달되지 않음.
 - 개선 아이디어: 권한별 사용 목적을 요청 시점에 명확히 안내(contextual permission), 보안/개인정보 설정을 별도 대시보드로 통합해 접근성 향상, 정기 보안 감사 결과 공개.
 
@@ -110,10 +110,10 @@
 
 - 순위: 10
 - 카테고리: Notification & Alert
-- 발생 빈도: 3건 (최근 3개월 2건 / 이전 9개월 1건)
-- 증가율: +500%
+- 발생 빈도: 3건 (최근 3개월 1건 / 이전 9개월 2건)
+- 증가율: +50%
 - 대표 VOC: "Ads in Notofications All of a sudden it started sending me push notifications that are just ads for the new Samsung phone. These notifications are supposed to alert me to issues like water leaks. Ads are annoying and wil…" — appstore, 2026-08-05 ([원문](https://apps.apple.com/us/app/id1222822904))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +500% 증가하며, 'Notification & Alert' 관련 부정 VOC가 총 3건 누적되어 상위 Pain Point로 식별됨.
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +50% 증가하며, 'Notification & Alert' 관련 부정 VOC가 총 3건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 푸시 알림 파이프라인(클라우드→FCM/APNs)의 지연, 사용자별 알림 설정과 기기 이벤트 트리거 간 매핑 오류로 알림 누락/중복 발생.
 - 개선 아이디어: 중요 알림(보안·누수·화재 등)에 대한 우선순위 큐 분리, 알림 전달 성공률 모니터링 대시보드 구축, 사용자가 알림 지연을 직접 진단할 수 있는 테스트 알림 기능 제공.
 
@@ -135,13 +135,13 @@
 
 최근 6개월간 증가한 VOC:
 
-- **Connectivity & Reliability**: 최근 6개월 234건 vs 이전 6개월 30건 (+289%)
+- **Connectivity & Reliability**: 최근 6개월 237건 vs 이전 6개월 30건 (+291%)
 - **Performance**: 최근 6개월 78건 vs 이전 6개월 8건 (+432%)
 - **Multi-brand Integration**: 최근 6개월 80건 vs 이전 6개월 15건 (+248%)
 - **Automation & Routine**: 최근 6개월 50건 vs 이전 6개월 10건 (+181%)
 - **UX/UI**: 최근 6개월 40건 vs 이전 6개월 3건 (+890%)
 - **Device Onboarding**: 최근 6개월 44건 vs 이전 6개월 10건 (+304%)
-- **Security & Privacy**: 최근 6개월 28건 vs 이전 6개월 1건 (+843%)
+- **Security & Privacy**: 최근 6개월 30건 vs 이전 6개월 1건 (+929%)
 - **Energy Management**: 최근 6개월 9건 vs 이전 6개월 0건 (+2300%)
 
 ## 감소 이슈
@@ -154,7 +154,7 @@
 
 ### 가장 시급한 개선 과제
 
-**Connectivity & Reliability** — 최근 3개월 149건(+289%), 12개월 누적 264건으로 전체 부정 VOC의 40%를 차지, 2위(Multi-brand Integration, 최근 3개월 51건)보다 98건 더 많음.
+**Connectivity & Reliability** — 최근 3개월 151건(+291%), 12개월 누적 267건으로 전체 부정 VOC의 41%를 차지, 2위(Multi-brand Integration, 최근 3개월 51건)보다 100건 더 많음.
 
 Root Cause 추정: 허브-클라우드 간 세션 유지 로직 취약, 다중 홉 메시 네트워크에서의 신호 간섭, 백그라운드 재연결 로직 미흡으로 오프라인 표시가 실제 상태와 어긋남.
 
@@ -183,16 +183,16 @@ Home Assistant, Apple Home, Aqara 등 경쟁/대체 플랫폼과 비교하며 Sm
 증가율 기준 상위 카테고리를 차기 릴리즈 검토 우선순위로 제안합니다:
 
 1. **Energy Management** (+2300%) — SmartThings Energy의 상세 에너지 데이터가 삼성 자체 기기 위주로만 제공되어 서드파티 기기(스마트 플러그 등)는 연동은 되어도 에너지 모니터링 항목이 누락되거나 Energy 화면에 기기 자체가 표시되지 않는 경우가 있음.
-2. **UX/UI** (+890%) — 기능이 누적되며 정보 구조(IA)가 복잡해졌고, 기기 관리·자동화·모니터링 기능이 하나의 화면 계층에 혼재되어 사용자가 원하는 기능을 찾기 어려움.
-3. **Security & Privacy** (+843%) — 권한 요청 시점과 사유 설명이 불충분해 사용자가 과도한 권한 요구로 인식, 보안 관련 정책 변경 공지가 앱 내에서 충분히 전달되지 않음.
+2. **Security & Privacy** (+929%) — 권한 요청 시점과 사유 설명이 불충분해 사용자가 과도한 권한 요구로 인식, 보안 관련 정책 변경 공지가 앱 내에서 충분히 전달되지 않음.
+3. **UX/UI** (+890%) — 기능이 누적되며 정보 구조(IA)가 복잡해졌고, 기기 관리·자동화·모니터링 기능이 하나의 화면 계층에 혼재되어 사용자가 원하는 기능을 찾기 어려움.
 
 ## Executive Summary
 
-- 최근 12개월간 SmartThings 앱 관련 부정 VOC 653건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 149건(+289%)으로 나타났다.
+- 최근 12개월간 SmartThings 앱 관련 부정 VOC 658건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 151건(+291%)으로 나타났다.
 - "Multi-brand Integration" 역시 상위 Pain Point로, 사용자 경험 저하가 지속되고 있어 함께 우선 대응이 필요하다.
 - 일부 사용자는 대체 솔루션으로의 이탈 의사를 직접 언급(5건)하여 이탈 위험 신호가 관측된다.
 - Home Assistant, Apple Home, Aqara 등 경쟁/대체 플랫폼 대비 열위가 언급된 VOC가 5건 확인되어 경쟁력 저하 신호로 관리가 필요하다.
-- 차기 릴리즈에서는 Energy Management, UX/UI, Security & Privacy 항목을 우선 검토 대상으로 제안한다.
+- 차기 릴리즈에서는 Energy Management, Security & Privacy, UX/UI 항목을 우선 검토 대상으로 제안한다.
 
 ## Sources
 
