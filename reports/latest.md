@@ -1,9 +1,9 @@
 # Victor's VoC Crawler
 
-- 생성 시각: 2026-11-04T02:31:51.145Z
-- 분석 기간: 2025-11-04 ~ 2026-11-04 (최근 12개월)
-- 최근 구간: 2026-08-04 ~ 2026-11-04 (최근 3개월) vs 이전 9개월
-- 분석 대상 부정 VOC: 666건 (전체 수집 VOC 9642건 중)
+- 생성 시각: 2026-11-05T02:38:59.930Z
+- 분석 기간: 2025-11-05 ~ 2026-11-05 (최근 12개월)
+- 최근 구간: 2026-08-05 ~ 2026-11-05 (최근 3개월) vs 이전 9개월
+- 분석 대상 부정 VOC: 670건 (전체 수집 VOC 9705건 중)
 
 ## Top 10 Pain Points
 
@@ -11,10 +11,10 @@
 
 - 순위: 1
 - 카테고리: Connectivity & Reliability
-- 발생 빈도: 269건 (최근 3개월 150건 / 이전 9개월 119건)
-- 증가율: +278%
-- 대표 VOC: "Best Smart Bulbs .../www.amazon.com/clp/B0DHFSDV46 open prime modal Amazon.com: THIRDREALITY Zigbee Smart Color Bulb ZL1 4Pack,Compatible with Home Assistant(ZHA &amp; Z2M), SmartThings,Aeotec,Homey,Hubitat or Echo Devic…" — other_forum_home_assistant, 2026-11-01 ([원문](https://community.home-assistant.io/t/best-smart-bulbs/1031551/11))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +278% 증가하며, 'Connectivity & Reliability' 관련 부정 VOC가 총 269건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 270건 (최근 3개월 151건 / 이전 9개월 119건)
+- 증가율: +281%
+- 대표 VOC: "With the latest app overhaul I can't tell on the main dashboard if batteries for things like sensors are low and if devices are offline. Am I missing something or is this intentional? I hope I'm just missing something be…" — play, 2026-11-03 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +281% 증가하며, 'Connectivity & Reliability' 관련 부정 VOC가 총 270건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 허브-클라우드 간 세션 유지 로직 취약, 다중 홉 메시 네트워크에서의 신호 간섭, 백그라운드 재연결 로직 미흡으로 오프라인 표시가 실제 상태와 어긋남.
 - 개선 아이디어: 지수 백오프 기반 자동 재연결 로직 개선, 기기별 실시간 연결 품질 지표 제공, 오프라인 발생 시 원인(허브/기기/네트워크) 구분 진단 도구 제공.
 
@@ -22,10 +22,10 @@
 
 - 순위: 2
 - 카테고리: Multi-brand Integration
-- 발생 빈도: 96건 (최근 3개월 52건 / 이전 9개월 44건)
-- 증가율: +255%
-- 대표 VOC: "Horrible Updates This app was once easy and simple to use but over time, the constant useless interface updates have quite literally made the app unusable. Every time I open the app to use it opens to a loading screen no…" — appstore, 2026-10-31 ([원문](https://apps.apple.com/us/app/id1222822904))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +255% 증가하며, 'Multi-brand Integration' 관련 부정 VOC가 총 96건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 98건 (최근 3개월 55건 / 이전 9개월 43건)
+- 증가율: +284%
+- 대표 VOC: "SONOFF Orb-ZBW2L Zigbee Double Smart Wall Switch ...b-ZBW2L Zigbee Double Smart Wall Switch fits the bill for what I need , no neutral needed and it only needs a shallow back box. However, I'd rather a matter over thread…" — smartthings_community, 2026-11-04 ([원문](https://community.smartthings.com/t/sonoff-orb-zbw2l-zigbee-double-smart-wall-switch/311951/1))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +284% 증가하며, 'Multi-brand Integration' 관련 부정 VOC가 총 98건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: Matter 표준 지원이 기기/펌웨어별로 파편화되어 있고, 타 브랜드 기기와의 인증서/ 드라이버 호환성 검증이 SmartThings 릴리즈 주기와 어긋남.
 - 개선 아이디어: Matter 인증 기기에 대한 호환성 매트릭스를 앱 내에서 공개하고, 주요 서드파티 브랜드와의 통합 테스트를 릴리즈 전 QA 파이프라인에 상시 포함.
 
@@ -33,10 +33,10 @@
 
 - 순위: 3
 - 카테고리: Performance
-- 발생 빈도: 87건 (최근 3개월 55건 / 이전 9개월 32건)
-- 증가율: +416%
-- 대표 VOC: "Completely utterly garbage piece of software. Kept freezing and crashing when I was trying to connect my. Samsung range. Another reminder of why Samsung has become so despised - horrible software, unreliable appliances a…" — play, 2026-11-01 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +416% 증가하며, 'Performance' 관련 부정 VOC가 총 87건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 88건 (최근 3개월 47건 / 이전 9개월 41건)
+- 증가율: +244%
+- 대표 VOC: "Horrible app Would be nice if it actually worked every time I open the app it freezes up or it just keeps turning the dial instead of actually opening up the remote. I have to constantly close the app and reopen it again…" — appstore, 2026-11-03 ([원문](https://apps.apple.com/us/app/id1222822904))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +244% 증가하며, 'Performance' 관련 부정 VOC가 총 88건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 앱 초기 로딩 시 과도한 기기 상태 동기화, 메모리 누수로 인한 장시간 사용 시 느려짐, 백그라운드 폴링으로 인한 배터리 소모.
 - 개선 아이디어: 초기 로딩을 지연 로딩(lazy load) 방식으로 전환, 캐시 계층 도입으로 반복 호출 감소, 배터리/성능 프로파일링을 정기 회귀 테스트에 포함.
 
@@ -44,10 +44,10 @@
 
 - 순위: 4
 - 카테고리: Automation & Routine
-- 발생 빈도: 60건 (최근 3개월 28건 / 이전 9개월 32건)
-- 증가율: +163%
+- 발생 빈도: 60건 (최근 3개월 27건 / 이전 9개월 33건)
+- 증가율: +145%
 - 대표 VOC: "What was the last automation that behaved differently than you expected? (Syntax was OK, logic/runtime failed) ...hing happened until I added a time_pattern trigger that checks the same condition every minute. The other …" — other_forum_home_assistant, 2026-10-29 ([원문](https://community.home-assistant.io/t/what-was-the-last-automation-that-behaved-differently-than-you-expected-syntax-was-ok-logic-runtime-failed/1030579/5))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +163% 증가하며, 'Automation & Routine' 관련 부정 VOC가 총 60건 누적되어 상위 Pain Point로 식별됨.
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +145% 증가하며, 'Automation & Routine' 관련 부정 VOC가 총 60건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 루틴 실행 엔진의 조건 평가 지연, 클라우드 종속 자동화의 지연/타임아웃, 앱 업데이트 후 기존 루틴의 트리거-조건 매핑이 깨지는 회귀 버그.
 - 개선 아이디어: 루틴 실행 로그/히스토리를 사용자에게 노출해 실패 시점을 즉시 확인 가능하게 하고, 로컬 실행(온디바이스) 비중을 늘려 클라우드 왕복 지연을 줄임.
 
@@ -135,10 +135,10 @@
 
 최근 6개월간 증가한 VOC:
 
-- **Connectivity & Reliability**: 최근 6개월 239건 vs 이전 6개월 30건 (+278%)
-- **Performance**: 최근 6개월 79건 vs 이전 6개월 8건 (+416%)
-- **Multi-brand Integration**: 최근 6개월 80건 vs 이전 6개월 16건 (+255%)
-- **Automation & Routine**: 최근 6개월 50건 vs 이전 6개월 10건 (+163%)
+- **Connectivity & Reliability**: 최근 6개월 240건 vs 이전 6개월 30건 (+281%)
+- **Performance**: 최근 6개월 80건 vs 이전 6개월 8건 (+244%)
+- **Multi-brand Integration**: 최근 6개월 83건 vs 이전 6개월 15건 (+284%)
+- **Automation & Routine**: 최근 6개월 50건 vs 이전 6개월 10건 (+145%)
 - **UX/UI**: 최근 6개월 41건 vs 이전 6개월 3건 (+920%)
 - **Device Onboarding**: 최근 6개월 44건 vs 이전 6개월 10건 (+275%)
 - **Security & Privacy**: 최근 6개월 33건 vs 이전 6개월 1건 (+1057%)
@@ -154,7 +154,7 @@
 
 ### 가장 시급한 개선 과제
 
-**Connectivity & Reliability** — 최근 3개월 150건(+278%), 12개월 누적 269건으로 전체 부정 VOC의 40%를 차지, 2위(Multi-brand Integration, 최근 3개월 52건)보다 98건 더 많음.
+**Connectivity & Reliability** — 최근 3개월 151건(+281%), 12개월 누적 270건으로 전체 부정 VOC의 40%를 차지, 2위(Multi-brand Integration, 최근 3개월 55건)보다 96건 더 많음.
 
 Root Cause 추정: 허브-클라우드 간 세션 유지 로직 취약, 다중 홉 메시 네트워크에서의 신호 간섭, 백그라운드 재연결 로직 미흡으로 오프라인 표시가 실제 상태와 어긋남.
 
@@ -170,13 +170,13 @@ Root Cause 추정: 허브-클라우드 간 세션 유지 로직 취약, 다중 �
 
 ### SmartThings 경쟁력 저하 요소
 
-Home Assistant, Apple Home 등 경쟁/대체 플랫폼과 비교하며 SmartThings의 열위를 지적한 VOC 5건 확인. 주로 **Connectivity & Reliability** 카테고리에서 함께 언급됨.
+Aqara, Home Assistant 등 경쟁/대체 플랫폼과 비교하며 SmartThings의 열위를 지적한 VOC 5건 확인. 주로 **Connectivity & Reliability** 카테고리에서 함께 언급됨.
 
+- "SONOFF Orb-ZBW2L Zigbee Double Smart Wall Switch ...b-ZBW2L Zigbee Double Smart Wall Switch fits the bill for what I need , no neutral needed and it only needs…" — smartthings_community, 2026-11-04 ([원문](https://community.smartthings.com/t/sonoff-orb-zbw2l-zigbee-double-smart-wall-switch/311951/1))
 - "Best Smart Bulbs .../www.amazon.com/clp/B0DHFSDV46 open prime modal Amazon.com: THIRDREALITY Zigbee Smart Color Bulb ZL1 4Pack,Compatible with Home Assistant(ZH…" — other_forum_home_assistant, 2026-11-01 ([원문](https://community.home-assistant.io/t/best-smart-bulbs/1031551/11))
 - "Ultraloq Bolt Z-Wave codes only lock, won't unlock I had the same problem last summer when I migrated my Ultraloq Bolt Z-Wave lock from SmartThings to Home Assi…" — other_forum_home_assistant, 2026-10-21 ([원문](https://community.home-assistant.io/t/ultraloq-bolt-z-wave-codes-only-lock-wont-unlock/1029674/2))
 - "Trying to set up the map view for the house is the worst thing I used in a long time. Drawing the rooms is more difficult than the beta version of SketchUp. Whe…" — play, 2026-10-21 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
 - "Home Assistant Core 2026.10.0 / 2026.10.2 — Severe bootstrap timeouts, 115 automations unavailable, integrations failing, possible automatic rollback to 2026.9.…" — other_forum_home_assistant, 2026-10-17 ([원문](https://community.home-assistant.io/t/home-assistant-core-2026-10-0-2026-10-2-severe-bootstrap-timeouts-115-automations-unavailable-integrations-failing-possible-automatic-rollback-to-2026-9-4/1029277/1))
-- "Add Matter Bridge support to SmartThings +1 for this. I own several Samsung devices (a Smart Monitor, a refrigerator and a kimchi refrigerator) and use an Apple…" — smartthings_community, 2026-10-15 ([원문](https://community.smartthings.com/t/add-matter-bridge-support-to-smartthings/310005/8))
 
 ### 차기 릴리즈 우선 검토 항목
 
@@ -188,10 +188,10 @@ Home Assistant, Apple Home 등 경쟁/대체 플랫폼과 비교하며 SmartThin
 
 ## Executive Summary
 
-- 최근 12개월간 SmartThings 앱 관련 부정 VOC 666건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 150건(+278%)으로 나타났다.
+- 최근 12개월간 SmartThings 앱 관련 부정 VOC 670건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 151건(+281%)으로 나타났다.
 - "Multi-brand Integration" 역시 상위 Pain Point로, 사용자 경험 저하가 지속되고 있어 함께 우선 대응이 필요하다.
 - 일부 사용자는 대체 솔루션으로의 이탈 의사를 직접 언급(5건)하여 이탈 위험 신호가 관측된다.
-- Home Assistant, Apple Home 등 경쟁/대체 플랫폼 대비 열위가 언급된 VOC가 5건 확인되어 경쟁력 저하 신호로 관리가 필요하다.
+- Aqara, Home Assistant 등 경쟁/대체 플랫폼 대비 열위가 언급된 VOC가 5건 확인되어 경쟁력 저하 신호로 관리가 필요하다.
 - 차기 릴리즈에서는 Energy Management, Security & Privacy, UX/UI 항목을 우선 검토 대상으로 제안한다.
 
 ## Sources
