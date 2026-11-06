@@ -1,9 +1,9 @@
 # Victor's VoC Crawler
 
-- 생성 시각: 2026-11-05T02:38:59.930Z
-- 분석 기간: 2025-11-05 ~ 2026-11-05 (최근 12개월)
-- 최근 구간: 2026-08-05 ~ 2026-11-05 (최근 3개월) vs 이전 9개월
-- 분석 대상 부정 VOC: 670건 (전체 수집 VOC 9705건 중)
+- 생성 시각: 2026-11-06T02:41:13.019Z
+- 분석 기간: 2025-11-06 ~ 2026-11-06 (최근 12개월)
+- 최근 구간: 2026-08-06 ~ 2026-11-06 (최근 3개월) vs 이전 9개월
+- 분석 대상 부정 VOC: 679건 (전체 수집 VOC 9779건 중)
 
 ## Top 10 Pain Points
 
@@ -11,10 +11,10 @@
 
 - 순위: 1
 - 카테고리: Connectivity & Reliability
-- 발생 빈도: 270건 (최근 3개월 151건 / 이전 9개월 119건)
-- 증가율: +281%
-- 대표 VOC: "With the latest app overhaul I can't tell on the main dashboard if batteries for things like sensors are low and if devices are offline. Am I missing something or is this intentional? I hope I'm just missing something be…" — play, 2026-11-03 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +281% 증가하며, 'Connectivity & Reliability' 관련 부정 VOC가 총 270건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 278건 (최근 3개월 158건 / 이전 9개월 120건)
+- 증가율: +295%
+- 대표 VOC: "IKEA Alpstuga firmware bug ? Thread key change too frequent ...nity.smartthings.com/t/recurring-thread-disconnect-every-30-days-with-ultraloq-bolt-f-matter-on-smartthings/310902/2 Today , both of my ALPSTUGA went offline…" — smartthings_community, 2026-11-06 ([원문](https://community.smartthings.com/t/ikea-alpstuga-firmware-bug-thread-key-change-too-frequent/311985/2))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +295% 증가하며, 'Connectivity & Reliability' 관련 부정 VOC가 총 278건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 허브-클라우드 간 세션 유지 로직 취약, 다중 홉 메시 네트워크에서의 신호 간섭, 백그라운드 재연결 로직 미흡으로 오프라인 표시가 실제 상태와 어긋남.
 - 개선 아이디어: 지수 백오프 기반 자동 재연결 로직 개선, 기기별 실시간 연결 품질 지표 제공, 오프라인 발생 시 원인(허브/기기/네트워크) 구분 진단 도구 제공.
 
@@ -33,10 +33,10 @@
 
 - 순위: 3
 - 카테고리: Performance
-- 발생 빈도: 88건 (최근 3개월 47건 / 이전 9개월 41건)
-- 증가율: +244%
+- 발생 빈도: 88건 (최근 3개월 46건 / 이전 9개월 42건)
+- 증가율: +229%
 - 대표 VOC: "Horrible app Would be nice if it actually worked every time I open the app it freezes up or it just keeps turning the dial instead of actually opening up the remote. I have to constantly close the app and reopen it again…" — appstore, 2026-11-03 ([원문](https://apps.apple.com/us/app/id1222822904))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +244% 증가하며, 'Performance' 관련 부정 VOC가 총 88건 누적되어 상위 Pain Point로 식별됨.
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +229% 증가하며, 'Performance' 관련 부정 VOC가 총 88건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 앱 초기 로딩 시 과도한 기기 상태 동기화, 메모리 누수로 인한 장시간 사용 시 느려짐, 백그라운드 폴링으로 인한 배터리 소모.
 - 개선 아이디어: 초기 로딩을 지연 로딩(lazy load) 방식으로 전환, 캐시 계층 도입으로 반복 호출 감소, 배터리/성능 프로파일링을 정기 회귀 테스트에 포함.
 
@@ -55,10 +55,10 @@
 
 - 순위: 5
 - 카테고리: Device Onboarding
-- 발생 빈도: 54건 (최근 3개월 30건 / 이전 9개월 24건)
-- 증가율: +275%
-- 대표 VOC: "[matter] add Dyson robot vacuum cleaner to smart things fail at last step but commissioning all complete ...ot vacuum cleaner https://www.dyson.com.sg/spot-scrub-ai-black Dyson Spot+Scrub™ Ai wet and dry robot vacuum cle…" — smartthings_community, 2026-10-29 ([원문](https://community.smartthings.com/t/matter-add-dyson-robot-vacuum-cleaner-to-smart-things-fail-at-last-step-but-commissioning-all-complete/311829/1))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +275% 증가하며, 'Device Onboarding' 관련 부정 VOC가 총 54건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 55건 (최근 3개월 31건 / 이전 9개월 24건)
+- 증가율: +288%
+- 대표 VOC: "Can’t add 4 digits code on my smart thing app after the upgrade Any solution on this? Mine just updated today and now I can't add any codes because Smartthings requires 6 digits but my lock can only do 4" — smartthings_community, 2026-11-03 ([원문](https://community.smartthings.com/t/can-t-add-4-digits-code-on-my-smart-thing-app-after-the-upgrade/311689/8))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +288% 증가하며, 'Device Onboarding' 관련 부정 VOC가 총 55건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 기기 등록 과정에서 발생하는 프로토콜(Wi-Fi/Zigbee/Z-Wave/Matter) 핸드셰이크 실패, 펌웨어-앱 버전 불일치, 불명확한 오류 메시지로 사용자가 실패 원인을 파악하기 어려움.
 - 개선 아이디어: 온보딩 단계별 진행률과 실패 시 구체적 원인(예: "라우터 2.4GHz 대역 확인 필요")을 보여주는 가이드형 UI 도입, 실패율이 높은 기기 유형에 대한 사전 호환성 체크 강화.
 
@@ -106,16 +106,16 @@
 - Root Cause 추정: AI/음성 기능이 특정 지역·기기에서만 제공되어 기대와 실제 지원 범위 간 괴리가 크고, Bixby 등 음성 인식 정확도가 낮아 명령 실패가 반복됨.
 - 개선 아이디어: AI/음성 기능의 지원 범위를 앱 내에서 명확히 안내, 음성 명령 실패 시 대체 텍스트 명령 제공, 사용자 피드백 기반 인식률 개선 루프 구축.
 
-### 10. Notification & Alert
+### 10. Ecosystem Management
 
 - 순위: 10
-- 카테고리: Notification & Alert
+- 카테고리: Ecosystem Management
 - 발생 빈도: 3건 (최근 3개월 1건 / 이전 9개월 2건)
 - 증가율: +50%
-- 대표 VOC: "Ads in Notofications All of a sudden it started sending me push notifications that are just ads for the new Samsung phone. These notifications are supposed to alert me to issues like water leaks. Ads are annoying and wil…" — appstore, 2026-08-05 ([원문](https://apps.apple.com/us/app/id1222822904))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +50% 증가하며, 'Notification & Alert' 관련 부정 VOC가 총 3건 누적되어 상위 Pain Point로 식별됨.
-- Root Cause 추정: 푸시 알림 파이프라인(클라우드→FCM/APNs)의 지연, 사용자별 알림 설정과 기기 이벤트 트리거 간 매핑 오류로 알림 누락/중복 발생.
-- 개선 아이디어: 중요 알림(보안·누수·화재 등)에 대한 우선순위 큐 분리, 알림 전달 성공률 모니터링 대시보드 구축, 사용자가 알림 지연을 직접 진단할 수 있는 테스트 알림 기능 제공.
+- 대표 VOC: "I never seen worse software in my life It is absolutely unable to find devices like Samsung ACs despite being on. Also, after having moved from US to Europe and despite changing location in all Samsung sites and profiles…" — appstore, 2026-10-05 ([원문](https://apps.apple.com/us/app/id1222822904))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +50% 증가하며, 'Ecosystem Management' 관련 부정 VOC가 총 3건 누적되어 상위 Pain Point로 식별됨.
+- Root Cause 추정: 다중 위치(Location)·다중 허브 환경에서 기기/자동화 관리 UI가 단일 가구 기준으로 설계되어 있어 확장 시 관리 복잡도가 급증.
+- 개선 아이디어: 위치·허브 간 일괄 관리(bulk actions) 기능 제공, 계층적 그룹/태그 기반 기기 관리 UI 도입, 공유 사용자 권한 관리 세분화.
 
 ## Spotlight
 
@@ -135,12 +135,12 @@
 
 최근 6개월간 증가한 VOC:
 
-- **Connectivity & Reliability**: 최근 6개월 240건 vs 이전 6개월 30건 (+281%)
-- **Performance**: 최근 6개월 80건 vs 이전 6개월 8건 (+244%)
+- **Connectivity & Reliability**: 최근 6개월 248건 vs 이전 6개월 30건 (+295%)
+- **Performance**: 최근 6개월 80건 vs 이전 6개월 8건 (+229%)
 - **Multi-brand Integration**: 최근 6개월 83건 vs 이전 6개월 15건 (+284%)
 - **Automation & Routine**: 최근 6개월 50건 vs 이전 6개월 10건 (+145%)
 - **UX/UI**: 최근 6개월 41건 vs 이전 6개월 3건 (+920%)
-- **Device Onboarding**: 최근 6개월 44건 vs 이전 6개월 10건 (+275%)
+- **Device Onboarding**: 최근 6개월 45건 vs 이전 6개월 10건 (+288%)
 - **Security & Privacy**: 최근 6개월 33건 vs 이전 6개월 1건 (+1057%)
 - **Energy Management**: 최근 6개월 9건 vs 이전 6개월 0건 (+2300%)
 
@@ -154,7 +154,7 @@
 
 ### 가장 시급한 개선 과제
 
-**Connectivity & Reliability** — 최근 3개월 151건(+281%), 12개월 누적 270건으로 전체 부정 VOC의 40%를 차지, 2위(Multi-brand Integration, 최근 3개월 55건)보다 96건 더 많음.
+**Connectivity & Reliability** — 최근 3개월 158건(+295%), 12개월 누적 278건으로 전체 부정 VOC의 41%를 차지, 2위(Multi-brand Integration, 최근 3개월 55건)보다 103건 더 많음.
 
 Root Cause 추정: 허브-클라우드 간 세션 유지 로직 취약, 다중 홉 메시 네트워크에서의 신호 간섭, 백그라운드 재연결 로직 미흡으로 오프라인 표시가 실제 상태와 어긋남.
 
@@ -188,7 +188,7 @@ Aqara, Home Assistant 등 경쟁/대체 플랫폼과 비교하며 SmartThings의
 
 ## Executive Summary
 
-- 최근 12개월간 SmartThings 앱 관련 부정 VOC 670건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 151건(+281%)으로 나타났다.
+- 최근 12개월간 SmartThings 앱 관련 부정 VOC 679건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 158건(+295%)으로 나타났다.
 - "Multi-brand Integration" 역시 상위 Pain Point로, 사용자 경험 저하가 지속되고 있어 함께 우선 대응이 필요하다.
 - 일부 사용자는 대체 솔루션으로의 이탈 의사를 직접 언급(5건)하여 이탈 위험 신호가 관측된다.
 - Aqara, Home Assistant 등 경쟁/대체 플랫폼 대비 열위가 언급된 VOC가 5건 확인되어 경쟁력 저하 신호로 관리가 필요하다.
