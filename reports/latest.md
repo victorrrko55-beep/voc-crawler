@@ -1,9 +1,9 @@
 # Victor's VoC Crawler
 
-- 생성 시각: 2026-11-06T02:41:13.019Z
-- 분석 기간: 2025-11-06 ~ 2026-11-06 (최근 12개월)
-- 최근 구간: 2026-08-06 ~ 2026-11-06 (최근 3개월) vs 이전 9개월
-- 분석 대상 부정 VOC: 679건 (전체 수집 VOC 9779건 중)
+- 생성 시각: 2026-11-07T02:08:34.521Z
+- 분석 기간: 2025-11-07 ~ 2026-11-07 (최근 12개월)
+- 최근 구간: 2026-08-07 ~ 2026-11-07 (최근 3개월) vs 이전 9개월
+- 분석 대상 부정 VOC: 684건 (전체 수집 VOC 9839건 중)
 
 ## Top 10 Pain Points
 
@@ -11,10 +11,10 @@
 
 - 순위: 1
 - 카테고리: Connectivity & Reliability
-- 발생 빈도: 278건 (최근 3개월 158건 / 이전 9개월 120건)
-- 증가율: +295%
+- 발생 빈도: 278건 (최근 3개월 156건 / 이전 9개월 122건)
+- 증가율: +284%
 - 대표 VOC: "IKEA Alpstuga firmware bug ? Thread key change too frequent ...nity.smartthings.com/t/recurring-thread-disconnect-every-30-days-with-ultraloq-bolt-f-matter-on-smartthings/310902/2 Today , both of my ALPSTUGA went offline…" — smartthings_community, 2026-11-06 ([원문](https://community.smartthings.com/t/ikea-alpstuga-firmware-bug-thread-key-change-too-frequent/311985/2))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +295% 증가하며, 'Connectivity & Reliability' 관련 부정 VOC가 총 278건 누적되어 상위 Pain Point로 식별됨.
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +284% 증가하며, 'Connectivity & Reliability' 관련 부정 VOC가 총 278건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 허브-클라우드 간 세션 유지 로직 취약, 다중 홉 메시 네트워크에서의 신호 간섭, 백그라운드 재연결 로직 미흡으로 오프라인 표시가 실제 상태와 어긋남.
 - 개선 아이디어: 지수 백오프 기반 자동 재연결 로직 개선, 기기별 실시간 연결 품질 지표 제공, 오프라인 발생 시 원인(허브/기기/네트워크) 구분 진단 도구 제공.
 
@@ -33,10 +33,10 @@
 
 - 순위: 3
 - 카테고리: Performance
-- 발생 빈도: 88건 (최근 3개월 46건 / 이전 9개월 42건)
-- 증가율: +229%
-- 대표 VOC: "Horrible app Would be nice if it actually worked every time I open the app it freezes up or it just keeps turning the dial instead of actually opening up the remote. I have to constantly close the app and reopen it again…" — appstore, 2026-11-03 ([원문](https://apps.apple.com/us/app/id1222822904))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +229% 증가하며, 'Performance' 관련 부정 VOC가 총 88건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 89건 (최근 3개월 47건 / 이전 9개월 42건)
+- 증가율: +236%
+- 대표 VOC: "App Freezes/glitches too much." — appstore, 2026-11-05 ([원문](https://apps.apple.com/us/app/id1222822904))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +236% 증가하며, 'Performance' 관련 부정 VOC가 총 89건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 앱 초기 로딩 시 과도한 기기 상태 동기화, 메모리 누수로 인한 장시간 사용 시 느려짐, 백그라운드 폴링으로 인한 배터리 소모.
 - 개선 아이디어: 초기 로딩을 지연 로딩(lazy load) 방식으로 전환, 캐시 계층 도입으로 반복 호출 감소, 배터리/성능 프로파일링을 정기 회귀 테스트에 포함.
 
@@ -44,10 +44,10 @@
 
 - 순위: 4
 - 카테고리: Automation & Routine
-- 발생 빈도: 60건 (최근 3개월 27건 / 이전 9개월 33건)
-- 증가율: +145%
-- 대표 VOC: "What was the last automation that behaved differently than you expected? (Syntax was OK, logic/runtime failed) ...hing happened until I added a time_pattern trigger that checks the same condition every minute. The other …" — other_forum_home_assistant, 2026-10-29 ([원문](https://community.home-assistant.io/t/what-was-the-last-automation-that-behaved-differently-than-you-expected-syntax-was-ok-logic-runtime-failed/1030579/5))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +145% 증가하며, 'Automation & Routine' 관련 부정 VOC가 총 60건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 62건 (최근 3개월 29건 / 이전 9개월 33건)
+- 증가율: +164%
+- 대표 VOC: "EP SmartApp replacement for Shabbat-and-Holiday-Modes! Yes, I haven't fully looked into the details, but it looks like Samsung is shutting down all PATs, which will naturally cause this to fail. It's very disappointing, …" — smartthings_community, 2026-11-06 ([원문](https://community.smartthings.com/t/ep-smartapp-replacement-for-shabbat-and-holiday-modes/255274/73))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +164% 증가하며, 'Automation & Routine' 관련 부정 VOC가 총 62건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 루틴 실행 엔진의 조건 평가 지연, 클라우드 종속 자동화의 지연/타임아웃, 앱 업데이트 후 기존 루틴의 트리거-조건 매핑이 깨지는 회귀 버그.
 - 개선 아이디어: 루틴 실행 로그/히스토리를 사용자에게 노출해 실패 시점을 즉시 확인 가능하게 하고, 로컬 실행(온디바이스) 비중을 늘려 클라우드 왕복 지연을 줄임.
 
@@ -55,10 +55,10 @@
 
 - 순위: 5
 - 카테고리: Device Onboarding
-- 발생 빈도: 55건 (최근 3개월 31건 / 이전 9개월 24건)
-- 증가율: +288%
-- 대표 VOC: "Can’t add 4 digits code on my smart thing app after the upgrade Any solution on this? Mine just updated today and now I can't add any codes because Smartthings requires 6 digits but my lock can only do 4" — smartthings_community, 2026-11-03 ([원문](https://community.smartthings.com/t/can-t-add-4-digits-code-on-my-smart-thing-app-after-the-upgrade/311689/8))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +288% 증가하며, 'Device Onboarding' 관련 부정 VOC가 총 55건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 56건 (최근 3개월 32건 / 이전 9개월 24건)
+- 증가율: +300%
+- 대표 VOC: "Airzone Cloud: "Setup failed, will retry: 402 Payment Required" (cause and workaround) ...: hope that the workaround lasts for a long time We all doubt it. Soon rate limits will be introduced and shortly after… :litter_i…" — other_forum_home_assistant, 2026-11-06 ([원문](https://community.home-assistant.io/t/airzone-cloud-setup-failed-will-retry-402-payment-required-cause-and-workaround/1032614/3))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +300% 증가하며, 'Device Onboarding' 관련 부정 VOC가 총 56건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 기기 등록 과정에서 발생하는 프로토콜(Wi-Fi/Zigbee/Z-Wave/Matter) 핸드셰이크 실패, 펌웨어-앱 버전 불일치, 불명확한 오류 메시지로 사용자가 실패 원인을 파악하기 어려움.
 - 개선 아이디어: 온보딩 단계별 진행률과 실패 시 구체적 원인(예: "라우터 2.4GHz 대역 확인 필요")을 보여주는 가이드형 UI 도입, 실패율이 높은 기기 유형에 대한 사전 호환성 체크 강화.
 
@@ -66,10 +66,10 @@
 
 - 순위: 6
 - 카테고리: UX/UI
-- 발생 빈도: 44건 (최근 3개월 34건 / 이전 9개월 10건)
-- 증가율: +920%
-- 대표 VOC: "New update is dreadful Why? Why mess with a simple interface where I can see how long is left on a wash, or switch on some lights? I’m now bombarded with notifications for things irrelevant to me (4-5 every time I open t…" — appstore, 2026-10-31 ([원문](https://apps.apple.com/gb/app/id1222822904))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +920% 증가하며, 'UX/UI' 관련 부정 VOC가 총 44건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 45건 (최근 3개월 35건 / 이전 9개월 10건)
+- 증가율: +950%
+- 대표 VOC: "Mediocrity at its most infuriating The remote control UI/UX is a half-assed, poorly designed, low-effort tool" — appstore, 2026-11-05 ([원문](https://apps.apple.com/us/app/id1222822904))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +950% 증가하며, 'UX/UI' 관련 부정 VOC가 총 45건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 기능이 누적되며 정보 구조(IA)가 복잡해졌고, 기기 관리·자동화·모니터링 기능이 하나의 화면 계층에 혼재되어 사용자가 원하는 기능을 찾기 어려움.
 - 개선 아이디어: 사용 빈도 기반 홈 화면 재구성, 핵심 태스크(기기 추가/루틴 생성/상태 확인) 중심의 단순화된 네비게이션 도입, 정기적 사용성 테스트 기반 반복 개선.
 
@@ -88,10 +88,10 @@
 
 - 순위: 8
 - 카테고리: Energy Management
-- 발생 빈도: 9건 (최근 3개월 8건 / 이전 9개월 1건)
-- 증가율: +2300%
+- 발생 빈도: 9건 (최근 3개월 7건 / 이전 9개월 2건)
+- 증가율: +950%
 - 대표 VOC: "Smartthings app no longer opens device cards This is a significant issue - 100+ devices and cannot control dimming, cannot see power usage, cannot see anything other than whether the device is on or off. All the function…" — smartthings_community, 2026-10-20 ([원문](https://community.smartthings.com/t/smartthings-app-no-longer-opens-device-cards/311686/5))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +2300% 증가하며, 'Energy Management' 관련 부정 VOC가 총 9건 누적되어 상위 Pain Point로 식별됨.
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +950% 증가하며, 'Energy Management' 관련 부정 VOC가 총 9건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: SmartThings Energy의 상세 에너지 데이터가 삼성 자체 기기 위주로만 제공되어 서드파티 기기(스마트 플러그 등)는 연동은 되어도 에너지 모니터링 항목이 누락되거나 Energy 화면에 기기 자체가 표시되지 않는 경우가 있음.
 - 개선 아이디어: Matter/서드파티 에너지 리포팅 표준(예: Matter Electrical Energy Measurement 클러스터) 지원 기기 목록을 앱 내에 명시하고, 연동은 되지만 에너지 데이터가 없는 기기는 그 사유를 명확히 안내. AI Energy Mode 추천의 절감 효과를 실측 데이터로 검증해 신뢰도 제고.
 
@@ -99,10 +99,10 @@
 
 - 순위: 9
 - 카테고리: AI / Voice
-- 발생 빈도: 7건 (최근 3개월 5건 / 이전 9개월 2건)
-- 증가율: +650%
+- 발생 빈도: 7건 (최근 3개월 4건 / 이전 9개월 3건)
+- 증가율: +300%
 - 대표 VOC: "Trash app. Bixby sucks. Can't login. Makes me regret buying the TV. Gets one star because sometimes it does work. Just not most of the time." — play, 2026-10-14 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +650% 증가하며, 'AI / Voice' 관련 부정 VOC가 총 7건 누적되어 상위 Pain Point로 식별됨.
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +300% 증가하며, 'AI / Voice' 관련 부정 VOC가 총 7건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: AI/음성 기능이 특정 지역·기기에서만 제공되어 기대와 실제 지원 범위 간 괴리가 크고, Bixby 등 음성 인식 정확도가 낮아 명령 실패가 반복됨.
 - 개선 아이디어: AI/음성 기능의 지원 범위를 앱 내에서 명확히 안내, 음성 명령 실패 시 대체 텍스트 명령 제공, 사용자 피드백 기반 인식률 개선 루프 구축.
 
@@ -123,8 +123,8 @@
 
 ### Energy Management
 
-- 발생 빈도: 9건 (최근 3개월 8건 / 이전 9개월 1건)
-- 증가율: +2300%
+- 발생 빈도: 9건 (최근 3개월 7건 / 이전 9개월 2건)
+- 증가율: +950%
 - 대표 VOC: "Smartthings app no longer opens device cards This is a significant issue - 100+ devices and cannot control dimming, cannot see power usage, cannot see anything other than whether the device is on or off. All the function…" — smartthings_community, 2026-10-20 ([원문](https://community.smartthings.com/t/smartthings-app-no-longer-opens-device-cards/311686/5))
 - Root Cause 추정: SmartThings Energy의 상세 에너지 데이터가 삼성 자체 기기 위주로만 제공되어 서드파티 기기(스마트 플러그 등)는 연동은 되어도 에너지 모니터링 항목이 누락되거나 Energy 화면에 기기 자체가 표시되지 않는 경우가 있음.
 - 개선 아이디어: Matter/서드파티 에너지 리포팅 표준(예: Matter Electrical Energy Measurement 클러스터) 지원 기기 목록을 앱 내에 명시하고, 연동은 되지만 에너지 데이터가 없는 기기는 그 사유를 명확히 안내. AI Energy Mode 추천의 절감 효과를 실측 데이터로 검증해 신뢰도 제고.
@@ -135,14 +135,14 @@
 
 최근 6개월간 증가한 VOC:
 
-- **Connectivity & Reliability**: 최근 6개월 248건 vs 이전 6개월 30건 (+295%)
-- **Performance**: 최근 6개월 80건 vs 이전 6개월 8건 (+229%)
+- **Connectivity & Reliability**: 최근 6개월 248건 vs 이전 6개월 30건 (+284%)
+- **Performance**: 최근 6개월 81건 vs 이전 6개월 8건 (+236%)
 - **Multi-brand Integration**: 최근 6개월 83건 vs 이전 6개월 15건 (+284%)
-- **Automation & Routine**: 최근 6개월 50건 vs 이전 6개월 10건 (+145%)
-- **UX/UI**: 최근 6개월 41건 vs 이전 6개월 3건 (+920%)
-- **Device Onboarding**: 최근 6개월 45건 vs 이전 6개월 10건 (+288%)
+- **Automation & Routine**: 최근 6개월 52건 vs 이전 6개월 10건 (+164%)
+- **UX/UI**: 최근 6개월 42건 vs 이전 6개월 3건 (+950%)
+- **Device Onboarding**: 최근 6개월 46건 vs 이전 6개월 10건 (+300%)
 - **Security & Privacy**: 최근 6개월 33건 vs 이전 6개월 1건 (+1057%)
-- **Energy Management**: 최근 6개월 9건 vs 이전 6개월 0건 (+2300%)
+- **Energy Management**: 최근 6개월 9건 vs 이전 6개월 0건 (+950%)
 
 ## 감소 이슈
 
@@ -154,7 +154,7 @@
 
 ### 가장 시급한 개선 과제
 
-**Connectivity & Reliability** — 최근 3개월 158건(+295%), 12개월 누적 278건으로 전체 부정 VOC의 41%를 차지, 2위(Multi-brand Integration, 최근 3개월 55건)보다 103건 더 많음.
+**Connectivity & Reliability** — 최근 3개월 156건(+284%), 12개월 누적 278건으로 전체 부정 VOC의 41%를 차지, 2위(Multi-brand Integration, 최근 3개월 55건)보다 101건 더 많음.
 
 Root Cause 추정: 허브-클라우드 간 세션 유지 로직 취약, 다중 홉 메시 네트워크에서의 신호 간섭, 백그라운드 재연결 로직 미흡으로 오프라인 표시가 실제 상태와 어긋남.
 
@@ -162,37 +162,37 @@ Root Cause 추정: 허브-클라우드 간 세션 유지 로직 취약, 다중 �
 
 대체 솔루션으로의 전환·삭제 의사를 직접 언급한 VOC 5건 확인. 건수는 많지 않지만 자발적 이탈 의사 표현은 일반 불만보다 드물게 나타나는 강한 신호이므로 주시가 필요합니다. 주로 **Automation & Routine** 관련 맥락에서 언급됨.
 
+- "EP SmartApp replacement for Shabbat-and-Holiday-Modes! Yes, I haven't fully looked into the details, but it looks like Samsung is shutting down all PATs, which…" — smartthings_community, 2026-11-06 ([원문](https://community.smartthings.com/t/ep-smartapp-replacement-for-shabbat-and-holiday-modes/255274/73))
 - "absolutely horrendous, it is offline or unavailable more than it is. you have to keep uninstalling it and reinstalling your ring cameras, it keeps saying it's p…" — play, 2026-10-21 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
 - "Trying to set up the map view for the house is the worst thing I used in a long time. Drawing the rooms is more difficult than the beta version of SketchUp. Whe…" — play, 2026-10-21 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
 - "[ST Edge] Z-Wave Lock BP Beta — Schlage BE468 / BE469 I switched to this driver from the Z-Wave Lock PH driver from philh30 to try it out. This is just informat…" — smartthings_community, 2026-10-18 ([원문](https://community.smartthings.com/t/st-edge-z-wave-lock-bp-beta-schlage-be468-be469/311019/45))
 - "Since the latest update I can no longer click on a device and see details or remove it from smartthings etc if the device is no longer around. I have uninstalle…" — play, 2026-10-16 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
-- "Always used to run a little clunky but lately the app just won't acknowledge the default browser I have set to sign in. It keeps opening the OS browser; which I…" — play, 2026-10-16 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
 
 ### SmartThings 경쟁력 저하 요소
 
-Aqara, Home Assistant 등 경쟁/대체 플랫폼과 비교하며 SmartThings의 열위를 지적한 VOC 5건 확인. 주로 **Connectivity & Reliability** 카테고리에서 함께 언급됨.
+Home Assistant, Aqara 등 경쟁/대체 플랫폼과 비교하며 SmartThings의 열위를 지적한 VOC 5건 확인. 주로 **Automation & Routine** 카테고리에서 함께 언급됨.
 
+- "EP SmartApp replacement for Shabbat-and-Holiday-Modes! Yes, I haven't fully looked into the details, but it looks like Samsung is shutting down all PATs, which…" — smartthings_community, 2026-11-06 ([원문](https://community.smartthings.com/t/ep-smartapp-replacement-for-shabbat-and-holiday-modes/255274/73))
 - "SONOFF Orb-ZBW2L Zigbee Double Smart Wall Switch ...b-ZBW2L Zigbee Double Smart Wall Switch fits the bill for what I need , no neutral needed and it only needs…" — smartthings_community, 2026-11-04 ([원문](https://community.smartthings.com/t/sonoff-orb-zbw2l-zigbee-double-smart-wall-switch/311951/1))
 - "Best Smart Bulbs .../www.amazon.com/clp/B0DHFSDV46 open prime modal Amazon.com: THIRDREALITY Zigbee Smart Color Bulb ZL1 4Pack,Compatible with Home Assistant(ZH…" — other_forum_home_assistant, 2026-11-01 ([원문](https://community.home-assistant.io/t/best-smart-bulbs/1031551/11))
 - "Ultraloq Bolt Z-Wave codes only lock, won't unlock I had the same problem last summer when I migrated my Ultraloq Bolt Z-Wave lock from SmartThings to Home Assi…" — other_forum_home_assistant, 2026-10-21 ([원문](https://community.home-assistant.io/t/ultraloq-bolt-z-wave-codes-only-lock-wont-unlock/1029674/2))
 - "Trying to set up the map view for the house is the worst thing I used in a long time. Drawing the rooms is more difficult than the beta version of SketchUp. Whe…" — play, 2026-10-21 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
-- "Home Assistant Core 2026.10.0 / 2026.10.2 — Severe bootstrap timeouts, 115 automations unavailable, integrations failing, possible automatic rollback to 2026.9.…" — other_forum_home_assistant, 2026-10-17 ([원문](https://community.home-assistant.io/t/home-assistant-core-2026-10-0-2026-10-2-severe-bootstrap-timeouts-115-automations-unavailable-integrations-failing-possible-automatic-rollback-to-2026-9-4/1029277/1))
 
 ### 차기 릴리즈 우선 검토 항목
 
 증가율 기준 상위 카테고리를 차기 릴리즈 검토 우선순위로 제안합니다:
 
-1. **Energy Management** (+2300%) — SmartThings Energy의 상세 에너지 데이터가 삼성 자체 기기 위주로만 제공되어 서드파티 기기(스마트 플러그 등)는 연동은 되어도 에너지 모니터링 항목이 누락되거나 Energy 화면에 기기 자체가 표시되지 않는 경우가 있음.
-2. **Security & Privacy** (+1057%) — 권한 요청 시점과 사유 설명이 불충분해 사용자가 과도한 권한 요구로 인식, 보안 관련 정책 변경 공지가 앱 내에서 충분히 전달되지 않음.
-3. **UX/UI** (+920%) — 기능이 누적되며 정보 구조(IA)가 복잡해졌고, 기기 관리·자동화·모니터링 기능이 하나의 화면 계층에 혼재되어 사용자가 원하는 기능을 찾기 어려움.
+1. **Security & Privacy** (+1057%) — 권한 요청 시점과 사유 설명이 불충분해 사용자가 과도한 권한 요구로 인식, 보안 관련 정책 변경 공지가 앱 내에서 충분히 전달되지 않음.
+2. **UX/UI** (+950%) — 기능이 누적되며 정보 구조(IA)가 복잡해졌고, 기기 관리·자동화·모니터링 기능이 하나의 화면 계층에 혼재되어 사용자가 원하는 기능을 찾기 어려움.
+3. **Energy Management** (+950%) — SmartThings Energy의 상세 에너지 데이터가 삼성 자체 기기 위주로만 제공되어 서드파티 기기(스마트 플러그 등)는 연동은 되어도 에너지 모니터링 항목이 누락되거나 Energy 화면에 기기 자체가 표시되지 않는 경우가 있음.
 
 ## Executive Summary
 
-- 최근 12개월간 SmartThings 앱 관련 부정 VOC 679건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 158건(+295%)으로 나타났다.
+- 최근 12개월간 SmartThings 앱 관련 부정 VOC 684건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 156건(+284%)으로 나타났다.
 - "Multi-brand Integration" 역시 상위 Pain Point로, 사용자 경험 저하가 지속되고 있어 함께 우선 대응이 필요하다.
 - 일부 사용자는 대체 솔루션으로의 이탈 의사를 직접 언급(5건)하여 이탈 위험 신호가 관측된다.
-- Aqara, Home Assistant 등 경쟁/대체 플랫폼 대비 열위가 언급된 VOC가 5건 확인되어 경쟁력 저하 신호로 관리가 필요하다.
-- 차기 릴리즈에서는 Energy Management, Security & Privacy, UX/UI 항목을 우선 검토 대상으로 제안한다.
+- Home Assistant, Aqara 등 경쟁/대체 플랫폼 대비 열위가 언급된 VOC가 5건 확인되어 경쟁력 저하 신호로 관리가 필요하다.
+- 차기 릴리즈에서는 Security & Privacy, UX/UI, Energy Management 항목을 우선 검토 대상으로 제안한다.
 
 ## Sources
 
