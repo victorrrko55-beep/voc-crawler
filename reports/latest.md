@@ -1,9 +1,9 @@
 # Victor's VoC Crawler
 
-- 생성 시각: 2026-11-10T04:14:06.017Z
-- 분석 기간: 2025-11-10 ~ 2026-11-10 (최근 12개월)
-- 최근 구간: 2026-08-10 ~ 2026-11-10 (최근 3개월) vs 이전 9개월
-- 분석 대상 부정 VOC: 699건 (전체 수집 VOC 10086건 중)
+- 생성 시각: 2026-11-11T02:03:08.884Z
+- 분석 기간: 2025-11-11 ~ 2026-11-11 (최근 12개월)
+- 최근 구간: 2026-08-11 ~ 2026-11-11 (최근 3개월) vs 이전 9개월
+- 분석 대상 부정 VOC: 702건 (전체 수집 VOC 10143건 중)
 
 ## Top 10 Pain Points
 
@@ -11,10 +11,10 @@
 
 - 순위: 1
 - 카테고리: Connectivity & Reliability
-- 발생 빈도: 279건 (최근 3개월 155건 / 이전 9개월 124건)
-- 증가율: +275%
-- 대표 VOC: "There are 3 separate issues, there is this disconnect between the three options, how each of them work, and how each of them work together. Viagra is a relatively short acting (but very effective) treatment option for ED…" — play, 2026-11-08 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +275% 증가하며, 'Connectivity & Reliability' 관련 부정 VOC가 총 279건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 282건 (최근 3개월 157건 / 이전 9개월 125건)
+- 증가율: +277%
+- 대표 VOC: "WTH can't Zigbee2MQTT be a first-class citizen on HA .../hubs_protocols/smart_home_hubs/ "hubs" (gateways/bridges/controllers) which support Zigbee devices, such as for example; deCONZ, Philips Hue Bridge, SmartThings Hu…" — other_forum_home_assistant, 2026-11-10 ([원문](https://community.home-assistant.io/t/wth-cant-zigbee2mqtt-be-a-first-class-citizen-on-ha/1033377/5))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +277% 증가하며, 'Connectivity & Reliability' 관련 부정 VOC가 총 282건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 허브-클라우드 간 세션 유지 로직 취약, 다중 홉 메시 네트워크에서의 신호 간섭, 백그라운드 재연결 로직 미흡으로 오프라인 표시가 실제 상태와 어긋남.
 - 개선 아이디어: 지수 백오프 기반 자동 재연결 로직 개선, 기기별 실시간 연결 품질 지표 제공, 오프라인 발생 시 원인(허브/기기/네트워크) 구분 진단 도구 제공.
 
@@ -22,10 +22,10 @@
 
 - 순위: 2
 - 카테고리: Multi-brand Integration
-- 발생 빈도: 100건 (최근 3개월 56건 / 이전 9개월 44건)
-- 증가율: +282%
+- 발생 빈도: 100건 (최근 3개월 55건 / 이전 9개월 45건)
+- 증가율: +267%
 - 대표 VOC: "WTH can't Home Assistant represent the actual things in my home, separately from the devices that make them smart? ....com/user-interface/settings/swap-apps-device Hubitat's built-in Swap Device moves a defective device'…" — other_forum_home_assistant, 2026-11-09 ([원문](https://community.home-assistant.io/t/wth-cant-home-assistant-represent-the-actual-things-in-my-home-separately-from-the-devices-that-make-them-smart/1033199/14))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +282% 증가하며, 'Multi-brand Integration' 관련 부정 VOC가 총 100건 누적되어 상위 Pain Point로 식별됨.
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +267% 증가하며, 'Multi-brand Integration' 관련 부정 VOC가 총 100건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: Matter 표준 지원이 기기/펌웨어별로 파편화되어 있고, 타 브랜드 기기와의 인증서/ 드라이버 호환성 검증이 SmartThings 릴리즈 주기와 어긋남.
 - 개선 아이디어: Matter 인증 기기에 대한 호환성 매트릭스를 앱 내에서 공개하고, 주요 서드파티 브랜드와의 통합 테스트를 릴리즈 전 QA 파이프라인에 상시 포함.
 
@@ -44,10 +44,10 @@
 
 - 순위: 4
 - 카테고리: Automation & Routine
-- 발생 빈도: 66건 (최근 3개월 33건 / 이전 9개월 33건)
-- 증가율: +200%
+- 발생 빈도: 66건 (최근 3개월 31건 / 이전 9개월 35건)
+- 증가율: +166%
 - 대표 VOC: "What was the last automation that behaved differently than you expected? (Syntax was OK, logic/runtime failed) ...our first question: the for: 5 minutes one I noticed physically, because I was sitting in the living room …" — other_forum_home_assistant, 2026-11-08 ([원문](https://community.home-assistant.io/t/what-was-the-last-automation-that-behaved-differently-than-you-expected-syntax-was-ok-logic-runtime-failed/1030579/7))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +200% 증가하며, 'Automation & Routine' 관련 부정 VOC가 총 66건 누적되어 상위 Pain Point로 식별됨.
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +166% 증가하며, 'Automation & Routine' 관련 부정 VOC가 총 66건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 루틴 실행 엔진의 조건 평가 지연, 클라우드 종속 자동화의 지연/타임아웃, 앱 업데이트 후 기존 루틴의 트리거-조건 매핑이 깨지는 회귀 버그.
 - 개선 아이디어: 루틴 실행 로그/히스토리를 사용자에게 노출해 실패 시점을 즉시 확인 가능하게 하고, 로컬 실행(온디바이스) 비중을 늘려 클라우드 왕복 지연을 줄임.
 
@@ -55,10 +55,10 @@
 
 - 순위: 5
 - 카테고리: Device Onboarding
-- 발생 빈도: 59건 (최근 3개월 35건 / 이전 9개월 24건)
-- 증가율: +338%
+- 발생 빈도: 59건 (최근 3개월 33건 / 이전 9개월 26건)
+- 증가율: +281%
 - 대표 VOC: "Brand new five hundred dollar t v won't pair" — play, 2026-11-09 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +338% 증가하며, 'Device Onboarding' 관련 부정 VOC가 총 59건 누적되어 상위 Pain Point로 식별됨.
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +281% 증가하며, 'Device Onboarding' 관련 부정 VOC가 총 59건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 기기 등록 과정에서 발생하는 프로토콜(Wi-Fi/Zigbee/Z-Wave/Matter) 핸드셰이크 실패, 펌웨어-앱 버전 불일치, 불명확한 오류 메시지로 사용자가 실패 원인을 파악하기 어려움.
 - 개선 아이디어: 온보딩 단계별 진행률과 실패 시 구체적 원인(예: "라우터 2.4GHz 대역 확인 필요")을 보여주는 가이드형 UI 도입, 실패율이 높은 기기 유형에 대한 사전 호환성 체크 강화.
 
@@ -135,12 +135,12 @@
 
 최근 6개월간 증가한 VOC:
 
-- **Connectivity & Reliability**: 최근 6개월 250건 vs 이전 6개월 29건 (+275%)
+- **Connectivity & Reliability**: 최근 6개월 253건 vs 이전 6개월 29건 (+277%)
 - **Performance**: 최근 6개월 83건 vs 이전 6개월 8건 (+250%)
-- **Multi-brand Integration**: 최근 6개월 85건 vs 이전 6개월 15건 (+282%)
-- **Automation & Routine**: 최근 6개월 56건 vs 이전 6개월 10건 (+200%)
+- **Multi-brand Integration**: 최근 6개월 84건 vs 이전 6개월 16건 (+267%)
+- **Automation & Routine**: 최근 6개월 56건 vs 이전 6개월 10건 (+166%)
 - **UX/UI**: 최근 6개월 44건 vs 이전 6개월 3건 (+685%)
-- **Device Onboarding**: 최근 6개월 49건 vs 이전 6개월 10건 (+338%)
+- **Device Onboarding**: 최근 6개월 49건 vs 이전 6개월 10건 (+281%)
 - **Security & Privacy**: 최근 6개월 34건 vs 이전 6개월 1건 (+913%)
 - **Energy Management**: 최근 6개월 9건 vs 이전 6개월 0건 (+950%)
 
@@ -154,7 +154,7 @@
 
 ### 가장 시급한 개선 과제
 
-**Connectivity & Reliability** — 최근 3개월 155건(+275%), 12개월 누적 279건으로 전체 부정 VOC의 40%를 차지, 2위(Multi-brand Integration, 최근 3개월 56건)보다 99건 더 많음.
+**Connectivity & Reliability** — 최근 3개월 157건(+277%), 12개월 누적 282건으로 전체 부정 VOC의 40%를 차지, 2위(Multi-brand Integration, 최근 3개월 55건)보다 102건 더 많음.
 
 Root Cause 추정: 허브-클라우드 간 세션 유지 로직 취약, 다중 홉 메시 네트워크에서의 신호 간섭, 백그라운드 재연결 로직 미흡으로 오프라인 표시가 실제 상태와 어긋남.
 
@@ -170,13 +170,13 @@ Root Cause 추정: 허브-클라우드 간 세션 유지 로직 취약, 다중 �
 
 ### SmartThings 경쟁력 저하 요소
 
-Home Assistant, Aqara 등 경쟁/대체 플랫폼과 비교하며 SmartThings의 열위를 지적한 VOC 5건 확인. 주로 **Multi-brand Integration** 카테고리에서 함께 언급됨.
+Aqara, Home Assistant 등 경쟁/대체 플랫폼과 비교하며 SmartThings의 열위를 지적한 VOC 5건 확인. 주로 **Connectivity & Reliability** 카테고리에서 함께 언급됨.
 
+- "WTH can't Zigbee2MQTT be a first-class citizen on HA .../hubs_protocols/smart_home_hubs/ "hubs" (gateways/bridges/controllers) which support Zigbee devices, suc…" — other_forum_home_assistant, 2026-11-10 ([원문](https://community.home-assistant.io/t/wth-cant-zigbee2mqtt-be-a-first-class-citizen-on-ha/1033377/5))
 - "WTH can't Home Assistant represent the actual things in my home, separately from the devices that make them smart? ....com/user-interface/settings/swap-apps-dev…" — other_forum_home_assistant, 2026-11-09 ([원문](https://community.home-assistant.io/t/wth-cant-home-assistant-represent-the-actual-things-in-my-home-separately-from-the-devices-that-make-them-smart/1033199/14))
 - "EP SmartApp replacement for Shabbat-and-Holiday-Modes! Yes, I haven't fully looked into the details, but it looks like Samsung is shutting down all PATs, which…" — smartthings_community, 2026-11-06 ([원문](https://community.smartthings.com/t/ep-smartapp-replacement-for-shabbat-and-holiday-modes/255274/73))
 - "SONOFF Orb-ZBW2L Zigbee Double Smart Wall Switch ...b-ZBW2L Zigbee Double Smart Wall Switch fits the bill for what I need , no neutral needed and it only needs…" — smartthings_community, 2026-11-04 ([원문](https://community.smartthings.com/t/sonoff-orb-zbw2l-zigbee-double-smart-wall-switch/311951/1))
 - "Best Smart Bulbs .../www.amazon.com/clp/B0DHFSDV46 open prime modal Amazon.com: THIRDREALITY Zigbee Smart Color Bulb ZL1 4Pack,Compatible with Home Assistant(ZH…" — other_forum_home_assistant, 2026-11-01 ([원문](https://community.home-assistant.io/t/best-smart-bulbs/1031551/11))
-- "Ultraloq Bolt Z-Wave codes only lock, won't unlock I had the same problem last summer when I migrated my Ultraloq Bolt Z-Wave lock from SmartThings to Home Assi…" — other_forum_home_assistant, 2026-10-21 ([원문](https://community.home-assistant.io/t/ultraloq-bolt-z-wave-codes-only-lock-wont-unlock/1029674/2))
 
 ### 차기 릴리즈 우선 검토 항목
 
@@ -188,10 +188,10 @@ Home Assistant, Aqara 등 경쟁/대체 플랫폼과 비교하며 SmartThings의
 
 ## Executive Summary
 
-- 최근 12개월간 SmartThings 앱 관련 부정 VOC 699건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 155건(+275%)으로 나타났다.
+- 최근 12개월간 SmartThings 앱 관련 부정 VOC 702건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 157건(+277%)으로 나타났다.
 - "Multi-brand Integration" 역시 상위 Pain Point로, 사용자 경험 저하가 지속되고 있어 함께 우선 대응이 필요하다.
 - 일부 사용자는 대체 솔루션으로의 이탈 의사를 직접 언급(5건)하여 이탈 위험 신호가 관측된다.
-- Home Assistant, Aqara 등 경쟁/대체 플랫폼 대비 열위가 언급된 VOC가 5건 확인되어 경쟁력 저하 신호로 관리가 필요하다.
+- Aqara, Home Assistant 등 경쟁/대체 플랫폼 대비 열위가 언급된 VOC가 5건 확인되어 경쟁력 저하 신호로 관리가 필요하다.
 - 차기 릴리즈에서는 Energy Management, Security & Privacy, UX/UI 항목을 우선 검토 대상으로 제안한다.
 
 ## Sources

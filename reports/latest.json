@@ -1,28 +1,27 @@
 {
-  "generatedAt": "2026-11-10T04:14:06.017Z",
-  "windowStart": "2025-11-10T04:14:06.017Z",
-  "recentStart": "2026-08-10T04:14:06.017Z",
-  "totalPainItems": 699,
-  "totalRawItems": 10086,
+  "generatedAt": "2026-11-11T02:03:08.884Z",
+  "windowStart": "2025-11-11T02:03:08.884Z",
+  "recentStart": "2026-08-11T02:03:08.884Z",
+  "totalPainItems": 702,
+  "totalRawItems": 10143,
   "top10": [
     {
       "category": "Connectivity & Reliability",
-      "totalFrequency": 279,
-      "recentCount": 155,
-      "priorCount": 124,
-      "growth": 274.99999999999994,
-      "growthLabel": "+275%",
-      "last6moCount": 250,
+      "totalFrequency": 282,
+      "recentCount": 157,
+      "priorCount": 125,
+      "growth": 276.79999999999995,
+      "growthLabel": "+277%",
+      "last6moCount": 253,
       "prev6moCount": 29,
       "representative": {
-        "id": "play_en_283cfc0d-c137-4e97-8545-8573b9c51736",
-        "source": "play",
-        "author": "Mark Lamb",
-        "title": "",
-        "text": "There are 3 separate issues, there is this disconnect between the three options, how each of them work, and how each of them work together. Viagra is a relatively short acting (but very effective) treatment option for ED. Cialis is a somewhat less effective(but longer acting) option and apomorphine is the thing that ties the other two together and works on the very distinctly separate issue of desire (or \"wanting\") that the other two do not address directly, at all.",
-        "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
-        "date": "2026-11-08T17:31:25.468Z",
-        "rating": 5,
+        "id": "other_forum_home_assistant_3933905",
+        "source": "other_forum_home_assistant",
+        "author": "Hedda",
+        "title": "WTH can't Zigbee2MQTT be a first-class citizen on HA",
+        "text": "WTH can't Zigbee2MQTT be a first-class citizen on HA\n.../hubs_protocols/smart_home_hubs/ \"hubs\" (gateways/bridges/controllers) which support Zigbee devices, such as for example; deCONZ, Philips Hue Bridge, SmartThings Hub, IKEA Tradfri Gateway, Osram LIGHTIFY Gateway, Bosch Smart Home Controller, Tuya gateway(s), and Xiaomi Gateway (Aqara), etc.. What makes ZHA and...",
+        "url": "https://community.home-assistant.io/t/wth-cant-zigbee2mqtt-be-a-first-class-citizen-on-ha/1033377/5",
+        "date": "2026-11-10T15:39:04.700Z",
         "category": "Connectivity & Reliability",
         "sentiment": "negative",
         "pain": true,
@@ -35,12 +34,12 @@
     {
       "category": "Multi-brand Integration",
       "totalFrequency": 100,
-      "recentCount": 56,
-      "priorCount": 44,
-      "growth": 281.8181818181818,
-      "growthLabel": "+282%",
-      "last6moCount": 85,
-      "prev6moCount": 15,
+      "recentCount": 55,
+      "priorCount": 45,
+      "growth": 266.66666666666663,
+      "growthLabel": "+267%",
+      "last6moCount": 84,
+      "prev6moCount": 16,
       "representative": {
         "id": "other_forum_home_assistant_3933061",
         "source": "other_forum_home_assistant",
@@ -88,10 +87,10 @@
     {
       "category": "Automation & Routine",
       "totalFrequency": 66,
-      "recentCount": 33,
-      "priorCount": 33,
-      "growth": 200.00000000000006,
-      "growthLabel": "+200%",
+      "recentCount": 31,
+      "priorCount": 35,
+      "growth": 165.71428571428572,
+      "growthLabel": "+166%",
       "last6moCount": 56,
       "prev6moCount": 10,
       "representative": {
@@ -114,10 +113,10 @@
     {
       "category": "Device Onboarding",
       "totalFrequency": 59,
-      "recentCount": 35,
-      "priorCount": 24,
-      "growth": 337.5,
-      "growthLabel": "+338%",
+      "recentCount": 33,
+      "priorCount": 26,
+      "growth": 280.7692307692308,
+      "growthLabel": "+281%",
       "last6moCount": 49,
       "prev6moCount": 10,
       "representative": {
@@ -304,22 +303,21 @@
   "rising": [
     {
       "category": "Connectivity & Reliability",
-      "totalFrequency": 279,
-      "recentCount": 155,
-      "priorCount": 124,
-      "growth": 274.99999999999994,
-      "growthLabel": "+275%",
-      "last6moCount": 250,
+      "totalFrequency": 282,
+      "recentCount": 157,
+      "priorCount": 125,
+      "growth": 276.79999999999995,
+      "growthLabel": "+277%",
+      "last6moCount": 253,
       "prev6moCount": 29,
       "representative": {
-        "id": "play_en_283cfc0d-c137-4e97-8545-8573b9c51736",
-        "source": "play",
-        "author": "Mark Lamb",
-        "title": "",
-        "text": "There are 3 separate issues, there is this disconnect between the three options, how each of them work, and how each of them work together. Viagra is a relatively short acting (but very effective) treatment option for ED. Cialis is a somewhat less effective(but longer acting) option and apomorphine is the thing that ties the other two together and works on the very distinctly separate issue of desire (or \"wanting\") that the other two do not address directly, at all.",
-        "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
-        "date": "2026-11-08T17:31:25.468Z",
-        "rating": 5,
+        "id": "other_forum_home_assistant_3933905",
+        "source": "other_forum_home_assistant",
+        "author": "Hedda",
+        "title": "WTH can't Zigbee2MQTT be a first-class citizen on HA",
+        "text": "WTH can't Zigbee2MQTT be a first-class citizen on HA\n.../hubs_protocols/smart_home_hubs/ \"hubs\" (gateways/bridges/controllers) which support Zigbee devices, such as for example; deCONZ, Philips Hue Bridge, SmartThings Hub, IKEA Tradfri Gateway, Osram LIGHTIFY Gateway, Bosch Smart Home Controller, Tuya gateway(s), and Xiaomi Gateway (Aqara), etc.. What makes ZHA and...",
+        "url": "https://community.home-assistant.io/t/wth-cant-zigbee2mqtt-be-a-first-class-citizen-on-ha/1033377/5",
+        "date": "2026-11-10T15:39:04.700Z",
         "category": "Connectivity & Reliability",
         "sentiment": "negative",
         "pain": true,
@@ -357,12 +355,12 @@
     {
       "category": "Multi-brand Integration",
       "totalFrequency": 100,
-      "recentCount": 56,
-      "priorCount": 44,
-      "growth": 281.8181818181818,
-      "growthLabel": "+282%",
-      "last6moCount": 85,
-      "prev6moCount": 15,
+      "recentCount": 55,
+      "priorCount": 45,
+      "growth": 266.66666666666663,
+      "growthLabel": "+267%",
+      "last6moCount": 84,
+      "prev6moCount": 16,
       "representative": {
         "id": "other_forum_home_assistant_3933061",
         "source": "other_forum_home_assistant",
@@ -382,10 +380,10 @@
     {
       "category": "Automation & Routine",
       "totalFrequency": 66,
-      "recentCount": 33,
-      "priorCount": 33,
-      "growth": 200.00000000000006,
-      "growthLabel": "+200%",
+      "recentCount": 31,
+      "priorCount": 35,
+      "growth": 165.71428571428572,
+      "growthLabel": "+166%",
       "last6moCount": 56,
       "prev6moCount": 10,
       "representative": {
@@ -433,10 +431,10 @@
     {
       "category": "Device Onboarding",
       "totalFrequency": 59,
-      "recentCount": 35,
-      "priorCount": 24,
-      "growth": 337.5,
-      "growthLabel": "+338%",
+      "recentCount": 33,
+      "priorCount": 26,
+      "growth": 280.7692307692308,
+      "growthLabel": "+281%",
       "last6moCount": 49,
       "prev6moCount": 10,
       "representative": {
@@ -592,10 +590,10 @@
     {
       "category": "Device Onboarding",
       "totalFrequency": 59,
-      "recentCount": 35,
-      "priorCount": 24,
-      "growth": 337.5,
-      "growthLabel": "+338%",
+      "recentCount": 33,
+      "priorCount": 26,
+      "growth": 280.7692307692308,
+      "growthLabel": "+281%",
       "last6moCount": 49,
       "prev6moCount": 10,
       "representative": {
@@ -617,22 +615,21 @@
     },
     {
       "category": "Connectivity & Reliability",
-      "totalFrequency": 279,
-      "recentCount": 155,
-      "priorCount": 124,
-      "growth": 274.99999999999994,
-      "growthLabel": "+275%",
-      "last6moCount": 250,
+      "totalFrequency": 282,
+      "recentCount": 157,
+      "priorCount": 125,
+      "growth": 276.79999999999995,
+      "growthLabel": "+277%",
+      "last6moCount": 253,
       "prev6moCount": 29,
       "representative": {
-        "id": "play_en_283cfc0d-c137-4e97-8545-8573b9c51736",
-        "source": "play",
-        "author": "Mark Lamb",
-        "title": "",
-        "text": "There are 3 separate issues, there is this disconnect between the three options, how each of them work, and how each of them work together. Viagra is a relatively short acting (but very effective) treatment option for ED. Cialis is a somewhat less effective(but longer acting) option and apomorphine is the thing that ties the other two together and works on the very distinctly separate issue of desire (or \"wanting\") that the other two do not address directly, at all.",
-        "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
-        "date": "2026-11-08T17:31:25.468Z",
-        "rating": 5,
+        "id": "other_forum_home_assistant_3933905",
+        "source": "other_forum_home_assistant",
+        "author": "Hedda",
+        "title": "WTH can't Zigbee2MQTT be a first-class citizen on HA",
+        "text": "WTH can't Zigbee2MQTT be a first-class citizen on HA\n.../hubs_protocols/smart_home_hubs/ \"hubs\" (gateways/bridges/controllers) which support Zigbee devices, such as for example; deCONZ, Philips Hue Bridge, SmartThings Hub, IKEA Tradfri Gateway, Osram LIGHTIFY Gateway, Bosch Smart Home Controller, Tuya gateway(s), and Xiaomi Gateway (Aqara), etc.. What makes ZHA and...",
+        "url": "https://community.home-assistant.io/t/wth-cant-zigbee2mqtt-be-a-first-class-citizen-on-ha/1033377/5",
+        "date": "2026-11-10T15:39:04.700Z",
         "category": "Connectivity & Reliability",
         "sentiment": "negative",
         "pain": true,
@@ -644,10 +641,10 @@
     {
       "category": "Automation & Routine",
       "totalFrequency": 66,
-      "recentCount": 33,
-      "priorCount": 33,
-      "growth": 200.00000000000006,
-      "growthLabel": "+200%",
+      "recentCount": 31,
+      "priorCount": 35,
+      "growth": 165.71428571428572,
+      "growthLabel": "+166%",
       "last6moCount": 56,
       "prev6moCount": 10,
       "representative": {
@@ -695,12 +692,12 @@
     {
       "category": "Multi-brand Integration",
       "totalFrequency": 100,
-      "recentCount": 56,
-      "priorCount": 44,
-      "growth": 281.8181818181818,
-      "growthLabel": "+282%",
-      "last6moCount": 85,
-      "prev6moCount": 15,
+      "recentCount": 55,
+      "priorCount": 45,
+      "growth": 266.66666666666663,
+      "growthLabel": "+267%",
+      "last6moCount": 84,
+      "prev6moCount": 16,
       "representative": {
         "id": "other_forum_home_assistant_3933061",
         "source": "other_forum_home_assistant",
@@ -876,22 +873,21 @@
   "insights": {
     "mostUrgent": {
       "category": "Connectivity & Reliability",
-      "totalFrequency": 279,
-      "recentCount": 155,
-      "priorCount": 124,
-      "growth": 274.99999999999994,
-      "growthLabel": "+275%",
-      "last6moCount": 250,
+      "totalFrequency": 282,
+      "recentCount": 157,
+      "priorCount": 125,
+      "growth": 276.79999999999995,
+      "growthLabel": "+277%",
+      "last6moCount": 253,
       "prev6moCount": 29,
       "representative": {
-        "id": "play_en_283cfc0d-c137-4e97-8545-8573b9c51736",
-        "source": "play",
-        "author": "Mark Lamb",
-        "title": "",
-        "text": "There are 3 separate issues, there is this disconnect between the three options, how each of them work, and how each of them work together. Viagra is a relatively short acting (but very effective) treatment option for ED. Cialis is a somewhat less effective(but longer acting) option and apomorphine is the thing that ties the other two together and works on the very distinctly separate issue of desire (or \"wanting\") that the other two do not address directly, at all.",
-        "url": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
-        "date": "2026-11-08T17:31:25.468Z",
-        "rating": 5,
+        "id": "other_forum_home_assistant_3933905",
+        "source": "other_forum_home_assistant",
+        "author": "Hedda",
+        "title": "WTH can't Zigbee2MQTT be a first-class citizen on HA",
+        "text": "WTH can't Zigbee2MQTT be a first-class citizen on HA\n.../hubs_protocols/smart_home_hubs/ \"hubs\" (gateways/bridges/controllers) which support Zigbee devices, such as for example; deCONZ, Philips Hue Bridge, SmartThings Hub, IKEA Tradfri Gateway, Osram LIGHTIFY Gateway, Bosch Smart Home Controller, Tuya gateway(s), and Xiaomi Gateway (Aqara), etc.. What makes ZHA and...",
+        "url": "https://community.home-assistant.io/t/wth-cant-zigbee2mqtt-be-a-first-class-citizen-on-ha/1033377/5",
+        "date": "2026-11-10T15:39:04.700Z",
         "category": "Connectivity & Reliability",
         "sentiment": "negative",
         "pain": true,
@@ -904,12 +900,12 @@
     "second": {
       "category": "Multi-brand Integration",
       "totalFrequency": 100,
-      "recentCount": 56,
-      "priorCount": 44,
-      "growth": 281.8181818181818,
-      "growthLabel": "+282%",
-      "last6moCount": 85,
-      "prev6moCount": 15,
+      "recentCount": 55,
+      "priorCount": 45,
+      "growth": 266.66666666666663,
+      "growthLabel": "+267%",
+      "last6moCount": 84,
+      "prev6moCount": 16,
       "representative": {
         "id": "other_forum_home_assistant_3933061",
         "source": "other_forum_home_assistant",
@@ -928,7 +924,7 @@
       "rank": 2
     },
     "urgentShare": 40,
-    "urgentGapToSecond": 99,
+    "urgentGapToSecond": 102,
     "churnHits": [
       {
         "item": {
@@ -1018,6 +1014,22 @@
     "competitorHits": [
       {
         "item": {
+          "id": "other_forum_home_assistant_3933905",
+          "source": "other_forum_home_assistant",
+          "author": "Hedda",
+          "title": "WTH can't Zigbee2MQTT be a first-class citizen on HA",
+          "text": "WTH can't Zigbee2MQTT be a first-class citizen on HA\n.../hubs_protocols/smart_home_hubs/ \"hubs\" (gateways/bridges/controllers) which support Zigbee devices, such as for example; deCONZ, Philips Hue Bridge, SmartThings Hub, IKEA Tradfri Gateway, Osram LIGHTIFY Gateway, Bosch Smart Home Controller, Tuya gateway(s), and Xiaomi Gateway (Aqara), etc.. What makes ZHA and...",
+          "url": "https://community.home-assistant.io/t/wth-cant-zigbee2mqtt-be-a-first-class-citizen-on-ha/1033377/5",
+          "date": "2026-11-10T15:39:04.700Z",
+          "category": "Connectivity & Reliability",
+          "sentiment": "negative",
+          "pain": true,
+          "occurrences": 1
+        },
+        "matched": "aqara"
+      },
+      {
+        "item": {
           "id": "other_forum_home_assistant_3933061",
           "source": "other_forum_home_assistant",
           "author": "LawrenceH",
@@ -1079,29 +1091,13 @@
           "occurrences": 1
         },
         "matched": "home assistant"
-      },
-      {
-        "item": {
-          "id": "other_forum_home_assistant_3917479",
-          "source": "other_forum_home_assistant",
-          "author": "PCO",
-          "title": "Ultraloq Bolt Z-Wave codes only lock, won't unlock",
-          "text": "Ultraloq Bolt Z-Wave codes only lock, won't unlock\nI had the same problem last summer when I migrated my Ultraloq Bolt Z-Wave lock from SmartThings to Home Assistant. Gemini told me to use the following Yaml code under Settings &gt; Tools &gt; Actions &gt; Yaml Code for each lock code I needed to add and...",
-          "url": "https://community.home-assistant.io/t/ultraloq-bolt-z-wave-codes-only-lock-wont-unlock/1029674/2",
-          "date": "2026-10-21T04:58:31.838Z",
-          "category": "Connectivity & Reliability",
-          "sentiment": "negative",
-          "pain": true,
-          "occurrences": 1
-        },
-        "matched": "home assistant"
       }
     ],
     "mentionedCompetitors": [
-      "Home Assistant",
-      "Aqara"
+      "Aqara",
+      "Home Assistant"
     ],
-    "competitorTopCategory": "Multi-brand Integration",
+    "competitorTopCategory": "Connectivity & Reliability",
     "nextReleasePriority": [
       {
         "category": "Energy Management",
@@ -1184,13 +1180,13 @@
         "rank": 6
       }
     ],
-    "totalPainItems": 699
+    "totalPainItems": 702
   },
   "executiveSummary": [
-    "최근 12개월간 SmartThings 앱 관련 부정 VOC 699건을 분석한 결과, 가장 시급한 Pain Point는 \"Connectivity & Reliability\"이며 최근 3개월 발생 빈도가 155건(+275%)으로 나타났다.",
+    "최근 12개월간 SmartThings 앱 관련 부정 VOC 702건을 분석한 결과, 가장 시급한 Pain Point는 \"Connectivity & Reliability\"이며 최근 3개월 발생 빈도가 157건(+277%)으로 나타났다.",
     "\"Multi-brand Integration\" 역시 상위 Pain Point로, 사용자 경험 저하가 지속되고 있어 함께 우선 대응이 필요하다.",
     "일부 사용자는 대체 솔루션으로의 이탈 의사를 직접 언급(5건)하여 이탈 위험 신호가 관측된다.",
-    "Home Assistant, Aqara 등 경쟁/대체 플랫폼 대비 열위가 언급된 VOC가 5건 확인되어 경쟁력 저하 신호로 관리가 필요하다.",
+    "Aqara, Home Assistant 등 경쟁/대체 플랫폼 대비 열위가 언급된 VOC가 5건 확인되어 경쟁력 저하 신호로 관리가 필요하다.",
     "차기 릴리즈에서는 Energy Management, Security & Privacy, UX/UI 항목을 우선 검토 대상으로 제안한다."
   ]
 }
