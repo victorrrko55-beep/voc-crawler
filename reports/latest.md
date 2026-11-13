@@ -1,9 +1,9 @@
 # Victor's VoC Crawler
 
-- 생성 시각: 2026-11-12T03:12:30.098Z
-- 분석 기간: 2025-11-12 ~ 2026-11-12 (최근 12개월)
-- 최근 구간: 2026-08-12 ~ 2026-11-12 (최근 3개월) vs 이전 9개월
-- 분석 대상 부정 VOC: 708건 (전체 수집 VOC 10203건 중)
+- 생성 시각: 2026-11-13T02:45:11.474Z
+- 분석 기간: 2025-11-13 ~ 2026-11-13 (최근 12개월)
+- 최근 구간: 2026-08-13 ~ 2026-11-13 (최근 3개월) vs 이전 9개월
+- 분석 대상 부정 VOC: 713건 (전체 수집 VOC 10258건 중)
 
 ## Top 10 Pain Points
 
@@ -11,10 +11,10 @@
 
 - 순위: 1
 - 카테고리: Connectivity & Reliability
-- 발생 빈도: 286건 (최근 3개월 161건 / 이전 9개월 125건)
-- 증가율: +286%
-- 대표 VOC: "Samsung SmartThings API access As soon as I found local things, my samsung devices got blocked from the internet. I suspect they probably would have needed the ST app to get connected to wifi or whatever initially, but t…" — other_forum_home_assistant, 2026-11-12 ([원문](https://community.home-assistant.io/t/samsung-smartthings-api-access/1032704/15))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +286% 증가하며, 'Connectivity & Reliability' 관련 부정 VOC가 총 286건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 289건 (최근 3개월 162건 / 이전 9개월 127건)
+- 증가율: +283%
+- 대표 VOC: "[Edge Driver][Local LAN] Samsung audio (grouped and actually working) the official samsung audio integration is broken with devices appearing offline. I used claude to fix the driver and make some quality of life improve…" — smartthings_community, 2026-11-12 ([원문](https://community.smartthings.com/t/edge-driver-local-lan-samsung-audio-grouped-and-actually-working/312223/1))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +283% 증가하며, 'Connectivity & Reliability' 관련 부정 VOC가 총 289건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 허브-클라우드 간 세션 유지 로직 취약, 다중 홉 메시 네트워크에서의 신호 간섭, 백그라운드 재연결 로직 미흡으로 오프라인 표시가 실제 상태와 어긋남.
 - 개선 아이디어: 지수 백오프 기반 자동 재연결 로직 개선, 기기별 실시간 연결 품질 지표 제공, 오프라인 발생 시 원인(허브/기기/네트워크) 구분 진단 도구 제공.
 
@@ -33,10 +33,10 @@
 
 - 순위: 3
 - 카테고리: Performance
-- 발생 빈도: 92건 (최근 3개월 48건 / 이전 9개월 44건)
-- 증가율: +227%
-- 대표 VOC: "Bad connections to tv Always crashes awful" — appstore, 2026-11-09 ([원문](https://apps.apple.com/us/app/id1222822904))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +227% 증가하며, 'Performance' 관련 부정 VOC가 총 92건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 93건 (최근 3개월 49건 / 이전 9개월 44건)
+- 증가율: +234%
+- 대표 VOC: "Rubbish My iPhone is connected to the same Wi-Fi network as the Samsung Smart TV, yet the app consistently fails to connect to the television. The TV is positioned right next to the UniFi wall router, so signal strength …" — appstore, 2026-11-10 ([원문](https://apps.apple.com/gb/app/id1222822904))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +234% 증가하며, 'Performance' 관련 부정 VOC가 총 93건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 앱 초기 로딩 시 과도한 기기 상태 동기화, 메모리 누수로 인한 장시간 사용 시 느려짐, 백그라운드 폴링으로 인한 배터리 소모.
 - 개선 아이디어: 초기 로딩을 지연 로딩(lazy load) 방식으로 전환, 캐시 계층 도입으로 반복 호출 감소, 배터리/성능 프로파일링을 정기 회귀 테스트에 포함.
 
@@ -44,10 +44,10 @@
 
 - 순위: 4
 - 카테고리: Automation & Routine
-- 발생 빈도: 66건 (최근 3개월 31건 / 이전 9개월 35건)
-- 증가율: +166%
-- 대표 VOC: "What was the last automation that behaved differently than you expected? (Syntax was OK, logic/runtime failed) ...our first question: the for: 5 minutes one I noticed physically, because I was sitting in the living room …" — other_forum_home_assistant, 2026-11-08 ([원문](https://community.home-assistant.io/t/what-was-the-last-automation-that-behaved-differently-than-you-expected-syntax-was-ok-logic-runtime-failed/1030579/7))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +166% 증가하며, 'Automation & Routine' 관련 부정 VOC가 총 66건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 67건 (최근 3개월 32건 / 이전 9개월 35건)
+- 증가율: +174%
+- 대표 VOC: "[RELEASE] Voice Box – play your own recorded messages on Alexa (free, no ads, works from Routines / SmartThings) helen23marki: This looks like a community announcement introducing Voice Box, an Alexa skill for uploading …" — smartthings_community, 2026-11-11 ([원문](https://community.smartthings.com/t/release-voice-box-play-your-own-recorded-messages-on-alexa-free-no-ads-works-from-routines-smartthings/311288/4))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +174% 증가하며, 'Automation & Routine' 관련 부정 VOC가 총 67건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 루틴 실행 엔진의 조건 평가 지연, 클라우드 종속 자동화의 지연/타임아웃, 앱 업데이트 후 기존 루틴의 트리거-조건 매핑이 깨지는 회귀 버그.
 - 개선 아이디어: 루틴 실행 로그/히스토리를 사용자에게 노출해 실패 시점을 즉시 확인 가능하게 하고, 로컬 실행(온디바이스) 비중을 늘려 클라우드 왕복 지연을 줄임.
 
@@ -66,10 +66,10 @@
 
 - 순위: 6
 - 카테고리: UX/UI
-- 발생 빈도: 47건 (최근 3개월 34건 / 이전 9개월 13건)
-- 증가율: +685%
+- 발생 빈도: 47건 (최근 3개월 33건 / 이전 9개월 14건)
+- 증가율: +607%
 - 대표 VOC: "it's good. can be a bit buggy at times and unintuitive. worth downloading if you have Samsung products you wish to connect" — play, 2026-11-09 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +685% 증가하며, 'UX/UI' 관련 부정 VOC가 총 47건 누적되어 상위 Pain Point로 식별됨.
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +607% 증가하며, 'UX/UI' 관련 부정 VOC가 총 47건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 기능이 누적되며 정보 구조(IA)가 복잡해졌고, 기기 관리·자동화·모니터링 기능이 하나의 화면 계층에 혼재되어 사용자가 원하는 기능을 찾기 어려움.
 - 개선 아이디어: 사용 빈도 기반 홈 화면 재구성, 핵심 태스크(기기 추가/루틴 생성/상태 확인) 중심의 단순화된 네비게이션 도입, 정기적 사용성 테스트 기반 반복 개선.
 
@@ -135,11 +135,11 @@
 
 최근 6개월간 증가한 VOC:
 
-- **Connectivity & Reliability**: 최근 6개월 257건 vs 이전 6개월 29건 (+286%)
-- **Performance**: 최근 6개월 84건 vs 이전 6개월 8건 (+227%)
+- **Connectivity & Reliability**: 최근 6개월 259건 vs 이전 6개월 30건 (+283%)
+- **Performance**: 최근 6개월 85건 vs 이전 6개월 8건 (+234%)
 - **Multi-brand Integration**: 최근 6개월 83건 vs 이전 6개월 17건 (+267%)
-- **Automation & Routine**: 최근 6개월 56건 vs 이전 6개월 10건 (+166%)
-- **UX/UI**: 최근 6개월 44건 vs 이전 6개월 3건 (+685%)
+- **Automation & Routine**: 최근 6개월 57건 vs 이전 6개월 10건 (+174%)
+- **UX/UI**: 최근 6개월 44건 vs 이전 6개월 3건 (+607%)
 - **Device Onboarding**: 최근 6개월 50건 vs 이전 6개월 10건 (+292%)
 - **Security & Privacy**: 최근 6개월 34건 vs 이전 6개월 1건 (+913%)
 - **Energy Management**: 최근 6개월 9건 vs 이전 6개월 0건 (+950%)
@@ -154,7 +154,7 @@
 
 ### 가장 시급한 개선 과제
 
-**Connectivity & Reliability** — 최근 3개월 161건(+286%), 12개월 누적 286건으로 전체 부정 VOC의 40%를 차지, 2위(Multi-brand Integration, 최근 3개월 55건)보다 106건 더 많음.
+**Connectivity & Reliability** — 최근 3개월 162건(+283%), 12개월 누적 289건으로 전체 부정 VOC의 41%를 차지, 2위(Multi-brand Integration, 최근 3개월 55건)보다 107건 더 많음.
 
 Root Cause 추정: 허브-클라우드 간 세션 유지 로직 취약, 다중 홉 메시 네트워크에서의 신호 간섭, 백그라운드 재연결 로직 미흡으로 오프라인 표시가 실제 상태와 어긋남.
 
@@ -184,11 +184,11 @@ Aqara, Home Assistant 등 경쟁/대체 플랫폼과 비교하며 SmartThings의
 
 1. **Energy Management** (+950%) — SmartThings Energy의 상세 에너지 데이터가 삼성 자체 기기 위주로만 제공되어 서드파티 기기(스마트 플러그 등)는 연동은 되어도 에너지 모니터링 항목이 누락되거나 Energy 화면에 기기 자체가 표시되지 않는 경우가 있음.
 2. **Security & Privacy** (+913%) — 권한 요청 시점과 사유 설명이 불충분해 사용자가 과도한 권한 요구로 인식, 보안 관련 정책 변경 공지가 앱 내에서 충분히 전달되지 않음.
-3. **UX/UI** (+685%) — 기능이 누적되며 정보 구조(IA)가 복잡해졌고, 기기 관리·자동화·모니터링 기능이 하나의 화면 계층에 혼재되어 사용자가 원하는 기능을 찾기 어려움.
+3. **UX/UI** (+607%) — 기능이 누적되며 정보 구조(IA)가 복잡해졌고, 기기 관리·자동화·모니터링 기능이 하나의 화면 계층에 혼재되어 사용자가 원하는 기능을 찾기 어려움.
 
 ## Executive Summary
 
-- 최근 12개월간 SmartThings 앱 관련 부정 VOC 708건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 161건(+286%)으로 나타났다.
+- 최근 12개월간 SmartThings 앱 관련 부정 VOC 713건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 162건(+283%)으로 나타났다.
 - "Multi-brand Integration" 역시 상위 Pain Point로, 사용자 경험 저하가 지속되고 있어 함께 우선 대응이 필요하다.
 - 일부 사용자는 대체 솔루션으로의 이탈 의사를 직접 언급(5건)하여 이탈 위험 신호가 관측된다.
 - Aqara, Home Assistant 등 경쟁/대체 플랫폼 대비 열위가 언급된 VOC가 5건 확인되어 경쟁력 저하 신호로 관리가 필요하다.
