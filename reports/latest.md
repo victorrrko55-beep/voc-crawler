@@ -1,9 +1,9 @@
 # Victor's VoC Crawler
 
-- 생성 시각: 2026-11-13T02:45:11.474Z
-- 분석 기간: 2025-11-13 ~ 2026-11-13 (최근 12개월)
-- 최근 구간: 2026-08-13 ~ 2026-11-13 (최근 3개월) vs 이전 9개월
-- 분석 대상 부정 VOC: 713건 (전체 수집 VOC 10258건 중)
+- 생성 시각: 2026-11-14T02:34:43.966Z
+- 분석 기간: 2025-11-14 ~ 2026-11-14 (최근 12개월)
+- 최근 구간: 2026-08-14 ~ 2026-11-14 (최근 3개월) vs 이전 9개월
+- 분석 대상 부정 VOC: 717건 (전체 수집 VOC 10307건 중)
 
 ## Top 10 Pain Points
 
@@ -11,10 +11,10 @@
 
 - 순위: 1
 - 카테고리: Connectivity & Reliability
-- 발생 빈도: 289건 (최근 3개월 162건 / 이전 9개월 127건)
-- 증가율: +283%
-- 대표 VOC: "[Edge Driver][Local LAN] Samsung audio (grouped and actually working) the official samsung audio integration is broken with devices appearing offline. I used claude to fix the driver and make some quality of life improve…" — smartthings_community, 2026-11-12 ([원문](https://community.smartthings.com/t/edge-driver-local-lan-samsung-audio-grouped-and-actually-working/312223/1))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +283% 증가하며, 'Connectivity & Reliability' 관련 부정 VOC가 총 289건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 292건 (최근 3개월 163건 / 이전 9개월 129건)
+- 증가율: +279%
+- 대표 VOC: "[ST Edge] Dyson Purifier Humidify+Cool (358K), local over the LAN: humidifier, air quality, oscillation, warnings (unofficial) ...word. A new problem notifies again, even while an earlier one is still there. "Dyson not r…" — smartthings_community, 2026-11-13 ([원문](https://community.smartthings.com/t/st-edge-dyson-purifier-humidify-cool-358k-local-over-the-lan-humidifier-air-quality-oscillation-warnings-unofficial/312130/2))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +279% 증가하며, 'Connectivity & Reliability' 관련 부정 VOC가 총 292건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 허브-클라우드 간 세션 유지 로직 취약, 다중 홉 메시 네트워크에서의 신호 간섭, 백그라운드 재연결 로직 미흡으로 오프라인 표시가 실제 상태와 어긋남.
 - 개선 아이디어: 지수 백오프 기반 자동 재연결 로직 개선, 기기별 실시간 연결 품질 지표 제공, 오프라인 발생 시 원인(허브/기기/네트워크) 구분 진단 도구 제공.
 
@@ -22,10 +22,10 @@
 
 - 순위: 2
 - 카테고리: Multi-brand Integration
-- 발생 빈도: 100건 (최근 3개월 55건 / 이전 9개월 45건)
-- 증가율: +267%
-- 대표 VOC: "WTH can't Home Assistant represent the actual things in my home, separately from the devices that make them smart? ....com/user-interface/settings/swap-apps-device Hubitat's built-in Swap Device moves a defective device'…" — other_forum_home_assistant, 2026-11-09 ([원문](https://community.home-assistant.io/t/wth-cant-home-assistant-represent-the-actual-things-in-my-home-separately-from-the-devices-that-make-them-smart/1033199/14))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +267% 증가하며, 'Multi-brand Integration' 관련 부정 VOC가 총 100건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 101건 (최근 3개월 56건 / 이전 9개월 45건)
+- 증가율: +273%
+- 대표 VOC: "IKEA matter bulbs and devices started to appear, where have you spotted them? Spotted this on Reddit yesterday (edit, it was earlier today, feels like yesterday :smiley: ) but I can't get any update to be detected either…" — smartthings_community, 2026-11-12 ([원문](https://community.smartthings.com/t/ikea-matter-bulbs-and-devices-started-to-appear-where-have-you-spotted-them/306677/182))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +273% 증가하며, 'Multi-brand Integration' 관련 부정 VOC가 총 101건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: Matter 표준 지원이 기기/펌웨어별로 파편화되어 있고, 타 브랜드 기기와의 인증서/ 드라이버 호환성 검증이 SmartThings 릴리즈 주기와 어긋남.
 - 개선 아이디어: Matter 인증 기기에 대한 호환성 매트릭스를 앱 내에서 공개하고, 주요 서드파티 브랜드와의 통합 테스트를 릴리즈 전 QA 파이프라인에 상시 포함.
 
@@ -135,9 +135,9 @@
 
 최근 6개월간 증가한 VOC:
 
-- **Connectivity & Reliability**: 최근 6개월 259건 vs 이전 6개월 30건 (+283%)
+- **Connectivity & Reliability**: 최근 6개월 262건 vs 이전 6개월 30건 (+279%)
 - **Performance**: 최근 6개월 85건 vs 이전 6개월 8건 (+234%)
-- **Multi-brand Integration**: 최근 6개월 83건 vs 이전 6개월 17건 (+267%)
+- **Multi-brand Integration**: 최근 6개월 84건 vs 이전 6개월 17건 (+273%)
 - **Automation & Routine**: 최근 6개월 57건 vs 이전 6개월 10건 (+174%)
 - **UX/UI**: 최근 6개월 44건 vs 이전 6개월 3건 (+607%)
 - **Device Onboarding**: 최근 6개월 50건 vs 이전 6개월 10건 (+292%)
@@ -154,7 +154,7 @@
 
 ### 가장 시급한 개선 과제
 
-**Connectivity & Reliability** — 최근 3개월 162건(+283%), 12개월 누적 289건으로 전체 부정 VOC의 41%를 차지, 2위(Multi-brand Integration, 최근 3개월 55건)보다 107건 더 많음.
+**Connectivity & Reliability** — 최근 3개월 163건(+279%), 12개월 누적 292건으로 전체 부정 VOC의 41%를 차지, 2위(Multi-brand Integration, 최근 3개월 56건)보다 107건 더 많음.
 
 Root Cause 추정: 허브-클라우드 간 세션 유지 로직 취약, 다중 홉 메시 네트워크에서의 신호 간섭, 백그라운드 재연결 로직 미흡으로 오프라인 표시가 실제 상태와 어긋남.
 
@@ -188,7 +188,7 @@ Aqara, Home Assistant 등 경쟁/대체 플랫폼과 비교하며 SmartThings의
 
 ## Executive Summary
 
-- 최근 12개월간 SmartThings 앱 관련 부정 VOC 713건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 162건(+283%)으로 나타났다.
+- 최근 12개월간 SmartThings 앱 관련 부정 VOC 717건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 163건(+279%)으로 나타났다.
 - "Multi-brand Integration" 역시 상위 Pain Point로, 사용자 경험 저하가 지속되고 있어 함께 우선 대응이 필요하다.
 - 일부 사용자는 대체 솔루션으로의 이탈 의사를 직접 언급(5건)하여 이탈 위험 신호가 관측된다.
 - Aqara, Home Assistant 등 경쟁/대체 플랫폼 대비 열위가 언급된 VOC가 5건 확인되어 경쟁력 저하 신호로 관리가 필요하다.
