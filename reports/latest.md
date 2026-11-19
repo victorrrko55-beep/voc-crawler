@@ -1,9 +1,9 @@
 # Victor's VoC Crawler
 
-- 생성 시각: 2026-11-18T03:46:19.022Z
-- 분석 기간: 2025-11-18 ~ 2026-11-18 (최근 12개월)
-- 최근 구간: 2026-08-18 ~ 2026-11-18 (최근 3개월) vs 이전 9개월
-- 분석 대상 부정 VOC: 729건 (전체 수집 VOC 10554건 중)
+- 생성 시각: 2026-11-19T03:44:30.557Z
+- 분석 기간: 2025-11-19 ~ 2026-11-19 (최근 12개월)
+- 최근 구간: 2026-08-19 ~ 2026-11-19 (최근 3개월) vs 이전 9개월
+- 분석 대상 부정 VOC: 732건 (전체 수집 VOC 10640건 중)
 
 ## Top 10 Pain Points
 
@@ -11,10 +11,10 @@
 
 - 순위: 1
 - 카테고리: Connectivity & Reliability
-- 발생 빈도: 301건 (최근 3개월 167건 / 이전 9개월 134건)
-- 증가율: +274%
+- 발생 빈도: 301건 (최근 3개월 166건 / 이전 9개월 135건)
+- 증가율: +269%
 - 대표 VOC: "I am done with samsung and smartthing ...artThings support with the local control that Edge gives me. I am retired, so I cannot be wasting money on devices that do not work with SmartThings. Matter over thread may be the…" — smartthings_community, 2026-11-15 ([원문](https://community.smartthings.com/t/i-am-done-with-samsung-and-smartthing/312056/10))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +274% 증가하며, 'Connectivity & Reliability' 관련 부정 VOC가 총 301건 누적되어 상위 Pain Point로 식별됨.
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +269% 증가하며, 'Connectivity & Reliability' 관련 부정 VOC가 총 301건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 허브-클라우드 간 세션 유지 로직 취약, 다중 홉 메시 네트워크에서의 신호 간섭, 백그라운드 재연결 로직 미흡으로 오프라인 표시가 실제 상태와 어긋남.
 - 개선 아이디어: 지수 백오프 기반 자동 재연결 로직 개선, 기기별 실시간 연결 품질 지표 제공, 오프라인 발생 시 원인(허브/기기/네트워크) 구분 진단 도구 제공.
 
@@ -22,10 +22,10 @@
 
 - 순위: 2
 - 카테고리: Multi-brand Integration
-- 발생 빈도: 101건 (최근 3개월 56건 / 이전 9개월 45건)
-- 증가율: +273%
-- 대표 VOC: "IKEA matter bulbs and devices started to appear, where have you spotted them? Spotted this on Reddit yesterday (edit, it was earlier today, feels like yesterday :smiley: ) but I can't get any update to be detected either…" — smartthings_community, 2026-11-12 ([원문](https://community.smartthings.com/t/ikea-matter-bulbs-and-devices-started-to-appear-where-have-you-spotted-them/306677/182))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +273% 증가하며, 'Multi-brand Integration' 관련 부정 VOC가 총 101건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 102건 (최근 3개월 56건 / 이전 9개월 46건)
+- 증가율: +265%
+- 대표 VOC: "Viable approaches to using Alexa voice commands I'm considering switching from SmartThings hub to HA, but one requirement I have is to use my Echo devices to issue voice commands to control and query my devices, such as:…" — other_forum_home_assistant, 2026-11-18 ([원문](https://community.home-assistant.io/t/viable-approaches-to-using-alexa-voice-commands/1035368/1))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +265% 증가하며, 'Multi-brand Integration' 관련 부정 VOC가 총 102건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: Matter 표준 지원이 기기/펌웨어별로 파편화되어 있고, 타 브랜드 기기와의 인증서/ 드라이버 호환성 검증이 SmartThings 릴리즈 주기와 어긋남.
 - 개선 아이디어: Matter 인증 기기에 대한 호환성 매트릭스를 앱 내에서 공개하고, 주요 서드파티 브랜드와의 통합 테스트를 릴리즈 전 QA 파이프라인에 상시 포함.
 
@@ -44,10 +44,10 @@
 
 - 순위: 4
 - 카테고리: Automation & Routine
-- 발생 빈도: 68건 (최근 3개월 34건 / 이전 9개월 34건)
-- 증가율: +200%
-- 대표 VOC: "SmartThings Motion Sensor Automation Not Triggering Lights It would be useful to have a screenshot of the failing routine…" — smartthings_community, 2026-11-17 ([원문](https://community.smartthings.com/t/smartthings-motion-sensor-automation-not-triggering-lights/312716/2))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +200% 증가하며, 'Automation & Routine' 관련 부정 VOC가 총 68건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 69건 (최근 3개월 35건 / 이전 9개월 34건)
+- 증가율: +209%
+- 대표 VOC: "SmartThings Motion Sensor Automation Not Triggering Lights ...is likely a condition in the original routine rather than the sensor. Also check the light's own history at the times it failed: if the bulb shows as offline …" — smartthings_community, 2026-11-18 ([원문](https://community.smartthings.com/t/smartthings-motion-sensor-automation-not-triggering-lights/312716/6))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +209% 증가하며, 'Automation & Routine' 관련 부정 VOC가 총 69건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 루틴 실행 엔진의 조건 평가 지연, 클라우드 종속 자동화의 지연/타임아웃, 앱 업데이트 후 기존 루틴의 트리거-조건 매핑이 깨지는 회귀 버그.
 - 개선 아이디어: 루틴 실행 로그/히스토리를 사용자에게 노출해 실패 시점을 즉시 확인 가능하게 하고, 로컬 실행(온디바이스) 비중을 늘려 클라우드 왕복 지연을 줄임.
 
@@ -66,10 +66,10 @@
 
 - 순위: 6
 - 카테고리: UX/UI
-- 발생 빈도: 47건 (최근 3개월 32건 / 이전 9개월 15건)
-- 증가율: +540%
+- 발생 빈도: 47건 (최근 3개월 31건 / 이전 9개월 16건)
+- 증가율: +481%
 - 대표 VOC: "it's good. can be a bit buggy at times and unintuitive. worth downloading if you have Samsung products you wish to connect" — play, 2026-11-09 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +540% 증가하며, 'UX/UI' 관련 부정 VOC가 총 47건 누적되어 상위 Pain Point로 식별됨.
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +481% 증가하며, 'UX/UI' 관련 부정 VOC가 총 47건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 기능이 누적되며 정보 구조(IA)가 복잡해졌고, 기기 관리·자동화·모니터링 기능이 하나의 화면 계층에 혼재되어 사용자가 원하는 기능을 찾기 어려움.
 - 개선 아이디어: 사용 빈도 기반 홈 화면 재구성, 핵심 태스크(기기 추가/루틴 생성/상태 확인) 중심의 단순화된 네비게이션 도입, 정기적 사용성 테스트 기반 반복 개선.
 
@@ -106,16 +106,16 @@
 - Root Cause 추정: AI/음성 기능이 특정 지역·기기에서만 제공되어 기대와 실제 지원 범위 간 괴리가 크고, Bixby 등 음성 인식 정확도가 낮아 명령 실패가 반복됨.
 - 개선 아이디어: AI/음성 기능의 지원 범위를 앱 내에서 명확히 안내, 음성 명령 실패 시 대체 텍스트 명령 제공, 사용자 피드백 기반 인식률 개선 루프 구축.
 
-### 10. Ecosystem Management
+### 10. Notification & Alert
 
 - 순위: 10
-- 카테고리: Ecosystem Management
-- 발생 빈도: 3건 (최근 3개월 1건 / 이전 9개월 2건)
-- 증가율: +50%
-- 대표 VOC: "I never seen worse software in my life It is absolutely unable to find devices like Samsung ACs despite being on. Also, after having moved from US to Europe and despite changing location in all Samsung sites and profiles…" — appstore, 2026-10-05 ([원문](https://apps.apple.com/us/app/id1222822904))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +50% 증가하며, 'Ecosystem Management' 관련 부정 VOC가 총 3건 누적되어 상위 Pain Point로 식별됨.
-- Root Cause 추정: 다중 위치(Location)·다중 허브 환경에서 기기/자동화 관리 UI가 단일 가구 기준으로 설계되어 있어 확장 시 관리 복잡도가 급증.
-- 개선 아이디어: 위치·허브 간 일괄 관리(bulk actions) 기능 제공, 계층적 그룹/태그 기반 기기 관리 UI 도입, 공유 사용자 권한 관리 세분화.
+- 카테고리: Notification & Alert
+- 발생 빈도: 4건 (최근 3개월 1건 / 이전 9개월 3건)
+- 증가율: +0%
+- 대표 VOC: "didn't appreciate the push notification to "learn how to check up on mum and dad" poor form, poor advertising" — play, 2026-11-17 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
+- Pain Point 요약: 발생 빈도는 +0%로 완만한 추세를 보이나, 'Notification & Alert' 관련 부정 VOC가 총 4건 누적되어 상위 Pain Point로 식별됨.
+- Root Cause 추정: 푸시 알림 파이프라인(클라우드→FCM/APNs)의 지연, 사용자별 알림 설정과 기기 이벤트 트리거 간 매핑 오류로 알림 누락/중복 발생.
+- 개선 아이디어: 중요 알림(보안·누수·화재 등)에 대한 우선순위 큐 분리, 알림 전달 성공률 모니터링 대시보드 구축, 사용자가 알림 지연을 직접 진단할 수 있는 테스트 알림 기능 제공.
 
 ## Spotlight
 
@@ -135,12 +135,12 @@
 
 최근 6개월간 증가한 VOC:
 
-- **Connectivity & Reliability**: 최근 6개월 269건 vs 이전 6개월 32건 (+274%)
+- **Connectivity & Reliability**: 최근 6개월 268건 vs 이전 6개월 33건 (+269%)
 - **Performance**: 최근 6개월 87건 vs 이전 6개월 8건 (+220%)
-- **Multi-brand Integration**: 최근 6개월 84건 vs 이전 6개월 17건 (+273%)
-- **Automation & Routine**: 최근 6개월 59건 vs 이전 6개월 9건 (+200%)
+- **Multi-brand Integration**: 최근 6개월 85건 vs 이전 6개월 17건 (+265%)
+- **Automation & Routine**: 최근 6개월 58건 vs 이전 6개월 11건 (+209%)
 - **Device Onboarding**: 최근 6개월 50건 vs 이전 6개월 9건 (+308%)
-- **UX/UI**: 최근 6개월 44건 vs 이전 6개월 3건 (+540%)
+- **UX/UI**: 최근 6개월 44건 vs 이전 6개월 3건 (+481%)
 - **Security & Privacy**: 최근 6개월 34건 vs 이전 6개월 1건 (+913%)
 - **Energy Management**: 최근 6개월 9건 vs 이전 6개월 0건 (+950%)
 
@@ -154,7 +154,7 @@
 
 ### 가장 시급한 개선 과제
 
-**Connectivity & Reliability** — 최근 3개월 167건(+274%), 12개월 누적 301건으로 전체 부정 VOC의 41%를 차지, 2위(Multi-brand Integration, 최근 3개월 56건)보다 111건 더 많음.
+**Connectivity & Reliability** — 최근 3개월 166건(+269%), 12개월 누적 301건으로 전체 부정 VOC의 41%를 차지, 2위(Multi-brand Integration, 최근 3개월 56건)보다 110건 더 많음.
 
 Root Cause 추정: 허브-클라우드 간 세션 유지 로직 취약, 다중 홉 메시 네트워크에서의 신호 간섭, 백그라운드 재연결 로직 미흡으로 오프라인 표시가 실제 상태와 어긋남.
 
@@ -184,11 +184,11 @@ Aqara, Home Assistant 등 경쟁/대체 플랫폼과 비교하며 SmartThings의
 
 1. **Energy Management** (+950%) — SmartThings Energy의 상세 에너지 데이터가 삼성 자체 기기 위주로만 제공되어 서드파티 기기(스마트 플러그 등)는 연동은 되어도 에너지 모니터링 항목이 누락되거나 Energy 화면에 기기 자체가 표시되지 않는 경우가 있음.
 2. **Security & Privacy** (+913%) — 권한 요청 시점과 사유 설명이 불충분해 사용자가 과도한 권한 요구로 인식, 보안 관련 정책 변경 공지가 앱 내에서 충분히 전달되지 않음.
-3. **UX/UI** (+540%) — 기능이 누적되며 정보 구조(IA)가 복잡해졌고, 기기 관리·자동화·모니터링 기능이 하나의 화면 계층에 혼재되어 사용자가 원하는 기능을 찾기 어려움.
+3. **UX/UI** (+481%) — 기능이 누적되며 정보 구조(IA)가 복잡해졌고, 기기 관리·자동화·모니터링 기능이 하나의 화면 계층에 혼재되어 사용자가 원하는 기능을 찾기 어려움.
 
 ## Executive Summary
 
-- 최근 12개월간 SmartThings 앱 관련 부정 VOC 729건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 167건(+274%)으로 나타났다.
+- 최근 12개월간 SmartThings 앱 관련 부정 VOC 732건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 166건(+269%)으로 나타났다.
 - "Multi-brand Integration" 역시 상위 Pain Point로, 사용자 경험 저하가 지속되고 있어 함께 우선 대응이 필요하다.
 - 일부 사용자는 대체 솔루션으로의 이탈 의사를 직접 언급(5건)하여 이탈 위험 신호가 관측된다.
 - Aqara, Home Assistant 등 경쟁/대체 플랫폼 대비 열위가 언급된 VOC가 5건 확인되어 경쟁력 저하 신호로 관리가 필요하다.
