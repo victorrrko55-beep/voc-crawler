@@ -1,9 +1,9 @@
 # Victor's VoC Crawler
 
-- 생성 시각: 2026-11-23T02:56:58.926Z
-- 분석 기간: 2025-11-23 ~ 2026-11-23 (최근 12개월)
-- 최근 구간: 2026-08-23 ~ 2026-11-23 (최근 3개월) vs 이전 9개월
-- 분석 대상 부정 VOC: 738건 (전체 수집 VOC 10854건 중)
+- 생성 시각: 2026-11-24T06:13:56.395Z
+- 분석 기간: 2025-11-24 ~ 2026-11-24 (최근 12개월)
+- 최근 구간: 2026-08-24 ~ 2026-11-24 (최근 3개월) vs 이전 9개월
+- 분석 대상 부정 VOC: 741건 (전체 수집 VOC 10905건 중)
 
 ## Top 10 Pain Points
 
@@ -22,10 +22,10 @@
 
 - 순위: 2
 - 카테고리: Multi-brand Integration
-- 발생 빈도: 105건 (최근 3개월 55건 / 이전 9개월 50건)
-- 증가율: +230%
-- 대표 VOC: "Since version 1.8.51.30, several SmartThings devices no longer open their detail screens. Some briefly show "Loading" or progress from 0–100%, but nothing happens. The issue affects Zigbee, Matter, and cloud devices, whi…" — play, 2026-11-21 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +230% 증가하며, 'Multi-brand Integration' 관련 부정 VOC가 총 105건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 106건 (최근 3개월 55건 / 이전 9개월 51건)
+- 증가율: +224%
+- 대표 VOC: "latest update completely broke integration with Google home. Google home new recognizes most of my dimming lights as 2 devices, an outlet and a switch. I cannot even control rooms anymore because it things rooms only hav…" — play, 2026-11-22 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +224% 증가하며, 'Multi-brand Integration' 관련 부정 VOC가 총 106건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: Matter 표준 지원이 기기/펌웨어별로 파편화되어 있고, 타 브랜드 기기와의 인증서/ 드라이버 호환성 검증이 SmartThings 릴리즈 주기와 어긋남.
 - 개선 아이디어: Matter 인증 기기에 대한 호환성 매트릭스를 앱 내에서 공개하고, 주요 서드파티 브랜드와의 통합 테스트를 릴리즈 전 QA 파이프라인에 상시 포함.
 
@@ -55,10 +55,10 @@
 
 - 순위: 5
 - 카테고리: Device Onboarding
-- 발생 빈도: 60건 (최근 3개월 34건 / 이전 9개월 26건)
-- 증가율: +292%
-- 대표 VOC: "can't add washer, support never came back." — play, 2026-11-18 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +292% 증가하며, 'Device Onboarding' 관련 부정 VOC가 총 60건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 61건 (최근 3개월 35건 / 이전 9개월 26건)
+- 증가율: +304%
+- 대표 VOC: "Samsung Smart Tag 2 - Unlink from Unknown Account It doesn't work, you can factory reset the tag doing the button-"pressed while putting the battery in" trick. That puts the SmartTag in pairing mode again and can be adde…" — smartthings_community, 2026-11-23 ([원문](https://community.smartthings.com/t/samsung-smart-tag-2-unlink-from-unknown-account/313336/4))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +304% 증가하며, 'Device Onboarding' 관련 부정 VOC가 총 61건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 기기 등록 과정에서 발생하는 프로토콜(Wi-Fi/Zigbee/Z-Wave/Matter) 핸드셰이크 실패, 펌웨어-앱 버전 불일치, 불명확한 오류 메시지로 사용자가 실패 원인을 파악하기 어려움.
 - 개선 아이디어: 온보딩 단계별 진행률과 실패 시 구체적 원인(예: "라우터 2.4GHz 대역 확인 필요")을 보여주는 가이드형 UI 도입, 실패율이 높은 기기 유형에 대한 사전 호환성 체크 강화.
 
@@ -135,12 +135,12 @@
 
 최근 6개월간 증가한 VOC:
 
-- **Connectivity & Reliability**: 최근 6개월 271건 vs 이전 6개월 31건 (+261%)
+- **Connectivity & Reliability**: 최근 6개월 270건 vs 이전 6개월 32건 (+261%)
 - **Performance**: 최근 6개월 87건 vs 이전 6개월 7건 (+200%)
-- **Multi-brand Integration**: 최근 6개월 88건 vs 이전 6개월 17건 (+230%)
+- **Multi-brand Integration**: 최근 6개월 89건 vs 이전 6개월 17건 (+224%)
 - **Automation & Routine**: 최근 6개월 57건 vs 이전 6개월 13건 (+183%)
-- **Device Onboarding**: 최근 6개월 51건 vs 이전 6개월 9건 (+292%)
-- **UX/UI**: 최근 6개월 45건 vs 이전 6개월 3건 (+500%)
+- **Device Onboarding**: 최근 6개월 52건 vs 이전 6개월 9건 (+304%)
+- **UX/UI**: 최근 6개월 44건 vs 이전 6개월 4건 (+500%)
 - **Security & Privacy**: 최근 6개월 35건 vs 이전 6개월 1건 (+800%)
 - **Energy Management**: 최근 6개월 9건 vs 이전 6개월 0건 (+950%)
 
@@ -172,11 +172,11 @@ Root Cause 추정: 허브-클라우드 간 세션 유지 로직 취약, 다중 �
 
 Google Home, Aqara, Home Assistant 등 경쟁/대체 플랫폼과 비교하며 SmartThings의 열위를 지적한 VOC 5건 확인. 주로 **Multi-brand Integration** 카테고리에서 함께 언급됨.
 
+- "latest update completely broke integration with Google home. Google home new recognizes most of my dimming lights as 2 devices, an outlet and a switch. I cannot…" — play, 2026-11-22 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
 - "Nest app to shutdown on January 25, 2027 I also got the message. For me personally I only used the Nest App to fine tune my Thermostat by half degrees, somethin…" — smartthings_community, 2026-11-20 ([원문](https://community.smartthings.com/t/nest-app-to-shutdown-on-january-25-2027/313161/3))
 - "WTH can't Zigbee2MQTT be a first-class citizen on HA .../hubs_protocols/smart_home_hubs/ "hubs" (gateways/bridges/controllers) which support Zigbee devices, suc…" — other_forum_home_assistant, 2026-11-10 ([원문](https://community.home-assistant.io/t/wth-cant-zigbee2mqtt-be-a-first-class-citizen-on-ha/1033377/5))
 - "WTH can't Home Assistant represent the actual things in my home, separately from the devices that make them smart? ....com/user-interface/settings/swap-apps-dev…" — other_forum_home_assistant, 2026-11-09 ([원문](https://community.home-assistant.io/t/wth-cant-home-assistant-represent-the-actual-things-in-my-home-separately-from-the-devices-that-make-them-smart/1033199/14))
 - "EP SmartApp replacement for Shabbat-and-Holiday-Modes! Yes, I haven't fully looked into the details, but it looks like Samsung is shutting down all PATs, which…" — smartthings_community, 2026-11-06 ([원문](https://community.smartthings.com/t/ep-smartapp-replacement-for-shabbat-and-holiday-modes/255274/73))
-- "SONOFF Orb-ZBW2L Zigbee Double Smart Wall Switch ...b-ZBW2L Zigbee Double Smart Wall Switch fits the bill for what I need , no neutral needed and it only needs…" — smartthings_community, 2026-11-04 ([원문](https://community.smartthings.com/t/sonoff-orb-zbw2l-zigbee-double-smart-wall-switch/311951/1))
 
 ### 차기 릴리즈 우선 검토 항목
 
@@ -188,7 +188,7 @@ Google Home, Aqara, Home Assistant 등 경쟁/대체 플랫폼과 비교하며 S
 
 ## Executive Summary
 
-- 최근 12개월간 SmartThings 앱 관련 부정 VOC 738건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 165건(+261%)으로 나타났다.
+- 최근 12개월간 SmartThings 앱 관련 부정 VOC 741건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 165건(+261%)으로 나타났다.
 - "Multi-brand Integration" 역시 상위 Pain Point로, 사용자 경험 저하가 지속되고 있어 함께 우선 대응이 필요하다.
 - 일부 사용자는 대체 솔루션으로의 이탈 의사를 직접 언급(5건)하여 이탈 위험 신호가 관측된다.
 - Google Home, Aqara, Home Assistant 등 경쟁/대체 플랫폼 대비 열위가 언급된 VOC가 5건 확인되어 경쟁력 저하 신호로 관리가 필요하다.
