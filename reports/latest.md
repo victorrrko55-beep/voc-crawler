@@ -1,9 +1,9 @@
 # Victor's VoC Crawler
 
-- 생성 시각: 2026-11-24T06:13:56.395Z
-- 분석 기간: 2025-11-24 ~ 2026-11-24 (최근 12개월)
-- 최근 구간: 2026-08-24 ~ 2026-11-24 (최근 3개월) vs 이전 9개월
-- 분석 대상 부정 VOC: 741건 (전체 수집 VOC 10905건 중)
+- 생성 시각: 2026-11-25T04:58:10.634Z
+- 분석 기간: 2025-11-25 ~ 2026-11-25 (최근 12개월)
+- 최근 구간: 2026-08-25 ~ 2026-11-25 (최근 3개월) vs 이전 9개월
+- 분석 대상 부정 VOC: 744건 (전체 수집 VOC 10972건 중)
 
 ## Top 10 Pain Points
 
@@ -11,10 +11,10 @@
 
 - 순위: 1
 - 카테고리: Connectivity & Reliability
-- 발생 빈도: 302건 (최근 3개월 165건 / 이전 9개월 137건)
-- 증가율: +261%
-- 대표 VOC: "After the last update, I've been unable to reconnect my older Samsung smart TV. So much for being able to control ALL of my Samsung devices." — play, 2026-11-22 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +261% 증가하며, 'Connectivity & Reliability' 관련 부정 VOC가 총 302건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 303건 (최근 3개월 163건 / 이전 9개월 140건)
+- 증가율: +249%
+- 대표 VOC: "Most of the time it is unresponsive Out of 8 times of 10 this app remains unresponsive. Every time I have to delete and reinstall it again. I can’t operate any of my devices from this app. My Samsung tv which I was opera…" — appstore, 2026-11-23 ([원문](https://apps.apple.com/gb/app/id1222822904))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +249% 증가하며, 'Connectivity & Reliability' 관련 부정 VOC가 총 303건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 허브-클라우드 간 세션 유지 로직 취약, 다중 홉 메시 네트워크에서의 신호 간섭, 백그라운드 재연결 로직 미흡으로 오프라인 표시가 실제 상태와 어긋남.
 - 개선 아이디어: 지수 백오프 기반 자동 재연결 로직 개선, 기기별 실시간 연결 품질 지표 제공, 오프라인 발생 시 원인(허브/기기/네트워크) 구분 진단 도구 제공.
 
@@ -33,10 +33,10 @@
 
 - 순위: 3
 - 카테고리: Performance
-- 발생 빈도: 94건 (최근 3개월 47건 / 이전 9개월 47건)
-- 증가율: +200%
-- 대표 VOC: "This app sucks So complicated just to watch tv. App is slow takes for ever to respond. Why needed just to watch tv!?" — appstore, 2026-11-16 ([원문](https://apps.apple.com/us/app/id1222822904))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +200% 증가하며, 'Performance' 관련 부정 VOC가 총 94건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 95건 (최근 3개월 47건 / 이전 9개월 48건)
+- 증가율: +194%
+- 대표 VOC: "App is Awful I lost my remote and depend solely on this app .. ITS UNRELIABLE AND INCONSISTENT. Won’t always sync crashes constantly. Sometimes I press buttons and nothing happens. Don’t try and turn on your TV using the…" — appstore, 2026-11-22 ([원문](https://apps.apple.com/us/app/id1222822904))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +194% 증가하며, 'Performance' 관련 부정 VOC가 총 95건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 앱 초기 로딩 시 과도한 기기 상태 동기화, 메모리 누수로 인한 장시간 사용 시 느려짐, 백그라운드 폴링으로 인한 배터리 소모.
 - 개선 아이디어: 초기 로딩을 지연 로딩(lazy load) 방식으로 전환, 캐시 계층 도입으로 반복 호출 감소, 배터리/성능 프로파일링을 정기 회귀 테스트에 포함.
 
@@ -55,10 +55,10 @@
 
 - 순위: 5
 - 카테고리: Device Onboarding
-- 발생 빈도: 61건 (최근 3개월 35건 / 이전 9개월 26건)
-- 증가율: +304%
-- 대표 VOC: "Samsung Smart Tag 2 - Unlink from Unknown Account It doesn't work, you can factory reset the tag doing the button-"pressed while putting the battery in" trick. That puts the SmartTag in pairing mode again and can be adde…" — smartthings_community, 2026-11-23 ([원문](https://community.smartthings.com/t/samsung-smart-tag-2-unlink-from-unknown-account/313336/4))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +304% 증가하며, 'Device Onboarding' 관련 부정 VOC가 총 61건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 62건 (최근 3개월 36건 / 이전 9개월 26건)
+- 증가율: +315%
+- 대표 VOC: "[EDGE] Official Zooz Edge Drivers Channel ...ters 10 - 17. Fixed Group 2 and Group 3 association setting names and descriptions. Updated profiles to use native firmware version capability. Added battery information for Z…" — smartthings_community, 2026-11-25 ([원문](https://community.smartthings.com/t/edge-official-zooz-edge-drivers-channel/299331/113))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +315% 증가하며, 'Device Onboarding' 관련 부정 VOC가 총 62건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 기기 등록 과정에서 발생하는 프로토콜(Wi-Fi/Zigbee/Z-Wave/Matter) 핸드셰이크 실패, 펌웨어-앱 버전 불일치, 불명확한 오류 메시지로 사용자가 실패 원인을 파악하기 어려움.
 - 개선 아이디어: 온보딩 단계별 진행률과 실패 시 구체적 원인(예: "라우터 2.4GHz 대역 확인 필요")을 보여주는 가이드형 UI 도입, 실패율이 높은 기기 유형에 대한 사전 호환성 체크 강화.
 
@@ -135,11 +135,11 @@
 
 최근 6개월간 증가한 VOC:
 
-- **Connectivity & Reliability**: 최근 6개월 270건 vs 이전 6개월 32건 (+261%)
-- **Performance**: 최근 6개월 87건 vs 이전 6개월 7건 (+200%)
+- **Connectivity & Reliability**: 최근 6개월 271건 vs 이전 6개월 32건 (+249%)
+- **Performance**: 최근 6개월 88건 vs 이전 6개월 7건 (+194%)
 - **Multi-brand Integration**: 최근 6개월 89건 vs 이전 6개월 17건 (+224%)
-- **Automation & Routine**: 최근 6개월 57건 vs 이전 6개월 13건 (+183%)
-- **Device Onboarding**: 최근 6개월 52건 vs 이전 6개월 9건 (+304%)
+- **Device Onboarding**: 최근 6개월 53건 vs 이전 6개월 9건 (+315%)
+- **Automation & Routine**: 최근 6개월 56건 vs 이전 6개월 14건 (+183%)
 - **UX/UI**: 최근 6개월 44건 vs 이전 6개월 4건 (+500%)
 - **Security & Privacy**: 최근 6개월 35건 vs 이전 6개월 1건 (+800%)
 - **Energy Management**: 최근 6개월 9건 vs 이전 6개월 0건 (+950%)
@@ -154,7 +154,7 @@
 
 ### 가장 시급한 개선 과제
 
-**Connectivity & Reliability** — 최근 3개월 165건(+261%), 12개월 누적 302건으로 전체 부정 VOC의 41%를 차지, 2위(Multi-brand Integration, 최근 3개월 55건)보다 110건 더 많음.
+**Connectivity & Reliability** — 최근 3개월 163건(+249%), 12개월 누적 303건으로 전체 부정 VOC의 41%를 차지, 2위(Multi-brand Integration, 최근 3개월 55건)보다 108건 더 많음.
 
 Root Cause 추정: 허브-클라우드 간 세션 유지 로직 취약, 다중 홉 메시 네트워크에서의 신호 간섭, 백그라운드 재연결 로직 미흡으로 오프라인 표시가 실제 상태와 어긋남.
 
@@ -188,7 +188,7 @@ Google Home, Aqara, Home Assistant 등 경쟁/대체 플랫폼과 비교하며 S
 
 ## Executive Summary
 
-- 최근 12개월간 SmartThings 앱 관련 부정 VOC 741건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 165건(+261%)으로 나타났다.
+- 최근 12개월간 SmartThings 앱 관련 부정 VOC 744건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 163건(+249%)으로 나타났다.
 - "Multi-brand Integration" 역시 상위 Pain Point로, 사용자 경험 저하가 지속되고 있어 함께 우선 대응이 필요하다.
 - 일부 사용자는 대체 솔루션으로의 이탈 의사를 직접 언급(5건)하여 이탈 위험 신호가 관측된다.
 - Google Home, Aqara, Home Assistant 등 경쟁/대체 플랫폼 대비 열위가 언급된 VOC가 5건 확인되어 경쟁력 저하 신호로 관리가 필요하다.
