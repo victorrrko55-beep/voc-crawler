@@ -1,9 +1,9 @@
 # Victor's VoC Crawler
 
-- 생성 시각: 2026-11-26T04:15:18.547Z
-- 분석 기간: 2025-11-26 ~ 2026-11-26 (최근 12개월)
-- 최근 구간: 2026-08-26 ~ 2026-11-26 (최근 3개월) vs 이전 9개월
-- 분석 대상 부정 VOC: 751건 (전체 수집 VOC 11035건 중)
+- 생성 시각: 2026-11-27T04:23:32.074Z
+- 분석 기간: 2025-11-27 ~ 2026-11-27 (최근 12개월)
+- 최근 구간: 2026-08-27 ~ 2026-11-27 (최근 3개월) vs 이전 9개월
+- 분석 대상 부정 VOC: 756건 (전체 수집 VOC 11111건 중)
 
 ## Top 10 Pain Points
 
@@ -11,10 +11,10 @@
 
 - 순위: 1
 - 카테고리: Connectivity & Reliability
-- 발생 빈도: 306건 (최근 3개월 166건 / 이전 9개월 140건)
-- 증가율: +256%
-- 대표 VOC: "Offline app control on lan working? I realize this is from a while ago, but I ran into the same issue during a storm last week. Removing the physical SIM card from my active Android phone actually let the app find my loc…" — smartthings_community, 2026-11-25 ([원문](https://community.smartthings.com/t/offline-app-control-on-lan-working/311291/11))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +256% 증가하며, 'Connectivity & Reliability' 관련 부정 VOC가 총 306건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 308건 (최근 3개월 165건 / 이전 9개월 143건)
+- 증가율: +246%
+- 대표 VOC: "[ST Edge LAN Driver] Hunter Pacific DC ceiling fans (Tuya WiFi, local control) Update: reliability fixes A new build of hunterpacific-tuya-lan is on the channel. Your hub picks it up automatically. A fan no longer goes o…" — smartthings_community, 2026-11-26 ([원문](https://community.smartthings.com/t/st-edge-lan-driver-hunter-pacific-dc-ceiling-fans-tuya-wifi-local-control/311396/2))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +246% 증가하며, 'Connectivity & Reliability' 관련 부정 VOC가 총 308건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 허브-클라우드 간 세션 유지 로직 취약, 다중 홉 메시 네트워크에서의 신호 간섭, 백그라운드 재연결 로직 미흡으로 오프라인 표시가 실제 상태와 어긋남.
 - 개선 아이디어: 지수 백오프 기반 자동 재연결 로직 개선, 기기별 실시간 연결 품질 지표 제공, 오프라인 발생 시 원인(허브/기기/네트워크) 구분 진단 도구 제공.
 
@@ -22,10 +22,10 @@
 
 - 순위: 2
 - 카테고리: Multi-brand Integration
-- 발생 빈도: 107건 (최근 3개월 55건 / 이전 9개월 52건)
-- 증가율: +217%
-- 대표 VOC: "Tuya Local vs Official Tuya: More Entities & Local Control in Home Assistant (SCHEEAIR Nova100) The same is actually true for other platforms. Be that Google Home, Alexa, or SmartThings, many Tuya devices only expose the…" — other_forum_home_assistant, 2026-11-24 ([원문](https://community.home-assistant.io/t/tuya-local-vs-official-tuya-more-entities-local-control-in-home-assistant-scheeair-nova100/1031425/4))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +217% 증가하며, 'Multi-brand Integration' 관련 부정 VOC가 총 107건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 108건 (최근 3개월 56건 / 이전 9개월 52건)
+- 증가율: +223%
+- 대표 VOC: "Prime Big Deal Days (October 6-7, 2026) ...ght around the corner, and I am already prepping my shopping cart. I really need to replace a few failing Zigbee contact sensors and hopefully grab a Matter-enabled smart lock i…" — smartthings_community, 2026-11-25 ([원문](https://community.smartthings.com/t/prime-big-deal-days-october-6-7-2026/311279/4))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +223% 증가하며, 'Multi-brand Integration' 관련 부정 VOC가 총 108건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: Matter 표준 지원이 기기/펌웨어별로 파편화되어 있고, 타 브랜드 기기와의 인증서/ 드라이버 호환성 검증이 SmartThings 릴리즈 주기와 어긋남.
 - 개선 아이디어: Matter 인증 기기에 대한 호환성 매트릭스를 앱 내에서 공개하고, 주요 서드파티 브랜드와의 통합 테스트를 릴리즈 전 QA 파이프라인에 상시 포함.
 
@@ -33,10 +33,10 @@
 
 - 순위: 3
 - 카테고리: Performance
-- 발생 빈도: 96건 (최근 3개월 48건 / 이전 9개월 48건)
-- 증가율: +200%
+- 발생 빈도: 96건 (최근 3개월 47건 / 이전 9개월 49건)
+- 증가율: +188%
 - 대표 VOC: "Does not work at all with iPhone Duo Update: Dev asked me to advise what specifically I am seeing. The answer is nothing. The app just shows loading forever and nothing ever populates. Only works on my older devices. On …" — appstore, 2026-11-24 ([원문](https://apps.apple.com/us/app/id1222822904))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +200% 증가하며, 'Performance' 관련 부정 VOC가 총 96건 누적되어 상위 Pain Point로 식별됨.
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +188% 증가하며, 'Performance' 관련 부정 VOC가 총 96건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 앱 초기 로딩 시 과도한 기기 상태 동기화, 메모리 누수로 인한 장시간 사용 시 느려짐, 백그라운드 폴링으로 인한 배터리 소모.
 - 개선 아이디어: 초기 로딩을 지연 로딩(lazy load) 방식으로 전환, 캐시 계층 도입으로 반복 호출 감소, 배터리/성능 프로파일링을 정기 회귀 테스트에 포함.
 
@@ -44,10 +44,10 @@
 
 - 순위: 4
 - 카테고리: Automation & Routine
-- 발생 빈도: 70건 (최근 3개월 34건 / 이전 9개월 36건)
-- 증가율: +183%
-- 대표 VOC: "this is the most pushy app ever, I had my phone on the table next to me at work and it wont stop making random noises to get my attention so I can set up routines on it. I just need it to shut the F up while im busy at G…" — play, 2026-11-20 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +183% 증가하며, 'Automation & Routine' 관련 부정 VOC가 총 70건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 72건 (최근 3개월 36건 / 이전 9개월 36건)
+- 증가율: +200%
+- 대표 VOC: "[EDGE] Aqara Cube T1 Pro – Automate Prime Edition v1.1 (Home Assistant support) My bad, I've just realized I've misread your OP from the beginning, I didn't realise your update was precisely to add HA support via ST inte…" — smartthings_community, 2026-11-26 ([원문](https://community.smartthings.com/t/edge-aqara-cube-t1-pro-automate-prime-edition-v1-1-home-assistant-support/313772/5))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +200% 증가하며, 'Automation & Routine' 관련 부정 VOC가 총 72건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 루틴 실행 엔진의 조건 평가 지연, 클라우드 종속 자동화의 지연/타임아웃, 앱 업데이트 후 기존 루틴의 트리거-조건 매핑이 깨지는 회귀 버그.
 - 개선 아이디어: 루틴 실행 로그/히스토리를 사용자에게 노출해 실패 시점을 즉시 확인 가능하게 하고, 로컬 실행(온디바이스) 비중을 늘려 클라우드 왕복 지연을 줄임.
 
@@ -135,11 +135,11 @@
 
 최근 6개월간 증가한 VOC:
 
-- **Connectivity & Reliability**: 최근 6개월 272건 vs 이전 6개월 34건 (+256%)
-- **Performance**: 최근 6개월 89건 vs 이전 6개월 7건 (+200%)
-- **Multi-brand Integration**: 최근 6개월 90건 vs 이전 6개월 17건 (+217%)
-- **Device Onboarding**: 최근 6개월 54건 vs 이전 6개월 9건 (+327%)
-- **Automation & Routine**: 최근 6개월 56건 vs 이전 6개월 14건 (+183%)
+- **Connectivity & Reliability**: 최근 6개월 273건 vs 이전 6개월 35건 (+246%)
+- **Performance**: 최근 6개월 89건 vs 이전 6개월 7건 (+188%)
+- **Multi-brand Integration**: 최근 6개월 91건 vs 이전 6개월 17건 (+223%)
+- **Automation & Routine**: 최근 6개월 58건 vs 이전 6개월 14건 (+200%)
+- **Device Onboarding**: 최근 6개월 53건 vs 이전 6개월 10건 (+327%)
 - **UX/UI**: 최근 6개월 45건 vs 이전 6개월 4건 (+519%)
 - **Security & Privacy**: 최근 6개월 35건 vs 이전 6개월 1건 (+800%)
 - **Energy Management**: 최근 6개월 9건 vs 이전 6개월 0건 (+950%)
@@ -154,7 +154,7 @@
 
 ### 가장 시급한 개선 과제
 
-**Connectivity & Reliability** — 최근 3개월 166건(+256%), 12개월 누적 306건으로 전체 부정 VOC의 41%를 차지, 2위(Multi-brand Integration, 최근 3개월 55건)보다 111건 더 많음.
+**Connectivity & Reliability** — 최근 3개월 165건(+246%), 12개월 누적 308건으로 전체 부정 VOC의 41%를 차지, 2위(Multi-brand Integration, 최근 3개월 56건)보다 109건 더 많음.
 
 Root Cause 추정: 허브-클라우드 간 세션 유지 로직 취약, 다중 홉 메시 네트워크에서의 신호 간섭, 백그라운드 재연결 로직 미흡으로 오프라인 표시가 실제 상태와 어긋남.
 
@@ -172,11 +172,11 @@ Root Cause 추정: 허브-클라우드 간 세션 유지 로직 취약, 다중 �
 
 Home Assistant, Google Home, Aqara 등 경쟁/대체 플랫폼과 비교하며 SmartThings의 열위를 지적한 VOC 5건 확인. 주로 **Multi-brand Integration** 카테고리에서 함께 언급됨.
 
+- "[EDGE] Aqara Cube T1 Pro – Automate Prime Edition v1.1 (Home Assistant support) My bad, I've just realized I've misread your OP from the beginning, I didn't rea…" — smartthings_community, 2026-11-26 ([원문](https://community.smartthings.com/t/edge-aqara-cube-t1-pro-automate-prime-edition-v1-1-home-assistant-support/313772/5))
 - "Tuya Local vs Official Tuya: More Entities & Local Control in Home Assistant (SCHEEAIR Nova100) The same is actually true for other platforms. Be that Google Ho…" — other_forum_home_assistant, 2026-11-24 ([원문](https://community.home-assistant.io/t/tuya-local-vs-official-tuya-more-entities-local-control-in-home-assistant-scheeair-nova100/1031425/4))
 - "latest update completely broke integration with Google home. Google home new recognizes most of my dimming lights as 2 devices, an outlet and a switch. I cannot…" — play, 2026-11-22 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
 - "Nest app to shutdown on January 25, 2027 I also got the message. For me personally I only used the Nest App to fine tune my Thermostat by half degrees, somethin…" — smartthings_community, 2026-11-20 ([원문](https://community.smartthings.com/t/nest-app-to-shutdown-on-january-25-2027/313161/3))
 - "WTH can't Zigbee2MQTT be a first-class citizen on HA .../hubs_protocols/smart_home_hubs/ "hubs" (gateways/bridges/controllers) which support Zigbee devices, suc…" — other_forum_home_assistant, 2026-11-10 ([원문](https://community.home-assistant.io/t/wth-cant-zigbee2mqtt-be-a-first-class-citizen-on-ha/1033377/5))
-- "WTH can't Home Assistant represent the actual things in my home, separately from the devices that make them smart? ....com/user-interface/settings/swap-apps-dev…" — other_forum_home_assistant, 2026-11-09 ([원문](https://community.home-assistant.io/t/wth-cant-home-assistant-represent-the-actual-things-in-my-home-separately-from-the-devices-that-make-them-smart/1033199/14))
 
 ### 차기 릴리즈 우선 검토 항목
 
@@ -188,7 +188,7 @@ Home Assistant, Google Home, Aqara 등 경쟁/대체 플랫폼과 비교하며 S
 
 ## Executive Summary
 
-- 최근 12개월간 SmartThings 앱 관련 부정 VOC 751건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 166건(+256%)으로 나타났다.
+- 최근 12개월간 SmartThings 앱 관련 부정 VOC 756건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 165건(+246%)으로 나타났다.
 - "Multi-brand Integration" 역시 상위 Pain Point로, 사용자 경험 저하가 지속되고 있어 함께 우선 대응이 필요하다.
 - 일부 사용자는 대체 솔루션으로의 이탈 의사를 직접 언급(5건)하여 이탈 위험 신호가 관측된다.
 - Home Assistant, Google Home, Aqara 등 경쟁/대체 플랫폼 대비 열위가 언급된 VOC가 5건 확인되어 경쟁력 저하 신호로 관리가 필요하다.
