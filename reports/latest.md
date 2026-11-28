@@ -1,9 +1,9 @@
 # Victor's VoC Crawler
 
-- 생성 시각: 2026-11-27T04:23:32.074Z
-- 분석 기간: 2025-11-27 ~ 2026-11-27 (최근 12개월)
-- 최근 구간: 2026-08-27 ~ 2026-11-27 (최근 3개월) vs 이전 9개월
-- 분석 대상 부정 VOC: 756건 (전체 수집 VOC 11111건 중)
+- 생성 시각: 2026-11-28T04:03:39.398Z
+- 분석 기간: 2025-11-28 ~ 2026-11-28 (최근 12개월)
+- 최근 구간: 2026-08-28 ~ 2026-11-28 (최근 3개월) vs 이전 9개월
+- 분석 대상 부정 VOC: 758건 (전체 수집 VOC 11154건 중)
 
 ## Top 10 Pain Points
 
@@ -11,10 +11,10 @@
 
 - 순위: 1
 - 카테고리: Connectivity & Reliability
-- 발생 빈도: 308건 (최근 3개월 165건 / 이전 9개월 143건)
-- 증가율: +246%
+- 발생 빈도: 309건 (최근 3개월 164건 / 이전 9개월 145건)
+- 증가율: +239%
 - 대표 VOC: "[ST Edge LAN Driver] Hunter Pacific DC ceiling fans (Tuya WiFi, local control) Update: reliability fixes A new build of hunterpacific-tuya-lan is on the channel. Your hub picks it up automatically. A fan no longer goes o…" — smartthings_community, 2026-11-26 ([원문](https://community.smartthings.com/t/st-edge-lan-driver-hunter-pacific-dc-ceiling-fans-tuya-wifi-local-control/311396/2))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +246% 증가하며, 'Connectivity & Reliability' 관련 부정 VOC가 총 308건 누적되어 상위 Pain Point로 식별됨.
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +239% 증가하며, 'Connectivity & Reliability' 관련 부정 VOC가 총 309건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 허브-클라우드 간 세션 유지 로직 취약, 다중 홉 메시 네트워크에서의 신호 간섭, 백그라운드 재연결 로직 미흡으로 오프라인 표시가 실제 상태와 어긋남.
 - 개선 아이디어: 지수 백오프 기반 자동 재연결 로직 개선, 기기별 실시간 연결 품질 지표 제공, 오프라인 발생 시 원인(허브/기기/네트워크) 구분 진단 도구 제공.
 
@@ -33,10 +33,10 @@
 
 - 순위: 3
 - 카테고리: Performance
-- 발생 빈도: 96건 (최근 3개월 47건 / 이전 9개월 49건)
-- 증가율: +188%
+- 발생 빈도: 95건 (최근 3개월 45건 / 이전 9개월 50건)
+- 증가율: +170%
 - 대표 VOC: "Does not work at all with iPhone Duo Update: Dev asked me to advise what specifically I am seeing. The answer is nothing. The app just shows loading forever and nothing ever populates. Only works on my older devices. On …" — appstore, 2026-11-24 ([원문](https://apps.apple.com/us/app/id1222822904))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +188% 증가하며, 'Performance' 관련 부정 VOC가 총 96건 누적되어 상위 Pain Point로 식별됨.
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +170% 증가하며, 'Performance' 관련 부정 VOC가 총 95건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 앱 초기 로딩 시 과도한 기기 상태 동기화, 메모리 누수로 인한 장시간 사용 시 느려짐, 백그라운드 폴링으로 인한 배터리 소모.
 - 개선 아이디어: 초기 로딩을 지연 로딩(lazy load) 방식으로 전환, 캐시 계층 도입으로 반복 호출 감소, 배터리/성능 프로파일링을 정기 회귀 테스트에 포함.
 
@@ -77,10 +77,10 @@
 
 - 순위: 7
 - 카테고리: Security & Privacy
-- 발생 빈도: 36건 (최근 3개월 27건 / 이전 9개월 9건)
-- 증가율: +800%
-- 대표 VOC: "I think it's an invasion of privacy that I didn't ask to have on my telephone to start with and can't seem to get rid of" — play, 2026-11-20 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +800% 증가하며, 'Security & Privacy' 관련 부정 VOC가 총 36건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 37건 (최근 3개월 27건 / 이전 9개월 10건)
+- 증가율: +710%
+- 대표 VOC: "WAY TOO MANY PRIVACY ISSUES" — play, 2026-11-27 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +710% 증가하며, 'Security & Privacy' 관련 부정 VOC가 총 37건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: 권한 요청 시점과 사유 설명이 불충분해 사용자가 과도한 권한 요구로 인식, 보안 관련 정책 변경 공지가 앱 내에서 충분히 전달되지 않음.
 - 개선 아이디어: 권한별 사용 목적을 요청 시점에 명확히 안내(contextual permission), 보안/개인정보 설정을 별도 대시보드로 통합해 접근성 향상, 정기 보안 감사 결과 공개.
 
@@ -99,10 +99,10 @@
 
 - 순위: 9
 - 카테고리: AI / Voice
-- 발생 빈도: 8건 (최근 3개월 5건 / 이전 9개월 3건)
-- 증가율: +400%
-- 대표 VOC: "During device setup you are 20x redirected to login,.. you add internal plugin,.. redirected to login.. full of illogical bugs ie. you pause washing program, because it decided to wash 2 hrs longer.. 8 hrs later you want…" — play, 2026-11-14 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
-- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +400% 증가하며, 'AI / Voice' 관련 부정 VOC가 총 8건 누적되어 상위 Pain Point로 식별됨.
+- 발생 빈도: 9건 (최근 3개월 6건 / 이전 9개월 3건)
+- 증가율: +500%
+- 대표 VOC: "I used to be able to ask Bixby for random facts or something requires the Internet. I'm not sure if I changed settings but now it says "I can't help you with that one." Edit: even more frustrated with Bixby. the same com…" — play, 2026-11-26 ([원문](https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect))
+- Pain Point 요약: 최근 3개월 발생 빈도가 이전 대비 +500% 증가하며, 'AI / Voice' 관련 부정 VOC가 총 9건 누적되어 상위 Pain Point로 식별됨.
 - Root Cause 추정: AI/음성 기능이 특정 지역·기기에서만 제공되어 기대와 실제 지원 범위 간 괴리가 크고, Bixby 등 음성 인식 정확도가 낮아 명령 실패가 반복됨.
 - 개선 아이디어: AI/음성 기능의 지원 범위를 앱 내에서 명확히 안내, 음성 명령 실패 시 대체 텍스트 명령 제공, 사용자 피드백 기반 인식률 개선 루프 구축.
 
@@ -135,14 +135,14 @@
 
 최근 6개월간 증가한 VOC:
 
-- **Connectivity & Reliability**: 최근 6개월 273건 vs 이전 6개월 35건 (+246%)
-- **Performance**: 최근 6개월 89건 vs 이전 6개월 7건 (+188%)
+- **Connectivity & Reliability**: 최근 6개월 273건 vs 이전 6개월 36건 (+239%)
+- **Performance**: 최근 6개월 89건 vs 이전 6개월 6건 (+170%)
 - **Multi-brand Integration**: 최근 6개월 91건 vs 이전 6개월 17건 (+223%)
 - **Automation & Routine**: 최근 6개월 58건 vs 이전 6개월 14건 (+200%)
-- **Device Onboarding**: 최근 6개월 53건 vs 이전 6개월 10건 (+327%)
+- **Device Onboarding**: 최근 6개월 52건 vs 이전 6개월 11건 (+327%)
 - **UX/UI**: 최근 6개월 45건 vs 이전 6개월 4건 (+519%)
-- **Security & Privacy**: 최근 6개월 35건 vs 이전 6개월 1건 (+800%)
-- **Energy Management**: 최근 6개월 9건 vs 이전 6개월 0건 (+950%)
+- **Security & Privacy**: 최근 6개월 36건 vs 이전 6개월 1건 (+710%)
+- **AI / Voice**: 최근 6개월 9건 vs 이전 6개월 0건 (+500%)
 
 ## 감소 이슈
 
@@ -154,7 +154,7 @@
 
 ### 가장 시급한 개선 과제
 
-**Connectivity & Reliability** — 최근 3개월 165건(+246%), 12개월 누적 308건으로 전체 부정 VOC의 41%를 차지, 2위(Multi-brand Integration, 최근 3개월 56건)보다 109건 더 많음.
+**Connectivity & Reliability** — 최근 3개월 164건(+239%), 12개월 누적 309건으로 전체 부정 VOC의 41%를 차지, 2위(Multi-brand Integration, 최근 3개월 56건)보다 108건 더 많음.
 
 Root Cause 추정: 허브-클라우드 간 세션 유지 로직 취약, 다중 홉 메시 네트워크에서의 신호 간섭, 백그라운드 재연결 로직 미흡으로 오프라인 표시가 실제 상태와 어긋남.
 
@@ -183,12 +183,12 @@ Home Assistant, Google Home, Aqara 등 경쟁/대체 플랫폼과 비교하며 S
 증가율 기준 상위 카테고리를 차기 릴리즈 검토 우선순위로 제안합니다:
 
 1. **Energy Management** (+950%) — SmartThings Energy의 상세 에너지 데이터가 삼성 자체 기기 위주로만 제공되어 서드파티 기기(스마트 플러그 등)는 연동은 되어도 에너지 모니터링 항목이 누락되거나 Energy 화면에 기기 자체가 표시되지 않는 경우가 있음.
-2. **Security & Privacy** (+800%) — 권한 요청 시점과 사유 설명이 불충분해 사용자가 과도한 권한 요구로 인식, 보안 관련 정책 변경 공지가 앱 내에서 충분히 전달되지 않음.
+2. **Security & Privacy** (+710%) — 권한 요청 시점과 사유 설명이 불충분해 사용자가 과도한 권한 요구로 인식, 보안 관련 정책 변경 공지가 앱 내에서 충분히 전달되지 않음.
 3. **UX/UI** (+519%) — 기능이 누적되며 정보 구조(IA)가 복잡해졌고, 기기 관리·자동화·모니터링 기능이 하나의 화면 계층에 혼재되어 사용자가 원하는 기능을 찾기 어려움.
 
 ## Executive Summary
 
-- 최근 12개월간 SmartThings 앱 관련 부정 VOC 756건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 165건(+246%)으로 나타났다.
+- 최근 12개월간 SmartThings 앱 관련 부정 VOC 758건을 분석한 결과, 가장 시급한 Pain Point는 "Connectivity & Reliability"이며 최근 3개월 발생 빈도가 164건(+239%)으로 나타났다.
 - "Multi-brand Integration" 역시 상위 Pain Point로, 사용자 경험 저하가 지속되고 있어 함께 우선 대응이 필요하다.
 - 일부 사용자는 대체 솔루션으로의 이탈 의사를 직접 언급(5건)하여 이탈 위험 신호가 관측된다.
 - Home Assistant, Google Home, Aqara 등 경쟁/대체 플랫폼 대비 열위가 언급된 VOC가 5건 확인되어 경쟁력 저하 신호로 관리가 필요하다.
